@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en", charset="utf-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VTES Static Files</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="vtes.svg">
+</head>
+<body>
+    <header role="banner">
+        <img src="vtes.svg">
+        <h1>VTES Static Files</h1>
+    </header>
+    <article>
+    This is a server hosting development resources for <strong>V:tES</strong>
+    (Vampire: the Eternal Struggle) developers.
+    <div class="insert">
+        <p>
+            This server is optimised for performance:
+            files are served under a 1 hour <span>Cache-Control</span>.
+        </p>
+    </div>
+    <h2>Data resources</h2>
+    <p>Data resources are under the <span>data</span> directory.</p>
+    <ul>
+        <li>
+            <a target="_blank" href=data/vtes.json>data/vtes.json</a> contains all cards data
+            with translations, rulings and image <span>URL</span>, in <span>JSON</span> format.
+        </li>
+        <li>
+            <a target="_blank" href=data/twda.json>data/twda.json</a> contains a list of the TWDA, 
+            in <span>JSON</span> format.
+        </li>
+        <li>
+            <a target="_blank" href=data/twd.htm>data/twd.htm</a> is a normalized version of the official TWDA.
+            It's far easier to parse, as it uses a homogenous format in all places, and all card names are correct.
+        </li>
+    </ul>
+    <h2>Web resources</h2>
+    <p>
+        The <a href=example.html>example.html</a> provides
+        a short documentation and an actual example of their use.
+    </p>
+    <p>
+        Web resources are under the <span>web</span> directory. 
+    </p>
+    <ul>
+        <li>
+            <a target="_blank" href=web/ankha.ttf>web/ankha.ttf</a> is a font used to display 
+            disciplines and card types.
+        </li>
+        <li>
+            <a target="_blank" href=web/krcg.js>web/krcg.js</a> is a simple script to display a card image modal.
+        </li>
+        <li>
+            <a target="_blank" href=web/krcg.css>web/krcg.css</a> is a simple <span>CSS</span> 
+            for easy usage of the previous items.
+        </li>
+    </ul>
+    <h2>Card Images</h2>
+    <p>
+        Card images are <span>JPG</span> files under the <span>card</span> directory.
+        Images filenames are an ascii-only version of card names, with neither space nor punctuation,
+        and the <span>.jpg</span> file extentions.
+        For example: <a target="_blank" href=card/powerbasezurich.jpg>card/powerbasezurich.jpg</a>.
+        These images URLs are used in the <a target="_blank" href=data/vtes.json>vtes.json</a> file.
+    </p>
+    <h2>Clan images</h2>
+    <p>
+        Card images are <span>SVG</span> files under the <span>clan</span> directory. They display nicely at any size.
+        Images filenames are an ascii-only version of clan names, with neither space nor punctuation,
+        and the <span>.svg</span> file extentions.
+        For example: <a target="_blank" href=clan/daughtersofcacophony.svg>clan/daughtersofcacophony.svg</a>.
+    </p>
+    <p>
+        V5 clan icons are available under the <span>clan/v5</span> folder.
+        For example: <a target="_blank"href=clan/v5/tremere.svg>clan/v5/tremere.svg</a>.
+    </p>
+</article>
+<footer>
+<img src="dark-pack.png">
+<p>
+    Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission.
+    All rights reserved. 
+    You can use this content under the Dark Pack agreement.
+    For more information please visit
+    <a target="_blank" href="https://www.worldofdarkness.com/dark-pack">www.worldofdarkness.com</a>.
+</p>
+</footer>
+</body>
+</html>

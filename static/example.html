@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="web/krcg.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="vtes.svg">
+    <script src="web/krcg.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <a href="index.html" class="site-logo">
+            <img src="vtes.svg">
+        </a>
+        <h1>Example</h1>
+    </header>
+    <article>
+    This is a usage example of KRCG static file.
+    <div class="insert">
+        <p>
+            This example uses a very basic <span>CSS</span> file for styling in addition
+            to the <a href="web/krcg.css">krcg.css</a> file used to display cards and disciplines icons.
+        </p>
+    </div>
+    <h2>How to use the static files</h2>
+    <p>
+        To use the static files provided, first include the <a href="web/krcg.css">krcg.css</a> and
+        <a href="web/krcg.js">krcg.js</a> files to your webpage:
+    </p>
+    <p>
+        <span>
+        &lthead&gt<br>
+        ...<br>
+        &ltlink rel="stylesheet" type="text/css" href="web/krcg.css"&gt<br>
+        &ltscript src="web/krcg.js"&gt&ltscript&gt<br>
+        &lt/head&gt
+        </span>
+    </p>
+    <p>
+        You can then use the <span>&lti&gt</span> tag to display a discipline icon:
+    </p>
+    <p>
+        <span>Fortitude &lti&gtf&lt/i&gt</span>
+    </p>
+        and use the <span>krcg-card</span> class on a <span>&ltspan&gt</span> tag to get a nice card display:
+    </p>    
+    <p>
+        <span>&ltspan class="krcg-card"&gtGovern the Unaligned&lt/span&gt</span>
+    </p>
+    <p>
+        Check the source code of this next section for a full example.
+    </p>
+    <h2>Usage Example</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean hendrerit Ventrue <img src=clan/ventrue.svg> consectetur.
+        Donec ac Fortitude <i>f</i> neque Dominate <i>D</i>, ut <span class="krcg-card">Govern the Unaligned</span>.
+        Etiam dapibus, nibh at hendrerit ullamcorper, diam nisl vehicula sem, non semper erat metus sit amet velit.
+    </p>
+</article>
+<footer>
+<img src="dark-pack.png">
+<p>
+    Portions of the materials are the copyrights and trademarks of Paradox Interactive AB, and are used with permission.
+    All rights reserved. 
+    You can use this content under the Dark Pack agreement.
+    For more information please visit
+    <a target="_blank" href="https://www.worldofdarkness.com/dark-pack">www.worldofdarkness.com</a>.
+</p>
+</footer>
+</body>
+</html>

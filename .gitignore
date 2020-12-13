@@ -1,0 +1,18 @@
+# Build & distribution
+__pycache__/
+build/
+dist/
+venv/
+*.egg-info/
+*.pkl
+
+# test
+.pytest_cache/
+
+# editors & OS
+.vscode/
+*.DS_Store
+.idea/
+
+# do not commit images
+i18n_cards/

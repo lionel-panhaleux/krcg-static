@@ -1,0 +1,99 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    background-color: #fffdf5;
+    text-align: left;
+}
+a {
+    color: #000000;
+    cursor: pointer;
+}
+a:hover,
+a:focus {
+    color: #007acc;
+}
+header,
+footer {
+    display: flex;
+    flex-direction: row;
+    clear: both;
+    margin: 4em auto;
+    vertical-align: center;
+    max-width: 700px;
+}
+header img,
+footer img {
+    padding: 0 2em 0 0;
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+}
+header h1,
+header img {
+    display: inline-flex;
+    margin: auto 0;
+}
+header a {
+    text-decoration: none;
+}
+footer {
+    font-size: 0.8em;
+    font-style: italic;
+}
+article {
+    max-width: 700px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2.5rem;
+    padding: 0.5em;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 1em 0 0.5em 0;
+}
+p {
+    margin: 1em 0;
+}
+p img {
+    height: 1em;
+    max-width: 2em;
+    vertical-align: middle;
+}
+span {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #2b2b2b;
+    background-color: #e9e6dd;
+    padding: 0.1em;
+    border-radius: 0.3em;
+}
+/* change our span definition for krcg-card usage example */
+.krcg-card {
+    font-family: "Times New Roman", Times, serif;
+    color: #000000;
+    background-color: #fffdf5;
+    font-size: 1em;
+    padding: 0;
+    border-radius: 0;
+    text-decoration: underline;
+}
+.insert {
+    background: #fcf4ec;
+    border: 1px solid rgb(220, 140, 70);
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    margin: 1.5em;
+    clear: both;
+}
+@media only screen and (max-width: 750px) {
+    header,
+    footer {
+        margin: 2em auto;
+    }
+    header img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
