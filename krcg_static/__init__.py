@@ -6,6 +6,7 @@ import aiofile
 import aiohttp
 import argparse
 import asyncio
+import email.utils
 import html.parser
 import json
 import logging
@@ -30,12 +31,27 @@ parser = argparse.ArgumentParser(
 parser.add_argument("folder", help="Target folder", type=pathlib.Path)
 
 
+def amaranth_ids(path: str):
+    with open(path / "data" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
+        r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
+        r.raise_for_status()
+        json.dump(
+            {
+                int(card["id"]): vtes.VTES[card["name"]].id
+                for card in r.json()["result"]
+                if card["name"] in vtes.VTES  # ignore storyline / counter cards
+            },
+            fp,
+            ensure_ascii=False,
+        )
+
+
 def standard_json(path: str) -> None:
     path.mkdir(parents=True, exist_ok=True)
-    with open(path / "vtes.json", "w", encoding="utf-8") as fp:
-        json.dump([c.__getstate__() for c in vtes.VTES], fp, ensure_ascii=False)
-    with open(path / "twda.json", "w", encoding="utf-8") as fp:
-        json.dump(twda.TWDA.__getstate__(), fp, ensure_ascii=False)
+    with open(path / "data" / "vtes.json", "w", encoding="utf-8") as fp:
+        json.dump(vtes.VTES.to_json(), fp, ensure_ascii=False)
+    with open(path / "data" / "twda.json", "w", encoding="utf-8") as fp:
+        json.dump(twda.TWDA.to_json(), fp, ensure_ascii=False)
 
 
 def standard_html(path: str) -> None:
@@ -138,9 +154,9 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
     # body: list of decklists
     for deck in decks:
         content += f"<a id={deck.id} href=#>Top</a>\n<hr><pre>\n"
-        content += deck.to_txt(wrap=False)
+        content += deck.to_txt()
         content += "\n</pre>\n"
-    with open(path / "twd.htm", "w", encoding="utf-8") as fp:
+    with open(path / "data" / "twd.htm", "w", encoding="utf-8") as fp:
         fp.write(content)
 
 
@@ -159,10 +175,16 @@ class IndexParser(html.parser.HTMLParser):
 
 
 async def fetch_file(path, session, card):
+    """Fetch image files, preserve "last-mofidifed" time."""
     async with session.get(CARD_IMAGES_URL + card) as response:
+        time = email.utils.mktime_tz(
+            email.utils.parsedate_tz(response.headers["Last-Modified"])
+        )
         content = await response.read()
-    async with aiofile.async_open(path / "card" / card, "wb") as afp:
+    dst = path / "card" / card
+    async with aiofile.async_open(dst, "wb") as afp:
         await afp.write(content)
+    os.utime(dst, (time, time))
 
 
 async def fetch_lackey_card_images(path):
@@ -179,6 +201,7 @@ async def fetch_lackey_card_images(path):
 def card_images(path):
     i18n = pathlib.Path("i18n_cards")
     for lang in os.listdir(i18n):
+        (path / "card" / lang).mkdir(parents=True, exist_ok=True)
         for card in os.listdir(i18n / lang):
             dst, ext = card.rsplit(".", 1)
             dst = dst.split("_")
@@ -194,7 +217,6 @@ def card_images(path):
 def static(path):
     shutil.rmtree(path, ignore_errors=True)
     shutil.copytree("static", path)
-    (path / "card").mkdir(parents=True, exist_ok=True)
 
 
 def main():
@@ -206,7 +228,9 @@ def main():
         vtes.VTES.load_from_vekn()
         twda.TWDA.load_from_vekn()
     except requests.exceptions.ConnectionError as e:
-        logger.exception("failed to connect to {}", e.request.url)
+        logger.exception("failed to connect to %s", e.request.url)
         exit(1)
+    (args.folder / "data").mkdir(parents=True, exist_ok=True)
     standard_json(args.folder)
     standard_html(args.folder)
+    amaranth_ids(args.folder)

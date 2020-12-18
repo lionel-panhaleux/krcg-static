@@ -5,7 +5,7 @@ from krcg import vtes
 
 
 def test_card():
-    assert vtes.VTES["Aid from Bats"].__getstate__() == {
+    assert vtes.VTES["Aid from Bats"].to_json() == {
         "_i18n": {
             "es-ES": {
                 "card_text": (
@@ -19,6 +19,7 @@ def test_card():
                 ),
                 "name": "Ayuda de murciélagos",
                 "sets": {"First Blood": "Primera Sangre"},
+                "url": "https://static.krcg.org/data/es/aidfrombats.jpg",
             },
             "fr-FR": {
                 "card_text": (
@@ -34,10 +35,11 @@ def test_card():
                 ),
                 "name": "Aide des chauves-souris",
                 "sets": {"First Blood": "Premier Sang"},
+                "url": "https://static.krcg.org/data/fr/aidfrombats.jpg",
             },
         },
         "_name": "Aid from Bats",
-        "artist": ["Melissa Benson", "Eric Lofgren"],
+        "artists": ["Melissa Benson", "Eric Lofgren"],
         "card_text": "[ani] Strike: 1R damage, with 1 optional maneuver.\n"
         "[ANI] As above, with 1 optional press.",
         "disciplines": ["ani"],
@@ -46,6 +48,15 @@ def test_card():
         'D.H. Lawrence, "Bat"',
         "id": 100029,
         "name": "Aid from Bats",
+        "rulings": {
+            "links": {
+                "[TOM 19960521]": "https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/poYD3n0TKGo/xvU5HW7lBxMJ"
+            },
+            "text": [
+                "[ANI] The press can only be used during the current "
+                "round. [TOM 19960521]"
+            ],
+        },
         "sets": {
             "Anarchs": [
                 {"Copies": 2, "Precon": "Gangrel", "Release Date": "2003-05-19"}
@@ -67,6 +78,7 @@ def test_card():
             ],
         },
         "types": ["Combat"],
+        "url": "https://static.krcg.org/data/aidfrombats.jpg",
     }
 
 
@@ -74,7 +86,7 @@ def test_twda():
     deck = twda.TWDA["2020bf3hf"]
     test_twda = twda._TWDA()
     test_twda[deck.id] = deck
-    assert test_twda.__getstate__() == [
+    assert test_twda.to_json() == [
         {
             "comments": textwrap.dedent(
                 """

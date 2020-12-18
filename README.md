@@ -11,4 +11,6 @@ KRCG static V:tES files generation
 
 That's it.
 
+The command build the static site into the `build` folder,
+then uses `rsync` over `ssh` to push it to the `static.krcg.org` server.
 Note you need ssh access to the `krcg.org` server to deploy.
