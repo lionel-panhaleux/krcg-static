@@ -7,7 +7,7 @@ from krcg import vtes
 def test_card():
     assert vtes.VTES["Aid from Bats"].to_json() == {
         "_i18n": {
-            "es-ES": {
+            "es": {
                 "card_text": (
                     "[ani] Ataque: 1 de daño a distancia, con 1 maniobra opcional.\n"
                     "[ANI] Como antes, con 1 acoso opcional."
@@ -19,9 +19,9 @@ def test_card():
                 ),
                 "name": "Ayuda de murciélagos",
                 "sets": {"First Blood": "Primera Sangre"},
-                "url": "https://static.krcg.org/data/es/aidfrombats.jpg",
+                "url": "https://static.krcg.org/card/es/aidfrombats.jpg",
             },
-            "fr-FR": {
+            "fr": {
                 "card_text": (
                     "[ani] Frapper à toute portée : 1 point de dégâts, "
                     "avec 1 manœuvre optionnelle.\n"
@@ -35,11 +35,11 @@ def test_card():
                 ),
                 "name": "Aide des chauves-souris",
                 "sets": {"First Blood": "Premier Sang"},
-                "url": "https://static.krcg.org/data/fr/aidfrombats.jpg",
+                "url": "https://static.krcg.org/card/fr/aidfrombats.jpg",
             },
         },
         "_name": "Aid from Bats",
-        "artists": ["Melissa Benson", "Eric Lofgren"],
+        "artists": ["Eric Lofgren", "Melissa Benson"],
         "card_text": "[ani] Strike: 1R damage, with 1 optional maneuver.\n"
         "[ANI] As above, with 1 optional press.",
         "disciplines": ["ani"],
@@ -78,7 +78,7 @@ def test_card():
             ],
         },
         "types": ["Combat"],
-        "url": "https://static.krcg.org/data/aidfrombats.jpg",
+        "url": "https://static.krcg.org/card/aidfrombats.jpg",
     }
 
 
