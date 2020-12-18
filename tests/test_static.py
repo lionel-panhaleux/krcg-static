@@ -59,22 +59,22 @@ def test_card():
         },
         "sets": {
             "Anarchs": [
-                {"Copies": 2, "Precon": "Gangrel", "Release Date": "2003-05-19"}
+                {"copies": 2, "precon": "Gangrel", "release_date": "2003-05-19"}
             ],
             "Camarilla Edition": [
-                {"Rarity": "Common", "Release Date": "2002-08-19"},
-                {"Copies": 3, "Precon": "Nosferatu", "Release Date": "2002-08-19"},
+                {"rarity": "Common", "release_date": "2002-08-19"},
+                {"copies": 3, "precon": "Nosferatu", "release_date": "2002-08-19"},
             ],
             "First Blood": [
-                {"Copies": 6, "Precon": "Nosferatu", "Release Date": "2019-10-01"}
+                {"copies": 6, "precon": "Nosferatu", "release_date": "2019-10-01"}
             ],
-            "Jyhad": [{"Rarity": "Common", "Release Date": "1994-08-16"}],
+            "Jyhad": [{"rarity": "Common", "release_date": "1994-08-16"}],
             "Keepers of Tradition": [
-                {"Rarity": "Common", "Release Date": "2008-11-19"}
+                {"rarity": "Common", "release_date": "2008-11-19"}
             ],
-            "Third Edition": [{"Rarity": "Common", "Release Date": "2006-09-04"}],
+            "Third Edition": [{"rarity": "Common", "release_date": "2006-09-04"}],
             "Vampire: The Eternal Struggle": [
-                {"Rarity": "Common", "Release Date": "1995-09-15"}
+                {"rarity": "Common", "release_date": "1995-09-15"}
             ],
         },
         "types": ["Combat"],
