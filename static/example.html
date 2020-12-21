@@ -18,48 +18,47 @@
         <h1>Example</h1>
     </header>
     <article>
-    This is a usage example of KRCG static file.
-    <div class="insert">
-        <p>
-            This example uses a very basic <span>CSS</span> file for styling in addition
-            to the <a href="web/krcg.css">krcg.css</a> file used to display cards and disciplines icons.
-        </p>
-    </div>
-    <h2>How to use the static files</h2>
     <p>
-        To use the static files provided, first include the <a href="web/krcg.css">krcg.css</a> and
+        First include the <a href="web/krcg.css">krcg.css</a> and
         <a href="web/krcg.js">krcg.js</a> files to your webpage:
     </p>
     <p>
         <span>
         &lthead&gt<br>
         ...<br>
-        &ltlink rel="stylesheet" type="text/css" href="web/krcg.css"&gt<br>
-        &ltscript src="web/krcg.js"&gt&ltscript&gt<br>
+        &ltlink rel="stylesheet" type="text/css" href="https://static.krcg.org/web/krcg.css"&gt<br>
+        &ltscript src="https://static.krcg.org/web/krcg.js"&gt&ltscript&gt<br>
         &lt/head&gt
         </span>
     </p>
-    <p>
-        You can then use the <span>&lti&gt</span> tag to display a discipline icon:
-    </p>
+    <h2>Discipline icon</h2>
     <p>
         <span>Fortitude &lti&gtf&lt/i&gt</span>
     </p>
-        and use the <span>krcg-card</span> class on a <span>&ltspan&gt</span> tag to get a nice card display:
-    </p>    
+    <p>
+        Fortitude <i>f</i>
+    </p>
+    <h2>Clan icon</h2>
+    <p>
+        <span>&ltimg src=clan/ventrue.svg&gt</span>
+    </p>
+    <p>
+        <img src=clan/ventrue.svg>
+    </p>
+    <h2>Card image on click / hover</h2>
     <p>
         <span>&ltspan class="krcg-card"&gtGovern the Unaligned&lt/span&gt</span>
     </p>
     <p>
-        Check the source code of this next section for a full example.
+        <span class="krcg-card">Govern the Unaligned</span>
     </p>
-    <h2>Usage Example</h2>
+    <div class="insert">
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Aenean hendrerit Ventrue <img src=clan/ventrue.svg> consectetur.
-        Donec ac Fortitude <i>f</i> neque Dominate <i>D</i>, ut <span class="krcg-card">Govern the Unaligned</span>.
-        Etiam dapibus, nibh at hendrerit ullamcorper, diam nisl vehicula sem, non semper erat metus sit amet velit.
+        This example uses a very basic <span>CSS</span> file for styling in addition
+        to the <a href="web/krcg.css">krcg.css</a> file used to display cards and disciplines icons.
+        Feel free to use it too, or use your own styles.
     </p>
+    </div>
 </article>
 <footer>
 <img src="dark-pack.png">

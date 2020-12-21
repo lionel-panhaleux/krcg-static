@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Ankha VTES";
-    src: url("ankha.ttf") format("truetype");
+    src: url("https://static.krcg.org/web/ankha.ttf") format("truetype");
 }
 i {
     font-family: "Ankha VTES";
