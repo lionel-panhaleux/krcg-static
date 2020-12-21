@@ -32,6 +32,7 @@ parser.add_argument("folder", help="Target folder", type=pathlib.Path)
 
 
 def amaranth_ids(path: str):
+    print("generating Amaranth IDs file...")
     with open(path / "data" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
         r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
         r.raise_for_status()
@@ -47,6 +48,7 @@ def amaranth_ids(path: str):
 
 
 def standard_json(path: str) -> None:
+    print("generating JSON files...")
     path.mkdir(parents=True, exist_ok=True)
     with open(path / "data" / "vtes.json", "w", encoding="utf-8") as fp:
         json.dump(vtes.VTES.to_json(), fp, ensure_ascii=False)
@@ -56,6 +58,7 @@ def standard_json(path: str) -> None:
 
 def standard_html(path: str) -> None:
     """A normalized HTML version of the TWDA"""
+    print("generating HTML TWD file...")
     # TODO: automatize header generation, so as not to edit it every year
     content = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -199,6 +202,7 @@ async def fetch_lackey_card_images(path):
 
 
 def card_images(path):
+    print("copying card images...")
     i18n = pathlib.Path("i18n_cards")
     for lang in os.listdir(i18n):
         (path / "card" / lang).mkdir(parents=True, exist_ok=True)
@@ -215,6 +219,7 @@ def card_images(path):
 
 
 def static(path):
+    print("setting up website files...")
     shutil.rmtree(path, ignore_errors=True)
     shutil.copytree("static", path)
 
@@ -225,6 +230,7 @@ def main():
     static(args.folder)
     card_images(args.folder)
     try:
+        print("loading from VEKN...")
         vtes.VTES.load_from_vekn()
         twda.TWDA.load_from_vekn()
     except requests.exceptions.ConnectionError as e:
