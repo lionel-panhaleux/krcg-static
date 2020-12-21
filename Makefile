@@ -3,7 +3,7 @@
 STATIC_SERVER ?= krcg.org:projects/static.krcg.org/dist
 
 quality:
-	black --check krcg tests
+	black --check .
 	flake8
 
 test: quality

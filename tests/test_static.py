@@ -50,7 +50,10 @@ def test_card():
         "name": "Aid from Bats",
         "rulings": {
             "links": {
-                "[TOM 19960521]": "https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/poYD3n0TKGo/xvU5HW7lBxMJ"
+                "[TOM 19960521]": (
+                    "https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/"
+                    "poYD3n0TKGo/xvU5HW7lBxMJ"
+                )
             },
             "text": [
                 "[ANI] The press can only be used during the current "
