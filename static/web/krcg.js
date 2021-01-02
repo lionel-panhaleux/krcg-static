@@ -1,13 +1,13 @@
-function clickCard(img_src) {
-    document.getElementById("krcg-click-image").src = img_src
+function clickCard() {
+    document.getElementById("krcg-click-image").src = nameToImage(this.textContent)
     document.getElementById("krcg-click-modal").style.display = "block"
 }
 
-function overCard(img_src) {
+function overCard() {
     if (window.matchMedia("(hover: none)").matches) {
         return
     }
-    document.getElementById("krcg-over-image").src = img_src
+    document.getElementById("krcg-over-image").src = nameToImage(this.textContent)
     document.getElementById("krcg-over-modal").style.display = "block"
 }
 
@@ -58,9 +58,8 @@ function krcgCards() {
     document.body.insertBefore(click_modal, document.body.firstChild)
     // add events listeners on all page elements marked as cards
     for (elem of document.querySelectorAll(".krcg-card")) {
-        image = nameToImage(elem.textContent)
-        elem.addEventListener("click", (e) => clickCard(image))
-        elem.addEventListener("mouseover", (e) => overCard(image))
+        elem.addEventListener("click", clickCard.bind(elem))
+        elem.addEventListener("mouseover", overCard.bind(elem))
         elem.addEventListener("mouseout", outCard)
     }
 }
