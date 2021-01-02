@@ -6,8 +6,10 @@ import aiofile
 import aiohttp
 import argparse
 import asyncio
+import csv
 import email.utils
 import html.parser
+import io
 import json
 import logging
 import os
@@ -16,8 +18,11 @@ import re
 import requests
 import shutil
 import sys
+import urllib.request
+import zipfile
 
 from krcg import twda
+from krcg import utils
 from krcg import vtes
 
 
@@ -31,7 +36,98 @@ parser = argparse.ArgumentParser(
 parser.add_argument("folder", help="Target folder", type=pathlib.Path)
 
 
-def amaranth_ids(path: str):
+def geonames(path: str) -> None:
+    """Fetch countries and first order cities from geonames.org, save as JSON"""
+    local_filename, _headers = urllib.request.urlretrieve(
+        "https://download.geonames.org/export/dump/countryInfo.txt"
+    )
+    buffer = io.StringIO()
+    with open(local_filename) as f:
+        for line in f.readlines():
+            if line[:1] == "#":
+                continue
+            buffer.write(line)
+    buffer.seek(0)
+    countries = list(
+        csv.DictReader(
+            buffer,
+            delimiter="\t",
+            fieldnames=[
+                "iso",
+                "iso3",
+                "iso_numeric",
+                "fips",
+                "country",
+                "capital",
+                "area",
+                "population",
+                "continent",
+                "tld",
+                "currency_code",
+                "currency_name",
+                "phone",
+                "postal_code_format",
+                "postal_code_regex",
+                "languages",
+                "geoname_id",
+                "neighbours",
+                "equivalent_fips_code",
+            ],
+        )
+    )
+    for country in countries:
+        country["languages"] = country["languages"].split(",")
+        country["neighbours"] = country["neighbours"].split(",")
+        country["geoname_id"] = int(country["geoname_id"])
+        country["area"] = float(country["area"])
+        country["population"] = int(country["population"])
+    with open(path / "data" / "countries.json", "w", encoding="utf-8") as fp:
+        json.dump(utils.json_pack(countries), fp, ensure_ascii=False)
+    local_filename, _headers = urllib.request.urlretrieve(
+        "https://download.geonames.org/export/dump/cities15000.zip"
+    )
+    z = zipfile.ZipFile(local_filename)
+    cities = list(
+        csv.DictReader(
+            io.TextIOWrapper(z.open("cities15000.txt")),
+            delimiter="\t",
+            fieldnames=[
+                "geoname_id",  # integer id of record in geonames database
+                "name",  # name of geographical point (utf8) varchar(200)
+                "ascii_name",  # name of geographical point in plain ascii characters
+                "alternate_names",  # alternate ascii names automatically transliterated
+                "latitude",  # latitude in decimal degrees (wgs84)
+                "longitude",  # longitude in decimal degrees (wgs84)
+                "feature_class",  # see http://www.geonames.org/export/codes.html
+                "feature_code",  # see http://www.geonames.org/export/codes.html
+                "country_code",  # ISO-3166 2-letter country code, 2 characters
+                "cc2",  # alternate country codes, ISO-3166 2-letter country code
+                "admin1_code",  # fipscode (subject to change to iso code)
+                "admin2_code",  # code for the second administrative division
+                "admin3_code",  # code for third level administrative division
+                "admin4_code",  # code for fourth level administrative division
+                "population",  # integer
+                "elevation",  # in meters, integer
+                "dem",  # digital elevation model, srtm3 or gtopo30, integer
+                "timezone",  # iana timezone id
+                "modification_date",  # date of last modification in ISO format
+            ],
+        )
+    )
+    for city in cities:
+        city["geoname_id"] = int(city["geoname_id"])
+        city["latitude"] = float(city["latitude"])
+        city["longitude"] = float(city["longitude"])
+        city["cc2"] = city["cc2"].split(",")
+        city["population"] = int(city["population"])
+        city["elevation"] = int(city["elevation"] or 0)
+        city["dem"] = int(city["dem"] or 0)
+        city["alternate_names"] = city["alternate_names"].split(",")
+    with open(path / "data" / "cities.json", "w", encoding="utf-8") as fp:
+        json.dump(utils.json_pack(cities), fp, ensure_ascii=False)
+
+
+def amaranth_ids(path: str) -> None:
     print("generating Amaranth IDs file...")
     with open(path / "data" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
         r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
@@ -221,7 +317,9 @@ def card_images(path):
 def static(path):
     print("setting up website files...")
     shutil.rmtree(path, ignore_errors=True)
-    shutil.copytree("static", path)
+    shutil.copytree(
+        "static", path, ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"]
+    )
 
 
 def main():
@@ -240,3 +338,4 @@ def main():
     standard_json(args.folder)
     standard_html(args.folder)
     amaranth_ids(args.folder)
+    geonames(args.folder)
