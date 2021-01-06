@@ -25,7 +25,7 @@ function nameToImage(text) {
     }
     text = text
         .replace(/™/g, "tm")
-        .replace(/\s|,|\.|-|—|'|:|\(|\)|"|\/| |!/g, "")
+        .replace(/\s|,|\.|-|—|'|’|:|\(|\)|"|\/| |!/g, "")
         .replace(/ö|ó|ø/g, "o")
         .replace(/é|ë|è/g, "e")
         .replace(/œ/g, "oe")
