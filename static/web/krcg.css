@@ -2,8 +2,16 @@
     font-family: "Ankha VTES";
     src: url("https://static.krcg.org/web/ankha.ttf") format("truetype");
 }
+@font-face {
+    font-family: "VTES Clans";
+    src: url("https://static.krcg.org/web/vtes-clans.otf") format("opentype");
+}
 i {
     font-family: "Ankha VTES";
+    font-style: normal;
+}
+span.krcg-clan {
+    font-family: "VTES Clans";
     font-style: normal;
 }
 #krcg-click-modal,
@@ -23,7 +31,7 @@ i {
 #krcg-over-modal {
     z-index: 3;
 }
-.krcg-modal-image {
+img.krcg-modal-image {
     max-height: min(70vh, 500px);
     max-width: min(85vh, 300px);
     border: 0;
