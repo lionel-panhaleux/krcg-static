@@ -27,6 +27,48 @@ from krcg import vtes
 
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
+VTES_PL_SETS_URLS = {
+    "jyhad": "http://vtes.pl/cards/set/jyhad",
+    "vampire-the-eternal-struggle": "http://vtes.pl/cards/set/vtes",
+    "dark-sovereigns": "http://vtes.pl/cards/set/ds",
+    "ancient-hearts": "http://vtes.pl/cards/set/ah",
+    "sabbat": "http://vtes.pl/cards/set/sabbat",
+    "sabbat-war": "http://vtes.pl/cards/set/sw",
+    "final-nights": "http://vtes.pl/cards/set/fn",
+    "bloodlines": "http://vtes.pl/cards/set/bl",
+    "camarilla-edition": "http://vtes.pl/cards/set/ce",
+    "anarchs": "http://vtes.pl/cards/set/anarchs",
+    "black-hand": "http://vtes.pl/cards/set/bh",
+    "gehenna": "http://vtes.pl/cards/set/gehenna",
+    "tenth-anniversary": "http://vtes.pl/cards/set/tenth",
+    "kindred-most-wanted": "http://vtes.pl/cards/set/kmw",
+    "legacies-of-blood": "http://vtes.pl/cards/set/lob",
+    "nights-of-reckoning": "http://vtes.pl/cards/set/nor",
+    "third-edition": "http://vtes.pl/cards/set/3e",
+    "sword-of-caine": "http://vtes.pl/cards/set/soc",
+    "lords-of-the-night": "http://vtes.pl/cards/set/lotn",
+    "blood-shadowed-court": "http://vtes.pl/cards/set/bsc",
+    "twilight-rebellion": "http://vtes.pl/cards/set/tr",
+    "keepers-of-tradition": "http://vtes.pl/cards/set/kot",
+    "ebony-kingdom": "http://vtes.pl/cards/set/ek",
+    "heirs-to-the-blood": "http://vtes.pl/cards/set/httb",
+    "anthology": "http://vtes.pl/cards/set/anth",
+    "lost-kindred": "http://vtes.pl/cards/set/lk",
+    "sabbat-preconstructed": "http://vtes.pl/cards/set/sp",
+    "twenty-fifth-anniversary": "http://vtes.pl/cards/set/25th",
+    "first-blood": "http://vtes.pl/cards/set/fb",
+    "promo": "http://vtes.pl/cards/set/promo",
+    "demo-decks": "http://vtes.pl/cards/set/dd",
+    "infernal-storyline": "http://vtes.pl/cards/set/isl",
+    "cultists-storyline": "http://vtes.pl/cards/set/csl",
+    "anarchs-and-alastor-storyline": "http://vtes.pl/cards/set/aa",
+    "fall-edens-legacy-storyline": "http://vtes.pl/cards/set/el",
+    "keepers-of-tradition-reprint": "http://vtes.pl/cards/set/kotr",
+    "heirs-to-the-blood-reprint": "http://vtes.pl/cards/set/httbr",
+    "humble-bundle": "http://vtes.pl/cards/set/promohb",
+    "anthology-1": "http://vtes.pl/cards/set/anth1",
+    "promo-pack-1": "http://vtes.pl/cards/set/pp1",
+}
 
 logger = logging.getLogger()
 
@@ -259,7 +301,7 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
         fp.write(content)
 
 
-class IndexParser(html.parser.HTMLParser):
+class LackeyIndexParser(html.parser.HTMLParser):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.cards = []
@@ -273,27 +315,70 @@ class IndexParser(html.parser.HTMLParser):
         self.cards.append(url)
 
 
-async def fetch_file(path, session, card):
+async def fetch_file(url, path, session):
     """Fetch image files, preserve "last-mofidifed" time."""
-    async with session.get(CARD_IMAGES_URL + card) as response:
+    async with session.get(url) as response:
         time = email.utils.mktime_tz(
             email.utils.parsedate_tz(response.headers["Last-Modified"])
         )
         content = await response.read()
-    dst = path / "card" / card
-    async with aiofile.async_open(dst, "wb") as afp:
+    async with aiofile.async_open(path, "wb") as afp:
         await afp.write(content)
-    os.utime(dst, (time, time))
+    os.utime(path, (time, time))
 
 
 async def fetch_lackey_card_images(path):
-    parser = IndexParser()
+    parser = LackeyIndexParser()
     async with aiohttp.ClientSession() as session:
         async with session.get(CARD_IMAGES_URL) as response:
             index = await response.text()
             parser.feed(index)
         await asyncio.gather(
-            *(fetch_file(path, session, card) for card in parser.cards)
+            *(
+                fetch_file(CARD_IMAGES_URL + card, path / "card" / card, session)
+                for card in parser.cards
+            )
+        )
+
+
+class VtesPlIndexParser(html.parser.HTMLParser):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.cards = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag != "img":
+            return
+        url = dict(attrs).get("onmouseover")
+        if not url:
+            return
+        url = re.search(r"'<IMG class=overlib src=([^>]*)", url).group(1)
+        if url[-3:] != "jpg":
+            return
+        self.cards.append(url)
+
+
+async def fetch_vtespl_set_images(session, path, url):
+    path.mkdir(parents=True, exist_ok=True)
+    parser = VtesPlIndexParser()
+    async with session.get(url) as response:
+        index = await response.text()
+        parser.feed(index)
+    await asyncio.gather(
+        *(
+            fetch_file(card, path / card.rsplit("/", 1)[1], session)
+            for card in parser.cards
+        )
+    )
+
+
+async def fetch_vtespl_cards_scans(path):
+    async with aiohttp.ClientSession() as session:
+        await asyncio.gather(
+            *(
+                fetch_vtespl_set_images(session, path / "card" / "set" / expansion, url)
+                for expansion, url in VTES_PL_SETS_URLS.items()
+            )
         )
 
 
@@ -311,7 +396,10 @@ def card_images(path):
                 dst = dst[0]
             dst = re.sub(r"[^\w\d]", "", dst).lower() + "." + ext
             shutil.copyfile(i18n / lang / card, path / "card" / lang / dst)
+    print("copying LackeyCCG card images...")
     asyncio.run(fetch_lackey_card_images(path))
+    print("copying vtes.pl card images...")
+    asyncio.run(fetch_vtespl_cards_scans(path))
 
 
 def static(path):
