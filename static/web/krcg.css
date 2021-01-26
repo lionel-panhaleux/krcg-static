@@ -18,7 +18,7 @@ span.krcg-clan {
 #krcg-over-modal {
     display: none;
     position: fixed;
-    padding: 10vh 2vw;
+    padding: 10vh 1vw;
     left: 0;
     top: 0;
 }

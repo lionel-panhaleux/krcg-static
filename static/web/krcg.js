@@ -1,5 +1,12 @@
+function getName(elem) {
+    if (elem.dataset.name) {
+        return elem.dataset.name
+    }
+    return elem.textContent
+}
+
 function clickCard() {
-    document.getElementById("krcg-click-image").src = nameToImage(this.textContent)
+    document.getElementById("krcg-click-image").src = nameToImage(getName(this))
     document.getElementById("krcg-click-modal").style.display = "block"
 }
 
@@ -7,11 +14,15 @@ function overCard() {
     if (window.matchMedia("(hover: none)").matches) {
         return
     }
-    document.getElementById("krcg-over-image").src = nameToImage(this.textContent)
+    document.getElementById("krcg-over-image").src = nameToImage(getName(this))
     document.getElementById("krcg-over-modal").style.display = "block"
 }
 
-function outCard() {
+function outCard(e) {
+    if (e.relatedTarget && e.relatedTarget.classList.contains("krcg-modal-image")) {
+        e.relatedTarget.addEventListener("mouseout", outCard)
+        return
+    }
     document.getElementById("krcg-over-modal").style.display = "none"
 }
 
@@ -59,8 +70,10 @@ function krcgCards() {
     // add events listeners on all page elements marked as cards
     for (elem of document.querySelectorAll(".krcg-card")) {
         elem.addEventListener("click", clickCard.bind(elem))
-        elem.addEventListener("mouseover", overCard.bind(elem))
-        elem.addEventListener("mouseout", outCard)
+        if (!elem.dataset.nohover) {
+            elem.addEventListener("mouseover", overCard.bind(elem))
+            elem.addEventListener("mouseout", outCard)
+        }
     }
 }
 
