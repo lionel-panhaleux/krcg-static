@@ -382,24 +382,28 @@ async def fetch_vtespl_cards_scans(path):
         )
 
 
+def copy_bcp_cards(src, path):
+    for card in os.listdir(src):
+        dst, ext = card.rsplit(".", 1)
+        dst = re.sub(r"[^a-z0-9]", "", dst.replace("™", ("TM")).lower()) + "." + ext
+        shutil.copyfile(src / card, path / dst)
+
+
 def card_images(path):
-    print("copying card images...")
-    i18n = pathlib.Path("i18n_cards")
-    for lang in os.listdir(i18n):
-        (path / "card" / lang).mkdir(parents=True, exist_ok=True)
-        for card in os.listdir(i18n / lang):
-            dst, ext = card.rsplit(".", 1)
-            dst = dst.split("_")
-            if len(dst) > 1:
-                dst = dst[1]
-            else:
-                dst = dst[0]
-            dst = re.sub(r"[^\w\d]", "", dst).lower() + "." + ext
-            shutil.copyfile(i18n / lang / card, path / "card" / lang / dst)
+    (path / "card").mkdir(parents=True, exist_ok=True)
     print("copying LackeyCCG card images...")
     asyncio.run(fetch_lackey_card_images(path))
     print("copying vtes.pl card images...")
     asyncio.run(fetch_vtespl_cards_scans(path))
+    print("copying BCP card images...")
+    i18n = pathlib.Path("i18n_cards")
+    for lang in os.listdir(i18n):
+        (path / "card" / lang).mkdir(parents=True, exist_ok=True)
+        copy_bcp_cards(i18n / lang, path / "card" / lang)
+    base = pathlib.Path("bcp_cards")
+    for ext in os.listdir(base):
+        (path / "card" / "set" / ext).mkdir(parents=True, exist_ok=True)
+        copy_bcp_cards(base / ext, path / "card" / "set" / ext)
 
 
 def static(path):

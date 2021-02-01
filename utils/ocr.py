@@ -1,4 +1,4 @@
-# Not used: kept here as a notepad if we need to do some OCR at some point
+# Kept here as a notepad if we need to do some OCR at some point
 
 import cv2
 import pytesseract
