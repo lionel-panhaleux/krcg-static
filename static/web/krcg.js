@@ -53,7 +53,7 @@ function krcgCards() {
     let click_modal = document.createElement("div")
     click_modal.id = "krcg-click-modal"
     click_modal.addEventListener("click", (e) => {
-        e.target.style.display = "none"
+        click_modal.style.display = "none"
     })
     let click_image = document.createElement("img")
     click_image.id = "krcg-click-image"
