@@ -27,6 +27,7 @@ from krcg import vtes
 
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
+CARD_LIBRARY_BACK_URL = "https://lackeyccg.com/vtes/high/images/cardback.jpg"
 VTES_PL_SETS_URLS = {
     "jyhad": "http://vtes.pl/cards/set/jyhad",
     "vampire-the-eternal-struggle": "http://vtes.pl/cards/set/vtes",
@@ -473,10 +474,13 @@ async def fetch_lackey_card_images(path):
             index = await response.text()
             parser.feed(index)
         await asyncio.gather(
+            fetch_file(
+                CARD_LIBRARY_BACK_URL, path / "card" / "cardbacklibrary.jpg", session
+            ),
             *(
                 fetch_file(CARD_IMAGES_URL + card, path / "card" / card, session)
                 for card in parser.cards
-            )
+            ),
         )
 
 
