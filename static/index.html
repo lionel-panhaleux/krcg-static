@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>VTES Static Files</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="vtes.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/vtes.svg">
 </head>
 <body>
     <header role="banner">
@@ -112,19 +112,82 @@
     <p>
         These images URLs are used in the <a target="_blank" href="data/vtes.json">vtes.json</a> file.
     </p>
-    <h2>Clan images</h2>
+    <h2>Symbols images</h2>
     <p>
-        Clan images are <span>SVG</span> files under the 
-        <a target="_blank" href="clan/">https://static.krcg.org/clan/</a> directory. 
-        They display nicely at any size.
-        Images filenames are an ascii-only version of clan names, with neither space nor punctuation,
-        and the <span>.svg</span> file extentions.<br>
-        For example: <a target="_blank" href="clan/daughtersofcacophony.svg">https://static.krcg.org/clan/daughtersofcacophony.svg</a>
+        Vector and raster versions of symbol images are available under the following directories:
+    </p>
+        <ul>
+            <li>
+                <a target="_blank" href="svg/">https://static.krcg.org/svg/</a>
+                has <span>SVG</span> versions that display well at all resolutions
+            </li>
+            <li>
+                <a target="_blank" href="png/">https://static.krcg.org/png/</a>
+                has <span>PNG</span> with alpha (transparency) for your compositions
+            </li>
+            <li>
+                <a target="_blank" href="png_wb/">https://static.krcg.org/png_wb/</a>
+                has <span>PNG</span> with alpha (transparency) and white borders and background,
+                ideal for online use and inclusion in third party tools.
+            </li>
+        </ul>
+    <p>
+        Each directory has the same sub-structure: <span>clan</span> contains clan icons,
+        including, for Sabbat clans, the "red wax seal" version prefixed <span>seal</span>,
+        with <span>clan/deprecated</span> containing the old symbols that have now been replaced.
+        <span>disc/inf</span> contains disciplines, virtues and other ability icons like
+        Flight, Maleficia and Striga, using the standard trigrams as filenames except for flight,
+        <span>disc/sup</span> contains the superior version of disciplines with upper case trigrams as filenames.
+        Finally, <span>icon</span> contains other game icons like blood and pool cost, advanced and merged symbols, etc.
     </p>
     <p>
-        V5 clan icons are available under the 
-        <a target="_blank" href="clan/v5/">https://static.krcg.org/clan/v5/</a> directory.<br>
-        For example: <a target="_blank"href="clan/v5/tremere.svg">https://static.krcg.org/clan/v5/tremere.svg</a>
+        Examples:
+        <ul>
+            <li>
+                <a target="_blank" href="svg/clan/tremere.svg">https://static.krcg.org/svg/clan/tremere.svg</a>:
+                <span>SVG</span> Tremere icon
+            </li>
+            <li>
+                <a target="_blank" href="png/clan/tremere.png">https://static.krcg.org/png/clan/tremere.png</a>:
+                <span>PNG</span> Tremere icon
+            </li>
+            <li>
+                <a target="_blank" href="png_wb/clan/deprecated/tremere.png">https://static.krcg.org/png_wb/clan/deprecated/tremere.png</a>:
+                White-bordered <span>PNG</span> old Tremere icon
+            </li>
+            <li>
+                <a target="_blank" href="png/clan/tremereantitribu.png">https://static.krcg.org/png/clan/sealtremereantitribu.png</a>:
+                <span>PNG</span> Tremere Antitribu icon
+            </li>
+            <li>
+                <a target="_blank" href="png/clan/sealtremereantitribu.png">https://static.krcg.org/png/clan/sealtremereantitribu.png</a>:
+                <span>PNG</span> Tremere Antitribu on read wax seal icon
+            </li>
+            <li>
+                <a target="_blank" href="svg/disc/inf/aus.svg">https://static.krcg.org/svg/disc/inf/aus.svg</a>: 
+                <span>SVG</span> inferior Auspex icon
+            </li>
+            <li>
+                <a target="_blank" href="png/disc/sup/AUS.png">https://static.krcg.org/png/disc/sup/AUS.png</a>: 
+                <span>PNG</span> superior Auspex icon
+            </li>
+            <li>
+                <a target="_blank" href="png_wb/disc/sup/AUS.png">https://static.krcg.org/png/disc/sup/AUS.png</a>: 
+                White-bordered <span>PNG</span> superior Auspex icon
+            </li>
+            <li>
+                <a target="_blank" href="png_wb/disc/inf/flight.png">https://static.krcg.org/png_wb/disc/inf/flight.png</a>: 
+                White-bordered <span>PNG</span> Flight icon
+            </li>
+            <li>
+                <a target="_blank" href="png_wb/disc/inf/vin.png">https://static.krcg.org/png_wb/disc/inf/vin.png</a>: 
+                White-bordered <span>PNG</span> Vision icon
+            </li>
+            <li>
+                <a target="_blank" href="png/icon/action.png">https://static.krcg.org/png/icon/action.png</a>: 
+                <span>PNG</span> Action icon
+            </li>
+        </ul>
     </p>
 </article>
 <footer>

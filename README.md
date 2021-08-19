@@ -36,3 +36,86 @@ and contributions guidelines.
 The command build the static site into the `build` folder with the `krcg-static build`
 command, then uses `rsync` over `ssh` to push it to the `static.krcg.org` server.
 Note you need ssh access to the `krcg.org` server to deploy.
+
+## Fontforge & Imagemagick foo
+
+Use [Homebrew](https://brew.sh) on OSX to install a few graphical tools:
+
+```
+brew install imagemagick inkscape potrace
+```
+
+[Fontforge](https://fontforge.org) can be used to build and extract fonts.
+Use `File > Execute Script` to execute the following `FF` script:
+
+```txt
+SelectWorthOutputting(); foreach Export("svg"); endloop;
+```
+
+Convert SVG to PNG with a transparent background:
+
+```shell
+for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; convert -background none $f $g; done
+```
+
+Convert transparent PNG to white bordered PNG:
+
+```shell
+for f in png/icon/*(.); \
+do g=png_wb/${f#png/}; \
+convert $f \( \
+    +clone -alpha extract -morphology edgeout octagon:15 -bordercolor black \
+    -border 100 -morphology close Octagon:50 -shave 100 \
+    -level 50% -transparent black \) \
+-compose DstOver -composite $g \
+; done
+```
+
+Convert transparent square PNG to white bordered PNG:
+
+```shell
+for f in png/icon/*(.); \
+do g=png_wb/${f#png/}; \
+convert -background none -size 896x896 xc:white \
+    \( $f -trim +repage -resize 768x768 \) \
+    -geometry +64+64 -composite $g \
+; done
+```
+
+Note as seen on real cards, inferior disciplines are roughly 15% bigger squares than superior disciplines.
+This is because when one rotates the square by 45° the width is √2 = 41% larger,
+so compensation is required for visual consistency.
+If the base square (inferior) is `896x896`, the superior square is `896/1.15` = `780x780`.
+And if the inner inferior icon is `768` in width (for a `64` white border),
+then the superior icon width needs to be `768/1.15 * √2` = `944x944`.
+
+Convert transparent losange (sup) PNG to white bordered PNG:
+
+```shell
+for f in png/icon/*(.); \
+do g=png_wb/${f#png/}; \
+convert -background none -size 780x780 xc:white -rotate 45 \
+    \( $f -trim +repage -resize 944x944 \) \
+    -geometry +82+82 -composite $g \
+; done
+```
+
+Add transparent border (`128px`):
+
+```shell
+for f in png_wb/icon/*(.); do \
+convert -background none $f -bordercolor none -border 128x128 $f \
+; done
+```
+
+Generate a multisize `.ico` file:
+
+```shell
+convert -background none vtes.svg \
+\( -clone 0 -resize 16x16 \) \
+\( -clone 0 -resize 32x32 \) \
+\( -clone 0 -resize 64x64 \) \
+\( -clone 0 -resize 128x128 \) \
+\( -clone 0 -resize 256x256 \) \
+-delete 0 -alpha on -compress Zip vtes.ico     
+```
