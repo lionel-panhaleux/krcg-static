@@ -571,8 +571,8 @@ def static(path):
 def main():
     """Entrypoint for the krcg-gen tool."""
     args = parser.parse_args(sys.argv[1:])
-    # static(args.folder)
-    # card_images(args.folder)
+    static(args.folder)
+    card_images(args.folder)
     try:
         print("loading from VEKN...")
         vtes.VTES.load_from_vekn()
