@@ -119,3 +119,17 @@ convert -background none vtes.svg \
 \( -clone 0 -resize 256x256 \) \
 -delete 0 -alpha on -compress Zip vtes.ico     
 ```
+
+Convert VEKN card images to our format:
+
+```shell
+for f in Lackey/*(.); do \
+name=${f#Lackey/}; \
+name=${name%.*}; \
+name=${name% - *}; \
+name=${name% \[*}; \
+name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
+name=result/${name}.jpg; \
+convert $f -bordercolor black -border 0x1 $name; \
+done
+```

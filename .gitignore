@@ -13,6 +13,3 @@ venv/
 .vscode/
 *.DS_Store
 .idea/
-
-# do not commit images
-i18n_cards/
