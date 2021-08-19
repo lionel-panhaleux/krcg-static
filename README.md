@@ -133,3 +133,8 @@ name=result/${name}.jpg; \
 convert $f -bordercolor black -border 0x1 $name; \
 done
 ```
+
+for f in static/png_wb/disc/sup/*; do \
+g=`echo $f | tr '[:lower:]' '[:upper:]'`; \
+git mv $g $f; \
+done
