@@ -535,14 +535,20 @@ async def fetch_vtespl_cards_scans(path):
 def copy_bcp_cards(src, path):
     for card in os.listdir(src):
         dst, ext = card.rsplit(".", 1)
-        dst = re.sub(r"[^a-z0-9]", "", unidecode.unidecode(dst.replace("™", ("TM"))).lower()) + "." + ext
+        dst = (
+            re.sub(
+                r"[^a-z0-9]", "", unidecode.unidecode(dst.replace("™", ("TM"))).lower()
+            )
+            + "."
+            + ext
+        )
         shutil.copy2(src / card, path / dst)
 
 
 def card_images(path):
     (path / "card").mkdir(parents=True, exist_ok=True)
     print("copying standard card images...")
-    # in the past Lackey was the source of truth, 
+    # in the past Lackey was the source of truth,
     # now krcg-static host the images for Lackey
     # asyncio.run(fetch_lackey_card_images(path))
     cards = pathlib.Path("cards")
