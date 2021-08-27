@@ -221,6 +221,7 @@ parser.add_argument("folder", help="Target folder", type=pathlib.Path)
 
 def geonames(path: str) -> None:
     """Fetch countries and first order cities from geonames.org, save as JSON"""
+    print("generating geographical data...")
     local_filename, _headers = urllib.request.urlretrieve(
         "https://download.geonames.org/export/dump/countryInfo.txt"
     )
@@ -259,11 +260,15 @@ def geonames(path: str) -> None:
         )
     )
     for country in countries:
-        country["languages"] = country["languages"].split(",")
-        country["neighbours"] = country["neighbours"].split(",")
-        country["geoname_id"] = int(country["geoname_id"])
-        country["area"] = float(country["area"])
-        country["population"] = int(country["population"])
+        try:
+            country["languages"] = country["languages"].split(",")
+            country["neighbours"] = country["neighbours"].split(",")
+            country["geoname_id"] = int(country["geoname_id"]) if country.get("geoname_id") else None
+            country["area"] = float(country["area"]) if country.get("area") else None
+            country["population"] = int(country["population"])
+            logger.info(country)
+        except:
+            logger.exception(f"Failed to parse country: {country}")
     with open(path / "data" / "countries.json", "w", encoding="utf-8") as fp:
         json.dump(utils.json_pack(countries), fp, ensure_ascii=False)
     local_filename, _headers = urllib.request.urlretrieve(
