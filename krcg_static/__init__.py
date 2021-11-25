@@ -263,7 +263,9 @@ def geonames(path: str) -> None:
         try:
             country["languages"] = country["languages"].split(",")
             country["neighbours"] = country["neighbours"].split(",")
-            country["geoname_id"] = int(country["geoname_id"]) if country.get("geoname_id") else None
+            country["geoname_id"] = (
+                int(country["geoname_id"]) if country.get("geoname_id") else None
+            )
             country["area"] = float(country["area"]) if country.get("area") else None
             country["population"] = int(country["population"])
             logger.info(country)
@@ -463,14 +465,17 @@ class LackeyIndexParser(html.parser.HTMLParser):
 
 async def fetch_file(url, path, session):
     """Fetch image files, preserve "last-mofidifed" time."""
+    time = None
     async with session.get(url) as response:
-        time = email.utils.mktime_tz(
-            email.utils.parsedate_tz(response.headers["Last-Modified"])
-        )
+        if "Last-Modified" in response.headers:
+            time = email.utils.mktime_tz(
+                email.utils.parsedate_tz(response.headers["Last-Modified"])
+            )
         content = await response.read()
     async with aiofile.async_open(path, "wb") as afp:
         await afp.write(content)
-    os.utime(path, (time, time))
+    if time:
+        os.utime(path, (time, time))
 
 
 async def fetch_lackey_card_images(path):
@@ -595,4 +600,4 @@ def main():
     standard_json(args.folder)
     standard_html(args.folder)
     amaranth_ids(args.folder)
-    geonames(args.folder)
+    # geonames(args.folder)
