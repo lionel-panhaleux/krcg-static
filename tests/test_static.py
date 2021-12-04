@@ -48,6 +48,7 @@ def test_card():
         'D.H. Lawrence, "Bat"',
         "id": 100029,
         "name": "Aid from Bats",
+        "printed_name": "Aid from Bats",
         "rulings": {
             "links": {
                 "[TOM 19960521]": (

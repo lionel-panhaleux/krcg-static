@@ -542,36 +542,7 @@ async def fetch_vtespl_cards_scans(path):
         )
 
 
-def copy_bcp_cards(src, path):
-    for card in os.listdir(src):
-        dst, ext = card.rsplit(".", 1)
-        dst = (
-            re.sub(
-                r"[^a-z0-9]", "", unidecode.unidecode(dst.replace("™", ("TM"))).lower()
-            )
-            + "."
-            + ext
-        )
-        shutil.copy2(src / card, path / dst)
-
-
-def card_images(path):
-    (path / "card").mkdir(parents=True, exist_ok=True)
-    print("copying standard card images...")
-    # in the past Lackey was the source of truth,
-    # now krcg-static host the images for Lackey
-    # asyncio.run(fetch_lackey_card_images(path))
-    cards = pathlib.Path("cards")
-    copy_bcp_cards(cards, path / "card")
-    print("copying BCP card images...")
-    i18n = pathlib.Path("i18n_cards")
-    for lang in os.listdir(i18n):
-        (path / "card" / lang).mkdir(parents=True, exist_ok=True)
-        copy_bcp_cards(i18n / lang, path / "card" / lang)
-    base = pathlib.Path("bcp_cards")
-    for ext in os.listdir(base):
-        (path / "card" / "set" / ext).mkdir(parents=True, exist_ok=True)
-        copy_bcp_cards(base / ext, path / "card" / "set" / ext)
+def vtespl_cards_scans(path):
     print("copying vtes.pl card images...")
     asyncio.run(fetch_vtespl_cards_scans(path))
 
@@ -588,7 +559,6 @@ def main():
     """Entrypoint for the krcg-gen tool."""
     args = parser.parse_args(sys.argv[1:])
     static(args.folder)
-    card_images(args.folder)
     try:
         print("loading from VEKN...")
         vtes.VTES.load_from_vekn()
@@ -600,4 +570,3 @@ def main():
     standard_json(args.folder)
     standard_html(args.folder)
     amaranth_ids(args.folder)
-    # geonames(args.folder)
