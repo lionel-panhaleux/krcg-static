@@ -551,7 +551,10 @@ def static(path):
     print("setting up website files...")
     shutil.rmtree(path, ignore_errors=True)
     shutil.copytree(
-        "static", path, ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"]
+        "static",
+        path,
+        symlinks=True,
+        ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"],
     )
 
 
