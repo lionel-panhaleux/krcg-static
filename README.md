@@ -123,13 +123,25 @@ convert -background none vtes.svg \
 Convert VEKN card images to our format:
 
 ```shell
-for f in Lackey/*(.); do \
-name=${f#Lackey/}; \
+for f in incoming/*(.); do \
+name=${f#incoming/}; \
 name=${name%.*}; \
 name=${name% - *}; \
 name=${name% \[*}; \
 name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
 name=result/${name}.jpg; \
 convert $f -bordercolor black -border 0x1 $name; \
+done
+```
+
+```shell
+for f in incoming/*(.); do \
+name=${f#incoming/}; \
+name=${name%.*}; \
+name=${name% - *}; \
+name=${name% \[*}; \
+name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
+name=result/${name}.jpg; \
+convert $f -shave 18 -resize x500 $name; \
 done
 ```
