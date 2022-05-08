@@ -139,9 +139,36 @@ for f in incoming/*(.); do \
 name=${f#incoming/}; \
 name=${name%.*}; \
 name=${name% - *}; \
+group=${name##*\[}; \
+group=${group%%\]*}; \
+if [[ ${group} == ${name} ]]; then \
+    group= ; \
+fi; \
 name=${name% \[*}; \
 name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
+if [[ ! -z $group ]]; then \
+    name=${name}g${group}; \
+fi; \
 name=result/${name}.jpg; \
 convert $f -shave 18 -resize x500 $name; \
 done
+```
+
+Then, to create the symbolic links for the crypt cards, you can:
+
+```shell
+cd result
+for f in ./*(.); do \
+name=${f#./}; \
+short=${name%g[123456789].jpg}; \
+if [[ ${short} != ${name} ]]; then \
+    ln -fs ${name} ${short}.jpg; \
+fi; \
+done
+```
+
+And to copy everything and preserve the links to the static directory:
+
+```shell
+cp -av ./* ~/dev/krcg-static/static/card/
 ```
