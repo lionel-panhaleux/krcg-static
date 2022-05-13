@@ -423,7 +423,7 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
             player += "'s"
         event = deck.event
         event = re.sub(r"\s*--\s+.*", "", event)
-        place = deck.place
+        place = deck.place or "Undisclosed location"
         place = re.sub(r"\s*,", ",", place)
         place = re.sub(r",,", ",", place)
         place = [x.strip() for x in place.split(",")[-2:]]
