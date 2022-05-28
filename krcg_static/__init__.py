@@ -18,7 +18,6 @@ import re
 import requests
 import shutil
 import sys
-import unidecode
 import urllib.request
 import zipfile
 
@@ -269,7 +268,7 @@ def geonames(path: str) -> None:
             country["area"] = float(country["area"]) if country.get("area") else None
             country["population"] = int(country["population"])
             logger.info(country)
-        except:
+        except (KeyError, ValueError):
             logger.exception(f"Failed to parse country: {country}")
     with open(path / "data" / "countries.json", "w", encoding="utf-8") as fp:
         json.dump(utils.json_pack(countries), fp, ensure_ascii=False)
@@ -424,7 +423,7 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
             player += "'s"
         event = deck.event
         event = re.sub(r"\s*--\s+.*", "", event)
-        place = deck.place
+        place = deck.place or "Undisclosed location"
         place = re.sub(r"\s*,", ",", place)
         place = re.sub(r",,", ",", place)
         place = [x.strip() for x in place.split(",")[-2:]]

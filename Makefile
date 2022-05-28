@@ -11,7 +11,7 @@ test: quality
 
 static:
 	krcg-static build
-	rsync -rptq --delete-after -e ssh build/ ${STATIC_SERVER}
+	rsync -rlptq --delete-after -e ssh build/ ${STATIC_SERVER}
 
 update:
 	pip install --upgrade --upgrade-strategy eager -e .[dev]
