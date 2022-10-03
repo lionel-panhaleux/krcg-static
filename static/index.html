@@ -17,7 +17,9 @@
     <article>
         This is a server hosting development resources for <strong>V:tES</strong>
         (Vampire: the Eternal Struggle) developers. It is optimised for performance:
-        files are served under a 1 hour <span>Cache-Control</span>.
+        files are static and served under a 1 hour <span>Cache-Control</span>.<br>
+        You can rely on the HTTP <span>Last-Modified</span> header to check for
+        updates.
         <div class="insert">
             <p>
                 The files available here are shared under the conditions of the
@@ -25,6 +27,12 @@
                 They are free to use under the same conditions.
             </p>
         </div>
+        <h2>Web API</h2>
+        <p>
+            A free open source REST API is available online at
+            <a target="_blank" href="https://api.krcg.org">https://api.krcg.org</a>.<br>
+            It offers a range of features around cards, decks and TWDA.
+        </p>
         <h2>Data resources</h2>
         <p>
             Data resources are under the
@@ -105,6 +113,15 @@
         <p>
             These images URLs are used in the <a target="_blank" href="data/vtes.json">vtes.json</a> file.
         </p>
+        <div class="insert">
+            <p>
+                If you need cache busting, you can add any
+                <a target="_blank" href="https://en.wikipedia.org/wiki/URI_fragment">fragment identifier</a>
+                to any resource URL here.<br>
+                For example,
+                <a target="_blank" href="card/fame.jpg#2022-01-25-14">https://static.krcg.org/card/fame.jpg#2022-01-25-14</a>
+            </p>
+        </div>
         <h2>Symbols images</h2>
         <p>
             Vector and raster versions of symbol images are available under the following directories:
