@@ -28,14 +28,16 @@ and contributions guidelines.
 
 ## Update the KRCG static website
 
--   Copy the translated card images in the `i18n_cards` folder, under their respective
-    ISO 639-1 language code folder (ie. `i18n_cards/fr`)
+-   Copy the card images in the `static/cards` folder, under their respective folder:
+    + Right there for the most recent "main" images
+    + In the relevant subfolder in `static/cards/set`
+    + In the right ISO 639-1 language subfolder for translated cards (ie. `i18n_cards/fr`)
 
--   Launch the `make static` command
+-   Go to Github in the `Actions` tab and run the `Deployment` action.
 
-The command build the static site into the `build` folder with the `krcg-static build`
-command, then uses `rsync` over `ssh` to push it to the `static.krcg.org` server.
-Note you need ssh access to the `krcg.org` server to deploy.
+**Note only authorized admins on the krcg-static repository can run this action**
+If you're a contributor, signal yourself to the repository administrators so they
+can review and authorize your deployment.
 
 ## Fontforge & Imagemagick foo
 
@@ -134,6 +136,8 @@ convert $f -bordercolor black -border 0x1 $name; \
 done
 ```
 
+Depending on how they generate the files, those can come up with large block borders, in this case, do this instead:
+
 ```shell
 for f in incoming/*(.); do \
 name=${f#incoming/}; \
@@ -167,8 +171,10 @@ fi; \
 done
 ```
 
-And to copy everything and preserve the links to the static directory:
+Then copy everything and preserve the links to the static directory:
 
 ```shell
 cp -av ./* ~/dev/krcg-static/static/card/
 ```
+
+Make sure your symbolic links are **relative to the `.` folder**  ot they won't work online.
