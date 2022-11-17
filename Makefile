@@ -1,6 +1,6 @@
 .PHONY: quality test static update clean
 
-STATIC_SERVER ?= krcg.org:projects/static.krcg.org/dist
+STATIC_SERVER ?= lpanhaleux@krcg.org:projects/static.krcg.org/dist
 
 quality:
 	black --check .
