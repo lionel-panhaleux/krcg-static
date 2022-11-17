@@ -24,4 +24,4 @@ jobs:
           chmod 600 /home/runner/.ssh/id_rsa
           echo "${{ secrets.KRCG_HOST_ID }}" > /home/runner/.ssh/known_hosts
       - name: Deploy files to server
-        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@krcg.org:projects/lackey.krcg.org/dist
+        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@krcg.org:projects/static.krcg.org/dist
