@@ -2,7 +2,7 @@ name: Deployment
 on: [workflow_dispatch]
 
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
     environment: krcg.org
     steps:
