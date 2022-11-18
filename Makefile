@@ -13,6 +13,10 @@ static:
 	krcg-static build
 	rsync -rlptq --delete-after -e ssh build/ ${STATIC_SERVER}
 
+minimal:
+	krcg-static build --minimal
+	rsync -rlptq --delete-after -e ssh build/ ${STATIC_SERVER}
+
 update:
 	pip install --upgrade --upgrade-strategy eager -e .[dev]
 

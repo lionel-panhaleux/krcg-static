@@ -216,6 +216,9 @@ parser = argparse.ArgumentParser(
     prog="krcg-static", description="VTES static files generator"
 )
 parser.add_argument("folder", help="Target folder", type=pathlib.Path)
+parser.add_argument(
+    "--minimal", action="store_true", help="Re-generate just the static web files"
+)
 
 
 def geonames(path: str) -> None:
@@ -548,19 +551,36 @@ def vtespl_cards_scans(path):
 
 def static(path):
     print("setting up website files...")
-    shutil.rmtree(path, ignore_errors=True)
     shutil.copytree(
         "static",
         path,
         symlinks=True,
         ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"],
+        dirs_exist_ok=True,
     )
 
 
 def main():
     """Entrypoint for the krcg-gen tool."""
     args = parser.parse_args(sys.argv[1:])
+    if args.minimal:
+        print("setting up website files...")
+        shutil.copytree(
+            "static",
+            args.folder,
+            symlinks=True,
+            ignore=lambda folder, names: (
+                names
+                if folder == "static/card"
+                else [n for n in names if n[-3:] == ".py"]
+            ),
+            dirs_exist_ok=True,
+        )
+        return
+    shutil.rmtree(args.folder, ignore_errors=True)
     static(args.folder)
+    if args.minimal:
+        return
     try:
         print("loading from VEKN...")
         vtes.VTES.load_from_vekn()
