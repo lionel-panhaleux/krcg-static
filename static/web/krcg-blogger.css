@@ -1,0 +1,71 @@
+.krcg-card {
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.krcg-decklist {
+    padding: 1em;
+    margin: 1em 1em 1em 0;
+    border-radius: 1em;
+    white-space: nowrap;
+    line-height: 1.5;
+    clear: both;
+}
+
+.krcg-decklist h3 {
+    margin: 0 !important;
+}
+
+.krcg-decklist h4 {
+    margin: 1em 0 0 0 !important;
+}
+
+.krcg-decklist h5 {
+    font-size: 1em;
+    margin: 0.5em 0 0 0 !important;
+}
+
+.krcg-decklist ul {
+    list-style: none;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+
+.krcg-row {
+    display: flex;
+}
+
+.krcg-column {
+    flex: 50%;
+    padding: 1em;
+}
+
+.krcg-decklist .krcg-card {
+    font-style: normal;
+}
+
+.krcg-vdb-button {
+    border-radius: 0.3em;
+    border: 1px solid;
+    background-color: #d0d0e8;
+    border-color: #d1d1d1;
+    width: fit-content;
+    text-decoration: none;
+    margin: 1em 1em 1em 0;
+    padding: 0.1em 0.3em;
+}
+
+.krcg-vdb-button:hover {
+    box-shadow: 0 2px 2px rgba(35, 73, 0, 0.2);
+    color: inherit;
+    border-color: #bdbab0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .krcg-column {
+        width: 100%;
+    }
+}

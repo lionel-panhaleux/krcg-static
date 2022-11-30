@@ -53,18 +53,24 @@ const icon_map = {
     "SPI": "Z",
     "tem": "?",
     "TEM": "!",
-    "str": "&agrave;",
-    "STR": "&aacute;",
+    "str": "à",
+    "STR": "á",
     "obt": "$",
     "OBT": "£",
-    "mal": "&acirc;",
-    "MAL": "&atilde;",
+    "mal": "â",
+    "MAL": "ã",
     "conviction": "¤",
     "action": "0",
     "political": "2",
     "politics": "2",
     "politic": "2",
     "political action": "2",
+    "ally": "3",
+    "recruit": "3",
+    "equipment": "5",
+    "equip": "5",
+    "retainer": "8",
+    "employ": "8",
     "reaction": "7",
     "react": "7",
     "action modifier": "1",
@@ -84,8 +90,8 @@ const icon_map = {
     "inn": "#",
     "defense": "@",
     "def": "@",
-    "martyrdom": "&amp;",
-    "mar": "&amp;",
+    "martyrdom": "&",
+    "mar": "&",
     "justice": "%",
     "jus": "%",
     "vengeance": "(",
@@ -94,9 +100,9 @@ const icon_map = {
     "vin": ")",
     "redemption": "*",
     "red": "*",
-    "1 blood": " &#39;",
-    "1 b": " &#39;",
-    "1b": " &#39;",
+    "1 blood": "'",
+    "1 b": "'",
+    "1b": "'",
     "2 blood": ";",
     "2 b": ";",
     "2b": ";",
@@ -112,10 +118,10 @@ const icon_map = {
     "X blood": "-",
     "X b": "-",
     "Xb": "-",
-    "pool": "&brvbar;",
-    "1 pool": "&quot;",
-    "1 p": "&quot;",
-    "1p": "&quot;",
+    "pool": "¦",
+    "1 pool": "\"",
+    "1 p": "\"",
+    "1p": "\"",
     "2 pool": ":",
     "2 p": ":",
     "2p": ":",
@@ -182,7 +188,7 @@ const clan_map = {
     "innocent": "3",
     "ishtarri": "R",
     "ishtar": "R",
-    "judge,": "4",
+    "judge": "4",
     "kiasyd": "S",
     "lasombra": "w",
     "malkavian": "q",
@@ -247,7 +253,100 @@ const clan_map = {
     "visionary": "7",
 }
 
-function krcgBlogger() {
+async function fetchDeck(url) {
+    const response = await fetch(encodeURI(`https://api.krcg.org/vdb`), {
+        method: "POST",
+        body: JSON.stringify({ url: url }),
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+    })
+    if (!response.ok) {
+        if (response.status >= 500 && response.status < 600) {
+            throw Error("KRCG server error")
+        } else if (response.status >= 404 && response.status < 600) {
+            throw Error(`Deck #${id} not found.`)
+        } else {
+            throw Error(response.statusText)
+        }
+    }
+    return await response.json()
+}
+
+function addCard(section, card_info) {
+    let elem = document.createElement("li")
+    elem.textContent = `${card_info.count} `
+    let card = document.createElement("span")
+    card.textContent = card_info.name
+    card.classList.add("krcg-card")
+    elem.appendChild(card)
+    section.appendChild(elem)
+}
+
+function wrapText(text, maxlen) {
+    if (!text) {
+        return "(N/A)"
+    }
+    if (text.length > maxlen) {
+        return text.substr(0, maxlen - 3) + "..."
+    }
+    return text
+}
+
+async function insert_decklist(elem, url) {
+    const data = await fetchDeck(url)
+    console.log(data)
+    let decklist = document.createElement("div")
+    decklist.classList.add("krcg-decklist")
+    let deck_name = document.createElement("h3")
+    decklist.appendChild(deck_name)
+    let deck_link = document.createElement("a")
+    deck_link.target = "_blank"
+    deck_link.href = url
+    deck_link.textContent = wrapText(data.name || "(No Name)", 25)
+    deck_name.appendChild(deck_link)
+    let row = document.createElement("div")
+    row.classList.add("krcg-row")
+    let column1 = document.createElement("div")
+    column1.classList.add("krcg-column")
+    let column2 = document.createElement("div")
+    column2.classList.add("krcg-column")
+    let crypt_header = document.createElement("h4")
+    crypt_header.textContent = `Crypt (${data.crypt.count})`
+    column1.appendChild(crypt_header)
+    let crypt_list = document.createElement("ul")
+    for (card_info of data.crypt.cards) {
+        addCard(crypt_list, card_info)
+    }
+    column1.appendChild(crypt_list)
+    let library_header = document.createElement("h4")
+    library_header.textContent = `Library (${data.library.count})`
+    column1.appendChild(library_header)
+    let library_list = document.createElement("ul")
+    for (const section of data.library.cards) {
+        let header = document.createElement("li")
+        let title = document.createElement("h5")
+        title.textContent = `— ${section.type} (${section.count}) —`
+        header.appendChild(title)
+        library_list.appendChild(header)
+        for (card_info of section.cards) {
+            addCard(library_list, card_info)
+        }
+        if (section.type === "Master") {
+            column1.appendChild(library_list)
+            row.appendChild(column1)
+            library_list = document.createElement("ul")
+        }
+    }
+    column2.appendChild(library_list)
+    row.appendChild(column2)
+    decklist.appendChild(row)
+    elem.after(decklist)
+    elem.remove()
+}
+
+async function krcgBlogger() {
     // modify all spans with the "courier" font
     for (elem of document.querySelectorAll('span[style="font-family: courier;"]')) {
         const category = elem.textContent.split(":", 1)[0]
@@ -270,8 +369,15 @@ function krcgBlogger() {
                 elem.setAttribute("class", "krcg-card")
                 elem.textContent = value
                 break
+            case "decklist":
+                elem.removeAttribute("style")
+                await insert_decklist(elem, value)
         }
     }
 }
 
-window.addEventListener("load", (e) => krcgBlogger())
+async function setup_krcg_blogger(e) {
+    await krcgBlogger()
+}
+
+window.addEventListener("DOMContentLoaded", setup_krcg_blogger)
