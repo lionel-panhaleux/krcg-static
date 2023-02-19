@@ -115,13 +115,17 @@
             For example: <a target="_blank" href="card/fr/fame.jpg">https://static.krcg.org/card/fr/fame.jpg</a>
         </p>
         <p>
-            Finally, original card scans are available set by set in the <span>set</span> subdirectory,
+            Original card scans are available set by set in the <span>set</span> subdirectory,
             with one directory per set.<br>
             For example: <a target="_blank"
                 href="card/set/jyhad/44magnum.jpg">https://static.krcg.org/card/set/jyhad/44magnum.jpg</a>
         </p>
         <p>
             These images URLs are used in the <a target="_blank" href="data/vtes.json">vtes.json</a> file.
+        </p>
+        <p>
+            Finally, you can download all the current official cards images (in english) as a
+            <a target="_blank" href="card/_all_cards.zip">single <span>ZIP</span> file</a>.
         </p>
         <div class="insert">
             <p>
@@ -131,6 +135,13 @@
                 For example,
                 <a target="_blank" href="card/fame.jpg#2022-01-25-14">https://static.krcg.org/card/fame.jpg#2022-01-25-14</a>
             </p>
+            <p>
+                On a similar note, the card images files hold a meaningful modification date,
+                which means you can also inspect and trust this modificaiton date in the HTTP header of the file:
+            </p>
+            <p><span>curl -I "https://static.krcg.org/card/archon.jpg"</span></p>
+            <p>will get you (among others):</p>
+            <p><span>Last-Modified: Thu, 19 Aug 2021 20:01:34 GMT</span></p>
         </div>
         <h2>Symbols images</h2>
         <p>

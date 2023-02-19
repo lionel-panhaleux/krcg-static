@@ -344,6 +344,16 @@ def standard_json(path: str) -> None:
         json.dump(twda.TWDA.to_json(), fp, ensure_ascii=False)
 
 
+def all_cards_images(path: str) -> None:
+    print("generating ZIP file for all cards images...")
+    source = pathlib.Path("static/card")
+    with zipfile.ZipFile(path / "card" / "_all_cards.zip", "w") as zipf:
+        for fil in os.listdir(source):
+            fil = source / fil
+            if os.path.isfile(fil) and not os.path.islink(fil):
+                zipf.write(fil, fil.relative_to("static"))
+
+
 def standard_html(path: str) -> None:
     """A normalized HTML version of the TWDA"""
     print("generating HTML TWD file...")
@@ -579,6 +589,7 @@ def main():
         return
     shutil.rmtree(args.folder, ignore_errors=True)
     static(args.folder)
+    all_cards_images(args.folder)
     if args.minimal:
         return
     try:
