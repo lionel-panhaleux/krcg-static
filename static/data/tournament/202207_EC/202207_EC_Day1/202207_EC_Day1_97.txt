@@ -1,0 +1,60 @@
+Deck Name: 202207_EC_Day1_97
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (13 cards, min=4 max=10 avg=1.69)
+=======================================
+1x Ali Kar                      3 obf qui      Banu Haqim:3
+1x Milo, The Invisible Horror   3 aus obf      Malkavian:3
+1x Bloodfeud                    2 obf          Malkavian antitribu:4
+1x Denette Stensen              2 obf          Gangrel antitribu:4
+1x Hanna Redmonds               2 obf tha      Caitiff:3
+1x Krid                         2 obf          Nosferatu:3
+1x Old Neddacka                 2 obf          Nosferatu antitribu:4
+6x Anarch Convert               1              Caitiff:ANY
+
+Library (67 cards)
+------------------
+Master (15; 2 trifle)
+----------------------
+1x Anarch Railroad
+1x Archon Investigation
+6x Ashur Tablets
+1x Fear of Mekhet
+1x Garibaldi-Meucci Museum
+2x Information Highway
+1x Pentex(TM) Subversion
+2x Wash
+
+Action (10)
+------------
+10x Night Moves
+
+Political Action (16)
+----------------------
+4x Diversity
+2x Domain Challenge
+5x Eat the Rich
+5x Kine Resources Contested
+
+Action Modifier (19)
+---------------------
+1x Cloak the Gathering
+3x Cryptic Rider
+1x Faceless Night
+3x Forgotten Labyrinth
+3x Memory Rift
+7x Propaganda of the Deed
+1x Spying Mission
+
+Action Modifier/Combat (1)
+---------------------------
+1x Swallowed by the Night
+
+Combat (4)
+-----------
+4x Dodge
+
+Event (2)
+----------
+2x Uncoiling, The

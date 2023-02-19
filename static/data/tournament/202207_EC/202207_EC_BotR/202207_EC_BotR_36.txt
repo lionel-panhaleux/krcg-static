@@ -1,0 +1,66 @@
+Deck Name: BOTR Deck 36
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=24 max=28 avg=6.5)
+=======================================
+5x Talbot                  7 ANI NEC PRO for           Gangrel:5
+1x Massimiliano            7 ANI FOR pro       baron   Gangrel:6
+2x André the Manipulator   6 FOR PRO                   Gangrel:5
+2x Casey Snyder            6 PRO ani for cel   baron   Gangrel:6
+2x Kuyén                   6 ANI PRO           baron   Gangrel:6
+
+Library (90 cards)
+------------------
+Master (20; 3 trifle)
+----------------------
+1x Backways
+3x Blood Doll
+1x Direct Intervention
+1x Dreams of the Sphinx
+1x Ecoterrorists
+2x Ennoia's Theater
+2x Fame
+2x Guardian Angel
+1x Heidelberg Castle, Germany
+2x Monster
+2x Wash
+1x Wider View
+1x Zoo Hunting Ground
+
+Action (9)
+-----------
+7x Deep Song
+2x Rewilding
+
+Retainer (8)
+-------------
+3x Dog Pack
+1x J. S. Simmons, Esq.
+3x Raven Spy
+1x Tasha Morgan
+
+Action Modifier (4)
+--------------------
+2x Beast Meld
+2x Trochomancy
+
+Reaction (15)
+--------------
+7x Bait and Switch
+2x Delaying Tactics
+3x Eyes of the Wild
+3x Sense the Savage Way
+
+Combat (32)
+------------
+9x Aid from Bats
+2x Canine Horde
+7x Carrion Crows
+5x Flesh of Marble
+6x Pack Alpha
+3x Taste of Vitae
+
+Event (2)
+----------
+2x Scourge of the Enochians

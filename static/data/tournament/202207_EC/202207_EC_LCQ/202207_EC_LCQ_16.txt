@@ -1,0 +1,47 @@
+Deck Name: 202207_EC_LCQ_16
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (12 cards, min=4 max=14 avg=2.25)
+=======================================
+1x Anka, Priestess of Thorns    4 ani chi pro      Ravnos:2
+1x Sennuwy, The Promoter        4 ani chi for      Ravnos:2
+1x Ashlesha                     3 aus chi          Ravnos:2
+1x Lázár Dobrescu               3 for              Ravnos:2
+1x Vedel Esbreno                3 chi for          Ravnos:2
+1x Sasha Miklos                 2 chi              Ravnos:2
+1x Spleen, Georgio Gutterpunk   2 ani chi          Ravnos:2
+1x Zip                          2 ani              Ravnos:3
+4x Anarch Convert               1                  Caitiff:ANY
+
+Library (61 cards)
+------------------
+Master (22; 7 trifle)
+----------------------
+1x Haven Uncovered
+7x Life in the City
+9x Ravnos Carnival
+3x Tribute to the Master
+2x Week of Nightmares
+
+Action (24)
+------------
+24x Embrace, The
+
+Action Modifier (3)
+--------------------
+3x Change of Target
+
+Reaction (1)
+-------------
+1x Wake with Evening's Freshness
+
+Combat (8)
+-----------
+7x Dodge
+1x Fake Out
+
+Event (3)
+----------
+1x Narrow Minds
+2x Veil of Darkness

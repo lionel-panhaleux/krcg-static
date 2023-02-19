@@ -1,0 +1,49 @@
+Deck Name: 202207_EC_Day2_41
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=40 max=33 avg=8.33)
+========================================
+3x Cock Robin        10 ANI OBF POT aus for           justicar   Nosferatu:3
+2x Xaviar (ADV)      10 ABO ANI FOR PRO aus cel pot   justicar   Gangrel:3
+2x Baron Dieudonne   9 ANI OBF POT PRO               prince     Nosferatu:4
+1x Casino Reeds      9 ANI OBF POT cel dem           prince     Nosferatu:3
+2x Sundown           6 ANI POT obf pre                          Nosferatu:3
+1x Humo              6 ANI POT obf obt                          Nosferatu antitribu:4
+1x Fish              5 ANI POT pre                              Guruhi:4
+
+Library (90 cards)
+------------------
+Master (11; 3 trifle)
+----------------------
+2x Blood Doll
+1x Fame
+1x Giant's Blood
+1x Monster
+2x Tension in the Ranks
+3x Vessel
+1x Warsaw Station
+
+Action (15)
+------------
+11x Deep Song
+4x Taunt the Caged Beast
+
+Political Action (10)
+----------------------
+7x Anathema
+1x Ancient Influence
+1x Domain Challenge
+1x Reins of Power
+
+Reaction (8)
+-------------
+8x Second Tradition: Domain
+
+Combat (46)
+------------
+8x Carrion Crows
+8x Drawing Out the Beast
+13x Immortal Grapple
+9x Taste of Vitae
+8x Torn Signpost

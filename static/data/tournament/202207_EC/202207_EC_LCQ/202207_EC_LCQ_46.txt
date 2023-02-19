@@ -1,0 +1,56 @@
+Deck Name: 202207_EC_LCQ_46
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=20 max=30 avg=6.25)
+========================================
+2x Arcadian, The             8 DOM MYT OBT chi for      Kiasyd:5
+2x Badr, Shadow of Granada   7 DOM OBT POT              Lasombra:5
+1x Lord Vauxhall             7 DOM OBT POT THA          Lasombra:4
+2x Isanwayen                 6 DOM MYT OBT              Kiasyd:4
+1x Onaedo                    6 DOM OBT aus pot          Lasombra:4
+2x Dame Hollerton            5 DOM OBT myt              Kiasyd:4
+2x Ermenegildo, The Rake     5 DOM OBT pot              Lasombra:4
+
+Library (66 cards)
+------------------
+Master (10; 1 trifle)
+----------------------
+2x Anarch Troublemaker
+1x Barrens, The
+2x Capitalist
+1x Coven, The
+2x Dreams of the Sphinx
+1x Great Symposium
+1x Misdirection
+
+Action (12)
+------------
+12x Govern the Unaligned
+
+Ally (6)
+---------
+6x Nocturn
+
+Action Modifier (30)
+---------------------
+3x Bonding
+1x Command of the Beast
+6x Conditioning
+1x Foreshadowing Destruction
+1x Leverage
+3x Seduction
+3x Shadow Play
+6x Shroud of Absence
+3x Shroud of Night
+3x Stone Travel
+
+Action Modifier/Reaction (1)
+-----------------------------
+1x Murmur of the False Will
+
+Reaction (7)
+-------------
+3x Deflection
+3x On the Qui Vive
+1x Redirection

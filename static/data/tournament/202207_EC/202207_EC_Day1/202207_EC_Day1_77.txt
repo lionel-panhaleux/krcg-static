@@ -1,0 +1,64 @@
+Deck Name: 202207_EC_Day1_77
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=12 max=24 avg=4.5)
+=======================================
+3x Yseult                           6 FOR MEL PRE          Daughter of Cacophony:3
+1x Gaël Pilet                       6 FOR MEL chi pre      Daughter of Cacophony:2
+2x Angela Preston                   5 MEL PRE for          Daughter of Cacophony:2
+3x Delilah Monroe                   4 MEL for pre          Daughter of Cacophony:2
+1x Céleste, The Voice of a Secret   3 mel pre              Daughter of Cacophony:2
+1x Muse                             3 ani for mel          Daughter of Cacophony:2
+1x New Blood                        2 san                  Blood Brother:ANY
+
+Library (77 cards)
+------------------
+Master (14; 2 trifle)
+----------------------
+1x Barrens, The
+2x Blood Doll
+1x Command Performance
+1x Direct Intervention
+1x Fame
+2x Fortitude
+1x Giant's Blood
+1x Paris Opera House
+1x Protected Resources
+1x Tension in the Ranks
+1x Wash
+1x Wider View
+
+Action (21)
+------------
+1x Entrancement
+3x Legal Manipulations
+17x Shattering Crescendo
+
+Action Modifier (7)
+--------------------
+2x Freak Drive
+5x Siren's Lure
+
+Reaction (1)
+-------------
+1x Delaying Tactics
+
+Combat (32)
+------------
+2x Catatonic Fear
+2x Death of the Drum
+4x Hidden Strength
+1x Indomitability
+2x Rolling with the Punches
+1x Skin of Steel
+2x Superior Mettle
+4x Target Vitals
+4x Taste of Vitae
+3x Unflinching Persistence
+7x Weighted Walking Stick
+
+Event (2)
+----------
+1x Dragonbound
+1x Narrow Minds

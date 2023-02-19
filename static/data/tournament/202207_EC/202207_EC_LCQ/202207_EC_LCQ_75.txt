@@ -1,0 +1,55 @@
+Deck Name: 202207_EC_LCQ_75
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (14 cards, min=16 max=32 avg=5.5)
+=======================================
+4x Brunhilde (ADV)        8 ANI FOR PRO pre   baron   Gangrel:3
+1x Brunhilde              8 ANI FOR PRO pre           Gangrel:3
+1x Bernard, the Scourge   5 ani for pre pro           Gangrel:4
+8x Valkyrie               4 for pre pro               Gangrel:3
+
+Library (90 cards)
+------------------
+Master (15)
+------------
+1x Anarch Railroad
+1x Backways
+1x Carfax Abbey
+2x Club Illusion
+2x Ecoterrorists
+6x Effective Management
+1x Ennoia's Theater
+1x Haven Uncovered
+
+Action (33)
+------------
+6x Field Training
+1x Open War
+10x Thing
+16x Undue Influence
+
+Ally (1)
+---------
+1x Double Deuce
+
+Equipment (1)
+--------------
+1x Shackles of Enkidu
+
+Action Modifier (26)
+---------------------
+12x CrimethInc.
+4x Freak Drive
+3x Monkey Wrench
+7x Revelation of the Serpent
+
+Reaction (4)
+-------------
+4x Delaying Tactics
+
+Combat (10)
+------------
+4x Bollix
+4x Earth Meld
+2x Form of Mist

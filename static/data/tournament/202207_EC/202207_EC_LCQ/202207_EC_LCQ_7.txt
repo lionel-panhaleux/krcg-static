@@ -1,0 +1,77 @@
+Deck Name: 202207_EC_LCQ_7
+Author: VtesEC2022
+Description: 1GW6
+
+Crypt (12 cards, min=14 max=28 avg=5.58)
+========================================
+5x Xendil Charmer   7 CEL PRO SER obf   priscus   Gangrel antitribu:4
+1x Luke Fellows     7 CEL OBF PRO                 Gangrel antitribu:4
+1x Ryszard          6 CEL OBF pre pro   bishop    Gangrel antitribu:4
+1x Alex Camille     5 PRO cel for obf             Gangrel antitribu:5
+2x Charlie Tyne     4 obf pro ser                 Gangrel antitribu:4
+1x Joseph Fischer   3 PRO                         Gangrel antitribu:5
+1x Lula Burch       3 for pro                     Gangrel antitribu:4
+
+Library (90 cards)
+------------------
+Master (12; 3 trifle)
+----------------------
+1x Heidelberg Castle, Germany
+1x Trophy: Diablerie
+1x Trophy: Domain
+1x Trophy: Hunting Ground
+1x Trophy: Library
+1x Trophy: Retainers
+2x Trophy: Revered
+1x Twisted Forest
+3x Vessel
+
+Action (20)
+------------
+1x Aranthebes, The Immortal
+4x Big Game
+1x Bum's Rush
+1x Fleetness
+4x Marked Territory
+5x Red List
+1x Shadow of the Beast
+1x Temptation
+2x Under Siege
+
+Equipment (4)
+--------------
+1x Book of Going Forth by Night, The
+1x Ivory Bow
+1x Sengir Dagger
+1x Sport Bike
+
+Retainer (15)
+--------------
+11x Hatch the Viper
+1x J. S. Simmons, Esq.
+1x Jackie Therman
+1x Mr. Winthrop
+1x Tasha Morgan
+
+Action Modifier (12)
+---------------------
+2x Earth Control
+10x Instantaneous Transformation
+
+Action Modifier/Combat (2)
+---------------------------
+2x Form of the Cobra
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Form of the Bat
+
+Combat (23)
+------------
+3x Claws of the Dead
+4x Earth Meld
+1x Flash
+2x Form of Mist
+5x Psyche!
+7x Taste of Vitae
+1x Wolf Claws

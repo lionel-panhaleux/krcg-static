@@ -1,0 +1,67 @@
+Deck Name: BOTR: #2
+Author: VtesEC2022
+Description: 1GW6
+
+Crypt (12 cards, min=31 max=32 avg=7.75)
+========================================
+5x Ghede             10 FOR OBF POT PRE SER      Ministry:6
+1x Mambo Jeanne      9 FOR NEC OBF THN          Samedi:6
+1x Jean Lisle        8 FOR OBF THN pot          Samedi:6
+1x Josette           8 FOR OBF THN pot pre      Samedi:6
+1x Baroque           7 NEC THN aus for obf      Samedi:5
+1x Mister Schwartz   6 NEC THN for obf          Samedi:6
+1x Marie-Pierre      4 THN for nec              Samedi:6
+1x Anarch Convert    1                          Caitiff:ANY
+
+Library (90 cards)
+------------------
+Master (16; 7 trifle)
+----------------------
+3x Blessings of the Loa
+1x Carver's Meat Packing and Storage
+1x Dreams of the Sphinx
+1x Failsafe
+1x Fame
+1x Powerbase: Montreal
+1x Secure Haven
+1x Tension in the Ranks
+5x Villein
+1x Wider View
+
+Action (8)
+-----------
+1x Ambush
+1x Bum's Rush
+1x Entrancement
+1x Harass
+1x Heroic Might
+2x Preternatural Strength
+1x Resilient Mind
+
+Equipment (1)
+--------------
+1x Light Intensifying Goggles
+
+Action Modifier (8)
+--------------------
+8x Freak Drive
+
+Action Modifier/Combat (2)
+---------------------------
+2x Shadow Boxing
+
+Combat (54)
+------------
+12x Immortal Grapple
+1x Jones, The
+2x Necrosis
+6x Pulled Fangs
+2x Relentless Reaper
+4x Skin of the Adder
+3x Street Cred
+8x Taste of Vitae
+16x Typhonic Beast
+
+Event (1)
+----------
+1x Dragonbound

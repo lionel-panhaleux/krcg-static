@@ -1,0 +1,74 @@
+Deck Name: 202207_EC_Day1_85
+Author: VtesEC2022
+Description: 0GW0.5
+
+Crypt (12 cards, min=35 max=28 avg=7.17)
+========================================
+3x Karl Schrekt      10 AUS DOM FOR PRE THA   2 votes    Tremere:6
+1x Abraham DuSable   8 AUS DOM FOR THA                  Tremere:6
+2x Ayelech           7 AUS DOM THA           prince     Tremere:6
+2x Inês Tristão      6 THA aus dom pre       prince     Tremere:6
+1x Lloyd Brooks      6 THA DOM aus pot       primogen   Tremere:6
+1x Trevon Parker     6 AUS DOM THA                      Tremere:6
+2x Chrysanthemum     5 AUS THA dom           primogen   Tremere:6
+
+Library (86 cards)
+------------------
+Master (12; 5 trifle)
+----------------------
+1x Academic Hunting Ground
+1x Arcane Library
+1x Chantry
+1x Elder Library
+1x Information Highway
+1x Rack, The
+1x Sudden Reversal
+3x Vessel
+2x Villein
+
+Action (14)
+------------
+10x Govern the Unaligned
+2x Magic of the Smith
+2x Scouting Mission
+
+Equipment (8)
+--------------
+1x .44 Magnum
+1x Bowl of Convergence
+1x Desert Eagle
+1x IR Goggles
+1x Ivory Bow
+1x Kevlar Vest
+1x Mark V
+1x Sport Bike
+
+Action Modifier (18)
+---------------------
+4x Bonding
+2x Conditioning
+2x Foreshadowing Destruction
+5x Mirror Walk
+2x Seduction
+3x Suppressing Fire
+
+Reaction (22)
+--------------
+4x Deflection
+1x Eagle's Sight
+2x Enhanced Senses
+3x Eyes of Argus
+3x On the Qui Vive
+3x Precognition
+2x Spirit's Touch
+2x Telepathic Misdirection
+2x Wake with Evening's Freshness
+
+Combat (12)
+------------
+3x Apportation
+2x Blood Fury
+2x Concealed Weapon
+1x Rego Motum
+3x Theft of Vitae
+1x Walk of Flame

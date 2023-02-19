@@ -1,0 +1,62 @@
+Deck Name: 202207_EC_LCQ_32
+Author: VtesEC2022
+Description: 1GW2.5
+
+Crypt (12 cards, min=15 max=27 avg=5.25)
+========================================
+3x Badr, Shadow of Granada   7 DOM OBT POT                Lasombra:5
+2x Onaedo                    6 DOM OBT aus pot            Lasombra:4
+2x Andrew Emory              5 OBT aus dom pot   bishop   Lasombra:4
+2x Ermenegildo, The Rake     5 DOM OBT pot                Lasombra:4
+1x Leila Monroe              4 dom obt pre                Lasombra:4
+2x Lucy Markowitz            3 dom obt                    Lasombra:4
+
+Library (90 cards)
+------------------
+Master (14; 4 trifle)
+----------------------
+1x Anarch Troublemaker
+1x Coven, The
+1x Dreams of the Sphinx
+1x Elysian Fields
+1x Erciyes Fragments, The
+5x Path of Night, The
+1x Pentex(TM) Subversion
+1x Vessel
+1x Wash
+1x Wider View
+
+Action (12)
+------------
+12x Govern the Unaligned
+
+Ally (18)
+----------
+18x Nocturn
+
+Equipment (2)
+--------------
+1x Heart of Nizchetus
+1x Zaire River Ferry
+
+Action Modifier (26)
+---------------------
+4x Bonding
+4x Conditioning
+2x Foreshadowing Destruction
+2x Seduction
+6x Shadow Play
+6x Shroud of Absence
+2x Tenebrous Form
+
+Reaction (14)
+--------------
+8x Deflection
+5x On the Qui Vive
+1x Wake with Evening's Freshness
+
+Event (4)
+----------
+1x Bitter and Sweet Story, The
+1x Nightmares upon Nightmares
+2x Unmasking, The

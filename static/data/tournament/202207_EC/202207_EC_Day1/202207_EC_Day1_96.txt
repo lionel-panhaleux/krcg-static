@@ -1,0 +1,64 @@
+Deck Name: 202207_EC_Day1_96
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=7 max=28 avg=4.67)
+=======================================
+1x Dela Eden   8 AUS FOR VAL cel dom            Salubri antitribu:3
+1x Uriel       8 AUS FOR VAL ani obe   bishop   Salubri antitribu:4
+3x Castiel     6 AUS VAL for                    Salubri antitribu:3
+2x Langa       5 VAL for                        Salubri antitribu:4
+1x Aredhel     5 FOR VAL aus                    Salubri antitribu:4
+1x Nkechi      4 aus for val                    Salubri antitribu:4
+3x Tupdog      1 POT VIS                        Gargoyle:3
+
+Library (81 cards)
+------------------
+Master (13)
+------------
+4x Blood Doll
+2x Code of Samiel
+2x Fame
+1x Haven Uncovered
+1x KRCG News Radio
+2x Path of Retribution, The
+1x Retribution
+
+Action (10)
+------------
+2x Blessing of the Name
+8x Sense Death
+
+Equipment (9)
+--------------
+9x Dagger
+
+Retainer (2)
+-------------
+1x J. S. Simmons, Esq.
+1x Tasha Morgan
+
+Action Modifier (5)
+--------------------
+4x Freak Drive
+1x Gift of Bellona
+
+Action Modifier/Combat (1)
+---------------------------
+1x Burning Touch
+
+Reaction (10)
+--------------
+5x Hide the Heart
+3x On the Qui Vive
+2x Wake with Evening's Freshness
+
+Combat (31)
+------------
+4x Blessed Blade
+3x Concealed Weapon
+3x Death Seeker
+5x Indomitability
+3x Righteous Aura
+8x Sword of the Righteous
+5x Taste of Vitae

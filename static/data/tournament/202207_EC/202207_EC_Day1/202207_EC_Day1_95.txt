@@ -1,0 +1,80 @@
+Deck Name: 202207_EC_Day1_95
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=40 max=36 avg=9.08)
+========================================
+5x Louhi              10 ANI AUS DEM OBF THA pro   cardinal     Malkavian antitribu:4
+2x Petaniqua          9 AUS DAI DEM OBF THA chi                Malkavian:4
+2x William Biltmore   9 AUS DEM OBF THA dom                    Malkavian:3
+2x Lazarus James      8 AUS DEM PRE obf tha                    Malkavian:4
+1x Marie Faucigny     7 AUS OBF dem tha           archbishop   Malkavian antitribu:3
+
+Library (81 cards)
+------------------
+Master (15; 6 trifle)
+----------------------
+2x Direct Intervention
+1x Dreams of the Sphinx
+1x Giant's Blood
+1x Golconda: Inner Peace
+1x Institution Hunting Ground
+1x Not to Be
+1x Perfectionist
+1x Secure Haven
+1x Vessel
+4x Villein
+1x Wash
+
+Action (16)
+------------
+3x Call, The
+6x Kindred Spirits
+4x Magic of the Smith
+1x Restructure
+1x Rutor's Hand
+1x Under Siege
+
+Ally (1)
+---------
+1x Carlton Van Wyk
+
+Equipment (6)
+--------------
+1x Bowl of Convergence
+1x Enchanted Marionette
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Sacré-Cœur Cathedral, France
+1x Sniper Rifle
+
+Action Modifier (15)
+---------------------
+3x Confusion
+1x Elder Impersonation
+1x Enkil Cog
+3x Eyes of Chaos
+1x Faceless Night
+2x Lost in Crowds
+3x Mirror Walk
+1x Perfect Clarity
+
+Action Modifier/Combat (7)
+---------------------------
+3x Deny
+2x Hide the Mind
+2x Swallowed by the Night
+
+Reaction (17)
+--------------
+1x Confusion of the Eye
+3x Eyes of Argus
+1x My Enemy's Enemy
+6x On the Qui Vive
+6x Telepathic Misdirection
+
+Combat (4)
+-----------
+2x Rego Motum
+1x Taste of Vitae
+1x Wind Dance

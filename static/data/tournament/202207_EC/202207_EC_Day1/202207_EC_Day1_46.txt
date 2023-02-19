@@ -1,0 +1,50 @@
+Deck Name: 202207_EC_Day1_46
+Author: VtesEC2022
+Description: 0GW2.5
+
+Crypt (12 cards, min=9 max=20 avg=3.58)
+=======================================
+4x Dodd                                5 CEL dom pre      Brujah antitribu:2
+1x Hector Sosa                         4 POT pre          Brujah:1
+1x Yuri, The Talon                     4 cel pot pre      Brujah:1
+1x Dre, Leader of the Cold Dawn        3 cel pot          Brujah:1
+1x Raziya Samater                      3 ani pot          Brujah:2
+1x Uma Hatch                           3 cel pre          Brujah:1
+1x Angel                               2 cel              Brujah:1
+1x Lupo                                2 pot              Brujah:1
+1x Vasilis, The Traitor of Don Cruez   2 pre              Brujah:2
+
+Library (77 cards)
+------------------
+Master (9)
+-----------
+1x Direct Intervention
+6x Haven Uncovered
+1x Powerbase: Montreal
+1x Waste Management Operation
+
+Ally (21)
+----------
+1x 47th Street Royals
+18x Arms Dealer
+1x Carlton Van Wyk
+1x Mylan Horseed
+
+Equipment (25)
+---------------
+2x .44 Magnum
+11x Camera Phone
+12x Flash Grenade
+
+Reaction (7)
+-------------
+5x Deflection
+2x Poison Pill
+
+Combat (12)
+------------
+12x Concealed Weapon
+
+Event (3)
+----------
+3x Unmasking, The

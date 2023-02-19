@@ -1,0 +1,57 @@
+Deck Name: 202207_EC_Day1_80
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=9 max=23 avg=4.17)
+=======================================
+1x Morel                          6 AUS DEM OBF                  Malkavian:4
+1x Ruth McGinley                  6 DEM aus cel obf   primogen   Malkavian:3
+1x Tony                           6 AUS DEM dom obf              Malkavian:3
+1x Apache Jones                   5 DEM aus for obf              Malkavian antitribu:4
+1x Luc                            5 OBF dem vic                  Malkavian antitribu:4
+1x Persia, The Beautiful Statue   5 DEM aus obf                  Malkavian:3
+1x Uncle George                   5 DEM aus dom obf              Malkavian antitribu:3
+1x Jackie                         3 DEM                          Malkavian antitribu:4
+1x Marta                          3 aus dem                      Malkavian antitribu:4
+1x Midget                         3 DEM obf pre                  Malkavian antitribu:3
+1x Cassandra Langely, The Waif    2 dem                          Malkavian:4
+1x Eddie Gaines                   1 dem pot                      Caitiff:3
+
+Library (79 cards)
+------------------
+Master (13; 4 trifle)
+----------------------
+1x Barrens, The
+4x Dementation
+3x Dreams of the Sphinx
+1x Pentex(TM) Subversion
+4x Wash
+
+Action (21)
+------------
+20x Kindred Spirits
+1x Madman's Quill
+
+Action Modifier (36)
+---------------------
+1x Cloak the Gathering
+12x Confusion
+7x Eyes of Chaos
+1x Faceless Night
+1x Lost in Crowds
+6x Mind Tricks
+1x Spying Mission
+7x Veil the Legions
+
+Action Modifier/Combat (7)
+---------------------------
+6x Deny
+1x Swallowed by the Night
+
+Action Modifier/Reaction (1)
+-----------------------------
+1x Gift of Sleep
+
+Event (1)
+----------
+1x Bitter and Sweet Story, The

@@ -1,0 +1,70 @@
+Deck Name: 202207_EC_LCQ_55
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=17 max=35 avg=6.67)
+========================================
+2x Dark Selina        9 CEL POT PRE dom for   cardinal   Brujah antitribu:5
+1x Dmitra Ilyanova    9 CEL FOR POT PRE obf   justicar   Brujah:5
+2x Catalina Vega      8 AUS CEL PRE for       prince     Toreador:6
+2x Flávio Gonçalves   7 CEL PRE aus for       prince     Toreador:6
+2x Mkhokheli          6 PRE aus cel for       prince     Toreador:6
+1x Leumeah            6 PRE cel for pot       baron      Brujah:6
+1x Nik Sikko          3 cel pre                          Toreador:6
+1x Mateo García       2 pre                              Toreador:6
+
+Library (80 cards)
+------------------
+Master (14; 7 trifle)
+----------------------
+1x Art Museum
+1x Coven, The
+1x Creepshow Casino
+2x Dreams of the Sphinx
+1x Elysium: The Palace of Versailles
+2x Toreador Grand Ball
+6x Villein
+
+Action (6)
+-----------
+3x Enchant Kindred
+3x Entrancement
+
+Political Action (18)
+----------------------
+1x Anarchist Uprising
+1x Ancilla Empowerment
+2x Banishment
+1x Conservative Agitation
+7x Kine Resources Contested
+1x Neonate Breach
+4x Parity Shift
+1x Toreador Justicar
+
+Action Modifier (21)
+---------------------
+2x Aire of Elation
+3x Bewitching Oration
+5x Forced March
+4x Perfect Paragon
+7x Voter Captivation
+
+Action Modifier/Combat (6)
+---------------------------
+6x Resist Earth's Grasp
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Scalpel Tongue
+
+Reaction (4)
+-------------
+4x Second Tradition: Domain
+
+Combat (6)
+-----------
+6x Majesty
+
+Event (1)
+----------
+1x Uncoiling, The

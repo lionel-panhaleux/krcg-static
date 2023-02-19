@@ -1,0 +1,61 @@
+Deck Name: 202207_EC_Day1_65
+Author: VtesEC2022
+Description: 0GW1.5
+
+Crypt (13 cards, min=4 max=32 avg=4.54)
+=======================================
+4x Brunhilde (ADV)   8 ANI FOR PRO pre   baron   Gangrel:3
+1x Nana Buruku       8 ANI POT PRE               Guruhi:4
+1x Beetleman         4 ANI obf                   Nosferatu:4
+1x Bobby Lemon       4 ANI pro                   Gangrel:3
+1x Lorrie Dunsirn    4 POT for nec               Abomination:4
+1x Stick             3 ANI                       Nosferatu antitribu:4
+3x Anarch Convert    1                           Caitiff:ANY
+1x Lisa Noble        1 ani                       Caitiff:3
+
+Library (87 cards)
+------------------
+Master (29; 4 trifle)
+----------------------
+1x Anarch Free Press, The
+3x Anarch Revolt
+12x Ashur Tablets
+1x Carfax Abbey
+1x Ennoia's Theater
+4x Liquidation
+2x Parthenon, The
+1x Smiling Jack, The Anarch
+2x Vessel
+2x Wider View
+
+Action (13)
+------------
+1x Army of Rats
+10x Deep Song
+1x Fee Stake: Corte
+1x Open War
+
+Ally (2)
+---------
+1x Carlton Van Wyk
+1x Mylan Horseed
+
+Retainer (5)
+-------------
+1x Dog Pack
+2x Murder of Crows
+2x Raven Spy
+
+Reaction (16)
+--------------
+5x Bait and Switch
+2x Delaying Tactics
+6x Organized Resistance
+3x Sense the Savage Way
+
+Combat (22)
+------------
+12x Aid from Bats
+1x Canine Horde
+6x Carrion Crows
+3x Taste of Vitae

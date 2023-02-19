@@ -1,0 +1,76 @@
+Deck Name: European GP Finals Magnus Söder
+Author: VtesEC2022
+
+Crypt (12 cards, min=44 max=31 avg=8.5)
+=======================================
+5x Hazimel               11 ANI AUS CHI FOR POT dem   2 votes   Ravnos:4
+3x Mordechai Ben-Nun     8 ANI AUS FOR NEC                     Harbinger of Skulls:5
+1x Babalawo Alafin       7 AUS FOR NEC ani                     Harbinger of Skulls:4
+1x Dr. Lawrence Mayhew   6 AUS CHI ani for                     Ravnos:5
+1x Anjalika Underwood    5 ANI aus chi for                     Ravnos:5
+1x Solomon Batanea       5 AUS FOR nec                         Harbinger of Skulls:4
+
+Library (78 cards)
+------------------
+Master (14; 6 trifle)
+----------------------
+1x Coven, The
+2x Direct Intervention
+1x Dreams of the Sphinx
+1x Giant's Blood
+1x Guardian Angel
+1x Jake Washington
+1x Metro Underground
+1x Pentex(TM) Subversion
+4x Villein
+1x Wider View
+
+Action (3)
+-----------
+3x Nightmare Curse
+
+Ally (4)
+---------
+4x Emerald Legionnaire
+
+Equipment (3)
+--------------
+1x Bowl of Convergence
+1x Ivory Bow
+1x Signet of King Saul, The
+
+Action Modifier (14)
+---------------------
+2x Enkil Cog
+1x False Resonance
+1x Fata Morgana
+2x Heart's Desire
+4x Mind of the Wilds
+2x Trochomancy
+2x Will-o'-the-Wisp
+
+Action Modifier/Combat (2)
+---------------------------
+1x Mirror Image
+1x Occlusion
+
+Reaction (19)
+--------------
+1x Eagle's Sight
+4x Eyes of Argus
+2x My Enemy's Enemy
+1x On the Qui Vive
+1x Read the Winds
+4x Sense the Savage Way
+6x Telepathic Misdirection
+
+Combat (19)
+------------
+2x Aid from Bats
+4x Carrion Crows
+3x Hidden Strength
+2x Indomitability
+2x Soak
+1x Target Vitals
+3x Taste of Vitae
+2x Weighted Walking Stick

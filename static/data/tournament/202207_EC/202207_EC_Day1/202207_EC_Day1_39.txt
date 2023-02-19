@@ -1,0 +1,43 @@
+Deck Name: 202207_EC_Day1_39
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=4 max=18 avg=2.67)
+=======================================
+1x Céleste Lamontagne     5 ANI PRO for      Gangrel antitribu:4
+1x Petra                  5 ANI OBF aus      Nosferatu:4
+1x Beetleman              4 ANI obf          Nosferatu:4
+1x Bobby Lemon            4 ANI pro          Gangrel:3
+1x Bothwell               3 ani for          Gangrel:3
+1x Clarissa Steinburgen   3 ani obf          Nosferatu:3
+1x Stick                  3 ANI              Nosferatu antitribu:4
+4x Anarch Convert         1                  Caitiff:ANY
+1x Lisa Noble             1 ani              Caitiff:3
+
+Library (81 cards)
+------------------
+Master (15; 3 trifle)
+----------------------
+10x Anarch Revolt
+2x Fame
+3x Villein
+
+Action (18)
+------------
+14x Deep Song
+4x Field Training
+
+Reaction (4)
+-------------
+3x Delaying Tactics
+1x On the Qui Vive
+
+Combat (44)
+------------
+17x Aid from Bats
+2x Canine Horde
+13x Carrion Crows
+4x Drawing Out the Beast
+2x Groundfighting
+2x Target Vitals
+4x Taste of Vitae

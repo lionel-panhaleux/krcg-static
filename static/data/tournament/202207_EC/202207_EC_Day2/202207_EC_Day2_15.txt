@@ -1,0 +1,73 @@
+Deck Name: 202207_EC_Day2_15
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=13 max=13 avg=5.5)
+=======================================
+5x Shalmath                 10 POT PRE TEM                  True Brujah:6
+1x Philippe de Marseilles   7 AUS CEL dem pre   primogen   Toreador:5
+1x Alu                      2 obf                          Banu Haqim:5
+1x Jozz                     2 nec                          Nagaraja:6
+1x New Blood                2 san                          Blood Brother:ANY
+2x Anarch Convert           1                              Caitiff:ANY
+1x Walker Grimes            1 ani                          Caitiff:5
+
+Library (80 cards)
+------------------
+Master (11; 2 trifle)
+----------------------
+1x Carver's Meat Packing and Storage
+1x Direct Intervention
+1x Giant's Blood
+1x Monastery of Shadows
+1x Pentex(TM) Subversion
+1x Perfectionist
+1x Rack, The
+1x Secure Haven
+1x Tabriz Assembly
+2x Vessel
+
+Action (17)
+------------
+1x Clotho's Gift
+2x Hourglass of the Mind
+1x Path of the Scorched Heart, The
+10x Summon History
+3x Vaticination
+
+Ally (4)
+---------
+1x Carlton Van Wyk
+1x Ponticulus
+1x Tye Cooper
+1x Veneficti
+
+Equipment (7)
+--------------
+1x Camera Phone
+1x Kevlar Vest
+1x Palatial Estate
+1x Signet of King Saul, The
+1x Sport Bike
+1x Starshell Grenade Launcher
+1x Talbot's Chainsaw
+
+Action Modifier (21)
+---------------------
+12x Domain of Evernight
+3x Enkil Cog
+6x Pocket Out of Time
+
+Reaction (3)
+-------------
+3x Rewind Time
+
+Combat (14)
+------------
+4x Decapitate
+10x Outside the Hourglass
+
+Event (3)
+----------
+1x Narrow Minds
+2x Unmasking, The

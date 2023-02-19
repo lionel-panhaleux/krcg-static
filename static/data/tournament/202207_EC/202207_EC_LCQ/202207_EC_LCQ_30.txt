@@ -1,0 +1,68 @@
+Deck Name: 202207_EC_LCQ_30
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=23 max=36 avg=7.5)
+=======================================
+4x Ignazio Giovanni    9 DOM FOR NEC POT obf      Giovanni:3
+3x Pochtli             8 NEC OBF POT cel dom      Giovanni:2
+2x Andrea Giovanni     7 DOM NEC pot vic          Giovanni:2
+1x Carlotta Giovanni   7 NEC POT dom obf          Giovanni:2
+1x Isabel Giovanni     5 DOM NEC pot              Giovanni:2
+1x Gloria Giovanni     4 DOM nec                  Giovanni:2
+
+Library (87 cards)
+------------------
+Master (18; 8 trifle)
+----------------------
+1x Anarch Troublemaker
+1x Barrens, The
+1x Coven, The
+1x Dominate
+1x Dreams of the Sphinx
+1x Golconda: Inner Peace
+2x Misdirection
+1x Morgue Hunting Ground
+1x Pentex(TM) Subversion
+6x Villein
+1x Visit from the Capuchin
+1x Wider View
+
+Action (16)
+------------
+6x Govern the Unaligned
+1x Graverobbing
+3x Jar the Soul
+6x Scouting Mission
+
+Action Modifier (25)
+---------------------
+2x Bonding
+5x Call of the Hungry Dead
+1x Cloak the Gathering
+4x Conditioning
+1x Faceless Night
+1x Lost in Crowds
+5x Seduction
+1x Spying Mission
+4x Trochomancy
+1x Veil the Legions
+
+Action Modifier/Combat (1)
+---------------------------
+1x Breath of Thanatos
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Spectral Divination
+
+Reaction (16)
+--------------
+8x Deflection
+2x Delaying Tactics
+6x On the Qui Vive
+
+Combat (7)
+-----------
+1x Disarm
+6x Spiritual Intervention

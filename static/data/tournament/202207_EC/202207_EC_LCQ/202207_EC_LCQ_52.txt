@@ -1,0 +1,57 @@
+Deck Name: 202207_EC_LCQ_52
+Author: VtesEC2022
+Description: 0GW1.5
+
+Crypt (12 cards, min=7 max=32 avg=5.33)
+=======================================
+3x Dónal O'Connor              8 CEL DOM POT       prince   Brujah:2
+2x Constanza Vinti             8 CEL DOM POT       prince   Brujah:2
+1x Ira Rivers                  7 AUS CEL ani pre   prince   Toreador:3
+2x Volker, The Puppet Prince   5 CEL pot           prince   Brujah:2
+1x Mustafa Rahman              2 dom                        Tremere:2
+1x Ohanna                      2 dom                        Malkavian:2
+1x Samson                      2 dom                        Ventrue antitribu:2
+1x Royce                       1 dom                        Pander:2
+
+Library (82 cards)
+------------------
+Master (17; 5 trifle)
+----------------------
+2x Blood Doll
+6x Haven Uncovered
+2x Papillon
+1x Pentex(TM) Subversion
+3x Vessel
+1x Warzone Hunting Ground
+2x Wash
+
+Action (10)
+------------
+10x Govern the Unaligned
+
+Equipment (8)
+--------------
+7x .44 Magnum
+1x Heart of Nizchetus
+
+Action Modifier (3)
+--------------------
+3x Conditioning
+
+Action Modifier/Combat (3)
+---------------------------
+3x Resist Earth's Grasp
+
+Reaction (13)
+--------------
+4x Deflection
+9x Second Tradition: Domain
+
+Combat (28)
+------------
+6x Concealed Weapon
+3x Infernal Pursuit
+7x Psyche!
+8x Pursuit
+2x Side Strike
+2x Taste of Vitae

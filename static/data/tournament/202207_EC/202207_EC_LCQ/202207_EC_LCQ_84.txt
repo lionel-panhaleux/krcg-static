@@ -1,0 +1,58 @@
+Deck Name: 202207_EC_LCQ_84
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=16 max=26 avg=5.42)
+========================================
+2x Farah Sarroub       7 CEL THA aus obf   prince     Banu Haqim:6
+3x Kassandra Tassaki   6 CEL THA obf       prince     Banu Haqim:6
+2x Khadija Al-Kindi    6 CEL OBF THA       primogen   Banu Haqim:6
+2x Warmaksan           5 THA cel obf       prince     Banu Haqim:6
+2x Nayarana            4 THA cel                      Banu Haqim:6
+1x Bijou               3 cel tha                      Banu Haqim:6
+
+Library (88 cards)
+------------------
+Master (17; 7 trifle)
+----------------------
+2x Dreams of the Sphinx
+6x Haqim's Law: Retribution
+1x Market Square
+3x Priority Contract
+1x Underworld Hunting Ground
+3x Vessel
+1x Wash
+
+Action (12)
+------------
+8x Embrace, The
+4x Hunter's Mark
+
+Equipment (3)
+--------------
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Reliquary: Shango Remains
+
+Political Action (3)
+---------------------
+3x Consanguineous Boon
+
+Action Modifier/Combat (10)
+----------------------------
+4x Resist Earth's Grasp
+6x Swallowed by the Night
+
+Reaction (8)
+-------------
+1x Delaying Tactics
+7x Second Tradition: Domain
+
+Combat (35)
+------------
+5x Blur
+11x Hunger of Marduk
+7x Pursuit
+4x Quickness
+4x Rego Motum
+4x Weighted Walking Stick

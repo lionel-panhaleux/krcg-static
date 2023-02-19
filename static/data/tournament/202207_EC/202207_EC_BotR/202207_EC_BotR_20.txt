@@ -1,0 +1,75 @@
+Deck Name: BOTR Deck 20
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=35 max=31 avg=7.67)
+========================================
+3x Mary Anne Blaire     10 AUS DOM FOR PRE ani pot   justicar   Ventrue:5
+2x Lodin (Olaf Holte)   8 DOM FOR PRE aus pro       prince     Ventrue:5
+1x Alexa Draper         8 DOM PRE for pot           prince     Ventrue:6
+1x Alice Chen           7 FOR PRE dom obf           prince     Ventrue:6
+1x Graham Gottesman     7 DOM FOR obf pre tha       prince     Ventrue:5
+1x Sybren van Oosten    7 FOR PRE dom tha           prince     Ventrue:6
+1x Horst von Brühl      6 FOR aus pre dom           prince     Ventrue:6
+1x Victor Donaldson     6 DOM for pre               prince     Ventrue:5
+1x Emily Carson         5 DOM for pre               primogen   Ventrue:5
+
+Library (90 cards)
+------------------
+Master (15; 8 trifle)
+----------------------
+1x Coven, The
+1x Creepshow Casino
+1x Direct Intervention
+1x Elysium: The Arboretum
+1x Ephor
+1x Information Highway
+1x Monastery of Shadows
+1x Ventrue Headquarters
+6x Villein
+1x Wider View
+
+Action (13)
+------------
+3x Enchant Kindred
+2x Entrancement
+6x Govern the Unaligned
+2x Scouting Mission
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (14)
+----------------------
+1x Banishment
+1x Conservative Agitation
+1x Domain Challenge
+4x Kine Resources Contested
+1x My Kin Against the World
+1x Neonate Breach
+5x Parity Shift
+
+Action Modifier (28)
+---------------------
+2x Approximation of Loyalty
+2x Conditioning
+1x Foreshadowing Destruction
+7x Freak Drive
+5x Perfect Paragon
+4x Seduction
+7x Voter Captivation
+
+Reaction (12)
+--------------
+7x Deflection
+5x Second Tradition: Domain
+
+Combat (5)
+-----------
+5x Majesty
+
+Event (2)
+----------
+1x Nightmares upon Nightmares
+1x Scourge of the Enochians

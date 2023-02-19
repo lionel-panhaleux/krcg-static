@@ -1,0 +1,57 @@
+Deck Name: 202207_EC_Day1_50
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=40 max=36 avg=9.42)
+========================================
+5x Nakhthorheb   10 OBF PRE SER                         Ministry:4
+4x Porphyrion    9 CHI OBF PRE SER for                 Ministry:5
+1x Neferu        9 OBF PRE SER THA dom nec   2 votes   Ministry:4
+1x Pentweret     9 OBF PRE SER aus for obe             Ministry:5
+1x Shemti        9 OBF POT PRE SER vic       1 vote    Ministry:5
+
+Library (66 cards)
+------------------
+Master (27; 7 trifle)
+----------------------
+1x Coven, The
+1x Dreams of the Sphinx
+12x Eternals of Sirius, The
+1x Giant's Blood
+1x Golconda: Inner Peace
+1x Jake Washington
+1x Monastery of Shadows
+1x Opium Den
+2x Parthenon, The
+6x Villein
+
+Action (19)
+------------
+5x Enticement
+1x Entrancement
+2x Intimidation
+1x Mind Numb
+8x Public Trust
+2x Revelation of Ecstasy
+
+Ally (1)
+---------
+1x Saatet-ta
+
+Action Modifier (15)
+---------------------
+2x Aire of Elation
+2x Elder Impersonation
+1x Enkil Cog
+3x Faceless Night
+2x Into Thin Air
+3x Lost in Crowds
+2x Revelation of Desire
+
+Action Modifier/Combat (1)
+---------------------------
+1x Swallowed by the Night
+
+Combat (3)
+-----------
+3x Majesty

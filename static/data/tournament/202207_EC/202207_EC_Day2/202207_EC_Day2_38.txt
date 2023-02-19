@@ -1,0 +1,60 @@
+Deck Name: 202207_EC_Day2_38
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (15 cards, min=9 max=23 avg=3.87)
+=======================================
+1x Morel                          6 AUS DEM OBF                  Malkavian:4
+1x Ruth McGinley                  6 DEM aus cel obf   primogen   Malkavian:3
+1x Tony                           6 AUS DEM dom obf              Malkavian:3
+1x Apache Jones                   5 DEM aus for obf              Malkavian antitribu:4
+1x Persia, The Beautiful Statue   5 DEM aus obf                  Malkavian:3
+1x Uncle George                   5 DEM aus dom obf              Malkavian antitribu:3
+1x Jeremy Talbot                  4 dem obf                      Malkavian:3
+5x Midget                         3 DEM obf pre                  Malkavian antitribu:3
+1x Jackie                         3 DEM                          Malkavian antitribu:4
+1x Cassandra Langely, The Waif    2 dem                          Malkavian:4
+1x Eddie Gaines                   1 dem pot                      Caitiff:3
+
+Library (67 cards)
+------------------
+Master (11; 4 trifle)
+----------------------
+3x Agent of Power
+1x Archon Investigation
+6x Ashur Tablets
+1x Wider View
+
+Action (20)
+------------
+1x Contagion
+17x Kindred Spirits
+1x Madman's Quill
+1x Psychic Veil
+
+Equipment (5)
+--------------
+5x Kaymakli Fragment
+
+Action Modifier (22)
+---------------------
+1x Cloak the Gathering
+9x Confusion
+4x Eyes of Chaos
+2x Faceless Night
+2x Lost in Crowds
+3x Mind Tricks
+1x Spying Mission
+
+Action Modifier/Combat (5)
+---------------------------
+4x Deny
+1x Swallowed by the Night
+
+Action Modifier/Reaction (3)
+-----------------------------
+3x Touch of Clarity
+
+Event (1)
+----------
+1x Narrow Minds

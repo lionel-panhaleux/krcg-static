@@ -1,0 +1,69 @@
+Deck Name: 202207_EC_Day2_31
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=21 max=25 avg=5.83)
+========================================
+1x Massimiliano           7 ANI FOR pro       baron   Gangrel:6
+2x Kuyén                  6 ANI PRO           baron   Gangrel:6
+1x Benedito, a Lanterna   6 POT ani aus obf   baron   Nosferatu:6
+1x Bituin                 6 THA ani cel dom   baron   Tremere:6
+1x Casey Snyder           6 PRO ani for cel   baron   Gangrel:6
+1x Jacques Rouge          6 OBF ani pot pre   baron   Nosferatu:6
+1x Jayakumar              6 ANI FOR chi tha           Ravnos:5
+1x Lisé                   6 ANI FOR pot pro           Gangrel:5
+1x Crow                   5 ANI for pro tha           Gangrel:5
+1x Dhita Choudhair        5 ANI CHI aus               Ravnos:6
+1x Horace Radcliffe       5 ANI POT obf               Nosferatu:6
+
+Library (89 cards)
+------------------
+Master (20; 7 trifle)
+----------------------
+1x Anarch Free Press, The
+3x Animalism
+1x Carfax Abbey
+1x Club Illusion
+1x Fear of Mekhet
+1x Frontal Assault
+1x Giant's Blood
+1x Pentex(TM) Subversion
+1x Powerbase: Montreal
+1x Rack, The
+1x Smiling Jack, The Anarch
+7x Vessel
+
+Action (14)
+------------
+2x Army of Rats
+2x Constant Revolution
+9x Deep Song
+1x Fee Stake: Seattle
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Retainer (4)
+-------------
+2x Murder of Crows
+2x Raven Spy
+
+Reaction (22)
+--------------
+9x Bait and Switch
+1x Cats' Guidance
+5x Deep Ecology
+2x Guard Dogs
+3x On the Qui Vive
+2x Organized Resistance
+
+Combat (27)
+------------
+15x Aid from Bats
+3x Canine Horde
+9x Carrion Crows
+
+Event (1)
+----------
+1x Dragonbound

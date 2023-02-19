@@ -1,0 +1,52 @@
+Deck Name: BOTR Deck #11
+Author: VtesEC2022
+Description: 1GW4
+
+Crypt (12 cards, min=17 max=28 avg=5.58)
+========================================
+1x Dela Eden   8 AUS FOR VAL cel dom            Salubri antitribu:3
+1x Uriel       8 AUS FOR VAL ani obe   bishop   Salubri antitribu:4
+4x Castiel     6 AUS VAL for                    Salubri antitribu:3
+3x Langa       5 VAL for                        Salubri antitribu:4
+1x Aredhel     5 FOR VAL aus                    Salubri antitribu:4
+1x Nkechi      4 aus for val                    Salubri antitribu:4
+1x Rashiel     3 for val                        Salubri antitribu:4
+
+Library (89 cards)
+------------------
+Master (18; 5 trifle)
+----------------------
+2x Code of Samiel
+2x Dreams of the Sphinx
+1x Fame
+1x Giant's Blood
+1x Monster
+3x Path of Retribution, The
+1x Powerbase: Luanda
+1x Rack, The
+5x Villein
+1x Yawp Court
+
+Action (13)
+------------
+1x Blessing of the Name
+12x Sense Death
+
+Equipment (4)
+--------------
+4x Blade of Bellona
+
+Reaction (9)
+-------------
+5x Eyes of Argus
+4x Telepathic Misdirection
+
+Combat (45)
+------------
+5x Armor of Caine's Fury
+3x Blessed Blade
+8x Death Seeker
+5x Righteous Aura
+10x Sword of the Righteous
+6x Taste of Vitae
+8x Weighted Walking Stick

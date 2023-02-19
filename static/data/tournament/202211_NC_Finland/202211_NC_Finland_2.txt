@@ -1,0 +1,67 @@
+Deck Name: Finnish Nats 2022: #2
+Author: 3530097
+Description: 2GW8+0
+
+Crypt (13 cards, min=4 max=18 avg=5.54)
+=======================================
+5x unnamed, The     10 CEL DAI OBF PRE PRO            Baali:6
+2x Arishat           6 DAI OBF PRE           1 vote   Baali:6
+2x Horde, The        3 dai obf pre                    Baali:6
+4x Anarch Convert    1                                Caitiff:ANY
+
+Library (75 cards)
+==================
+Master (15; 4 trifle)
+----------------------
+1x Archon Investigation
+1x Blood Doll
+2x Chimerstry
+2x Dreams of the Sphinx
+1x Retribution
+4x Tend the Flock
+3x Villein
+1x Wider View
+
+Action (12)
+------------
+2x Call the Great Beast
+1x Entrancement
+6x Illegalism
+1x Legal Manipulations
+2x Unleash Hell's Fury
+
+Ally (2)
+---------
+2x Infernal Servitor
+
+Action Modifier (25)
+---------------------
+2x Elder Impersonation
+2x Enkil Cog
+1x Faceless Night
+4x I am Legion
+8x Instantaneous Transformation
+5x Lost in Crowds
+1x Psychomachia
+1x Spying Mission
+1x True Love's Face
+
+Action Modifier/Combat (4)
+---------------------------
+4x Swallowed by the Night
+
+Action Modifier/Reaction (4)
+-----------------------------
+2x Form of the Bat
+2x Sense the Sin
+
+Reaction (6)
+-------------
+1x Delaying Tactics
+5x Party Out Of Bounds
+
+Combat (7)
+-----------
+2x Bollix
+3x Earth Meld
+2x Form of Mist

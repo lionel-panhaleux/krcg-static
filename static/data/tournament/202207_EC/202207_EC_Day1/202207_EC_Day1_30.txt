@@ -1,0 +1,66 @@
+Deck Name: 202207_EC_Day1_30
+Author: VtesEC2022
+Description: 1GW3.5
+
+Crypt (12 cards, min=40 max=31 avg=9.42)
+========================================
+4x Arika               11 DOM FOR OBF PRE aus cel   inner circle   Ventrue:2
+3x Marcus Vitel        10 DOM FOR OBF OBT PRE       prince         Ventrue:3
+2x Queen Anne          10 DOM FOR PRE aus obf       prince         Ventrue:2
+1x Lucinde, Alastor    10 DOM FOR PRE obf pot tha   justicar       Ventrue:3
+1x Catherine du Bois   5 DOM for obf pre                          Ventrue:3
+1x Michael Luther      4 aus pre                                  Toreador:3
+
+Library (81 cards)
+------------------
+Master (17; 8 trifle)
+----------------------
+1x Creepshow Casino
+1x Dreams of the Sphinx
+1x Giant's Blood
+1x Information Highway
+2x Metro Underground
+1x Monastery of Shadows
+1x Secure Haven
+1x Ventrue Headquarters
+8x Villein
+
+Action (10)
+------------
+1x Entrancement
+8x Govern the Unaligned
+1x Revelations
+
+Political Action (10)
+----------------------
+2x Anarchist Uprising
+1x Ancilla Empowerment
+4x Banishment
+2x Parity Shift
+1x Reins of Power
+
+Action Modifier (28)
+---------------------
+2x Approximation of Loyalty
+1x Conditioning
+4x Elder Impersonation
+1x Enkil Cog
+3x Faceless Night
+6x Freak Drive
+5x Into Thin Air
+1x Perfect Paragon
+1x Spying Mission
+4x Voter Captivation
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Murmur of the False Will
+
+Reaction (12)
+--------------
+7x Deflection
+5x Obedience
+
+Combat (2)
+-----------
+2x Majesty

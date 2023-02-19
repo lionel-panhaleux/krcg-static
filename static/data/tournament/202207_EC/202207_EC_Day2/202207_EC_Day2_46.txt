@@ -1,0 +1,73 @@
+Deck Name: 202207_EC_Day2_46
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=41 max=32 avg=8.25)
+========================================
+1x Alexandra                   11 ANI AUS CEL PRE dom       inner circle   Toreador:2
+1x Anneke                      10 AUS CEL PRE dom           justicar       Toreador:1
+1x Don Cruez, The Idealist     10 CEL POT PRE ani dom pro   justicar       Brujah:1
+1x François Villon             10 AUS CEL PRE chi obf pot   prince         Toreador:2
+4x Anson                       8 CEL PRE aus dom           prince         Toreador:1
+1x Constanza Vinti             8 CEL DOM POT               prince         Brujah:2
+1x Dónal O'Connor              8 CEL DOM POT               prince         Brujah:2
+2x Volker, The Puppet Prince   5 CEL pot                   prince         Brujah:2
+
+Library (90 cards)
+------------------
+Master (32; 1 trifle)
+----------------------
+9x Ashur Tablets
+1x Direct Intervention
+1x Dreams of the Sphinx
+1x Erciyes Fragments, The
+1x Fame
+1x Guardian Angel
+1x Haven Uncovered
+1x Information Highway
+6x Minion Tap
+1x Parthenon, The
+1x Powerbase: Montreal
+1x Sudden Reversal
+1x Wider View
+6x Zillah's Valley
+
+Action (7)
+-----------
+1x Aranthebes, The Immortal
+1x Atonement
+3x Bum's Rush
+2x Fleetness
+
+Equipment (6)
+--------------
+6x .44 Magnum
+
+Political Action (2)
+---------------------
+1x Ancient Influence
+1x Reins of Power
+
+Action Modifier (2)
+--------------------
+2x Conditioning
+
+Reaction (10)
+--------------
+4x Deflection
+6x Second Tradition: Domain
+
+Combat (30)
+------------
+3x Blur
+6x Concealed Weapon
+6x Infernal Pursuit
+1x Lightning Reflexes
+4x Psyche!
+4x Pursuit
+2x Sideslip
+4x Taste of Vitae
+
+Event (1)
+----------
+1x Dragonbound

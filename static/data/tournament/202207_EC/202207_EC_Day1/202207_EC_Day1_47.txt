@@ -1,0 +1,62 @@
+Deck Name: 202207_EC_Day1_47
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=17 max=29 avg=5.75)
+========================================
+1x Kasim Bayar         9 CEL OBF THA aus pot   justicar   Banu Haqim:6
+2x Farah Sarroub       7 CEL THA aus obf       prince     Banu Haqim:6
+3x Kassandra Tassaki   6 CEL THA obf           prince     Banu Haqim:6
+1x Kalinda             6 CEL OBF tha           primogen   Banu Haqim:6
+2x Warmaksan           5 THA cel obf           prince     Banu Haqim:6
+1x Asmin Kobane        5 CEL dom obf tha                  Banu Haqim:6
+1x Greg Mazouni        4 cel obf tha                      Banu Haqim:6
+1x Bijou               3 cel tha                          Banu Haqim:6
+
+Library (90 cards)
+------------------
+Master (18; 9 trifle)
+----------------------
+2x Dreams of the Sphinx
+4x Haqim's Law: Retribution
+1x Khabar: Community, The
+2x Perfectionist
+3x Priority Contract
+2x Vessel
+4x Villein
+
+Action (10)
+------------
+1x Aranthebes, The Immortal
+8x Magic of the Smith
+1x Rutor's Hand
+
+Ally (1)
+---------
+1x Carlton Van Wyk
+
+Equipment (7)
+--------------
+3x .44 Magnum
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Kevlar Vest
+1x Sport Bike
+
+Action Modifier/Combat (4)
+---------------------------
+4x Swallowed by the Night
+
+Reaction (15)
+--------------
+15x Second Tradition: Domain
+
+Combat (34)
+------------
+10x Psyche!
+14x Pursuit
+10x Taste of Vitae
+
+Event (1)
+----------
+1x Narrow Minds

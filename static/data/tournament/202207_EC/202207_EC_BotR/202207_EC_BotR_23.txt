@@ -1,0 +1,67 @@
+Deck Name: BOTR Deck 23
+Author: VtesEC2022
+Description: 0GW2.5
+
+Crypt (12 cards, min=21 max=34 avg=6.75)
+========================================
+3x Kasim Bayar         9 CEL OBF THA aus pot   justicar   Banu Haqim:6
+3x Farah Sarroub       7 CEL THA aus obf       prince     Banu Haqim:6
+3x Kassandra Tassaki   6 CEL THA obf           prince     Banu Haqim:6
+3x Warmaksan           5 THA cel obf           prince     Banu Haqim:6
+
+Library (90 cards)
+------------------
+Master (21; 7 trifle)
+----------------------
+2x Dreams of the Sphinx
+1x Dummy Corporation
+1x Fame
+1x Guardian Angel
+2x Haqim's Law: Retribution
+1x Information Highway
+1x Market Square
+4x Priority Contract
+2x Protected Resources
+2x Sudden Reversal
+1x Tension in the Ranks
+1x Two Wrongs
+2x Villein
+
+Action (12)
+------------
+1x Blood Hunt
+4x Fourth Tradition: The Accounting
+5x Hunter's Mark
+2x Judgment: Camarilla Segregation
+
+Political Action (10)
+----------------------
+2x Anathema
+2x Archon
+3x My Kin Against the World
+3x Parity Shift
+
+Action Modifier (5)
+--------------------
+5x Zephyr
+
+Reaction (4)
+-------------
+4x Second Tradition: Domain
+
+Combat (35)
+------------
+2x Blood Fury
+3x Blur
+12x Hunger of Marduk
+1x Lightning Reflexes
+4x Pursuit
+4x Quickness
+4x Rego Motum
+3x Side Strike
+2x Soul Burn
+
+Event (3)
+----------
+1x NSA Trio
+2x Narrow Minds

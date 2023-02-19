@@ -1,0 +1,56 @@
+Deck Name: 202207_EC_Day2_24
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=22 max=28 avg=6.33)
+========================================
+3x Aline Gädeke         7 POT PRE cel       baron   Brujah:6
+3x Valeriya Zinovieva   7 POT cel pre pro   baron   Brujah:6
+3x Leumeah              6 PRE cel for pot   baron   Brujah:6
+2x Atiena               6 CEL pot pre obf   baron   Brujah:6
+1x Elen Kamjian         4 CEL POT                   Brujah:6
+
+Library (88 cards)
+------------------
+Master (18; 8 trifle)
+----------------------
+1x Anarch Free Press, The
+1x Burden the Mind
+2x Carfax Abbey
+1x Guardian Angel
+2x Hackerspace
+3x New Carthage
+6x Villein
+2x Wider View
+
+Action (6)
+-----------
+6x Line Brawl
+
+Ally (2)
+---------
+1x 47th Street Royals
+1x Grey Thorne
+
+Equipment (8)
+--------------
+7x .44 Magnum
+1x Sport Bike
+
+Action Modifier (2)
+--------------------
+2x Power of One
+
+Reaction (27)
+--------------
+5x Bait and Switch
+18x Organized Resistance
+4x Protection Racket
+
+Combat (25)
+------------
+4x Bollix
+7x Concealed Weapon
+5x Diversion
+5x Dust Up
+4x Taste of Vitae

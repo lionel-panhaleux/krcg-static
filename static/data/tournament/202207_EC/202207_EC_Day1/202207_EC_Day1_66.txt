@@ -1,0 +1,76 @@
+Deck Name: 202207_EC_Day1_66
+Author: VtesEC2022
+Description: 0GW1.5
+
+Crypt (12 cards, min=7 max=26 avg=4.58)
+=======================================
+2x Anu Diptinatpa     7 DOM NEC aus vic      Nagaraja:6
+2x Dr. Oliver Genet   6 DOM NEC pot          Giovanni:6
+2x Lupo Giovanni      6 NEC dom pot pre      Giovanni:6
+1x Accorri Giovanni   6 DOM POT ani nec      Giovanni:5
+1x Kay Polerno        4 dom nec pro          Giovanni:5
+1x Stephen Milliner   3 nec pre              Giovanni:5
+1x Eric Milliner      2 pot                  Giovanni:5
+2x Anarch Convert     1                      Caitiff:ANY
+
+Library (90 cards)
+------------------
+Master (19; 5 trifle)
+----------------------
+3x Archon Investigation
+1x Charisma
+1x Coven, The
+2x Dreams of the Sphinx
+1x Giant's Blood
+2x Jake Washington
+3x Liquidation
+1x Morgue Hunting Ground
+1x Powerbase: Cape Verde
+4x Vessel
+
+Action (16)
+------------
+3x Govern the Unaligned
+9x Khazar's Diary (Endless Night)
+4x Sudario Refraction
+
+Ally (18)
+----------
+1x Carlton Van Wyk
+5x Cry Wolf
+1x Felix "Fix" Hessian
+1x Gianna di Canneto
+1x Gregory Winter
+1x Leonardo, Mortician
+1x Mylan Horseed
+1x Repo Man
+3x Shambling Hordes
+1x Tye Cooper
+1x Vivienne Géroux
+1x Young Bloods
+
+Action Modifier (11)
+---------------------
+6x Call of the Hungry Dead
+2x Red Question, The
+3x Trochomancy
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Spectral Divination
+
+Reaction (16)
+--------------
+6x Deflection
+2x Delaying Tactics
+3x Funeral Wake
+5x On the Qui Vive
+
+Combat (3)
+-----------
+3x Fake Out
+
+Event (3)
+----------
+1x FBI Special Affairs Division
+2x Unmasking, The

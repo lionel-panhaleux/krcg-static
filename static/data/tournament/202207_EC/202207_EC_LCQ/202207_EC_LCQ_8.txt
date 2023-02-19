@@ -1,0 +1,42 @@
+Deck Name: 202207_EC_LCQ_8
+Author: VtesEC2022
+Description: 1GW6
+
+Crypt (46 cards, min=4 max=8 avg=1.13)
+======================================
+3x Heinrick Schlempt   2 tha          Tremere antitribu:2
+2x Mustafa Rahman      2 dom          Tremere:2
+1x Almiro Suarez       2 aus          Tremere:3
+40x Tupdog              1 POT VIS      Gargoyle:3
+
+Library (90 cards)
+------------------
+Master (47; 11 trifle)
+-----------------------
+9x Agent of Power
+4x Alvusia
+2x Direct Intervention
+6x Dreams of the Sphinx
+7x Inceptor
+2x Information Highway
+8x Liquidation
+7x Parthenon, The
+2x Wider View
+
+Action (14)
+------------
+14x Summon History
+
+Ally (11)
+----------
+10x Emerald Legionnaire
+1x Veneficti
+
+Action Modifier (13)
+---------------------
+4x Pocket Out of Time
+9x Skin of the Chameleon
+
+Reaction (5)
+-------------
+5x Poison Pill

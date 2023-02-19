@@ -1,0 +1,63 @@
+Deck Name: 202207_EC_Day1_43
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=41 max=36 avg=10.08)
+=========================================
+5x Stanislava       11 ANI CEL DOM FOR PRO   inner circle   Gangrel:2
+3x Hartmut Stover   10 CEL OBF PRO dom for   archbishop     Gangrel antitribu:3
+4x Ingrid Rossler   9 ANI FOR PRO dom       prince         Gangrel:2
+
+Library (80 cards)
+------------------
+Master (16; 6 trifle)
+----------------------
+1x Backways
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Monastery of Shadows
+1x Papillon
+2x Perfectionist
+6x Villein
+1x Zoo Hunting Ground
+
+Action (6)
+-----------
+6x Govern the Unaligned
+
+Equipment (2)
+--------------
+2x Heart of Nizchetus
+
+Political Action (15)
+----------------------
+1x Anarchist Uprising
+1x Ancient Influence
+2x Ancilla Empowerment
+4x Banishment
+3x Kine Resources Contested
+3x Parity Shift
+1x Reins of Power
+
+Action Modifier (20)
+---------------------
+3x Conditioning
+5x Earth Control
+5x Forced March
+1x Freak Drive
+6x Instantaneous Transformation
+
+Action Modifier/Combat (2)
+---------------------------
+2x Rapid Change
+
+Reaction (10)
+--------------
+7x Deflection
+3x Guard Dogs
+
+Combat (9)
+-----------
+3x Earth Meld
+6x Form of Mist

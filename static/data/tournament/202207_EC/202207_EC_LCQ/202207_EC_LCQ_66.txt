@@ -1,0 +1,54 @@
+Deck Name: 202207_EC_LCQ_66
+Author: VtesEC2022
+Description: 0GW0.5
+
+Crypt (12 cards, min=17 max=29 avg=5.75)
+========================================
+1x Kasim Bayar         9 CEL OBF THA aus pot   justicar   Banu Haqim:6
+2x Farah Sarroub       7 CEL THA aus obf       prince     Banu Haqim:6
+3x Kassandra Tassaki   6 CEL THA obf           prince     Banu Haqim:6
+1x Kalinda             6 CEL OBF tha           primogen   Banu Haqim:6
+2x Warmaksan           5 THA cel obf           prince     Banu Haqim:6
+1x Asmin Kobane        5 CEL dom obf tha                  Banu Haqim:6
+1x Greg Mazouni        4 cel obf tha                      Banu Haqim:6
+1x Bijou               3 cel tha                          Banu Haqim:6
+
+Library (80 cards)
+------------------
+Master (18; 8 trifle)
+----------------------
+6x Ashur Tablets
+1x Dreams of the Sphinx
+3x Haqim's Law: Retribution
+3x Priority Contract
+5x Villein
+
+Action (9)
+-----------
+1x Aranthebes, The Immortal
+5x Magic of the Smith
+3x Web of Knives Recruit
+
+Equipment (7)
+--------------
+3x .44 Magnum
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Kevlar Vest
+1x Sport Bike
+
+Reaction (14)
+--------------
+14x Second Tradition: Domain
+
+Combat (30)
+------------
+6x Disguised Weapon
+7x Psyche!
+9x Pursuit
+8x Taste of Vitae
+
+Event (2)
+----------
+1x Dragonbound
+1x Narrow Minds

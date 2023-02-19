@@ -1,0 +1,47 @@
+Deck Name: 202207_EC_Day1_8
+Author: VtesEC2022
+Description: 1GW6
+
+Crypt (12 cards, min=7 max=19 avg=3.33)
+=======================================
+1x Apache Jones                   5 DEM aus for obf                Malkavian antitribu:4
+1x Persia, The Beautiful Statue   5 DEM aus obf                    Malkavian:3
+1x Uncle George                   5 DEM aus dom obf                Malkavian antitribu:3
+1x Adelaide Davis                 4 aus dem obf                    Malkavian:3
+1x Fabrizia Contreraz             4 dem pot           archbishop   Malkavian antitribu:4
+1x Sean Rycek                     4 aus dem                        Malkavian:4
+1x Jackie                         3 DEM                            Malkavian antitribu:4
+1x Marta                          3 aus dem                        Malkavian antitribu:4
+1x Midget                         3 DEM obf pre                    Malkavian antitribu:3
+1x Cassandra Langely, The Waif    2 dem                            Malkavian:4
+1x Anarch Convert                 1                                Caitiff:ANY
+1x Eddie Gaines                   1 dem pot                        Caitiff:3
+
+Library (80 cards)
+------------------
+Master (14; 3 trifle)
+----------------------
+1x Archon Investigation
+1x Barrens, The
+2x Bleeding the Vine
+6x Dementation
+1x Pentex(TM) Subversion
+3x Vessel
+
+Action (26)
+------------
+26x Kindred Spirits
+
+Action Modifier (28)
+---------------------
+16x Confusion
+8x Eyes of Chaos
+4x Mind Tricks
+
+Action Modifier/Combat (9)
+---------------------------
+9x Deny
+
+Action Modifier/Reaction (3)
+-----------------------------
+3x Touch of Clarity

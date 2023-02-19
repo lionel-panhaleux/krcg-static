@@ -1,0 +1,61 @@
+Deck Name: BOTR Deck 22
+Author: VtesEC2022
+Description: 0GW2.5
+
+Crypt (13 cards, min=11 max=24 avg=4.31)
+========================================
+4x Ági         6 FOR SAN VIC      Blood Brother:6
+2x Gabi        5 SAN VIC for      Blood Brother:6
+2x Dorka       4 for san vic      Blood Brother:6
+2x Viri        3 san vic          Blood Brother:6
+2x Zizi        3 san vic          Blood Brother:6
+1x New Blood   2 san              Blood Brother:ANY
+
+Library (86 cards)
+------------------
+Master (15; 5 trifle)
+----------------------
+2x Blood Buff
+1x Coven, The
+1x Dark Influences
+3x Effective Management
+2x Hungry Coyote, The
+1x Information Highway
+1x Kaymakli Nightmares
+1x Pentex(TM) Subversion
+1x Sudden Reversal
+2x Wider View
+
+Action (22)
+------------
+4x Fiendish Tongue
+2x Force of Will
+10x Hive Mind
+6x Unwholesome Bond
+
+Action Modifier (24)
+---------------------
+4x Changeling
+2x Daring the Dawn
+2x Freak Drive
+8x Shell Game
+8x Walk of Caine
+
+Action Modifier/Combat (4)
+---------------------------
+4x Plasmic Form
+
+Reaction (12)
+--------------
+4x Camaraderie
+4x Delaying Tactics
+4x On the Qui Vive
+
+Combat (8)
+-----------
+2x Breath of the Dragon
+6x Chiropteran Marauder
+
+Event (1)
+----------
+1x Narrow Minds

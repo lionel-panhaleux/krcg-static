@@ -1,0 +1,55 @@
+Deck Name: Finnish Nats 2022: #41
+Author: 3870043
+Description: 0GW0
+
+Crypt (12 cards, min=6 max=16 avg=2.5)
+======================================
+1x Antoinette Dubois        4 PRE for mel              Daughter of Cacophony:4
+1x Loonar                   4 PRE cel                  Toreador antitribu:4
+1x Marla Kenyon             4 PRE ser                  Ministry:4
+1x Reginald Moore           4 PRE           primogen   Brujah:4
+2x Jayne Jonestown          2 PRE                      Brujah antitribu:4
+1x Dr. Solomon Grey         2 dom pre                  Caitiff:5
+1x Honest Abe               2 pre                      Brujah:5
+1x Jack Tredegar            2 pre                      Ventrue:5
+1x Justine Chen, Innocent   2 pre                      Toreador antitribu:4
+2x Dirk                     1 pre                      Caitiff:4
+
+Library (77 cards)
+==================
+Master (21; 8 trifle)
+----------------------
+2x Dreams of the Sphinx
+6x Effective Management
+1x From a Sinking Ship
+1x Kaymakli Nightmares
+6x Life in the City
+3x Pentex(TM) Subversion
+2x Wash
+
+Action (36)
+------------
+3x Entrancement
+10x Intimidation
+6x Legal Manipulations
+2x Media Influence
+6x Mind Numb
+3x Public Trust
+6x Social Charm
+
+Ally (2)
+---------
+2x Carlton Van Wyk
+
+Action Modifier (8)
+--------------------
+8x Leverage
+
+Combat (8)
+-----------
+8x Majesty
+
+Event (2)
+----------
+1x Bitter and Sweet Story, The
+1x Narrow Minds

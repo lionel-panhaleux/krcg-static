@@ -1,0 +1,65 @@
+Deck Name: 202207_EC_Day1_55
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=22 max=24 avg=5.83)
+========================================
+3x Larissa Moreira    6 ANI OBF pot       primogen   Nosferatu:6
+3x Lenny Burkhead     6 ANI obf pot pre   primogen   Nosferatu:6
+2x Belinde            6 OBF ani aus pot   prince     Nosferatu:6
+2x Dowager, The       6 ANI OBF aus pot   primogen   Nosferatu:6
+2x Horace Radcliffe   5 ANI POT obf                  Nosferatu:6
+
+Library (90 cards)
+------------------
+Master (9; 2 trifle)
+---------------------
+1x Archon Investigation
+1x Guardian Angel
+1x Labyrinth, The
+1x Slum Hunting Ground
+1x Smiling Jack, The Anarch
+1x Sudden Reversal
+2x Vessel
+1x Warsaw Station
+
+Action (22)
+------------
+2x Army of Rats
+8x Creeping Sabotage
+5x Deep Song
+2x Destructive Secrets
+2x Muricia's Call
+3x Preternatural Strength
+
+Retainer (3)
+-------------
+1x Murder of Crows
+2x Raven Spy
+
+Action Modifier (14)
+---------------------
+2x Cloak the Gathering
+4x Elder Impersonation
+2x Forgotten Labyrinth
+6x Lost in Crowds
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Reaction (28)
+--------------
+4x Cats' Guidance
+4x Guard Dogs
+2x Instinctive Reaction
+6x On the Qui Vive
+7x Protected District
+5x Warrens, The
+
+Combat (12)
+------------
+3x Aid from Bats
+5x Carrion Crows
+1x Flesh Bond
+3x Taste of Vitae

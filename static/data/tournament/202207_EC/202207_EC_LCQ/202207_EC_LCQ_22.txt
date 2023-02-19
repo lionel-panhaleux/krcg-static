@@ -1,0 +1,73 @@
+Deck Name: 202207_EC_LCQ_22
+Author: VtesEC2022
+Description: 1GW4
+
+Crypt (12 cards, min=14 max=20 avg=4.25)
+========================================
+3x Jennie "Cassie247" Orne        5 inn jud vis      Visionary:4
+2x Travis "Traveler72" Miller     5 mar def          Martyr:4
+2x Jack "Hannibal137" Harmon      4 def jud          Defender:4
+2x Paul "Sixofswords29" Moreton   4 def vis          Visionary:4
+1x John "Cop90" O'Malley          4 jud ven          Avenger:4
+2x François "Warden" Loehr        3 def jud          Judge:4
+
+Library (89 cards)
+------------------
+Master (30)
+------------
+5x Angel of Berlin
+9x Ashur Tablets
+1x Church of Vindicated Faith, The
+1x Direct Intervention
+1x Fortschritt Library
+6x Liquidation
+1x Millicent Smith, Puritan Vampire Hunter
+4x Parthenon, The
+1x Smiling Jack, The Anarch
+1x Society of Leopold
+
+Conviction (17)
+----------------
+5x React with Conviction
+6x Second Sight
+6x Strike with Conviction
+
+Action (1)
+-----------
+1x Aranthebes, The Immortal
+
+Ally (3)
+---------
+1x Carlton Van Wyk
+1x Vagabond Mystic
+1x Wendell Delburton
+
+Equipment (11)
+---------------
+3x .44 Magnum
+1x Crusader Sword, The
+1x Ivory Bow
+1x Kevlar Vest
+3x Laptop Computer
+2x Sniper Rifle
+
+Power (13)
+-----------
+2x Champion
+3x Discern
+3x Rejuvenate
+5x Vigilance
+
+Reaction (6)
+-------------
+5x Determine
+1x On the Qui Vive
+
+Event (8)
+----------
+1x Blood Weakens
+1x Dragonbound
+2x NRA PAC
+1x Slow Withering, The
+2x Unmasking, The
+1x Veil of Darkness

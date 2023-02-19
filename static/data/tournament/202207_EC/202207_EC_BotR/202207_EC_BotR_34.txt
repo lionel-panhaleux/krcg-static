@@ -1,0 +1,90 @@
+Deck Name: BOTR Deck 34
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (16 cards, min=4 max=10 avg=4.19)
+=======================================
+5x Angelica, The Canonicus    10 DOM OBT POT cel obf   cardinal   Lasombra:2
+1x Hester Reed                3 obt pot                          Lasombra:3
+1x Lena Rowe                  3 aus obf pre                      Pander:2
+1x Christine Boscacci         2 dom vic                          Pander:2
+1x Mitchell, The Headhunter   2 obt pot                          Pander:2
+1x Angela Decker              1 pre                              Pander:2
+1x Basil                      1 obf                              Pander:2
+1x Feo Ramos                  1 aus                              Pander:3
+1x Huang, Blood Cultist       1 pro                              Pander:2
+1x March Halcyon              1 for                              Pander:2
+1x Olga Triminov              1 vic                              Pander:3
+1x Royce                      1 dom                              Pander:2
+
+Library (90 cards)
+------------------
+Master (24; 1 trifle)
+----------------------
+1x Antediluvian Awakening
+1x Archon Investigation
+1x Curse of Nitocris
+1x Dreams of the Sphinx
+2x Día de los Muertos
+1x Fear of Mekhet
+1x Humanitas
+1x Information Highway
+2x Joseph Pander
+2x Metro Underground
+5x Obfuscate
+2x Parthenon, The
+1x Powerbase: Montreal
+2x Vulnerability
+1x Wider View
+
+Action (5)
+-----------
+5x Baltimore Purge
+
+Equipment (2)
+--------------
+2x Ivory Bow
+
+Political Action (25)
+----------------------
+1x Autarkis Persecution
+8x Consanguineous Boon
+1x Crusade: Berlin
+1x Crusade: Istanbul
+1x Crusade: London
+1x Crusade: Rome
+2x Domain Challenge
+7x Kine Resources Contested
+3x Legacy of Pander
+
+Action Modifier (24)
+---------------------
+6x Bribes
+3x Cloak the Gathering
+1x Cryptic Rider
+2x Domain of Evernight
+2x Faceless Night
+2x Forgotten Labyrinth
+3x Lost in Crowds
+2x Spying Mission
+3x Veil the Legions
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Gift of Sleep
+
+Reaction (3)
+-------------
+3x Obedience
+
+Combat (2)
+-----------
+2x Disguised Weapon
+
+Event (1)
+----------
+1x Urban Jungle
