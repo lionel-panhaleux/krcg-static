@@ -1,0 +1,63 @@
+Deck Name: 202207_EC_LCQ_35
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=22 max=36 avg=7.33)
+========================================
+4x Gerald Windham      9 AUS DOM FOR THA                    Tremere:5
+2x Polly Kay Fisher    8 AUS DOM THA for pot   archbishop   Ventrue antitribu:4
+2x Graham Gottesman    7 DOM FOR obf pre tha   prince       Ventrue:5
+2x Jefferson Foster    6 AUS DOM for tha       bishop       Ventrue antitribu:4
+1x Antonio d'Erlette   5 THA dom for pot                    Tremere antitribu:4
+1x Claus Wegener       5 DOM aus for tha                    Tremere:5
+
+Library (77 cards)
+------------------
+Master (11; 6 trifle)
+----------------------
+1x Barrens, The
+3x Dreams of the Sphinx
+1x Sudden Reversal
+3x Villein
+1x Wash
+2x Wider View
+
+Action (18)
+------------
+1x Dominate Kine
+10x Govern the Unaligned
+4x Magic of the Smith
+2x Revelations
+1x Under Siege
+
+Equipment (4)
+--------------
+1x Bowl of Convergence
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Sniper Rifle
+
+Political Action (1)
+---------------------
+1x Banishment
+
+Action Modifier (20)
+---------------------
+5x Bonding
+3x Conditioning
+4x Freak Drive
+6x Mirror Walk
+2x Seduction
+
+Reaction (15)
+--------------
+5x Deflection
+4x Eyes of Argus
+3x On the Qui Vive
+3x Telepathic Misdirection
+
+Combat (8)
+-----------
+4x Hidden Strength
+3x Superior Mettle
+1x Walk of Flame

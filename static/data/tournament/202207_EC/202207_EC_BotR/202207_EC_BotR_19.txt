@@ -1,0 +1,81 @@
+Deck Name: BOTR Deck 19
+Author: VtesEC2022
+Description: 0GW3.5
+
+Crypt (12 cards, min=11 max=23 avg=4.17)
+========================================
+1x Ryder                   7 FOR PRO ani pot      Gangrel:4
+1x André the Manipulator   6 FOR PRO              Gangrel:5
+1x Bernard, the Scourge    5 ani for pre pro      Gangrel:4
+1x Jacob Fermor            5 PRO ani tha          Gangrel:4
+1x Rathmere                5 FOR ani pro          Gangrel:5
+1x Gunnar                  4 PRO for              Gangrel:4
+1x Jezebelle               4 ani for pro          Gangrel:4
+1x Calvin Cleaver          3 for pro              Gangrel:4
+1x Fergus Alexander        3 pot pro              Gangrel:5
+1x Lillian                 3 ani pro              Gangrel:5
+1x T.J.                    3 cel for              Gangrel:4
+1x Robert Price            2 pro                  Gangrel:4
+
+Library (70 cards)
+------------------
+Master (12; 1 trifle)
+----------------------
+1x Animalism
+1x Backways
+2x Blood Doll
+1x Ecoterrorists
+1x Fame
+1x Gangrel Revel
+2x Protean
+1x Retribution
+1x Vessel
+1x Zoo Hunting Ground
+
+Action (16)
+------------
+1x Abomination
+1x Gather
+2x Gift of Proteus
+1x Rewilding
+3x Ritual Challenge
+2x Taunt the Caged Beast
+6x Thing
+
+Ally (2)
+---------
+2x Walks-With-Might
+
+Equipment (3)
+--------------
+3x Camera Phone
+
+Action Modifier (3)
+--------------------
+1x Earth Control
+2x Freak Drive
+
+Action Modifier/Combat (4)
+---------------------------
+2x Form of the Cobra
+2x Rapid Change
+
+Action Modifier/Reaction (1)
+-----------------------------
+1x Form of the Bat
+
+Reaction (10)
+--------------
+2x Cats' Guidance
+5x Eyes of the Wild
+1x Pack Tactics
+2x Sonar
+
+Combat (19)
+------------
+4x Bear's Skin
+1x Bone Spur
+2x Claws of the Dead
+5x Earth Meld
+4x Form of Mist
+3x Taste of Vitae

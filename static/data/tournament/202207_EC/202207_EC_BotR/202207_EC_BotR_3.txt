@@ -1,0 +1,81 @@
+Deck Name: BOTR: #3
+Author: VtesEC2022
+Description: 2GW8
+
+Crypt (13 cards, min=13 max=29 avg=6.46)
+========================================
+5x Huitzilopochtli            10 AUS DAI DOM OBF POT PRE      Baali:2
+1x High Priest Angra Mainyu   8 DAI OBF PRE dem ser          Baali:2
+3x Giotto Verducci            7 DAI OBF for pot pre          Baali:2
+1x New Blood                  2 san                          Blood Brother:ANY
+3x Anarch Convert             1                              Caitiff:ANY
+
+Library (79 cards)
+------------------
+Master (39; 5 trifle)
+----------------------
+1x Archon Investigation
+12x Ashur Tablets
+2x Blind Spot
+1x Coven, The
+1x Direct Intervention
+1x Dreams of the Sphinx
+1x Giant's Blood
+1x Golconda: Inner Peace
+2x Information Highway
+2x Liquidation
+2x Metro Underground
+1x Monastery of Shadows
+2x Parthenon, The
+1x Pentex(TM) Subversion
+1x Secure Haven
+4x Tend the Flock
+2x Villein
+1x Wash
+1x Wider View
+
+Action (6)
+-----------
+2x Entrancement
+2x Intimidation
+2x Unleash Hell's Fury
+
+Ally (2)
+---------
+1x Mylan Horseed
+1x Veneficti
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Action Modifier (16)
+---------------------
+1x Approximation of Loyalty
+1x Conditioning
+4x Elder Impersonation
+2x Enkil Cog
+1x Faceless Night
+1x I am Legion
+4x Into Thin Air
+2x Tangle Atropos' Hand
+
+Action Modifier/Combat (2)
+---------------------------
+1x Hide the Mind
+1x Swallowed by the Night
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Sense the Sin
+
+Reaction (8)
+-------------
+4x Deflection
+1x Delaying Tactics
+1x Eluding the Arms of Morpheus
+2x Obedience
+
+Combat (1)
+-----------
+1x Majesty

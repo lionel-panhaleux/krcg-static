@@ -1,0 +1,51 @@
+Deck Name: 202207_EC_LCQ_38
+Author: VtesEC2022
+Description: 0GW3
+
+Crypt (12 cards, min=22 max=35 avg=7.25)
+========================================
+2x Neferu                          9 OBF PRE SER THA dom nec   2 votes   Ministry:4
+1x Shemti                          9 OBF POT PRE SER vic       1 vote    Ministry:5
+2x Sundervere, The Devil Brahmin   8 AUS PRE SER THA obf                 Ministry:4
+1x Cagliostro, The Grand Copht     8 OBF PRE SER nec pot                 Ministry:4
+2x Stavros                         7 AUS OBF PRE dem           priscus   Malkavian antitribu:4
+2x Ankh-sen-Sutekh                 6 PRE SER obf                         Ministry:4
+2x Renenet                         5 OBF PRE ser                         Ministry:4
+
+Library (88 cards)
+------------------
+Master (14; 4 trifle)
+----------------------
+2x Dreams of the Sphinx
+6x Minion Tap
+4x Vessel
+2x Zillah's Valley
+
+Political Action (16)
+----------------------
+2x Anarchist Uprising
+2x Can't Take it with You
+5x Kine Resources Contested
+7x Reckless Agitation
+
+Action Modifier (46)
+---------------------
+4x Aire of Elation
+4x Awe
+10x Bewitching Oration
+6x Elder Impersonation
+2x Faceless Night
+4x Forgotten Labyrinth
+4x Lost in Crowds
+2x True Love's Face
+10x Voter Captivation
+
+Reaction (6)
+-------------
+2x My Enemy's Enemy
+4x Telepathic Misdirection
+
+Combat (6)
+-----------
+2x Majesty
+4x Staredown

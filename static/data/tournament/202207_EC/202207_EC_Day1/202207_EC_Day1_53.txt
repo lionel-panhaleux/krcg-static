@@ -1,0 +1,62 @@
+Deck Name: 202207_EC_Day1_53
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=40 max=32 avg=7.75)
+========================================
+2x Kemintiri                  10 OBF PRE SER THA aus dom      Ministry:2
+2x Nefertiti                  10 DOM OBF PRE SER cel pot      Ministry:2
+2x Khay'tall, Snake of Eden   9 DOM OBF PRE SER aus          Ministry:2
+2x Danny Larkshill            7 PRE SER obf obt pot          Ministry:2
+1x Hesha Ruhadze              6 SER ani obf pre              Ministry:2
+1x Samat Ramal-Ra, Archon     6 OBF pre ser tha              Ministry:2
+1x Dedefra                    5 SER nec obf                  Ministry:2
+1x Hadrian Garrick            4 obf pre                      Ministry:2
+
+Library (85 cards)
+------------------
+Master (22; 11 trifle)
+-----------------------
+2x Dreams of the Sphinx
+1x Erciyes Fragments, The
+5x Eternals of Sirius, The
+2x Life Boon
+1x Sudden Reversal
+5x Vessel
+6x Villein
+
+Action (12)
+------------
+2x Enchant Kindred
+3x Graverobbing
+2x Legal Manipulations
+2x Lure of the Serpent
+3x Social Charm
+
+Ally (1)
+---------
+1x Mylan Horseed
+
+Action Modifier (6)
+--------------------
+3x Faceless Night
+3x Lost in Crowds
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Reaction (39)
+--------------
+5x Deflection
+3x Delaying Tactics
+8x Ecstasy
+7x Mental Maze
+2x Obedience
+5x On the Qui Vive
+5x Redirection
+4x Wake with Evening's Freshness
+
+Combat (3)
+-----------
+3x Tongue of the Serpent

@@ -1,0 +1,69 @@
+Deck Name: 202207_EC_Day2_50
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=16 max=36 avg=6.83)
+========================================
+4x Gerald Windham     9 AUS DOM FOR THA                    Tremere:5
+3x Polly Kay Fisher   8 AUS DOM THA for pot   archbishop   Ventrue antitribu:4
+1x Jefferson Foster   6 AUS DOM for tha       bishop       Ventrue antitribu:4
+1x Claus Wegener      5 DOM aus for tha                    Tremere:5
+1x Frondator          5 AUS dom tha           bishop       Tremere antitribu:4
+1x Keith Moody        3 DOM                                Tremere antitribu:4
+1x Monica Chang       3 dom tha                            Tremere:5
+
+Library (87 cards)
+------------------
+Master (14; 8 trifle)
+----------------------
+1x Academic Hunting Ground
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Information Highway
+2x Life in the City
+1x Monastery of Shadows
+1x Vessel
+3x Villein
+2x Wider View
+
+Action (14)
+------------
+13x Govern the Unaligned
+1x Pulse of the Canaille
+
+Ally (2)
+---------
+2x Procurer
+
+Equipment (1)
+--------------
+1x Ivory Bow
+
+Political Action (2)
+---------------------
+1x Domain Challenge
+1x Kine Resources Contested
+
+Action Modifier (25)
+---------------------
+6x Bonding
+3x Conditioning
+7x Freak Drive
+5x Mirror Walk
+4x Seduction
+
+Reaction (20)
+--------------
+8x Deflection
+1x Eagle's Sight
+2x Enhanced Senses
+4x Eyes of Argus
+3x On the Qui Vive
+2x Precognition
+
+Combat (9)
+-----------
+1x Apportation
+1x Burst of Sunlight
+4x Hidden Strength
+3x Theft of Vitae

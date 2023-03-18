@@ -1,0 +1,85 @@
+Deck Name: Finnish Nats 2022: #10
+Author: 1003796
+Description: 1GW4
+
+Crypt (12 cards, min=40 max=35 avg=9.58)
+========================================
+1x Mistress Fanchon    11 AUS CEL DOM OBF THA VIC   inner circle   Tremere:4
+1x Rafael de Corazon   11 AUS CEL DOM OBF PRE       inner circle   Toreador:4
+3x Cybele              10 ANI DAI OBF PRE SER THA                  Baali:4
+1x Nakhthorheb         10 OBF PRE SER                              Ministry:4
+1x Nergal              10 AUS DAI FOR OBF PRE THA                  Baali:5
+3x Aksinya Daclau       9 ANI FOR PRE PRO cel tha                  Gangrel antitribu:4
+2x Nana Buruku          8 ANI POT PRE                              Guruhi:4
+
+Library (86 cards)
+==================
+Master (49; 9 trifle)
+----------------------
+1x Archon Investigation
+15x Ashur Tablets
+1x Coven, The
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+2x Golconda: Inner Peace
+1x Information Highway
+6x Liquidation
+1x Metro Underground
+1x Monastery of Shadows
+1x Parthenon, The
+1x Pentex(TM) Subversion
+1x Secure Haven
+6x Villein
+2x Wider View
+6x Zillah's Valley
+
+Action (7)
+-----------
+1x Contagion
+1x Enticement
+2x Entrancement
+1x Intimidation
+2x Unleash Hell's Fury
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (1)
+---------------------
+1x Anarchist Uprising
+
+Action Modifier (18)
+---------------------
+2x Aire of Elation
+1x Cloak the Gathering
+2x Elder Impersonation
+1x Enkil Cog
+2x Faceless Night
+1x I am Legion
+2x Into Thin Air
+2x Lost in Crowds
+1x Mirror Walk
+2x Spying Mission
+2x Veil the Legions
+
+Action Modifier/Combat (2)
+---------------------------
+1x Hide the Mind
+1x Swallowed by the Night
+
+Reaction (4)
+-------------
+1x Guard Dogs
+2x Lost in Translation
+1x Rat's Warning
+
+Combat (3)
+-----------
+2x Majesty
+1x No Trace
+
+Event (1)
+----------
+1x Scourge of the Enochians

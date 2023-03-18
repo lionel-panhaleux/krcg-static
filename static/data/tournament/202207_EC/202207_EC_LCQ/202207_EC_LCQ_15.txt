@@ -1,0 +1,75 @@
+Deck Name: 202207_EC_LCQ_15
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (12 cards, min=9 max=24 avg=4.67)
+=======================================
+2x André the Manipulator   6 FOR PRO                   Gangrel:5
+2x Casey Snyder            6 PRO ani for cel   baron   Gangrel:6
+2x Kuyén                   6 ANI PRO           baron   Gangrel:6
+1x Martina Srnankova       6 FOR PRO ani               Gangrel:6
+1x Kamile Paukstys         5 PRO ani for               Gangrel:6
+1x Nathan Turner           4 PRO ani                   Gangrel:6
+1x Indira                  3 PRO                       Gangrel:6
+2x Anarch Convert          1                           Caitiff:ANY
+
+Library (74 cards)
+------------------
+Master (11; 1 trifle)
+----------------------
+1x Anarch Railroad
+2x Carfax Abbey
+1x Dark Influences
+1x Ecoterrorists
+1x Ennoia's Theater
+1x Garibaldi-Meucci Museum
+1x Powerbase: Los Angeles
+1x Powerbase: Montreal
+1x Powerbase: Savannah
+1x Wider View
+
+Action (15)
+------------
+5x Dual Form
+1x Fee Stake: Corte
+1x Fee Stake: Los Angeles
+1x Fee Stake: Seattle
+1x Loki's Gift
+1x Skaald
+5x Thing
+
+Equipment (2)
+--------------
+1x Heart of Nizchetus
+1x Sargon Fragment, The
+
+Political Action (13)
+----------------------
+2x Anarch Salon
+5x Consanguineous Boon
+1x Firebrand
+3x Reckless Agitation
+2x Revolutionary Council
+
+Action Modifier (10)
+---------------------
+3x CrimethInc.
+1x Cryptic Rider
+4x Earth Control
+2x Propaganda of the Deed
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Form of the Bat
+
+Reaction (6)
+-------------
+4x Bait and Switch
+2x Deep Ecology
+
+Combat (15)
+------------
+2x Donnybrook
+3x Earth Meld
+3x Flesh of Marble
+7x Form of Mist

@@ -1,0 +1,64 @@
+Deck Name: 202207_EC_Day1_36
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=17 max=31 avg=6.17)
+========================================
+1x Lady Vadislava       9 ANI AUS DOM VIC nec   priscus   Tzimisce:5
+1x Lady Zara Slatikov   8 ANI AUS OBF VIC       bishop    Tzimisce:4
+3x Ludmijla Rakoczy     7 ANI AUS VIC           bishop    Tzimisce:5
+1x Laika                7 ANI AUS chi obf vic             Tzimisce:4
+2x Rurik Rakoczy        6 ANI VIC aus                     Tzimisce:5
+1x Adhiambo             6 ANI VIC pot                     Tzimisce:4
+1x Yuri Kerezenski      5 ANI aus for vic       bishop    Tzimisce:4
+2x Stick                3 ANI                             Nosferatu antitribu:4
+
+Library (90 cards)
+------------------
+Master (14; 6 trifle)
+----------------------
+2x Blood Doll
+1x Jake Washington
+1x Library Hunting Ground
+1x Powerbase: Montreal
+2x Rötschreck
+1x Smiling Jack, The Anarch
+2x Vessel
+4x Villein
+
+Action (3)
+-----------
+3x Deep Song
+
+Retainer (5)
+-------------
+5x Raven Spy
+
+Action Modifier (5)
+--------------------
+5x Changeling
+
+Action Modifier/Combat (2)
+---------------------------
+2x Plasmic Form
+
+Reaction (27)
+--------------
+4x Cats' Guidance
+2x Delaying Tactics
+4x Eagle's Sight
+2x Enhanced Senses
+4x Eyes of Argus
+3x Read the Winds
+3x Sense the Savage Way
+5x Telepathic Misdirection
+
+Combat (34)
+------------
+10x Aid from Bats
+2x Breath of the Dragon
+6x Carrion Crows
+6x Chiropteran Marauder
+2x Meld with the Land
+3x Pack Alpha
+5x Taste of Vitae

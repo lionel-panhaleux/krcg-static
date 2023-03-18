@@ -1,0 +1,59 @@
+Deck Name: BOTR Deck 14
+Author: VtesEC2022
+Description: 1GW4
+
+Crypt (12 cards, min=17 max=27 avg=5.5)
+=======================================
+3x Vivian VI            7 PRE PRO obf tha   baron   Ministry:6
+2x Elisha Tucker        6 PRE cel obf pro   baron   Ministry:6
+1x Crystal Lynn         6 OBF PRE PRO               Ministry:6
+2x Jenny Silver         5 PRE PRO obf               Ministry:6
+1x Aluc Romas de Leon   5 PRE aus obf pro           Ministry:6
+1x Doctor Morocco       5 PRO cel obf pre           Ministry:6
+1x Marcel               4 obf pre pro               Ministry:6
+1x Milton Fox           3 pre pro                   Ministry:6
+
+Library (83 cards)
+------------------
+Master (12; 8 trifle)
+----------------------
+1x Anarch Railroad
+1x Dreams of the Sphinx
+1x Opium Den
+1x Pentex(TM) Subversion
+4x Vessel
+2x Villein
+2x Wider View
+
+Action (25)
+------------
+6x Enchant Kindred
+3x Entrancement
+1x Mind Numb
+15x Platinum Protocol, The
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Action Modifier (24)
+---------------------
+3x Aire of Elation
+2x Earth Control
+5x Enchanting Gaze
+1x Faceless Night
+1x Lost in Crowds
+12x Revelation of the Serpent
+
+Action Modifier/Combat (1)
+---------------------------
+1x Swallowed by the Night
+
+Reaction (10)
+--------------
+6x Bait and Switch
+4x On the Qui Vive
+
+Combat (10)
+------------
+10x Form of Mist

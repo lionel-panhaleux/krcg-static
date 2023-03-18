@@ -1,0 +1,76 @@
+Deck Name: 202207_EC_Day2_6
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (13 cards, min=4 max=31 avg=4.46)
+=======================================
+3x Nadima                 8 FOR PRO SER ani aus          Gangrel:3
+1x Danielle Diron (ADV)   7 ANI PRO aus cel chi for      Gangrel:3
+3x Mirembe Kabbada        5 PRO SER ani                  Gangrel:2
+1x Dr. Allan Woodstock    5 PRO ani aus for              Gangrel:3
+1x Chandler Hungerford    3 PRO                          Gangrel:2
+4x Anarch Convert         1                              Caitiff:ANY
+
+Library (89 cards)
+------------------
+Master (17; 6 trifle)
+----------------------
+1x Anarch Railroad
+2x Anarch Revolt
+1x Archon Investigation
+1x Backways
+1x Ennoia's Theater
+1x Garibaldi-Meucci Museum
+1x Pentex(TM) Subversion
+2x Perfectionist
+1x Powerbase: Los Angeles
+3x Vessel
+2x Villein
+1x Wider View
+
+Action (16)
+------------
+6x Enticement
+2x Field Training
+6x Platinum Protocol, The
+2x Rewilding
+
+Equipment (2)
+--------------
+1x Book of Going Forth by Night, The
+1x Stolen Police Cruiser
+
+Retainer (1)
+-------------
+1x J. S. Simmons, Esq.
+
+Action Modifier (16)
+---------------------
+5x CrimethInc.
+2x Earth Control
+3x Freak Drive
+6x Revelation of Desire
+
+Action Modifier/Combat (4)
+---------------------------
+4x Form of the Cobra
+
+Action Modifier/Reaction (3)
+-----------------------------
+3x Form of the Bat
+
+Reaction (16)
+--------------
+8x Deep Ecology
+2x Delaying Tactics
+6x Eyes of the Wild
+
+Combat (13)
+------------
+4x Donnybrook
+4x Earth Meld
+5x Form of Mist
+
+Event (1)
+----------
+1x Narrow Minds

@@ -1,0 +1,68 @@
+Deck Name: BOTR Deck 27
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=40 max=32 avg=8.5)
+=======================================
+2x Rafael de Corazon   11 AUS CEL DOM OBF PRE   inner circle   Toreador:4
+4x Montecalme          10 AUS CEL DOM PRE obt   justicar       Toreador:5
+4x Epikasta Rigatos    8 AUS DOM PRE cel       prince         Toreador:4
+1x Sheva Carr          4 aus cel dom                          Toreador:5
+1x Tyler McGill        4 AUS pre                              Toreador:5
+
+Library (82 cards)
+------------------
+Master (18; 8 trifle)
+----------------------
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Heidelberg Castle, Germany
+1x Metro Underground
+5x Toreador Grand Ball
+6x Villein
+2x Wider View
+
+Action (16)
+------------
+1x Abactor
+1x Dominate Kine
+1x Entrancement
+5x Govern the Unaligned
+3x Mind Numb
+5x Mind Rape
+
+Political Action (7)
+---------------------
+1x Ancient Influence
+1x Ancilla Empowerment
+1x Banishment
+2x Parity Shift
+1x Political Stranglehold
+1x Reins of Power
+
+Action Modifier (12)
+---------------------
+1x Approximation of Loyalty
+3x Conditioning
+2x Enkil Cog
+2x Perfect Paragon
+3x Seduction
+1x Under the Skin
+
+Action Modifier/Reaction (2)
+-----------------------------
+1x Murmur of the False Will
+1x Scalpel Tongue
+
+Reaction (21)
+--------------
+5x Deflection
+2x Eluding the Arms of Morpheus
+2x Eyes of Argus
+8x Obedience
+2x Second Tradition: Domain
+2x Telepathic Misdirection
+
+Combat (6)
+-----------
+6x Majesty

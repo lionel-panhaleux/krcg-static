@@ -1,0 +1,64 @@
+Deck Name: BOTR Deck 40
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=44 max=36 avg=9.08)
+========================================
+5x Montano                     11 ANI DOM FOR OBT POT       2 votes    Lasombra:3
+4x Tyler                       9 CEL POT PRE dom for obt   primogen   Brujah:3
+1x Gratiano                    8 DOM OBT obf pot           priscus    Lasombra:2
+1x Kassiym Malikhair           6 MYT OBT dom for                      Kiasyd:2
+1x Ignacio, The Black Priest   4 dom obt pot                          Lasombra:2
+
+Library (80 cards)
+------------------
+Master (21; 3 trifle)
+----------------------
+1x Blind Spot
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Heidelberg Castle, Germany
+2x Information Highway
+1x Monastery of Shadows
+3x Villein
+9x Zillah's Valley
+
+Action (19)
+------------
+8x Baltimore Purge
+4x Govern the Unaligned
+4x Graverobbing
+1x Mind Rape
+2x Renewed Vigor
+
+Ally (1)
+---------
+1x Carlton Van Wyk
+
+Equipment (3)
+--------------
+3x Learjet
+
+Action Modifier (29)
+---------------------
+2x Blanket of Night
+2x Enkil Cog
+13x Freak Drive
+2x Seduction
+4x Shadow Play
+2x Shroud of Absence
+2x Shroud of Night
+2x Tenebrous Form
+
+Reaction (4)
+-------------
+4x Deflection
+
+Combat (2)
+-----------
+2x Shadow Body
+
+Event (1)
+----------
+1x Scourge of the Enochians

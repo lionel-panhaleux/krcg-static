@@ -1,0 +1,66 @@
+Deck Name: 202207_EC_Day2_7
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (12 cards, min=36 max=34 avg=8.08)
+========================================
+3x Enkidu, The Noah     11 ANI CEL OBF POT PRO for              Gangrel antitribu:4
+1x Black Annis          9 OBF POT ani pro                      Nosferatu antitribu:4
+1x Nangila Were         9 ANI POT PRE obf ser                  Guruhi:4
+4x Nana Buruku          8 ANI POT PRE                          Guruhi:4
+1x Gustaphe Brunnelle   8 ANI DOM POT obf           primogen   Nosferatu:4
+2x Andre LeRoux         3 aus                                  Toreador:5
+
+Library (76 cards)
+------------------
+Master (32; 7 trifle)
+----------------------
+1x Archon Investigation
+12x Ashur Tablets
+1x Carver's Meat Packing and Storage
+1x Channel 10
+1x Dreams of the Sphinx
+1x Fame
+1x Giant's Blood
+1x Guardian Angel
+1x Monster
+1x Parthenon, The
+1x Powerbase: Luanda
+1x Powerbase: Montreal
+1x Sudden Reversal
+1x Tension in the Ranks
+6x Villein
+1x Wider View
+
+Action (1)
+-----------
+1x Well-Marked
+
+Retainer (2)
+-------------
+2x Raven Spy
+
+Action Modifier/Combat (1)
+---------------------------
+1x Shadow Boxing
+
+Reaction (5)
+-------------
+1x Cats' Guidance
+4x Sense the Savage Way
+
+Combat (34)
+------------
+1x Burning Wrath
+6x Carrion Crows
+1x Disarm
+2x Drawing Out the Beast
+1x Glancing Blow
+7x Immortal Grapple
+2x Slam
+7x Taste of Vitae
+7x Torn Signpost
+
+Event (1)
+----------
+1x Dragonbound

@@ -1,0 +1,58 @@
+Deck Name: 202207_EC_Day1_4
+Author: VtesEC2022
+Description: 2GW7.5
+
+Crypt (12 cards, min=15 max=35 avg=6.33)
+========================================
+3x Massassi                9 AUS CEL POT QUI obf      Osebo:4
+2x Bakr                    8 CEL OBF QUI dem pro      Banu Haqim:5
+1x Dominique Santo Paulo   6 AUS CEL pot pre          Toreador antitribu:4
+1x Guggenheim              6 AUS CEL PRE              Toreador antitribu:5
+1x Homa                    6 AUS CEL POT              Osebo:4
+1x Neighbor John           5 AUS dom for              Ventrue antitribu:4
+1x Titi Camara             5 AUS CEL pot              Osebo:5
+1x Idrissa                 4 CEL aus                  Osebo:4
+1x Anarch Convert          1                          Caitiff:ANY
+
+Library (90 cards)
+------------------
+Master (17; 6 trifle)
+----------------------
+6x Ashur Tablets
+1x Erciyes Fragments, The
+1x Giant's Blood
+1x Haven Uncovered
+1x Powerbase: Luanda
+1x Powerbase: Montreal
+5x Villein
+1x Wider View
+
+Equipment (8)
+--------------
+7x .44 Magnum
+1x Bowl of Convergence
+
+Reaction (29)
+--------------
+3x Eagle's Sight
+1x Enhanced Senses
+8x Eyes of Argus
+3x My Enemy's Enemy
+5x On the Qui Vive
+2x Quicken Sight
+7x Telepathic Misdirection
+
+Combat (35)
+------------
+4x Blur
+7x Concealed Weapon
+5x Infernal Pursuit
+5x Psyche!
+6x Pursuit
+1x Side Strike
+2x Sideslip
+5x Taste of Vitae
+
+Event (1)
+----------
+1x Dragonbound

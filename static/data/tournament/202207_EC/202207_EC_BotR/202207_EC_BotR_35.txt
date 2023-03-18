@@ -1,0 +1,61 @@
+Deck Name: BOTR Deck 35
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=40 max=25 avg=6.83)
+========================================
+4x Grimgroth         10 AUS DOM PRE THA for              Tremere:6
+2x Anu Diptinatpa    7 DOM NEC aus vic                  Nagaraja:6
+1x Trevon Parker     6 AUS DOM THA                      Tremere:6
+1x Chrysanthemum     5 AUS THA dom           primogen   Tremere:6
+1x Mason Ha          5 THA aus dom cel                  Tremere:6
+1x Zane              5 THA aus dom           primogen   Tremere:5
+1x Lauren            4 aus dom tha                      Tremere:6
+1x Rosalina Cortez   3 THA                              Tremere:6
+
+Library (80 cards)
+------------------
+Master (16; 7 trifle)
+----------------------
+1x Academic Hunting Ground
+1x Arcane Library
+1x Chantry
+2x Charisma
+3x Dreams of the Sphinx
+6x Villein
+1x Wasserschloss Anif, Austria
+1x Wider View
+
+Action (13)
+------------
+8x Govern the Unaligned
+5x Magic of the Smith
+
+Ally (15)
+----------
+1x Carlton Van Wyk
+12x Outcast Mage
+1x Ponticulus
+1x Thadius Zho
+
+Equipment (4)
+--------------
+1x Ankara Citadel, Turkey, The
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Signet of King Saul, The
+
+Action Modifier (10)
+---------------------
+10x Mirror Walk
+
+Reaction (19)
+--------------
+8x Deflection
+2x Delaying Tactics
+6x Eyes of Argus
+3x On the Qui Vive
+
+Event (3)
+----------
+3x Unmasking, The

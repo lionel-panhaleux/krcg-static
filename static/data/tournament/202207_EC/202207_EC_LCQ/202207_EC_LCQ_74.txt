@@ -1,0 +1,72 @@
+Deck Name: 202207_EC_LCQ_74
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=32 max=33 avg=7.75)
+========================================
+2x Lucian                      10 AUS DOM OBF cel tha   justicar   Malkavian:1
+2x Sheldon, Lord of the Clog   9 ANI AUS OBF POT for   justicar   Nosferatu:1
+1x Selma the Repugnant         8 OBF POT ani for       prince     Nosferatu:1
+2x Gilbert Duane               7 AUS DOM OBF           prince     Malkavian:1
+2x Greger Anderssen            7 AUS OBF dom pro       prince     Malkavian:2
+1x Murat                       7 OBF POT ser           prince     Nosferatu:2
+1x Nikolaus Vermeulen          7 POT ani for obf       prince     Nosferatu:2
+1x Volker, The Puppet Prince   5 CEL pot               prince     Brujah:2
+
+Library (70 cards)
+------------------
+Master (10; 1 trifle)
+----------------------
+1x Archon Investigation
+1x Coven, The
+1x Elysium: The Palace of Versailles
+1x Giant's Blood
+1x Information Highway
+1x Legendary Vampire
+3x Minion Tap
+1x Powerbase: Zürich
+
+Ally (1)
+---------
+1x Carlton Van Wyk
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (17)
+----------------------
+1x Anarchist Uprising
+1x Ancilla Empowerment
+2x Conservative Agitation
+1x First Tradition: The Masquerade
+1x Justicar Retribution
+6x Kine Resources Contested
+5x Parity Shift
+
+Action Modifier (23)
+---------------------
+3x Bribes
+6x Closed Session
+2x Elder Impersonation
+3x Faceless Night
+2x Forgotten Labyrinth
+4x Lost in Crowds
+1x Spying Mission
+2x Telepathic Vote Counting
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Reaction (11)
+--------------
+1x Delaying Tactics
+1x My Enemy's Enemy
+1x On the Qui Vive
+3x Second Tradition: Domain
+5x Telepathic Misdirection
+
+Combat (5)
+-----------
+5x No Trace

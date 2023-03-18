@@ -1,0 +1,81 @@
+Deck Name: 202207_EC_Day1_62
+Author: VtesEC2022
+Description: 0GW1.5
+
+Crypt (12 cards, min=40 max=36 avg=9)
+=====================================
+4x Alonso Petrodon      10 ANI DOM OBF POT for tha   justicar     Nosferatu:5
+3x Strohmann            9 ANI OBF POT THA dom       archbishop   Nosferatu antitribu:5
+2x Baron Dieudonne      9 ANI OBF POT PRO           prince       Nosferatu:4
+2x Gustaphe Brunnelle   8 ANI DOM POT obf           primogen     Nosferatu:4
+1x Benjamin Rose        7 AUS OBF ani pot           prince       Nosferatu:5
+
+Library (88 cards)
+------------------
+Master (17; 7 trifle)
+----------------------
+2x Dreams of the Sphinx
+1x Fame
+1x Information Highway
+1x Jake Washington
+1x Labyrinth, The
+1x Monastery of Shadows
+1x Slum Hunting Ground
+1x Vessel
+6x Villein
+2x Warsaw Station
+
+Action (13)
+------------
+1x Abbot
+5x Deep Song
+5x Govern the Unaligned
+1x Preternatural Strength
+1x SchreckNET
+
+Equipment (2)
+--------------
+1x Kevlar Vest
+1x Leather Jacket
+
+Political Action (8)
+---------------------
+1x Ancilla Empowerment
+1x Banishment
+4x Parity Shift
+1x Political Stranglehold
+1x Reins of Power
+
+Retainer (1)
+-------------
+1x Raven Spy
+
+Action Modifier (10)
+---------------------
+3x Conditioning
+1x Elder Impersonation
+1x Enkil Cog
+2x Faceless Night
+3x Lost in Crowds
+
+Action Modifier/Combat (3)
+---------------------------
+3x Swallowed by the Night
+
+Reaction (19)
+--------------
+4x Cats' Guidance
+5x Deflection
+5x Second Tradition: Domain
+5x Sense the Savage Way
+
+Combat (14)
+------------
+5x Aid from Bats
+1x Canine Horde
+5x Carrion Crows
+3x Taste of Vitae
+
+Event (1)
+----------
+1x Scourge of the Enochians

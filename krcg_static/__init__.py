@@ -216,6 +216,9 @@ parser = argparse.ArgumentParser(
     prog="krcg-static", description="VTES static files generator"
 )
 parser.add_argument("folder", help="Target folder", type=pathlib.Path)
+parser.add_argument(
+    "--minimal", action="store_true", help="Re-generate just the static web files"
+)
 
 
 def geonames(path: str) -> None:
@@ -339,6 +342,16 @@ def standard_json(path: str) -> None:
         json.dump(vtes.VTES.to_json(), fp, ensure_ascii=False)
     with open(path / "data" / "twda.json", "w", encoding="utf-8") as fp:
         json.dump(twda.TWDA.to_json(), fp, ensure_ascii=False)
+
+
+def all_cards_images(path: str) -> None:
+    print("generating ZIP file for all cards images...")
+    source = pathlib.Path("static/card")
+    with zipfile.ZipFile(path / "card" / "_all_cards.zip", "w") as zipf:
+        for fil in os.listdir(source):
+            fil = source / fil
+            if os.path.isfile(fil) and not os.path.islink(fil):
+                zipf.write(fil, fil.relative_to("static"))
 
 
 def standard_html(path: str) -> None:
@@ -548,19 +561,37 @@ def vtespl_cards_scans(path):
 
 def static(path):
     print("setting up website files...")
-    shutil.rmtree(path, ignore_errors=True)
     shutil.copytree(
         "static",
         path,
         symlinks=True,
         ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"],
+        dirs_exist_ok=True,
     )
 
 
 def main():
     """Entrypoint for the krcg-gen tool."""
     args = parser.parse_args(sys.argv[1:])
+    if args.minimal:
+        print("setting up website files...")
+        shutil.copytree(
+            "static",
+            args.folder,
+            symlinks=True,
+            ignore=lambda folder, names: (
+                names
+                if folder == "static/card"
+                else [n for n in names if n[-3:] == ".py"]
+            ),
+            dirs_exist_ok=True,
+        )
+        return
+    shutil.rmtree(args.folder, ignore_errors=True)
     static(args.folder)
+    all_cards_images(args.folder)
+    if args.minimal:
+        return
     try:
         print("loading from VEKN...")
         vtes.VTES.load_from_vekn()

@@ -1,0 +1,71 @@
+Deck Name: Finnish Nats 2022: #31
+Author: 9350040
+Description: 0GW1.5
+
+Crypt (13 cards, min=22 max=30 avg=6.38)
+========================================
+2x Abraham DuSable   8 AUS DOM FOR THA              Tremere:6
+3x Ayelech           7 AUS DOM THA       prince     Tremere:6
+2x Inês Tristão      6 THA aus dom pre   prince     Tremere:6
+2x Lloyd Brooks      6 DOM THA aus pot   primogen   Tremere:6
+2x Trevon Parker     6 AUS DOM THA                  Tremere:6
+2x Chrysanthemum     5 AUS THA dom       primogen   Tremere:6
+
+Library (80 cards)
+==================
+Master (12; 3 trifle)
+----------------------
+1x Academic Hunting Ground
+1x Arcane Library
+1x Chantry
+1x Elder Library
+1x Fame
+1x Haven Uncovered
+1x Information Highway
+1x Rack, The
+1x Sudden Reversal
+3x Vessel
+
+Action (14)
+------------
+7x Govern the Unaligned
+5x Magic of the Smith
+2x Scouting Mission
+
+Equipment (10)
+---------------
+1x .44 Magnum
+1x Bowl of Convergence
+1x Desert Eagle
+2x Heart of Nizchetus
+1x IR Goggles
+1x Ivory Bow
+1x Kevlar Vest
+1x Mark V
+1x Sport Bike
+
+Action Modifier (12)
+---------------------
+4x Bonding
+3x Conditioning
+1x Foreshadowing Destruction
+4x Mirror Walk
+
+Reaction (21)
+--------------
+2x Deflection
+3x Eagle's Sight
+2x Eyes of Argus
+3x On the Qui Vive
+3x Precognition
+3x Spirit's Touch
+3x Telepathic Misdirection
+2x Wake with Evening's Freshness
+
+Combat (11)
+------------
+3x Apportation
+2x Blood Fury
+2x Rego Motum
+3x Theft of Vitae
+1x Walk of Flame

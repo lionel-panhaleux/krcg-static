@@ -1,0 +1,67 @@
+Deck Name: 202207_EC_Day1_48
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=22 max=32 avg=6.5)
+=======================================
+2x Kasim Bayar         9 CEL OBF THA aus pot   justicar   Banu Haqim:6
+2x Farah Sarroub       7 CEL THA aus obf       prince     Banu Haqim:6
+2x Kassandra Tassaki   6 CEL THA obf           prince     Banu Haqim:6
+2x Victoria Ash        6 PRE aus cel dom                  Toreador:7
+1x Kalinda             6 CEL OBF tha           primogen   Banu Haqim:6
+1x Khadija Al-Kindi    6 CEL OBF THA           primogen   Banu Haqim:6
+2x Warmaksan           5 THA cel obf           prince     Banu Haqim:6
+
+Library (90 cards)
+------------------
+Master (21; 1 trifle)
+----------------------
+3x Alamut
+1x Coven, The
+1x Dreams of the Sphinx
+1x Giant's Blood
+4x Haqim's Law: Retribution
+1x Jake Washington
+2x Khabar: Community, The
+1x Market Square
+1x Not to Be
+4x Obfuscate
+1x Underworld Hunting Ground
+1x Yoruba Shrine
+
+Action (16)
+------------
+1x Aranthebes, The Immortal
+4x Embrace, The
+6x Third Tradition: Progeny
+5x Web of Knives Recruit
+
+Political Action (13)
+----------------------
+6x Consanguineous Boon
+2x Conservative Agitation
+5x Kine Resources Contested
+
+Retainer (2)
+-------------
+1x Nar-Sheptha
+1x Omael Kuman
+
+Action Modifier (8)
+--------------------
+4x Cloak the Gathering
+4x Veil the Legions
+
+Action Modifier/Combat (13)
+----------------------------
+4x Resist Earth's Grasp
+9x Swallowed by the Night
+
+Reaction (7)
+-------------
+7x Second Tradition: Domain
+
+Combat (10)
+------------
+5x Hunger of Marduk
+5x Pursuit

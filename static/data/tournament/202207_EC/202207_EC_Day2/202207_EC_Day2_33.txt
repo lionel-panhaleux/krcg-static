@@ -1,0 +1,59 @@
+Deck Name: 202207_EC_Day2_33
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=20 max=32 avg=6.75)
+========================================
+5x Eric Kressida        8 AUS DOM PRO THA cel   bishop   Tremere antitribu:4
+3x Soldat               7 POT PRO cel dom obf            Gangrel antitribu:3
+1x Janey Pickman        6 ANI PRO for                    Gangrel antitribu:4
+1x Céleste Lamontagne   5 ANI PRO for                    Gangrel antitribu:4
+1x Mowgli               5 FOR PRO ani cel                Gangrel antitribu:4
+1x Gunnar               4 PRO for                        Gangrel:4
+
+Library (87 cards)
+------------------
+Master (17; 3 trifle)
+----------------------
+1x Anarch Troublemaker
+1x Coven, The
+5x Dominate
+2x Dreams of the Sphinx
+1x Ennoia's Theater
+1x Pentex(TM) Subversion
+3x Perfectionist
+1x University Hunting Ground
+2x Wider View
+
+Action (22)
+------------
+1x Abbot
+16x Govern the Unaligned
+2x Marked Territory
+3x Under Siege
+
+Retainer (1)
+-------------
+1x Mr. Winthrop
+
+Action Modifier (10)
+---------------------
+2x Bonding
+3x Conditioning
+5x Earth Control
+
+Reaction (16)
+--------------
+7x Deflection
+2x Delaying Tactics
+7x On the Qui Vive
+
+Combat (20)
+------------
+10x Earth Meld
+7x Form of Mist
+3x Quick Meld
+
+Event (1)
+----------
+1x Scourge of the Enochians

@@ -1,0 +1,47 @@
+Deck Name: 202207_EC_LCQ_29
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=24 max=34 avg=7)
+=====================================
+3x Kasim Bayar         9 CEL OBF THA aus pot   justicar   Banu Haqim:6
+3x Farah Sarroub       7 CEL THA aus obf       prince     Banu Haqim:6
+3x Kassandra Tassaki   6 CEL THA obf           prince     Banu Haqim:6
+3x Khadija Al-Kindi    6 CEL OBF THA           primogen   Banu Haqim:6
+
+Library (84 cards)
+------------------
+Master (19; 14 trifle)
+-----------------------
+4x Haqim's Law: Retribution
+1x Haven Uncovered
+4x Priority Contract
+8x Villein
+2x Wider View
+
+Action (5)
+-----------
+5x Hunter's Mark
+
+Political Action (7)
+---------------------
+2x Anarchist Uprising
+2x Anathema
+1x Ancilla Empowerment
+2x Banishment
+
+Action Modifier/Combat (10)
+----------------------------
+10x Swallowed by the Night
+
+Reaction (8)
+-------------
+8x Second Tradition: Domain
+
+Combat (35)
+------------
+10x Hunger of Marduk
+9x Lightning Reflexes
+6x Quickness
+8x Rego Motum
+2x Zip Gun

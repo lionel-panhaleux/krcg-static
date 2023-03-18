@@ -1,0 +1,62 @@
+Deck Name: BOTR Deck 32
+Author: VtesEC2022
+Description: 0GW0.5
+
+Crypt (12 cards, min=15 max=22 avg=4.5)
+=======================================
+1x Chalcedony       7 FOR POT THA VIS              Gargoyle:6
+2x Verbruch         5 POT VIS for                  Gargoyle:5
+1x Chrysanthemum    5 AUS THA dom       primogen   Tremere:6
+1x Claus Wegener    5 DOM aus for tha              Tremere:5
+2x Porphyry         4 POT vis                      Gargoyle:6
+2x Rusticus         4 VIS for                      Gargoyle:5
+1x Lauren           4 aus dom tha                  Tremere:6
+1x Tarrence Moore   4 aus dom tha                  Tremere:5
+1x Monica Chang     3 dom tha                      Tremere:5
+
+Library (85 cards)
+------------------
+Master (13)
+------------
+1x Academic Hunting Ground
+4x Alvusia
+3x Blood Doll
+1x Centralized Background Check
+1x KRCG News Radio
+1x Powerbase: Montreal
+1x Sudden Reversal
+1x Tension in the Ranks
+
+Action (13)
+------------
+2x Armor of Terra
+3x Children of Stone
+5x Dive Bomb
+2x Preternatural Strength
+1x Sanguine Instruction
+
+Retainer (4)
+-------------
+1x Charnas the Imp
+3x Razor Bat
+
+Action Modifier (14)
+---------------------
+8x As the Crow
+6x Unleash the Hounds
+
+Reaction (17)
+--------------
+5x Deflection
+7x Their Master's Voice
+5x Voices of the Castle
+
+Combat (24)
+------------
+2x Crawling Chamber
+5x Lead Fist
+1x Orgy of Blood
+6x Raking Talons
+1x Roll
+4x Stonestrength
+5x Taste of Vitae

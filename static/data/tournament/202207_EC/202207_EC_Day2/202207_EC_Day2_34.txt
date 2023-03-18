@@ -1,0 +1,68 @@
+Deck Name: 202207_EC_Day2_34
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=44 max=36 avg=8.25)
+========================================
+4x Fakir al Sidi          11 ANI FOR PRE PRO THA abo      Gangrel:4
+4x Aksinya Daclau         9 ANI FOR PRE PRO cel tha      Gangrel antitribu:4
+2x Bernard, the Scourge   5 ani for pre pro              Gangrel:4
+1x Sahana                 5 ANI pre pro spi              Ahrimane:4
+1x Portia                 4 for pre pro                  Ventrue:5
+
+Library (90 cards)
+------------------
+Master (21; 11 trifle)
+-----------------------
+1x Blood Doll
+1x Coven, The
+1x Ennoia's Theater
+1x Giant's Blood
+4x Information Highway
+2x Perfectionist
+1x Sudden Reversal
+2x Vessel
+7x Villein
+1x Wider View
+
+Action (17)
+------------
+8x Deep Song
+4x Enchant Kindred
+1x Entrancement
+3x Public Trust
+1x Tier of Souls
+
+Retainer (1)
+-------------
+1x Owl Companion
+
+Action Modifier (16)
+---------------------
+3x Earth Control
+1x Enkil Cog
+6x Freak Drive
+6x Revelation of the Serpent
+
+Reaction (7)
+-------------
+1x Delaying Tactics
+1x Guard Dogs
+1x Rat's Warning
+4x Sense the Savage Way
+
+Combat (26)
+------------
+2x Canine Horde
+4x Carrion Crows
+3x Drawing Out the Beast
+4x Form of Mist
+4x Form of the Wolf
+3x Hidden Strength
+3x Indomitability
+3x Taste of Vitae
+
+Event (2)
+----------
+1x Narrow Minds
+1x Nightmares upon Nightmares

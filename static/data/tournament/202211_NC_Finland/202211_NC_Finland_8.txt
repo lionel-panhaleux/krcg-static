@@ -1,0 +1,62 @@
+Deck Name: Finnish Nats 2022: #8
+Author: 3530054
+Description: 1GW4
+
+Crypt (12 cards, min=24 max=29 avg=6.5)
+=======================================
+1x Alexander Silverson   8 AUS DOM OBF pre   prince   Malkavian:6
+3x Benjamin Rose         7 AUS OBF ani pot   prince   Nosferatu:5
+1x Gilbert Duane         7 AUS DOM OBF       baron    Malkavian:6
+4x Arishat               6 DAI OBF PRE       1 vote   Baali:6
+2x Belinde               6 OBF ani aus pot   prince   Nosferatu:6
+1x Jacques Rouge         6 OBF ani pot pre   baron    Nosferatu:6
+
+Library (63 cards)
+==================
+Master (18; 6 trifle)
+----------------------
+1x Coven, The
+1x Creepshow Casino
+1x Direct Intervention
+3x Dreams of the Sphinx
+3x Information Highway
+1x Labyrinth, The
+3x Protected Resources
+3x Villein
+2x Wider View
+
+Action (5)
+-----------
+2x Condemnation: Mute
+1x Contagion
+1x SchreckNET
+1x Unleash Hell's Fury
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (22)
+----------------------
+1x Anarchist Uprising
+1x Ancilla Empowerment
+7x Kine Resources Contested
+3x Neonate Breach
+8x Parity Shift
+2x Reckless Agitation
+
+Action Modifier (13)
+---------------------
+1x Elder Impersonation
+1x Faceless Night
+5x Forgotten Labyrinth
+5x Lost in Crowds
+1x Voter Captivation
+
+Action Modifier/Combat (1)
+---------------------------
+1x Swallowed by the Night
+
+Combat (3)
+-----------
+3x No Trace

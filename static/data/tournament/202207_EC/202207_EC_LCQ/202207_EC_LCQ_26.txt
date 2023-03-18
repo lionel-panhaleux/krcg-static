@@ -1,0 +1,63 @@
+Deck Name: 202207_EC_LCQ_26
+Author: VtesEC2022
+Description: 1GW4
+
+Crypt (13 cards, min=15 max=32 avg=6.08)
+========================================
+5x Anson                        8 CEL PRE aus dom   prince   Toreador:1
+1x Parnassus                    7 CEL QUI aus tha            Banu Haqim:2
+1x Jalal Sayad                  6 CEL QUI pot                Banu Haqim:2
+1x Zahir, Hand of the Silsila   6 CEL OBF qui tha            Banu Haqim:2
+1x Abd al-Rashid                5 CEL QUI obf                Banu Haqim:2
+1x Yusuf, Scribe of Alamut      5 CEL aus obf qui            Banu Haqim:2
+1x Anwar                        4 cel obf qui                Banu Haqim:2
+1x Parmenides                   4 CEL qui                    Banu Haqim:2
+1x Kanya Akhtar                 2 cel                        Banu Haqim:2
+
+Library (90 cards)
+------------------
+Master (25; 7 trifle)
+----------------------
+1x Archon Investigation
+9x Ashur Tablets
+1x Giant's Blood
+3x Haqim's Law: Retribution
+1x Haven Uncovered
+1x Khabar: Community, The
+1x Parthenon, The
+2x Priority Contract
+1x Underworld Hunting Ground
+4x Villein
+1x Wider View
+
+Action (10)
+------------
+4x Bum's Rush
+4x Fleetness
+2x Flurry of Action
+
+Equipment (7)
+--------------
+7x .44 Magnum
+
+Action Modifier/Combat (4)
+---------------------------
+4x Resist Earth's Grasp
+
+Reaction (8)
+-------------
+8x Second Tradition: Domain
+
+Combat (36)
+------------
+1x Blur
+7x Concealed Weapon
+2x Dam the Heart's River
+1x Fast Hands
+4x Focus the Blood
+6x Infernal Pursuit
+4x Psyche!
+4x Quickness
+2x Sideslip
+1x Taste of Death
+4x Taste of Vitae

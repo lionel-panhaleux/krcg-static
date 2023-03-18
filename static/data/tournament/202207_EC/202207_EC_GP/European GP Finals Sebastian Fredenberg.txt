@@ -1,0 +1,63 @@
+Deck Name: European GP Finals Sebastian Fredenberg
+Author: VtesEC2022
+
+Crypt (12 cards, min=13 max=25 avg=4.92)
+========================================
+1x Farah Sarroub       7 CEL THA aus obf   prince     Banu Haqim:6
+2x Kassandra Tassaki   6 CEL THA obf       prince     Banu Haqim:6
+1x Kalinda             6 CEL OBF tha       primogen   Banu Haqim:6
+1x Khadija Al-Kindi    6 CEL OBF THA       primogen   Banu Haqim:6
+2x Warmaksan           5 THA cel obf       prince     Banu Haqim:6
+1x Asmin Kobane        5 CEL dom obf tha              Banu Haqim:6
+1x Greg Mazouni        4 cel obf tha                  Banu Haqim:6
+1x Nayarana            4 THA cel                      Banu Haqim:6
+1x Bijou               3 cel tha                      Banu Haqim:6
+1x Alu                 2 obf                          Banu Haqim:5
+
+Library (90 cards)
+------------------
+Master (19; 9 trifle)
+----------------------
+2x Alamut
+4x Haqim's Law: Retribution
+2x Khabar: Community, The
+1x Market Square
+4x Priority Contract
+1x Underworld Hunting Ground
+5x Villein
+
+Action (14)
+------------
+1x Aranthebes, The Immortal
+7x Haqim's Law: Leadership
+1x Third Tradition: Progeny
+5x Web of Knives Recruit
+
+Equipment (1)
+--------------
+1x Ivory Bow
+
+Action Modifier/Combat (11)
+----------------------------
+3x Resist Earth's Grasp
+8x Swallowed by the Night
+
+Reaction (9)
+-------------
+2x Delaying Tactics
+7x Second Tradition: Domain
+
+Combat (35)
+------------
+3x Blur
+3x Flash
+6x Hunger of Marduk
+4x Psyche!
+4x Pursuit
+3x Quickness
+4x Taste of Vitae
+8x Weighted Walking Stick
+
+Event (1)
+----------
+1x Narrow Minds

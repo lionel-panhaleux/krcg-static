@@ -1,0 +1,66 @@
+Deck Name: BOTR Deck 33
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=7 max=18 avg=3.08)
+=======================================
+1x Dodd                      5 CEL dom pre          Brujah antitribu:2
+1x Rigby, Crusade Vanguard   5 CEL PRE aus pot      Brujah antitribu:2
+1x Evangeline                4 cel pot pre          Brujah antitribu:2
+1x Victor Tolliver           4 CEL pot              Brujah antitribu:2
+1x Jacob Bragg               3 cel pot              Brujah antitribu:2
+1x Midget                    3 DEM obf pre          Malkavian antitribu:3
+1x Sarah Brando              3 CEL                  Brujah antitribu:2
+1x Yorik                     3 dem obf              Malkavian antitribu:2
+1x Boy Toy                   2 dem                  Malkavian antitribu:2
+1x Frederick the Weak        2 pre                  Brujah antitribu:2
+1x Gillian Krader            2 ani dem              Pander:2
+1x Eddie Gaines              1 dem pot              Caitiff:3
+
+Library (82 cards)
+------------------
+Master (15; 4 trifle)
+----------------------
+4x Agent of Power
+4x Dementation
+4x Effective Management
+1x Gang Territory
+1x Pentex(TM) Loves You!
+1x Waste Management Operation
+
+Action (25)
+------------
+7x Dive into Madness
+15x Kindred Spirits
+3x Restructure
+
+Equipment (7)
+--------------
+1x Deer Rifle
+1x Saturday-Night Special
+2x Sawed-Off Shotgun
+3x Winchester Mansion
+
+Action Modifier (22)
+---------------------
+4x Confusion
+4x Eyes of Chaos
+1x Leverage
+2x Mind Tricks
+8x Spoils of War
+3x Stealth Ritus
+
+Action Modifier/Combat (4)
+---------------------------
+2x Deny
+2x Resist Earth's Grasp
+
+Combat (8)
+-----------
+3x Concealed Weapon
+1x Fake Out
+4x Target Vitals
+
+Event (1)
+----------
+1x Narrow Minds

@@ -1,0 +1,86 @@
+Deck Name: 202207_EC_Day1_82
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=44 max=25 avg=7.75)
+========================================
+5x Elimelech the Twice-Damned   11 AUS DEM DOM FOR OBF pro      Ventrue antitribu:5
+1x Joe "Boot" Hill              7 CEL QUI for obf              Banu Haqim:4
+1x Hagar Stone                  6 AUS DEM obf                  Malkavian antitribu:5
+1x Kestrelle Hayes              6 AUS dom for obt              Ventrue antitribu:5
+1x Sennadurek                   6 AUS NEC dom                  Nagaraja:4
+1x Dr. Morrow, The Skindoctor   5 AUS VIC for                  Tzimisce:5
+1x Neighbor John                5 AUS dom for                  Ventrue antitribu:4
+1x Lubomira Hradok              3 OBF                          Nosferatu antitribu:5
+
+Library (80 cards)
+------------------
+Master (21; 4 trifle)
+----------------------
+1x Blind Spot
+1x Blood Doll
+1x Corporate Hunting Ground
+1x Depravity
+2x Dominion
+1x Drop Point Network
+3x Framing an Ancient Grudge
+1x Information Highway
+1x Obfuscate
+1x Pentex(TM) Loves You!
+1x Protean
+1x Vessel
+2x Villein
+1x Wash
+3x Zillah's Valley
+
+Action (12)
+------------
+2x Abbot
+1x Blessing of Chaos
+2x Bloodwork
+2x Fiendish Tongue
+2x Reunion Kamut
+1x Tattoo Signal
+2x Zillah's Tears
+
+Equipment (6)
+--------------
+1x Bowl of Convergence
+2x Camera Phone
+1x Guarded Rubrics
+1x Ivory Bow
+1x Signet of King Saul, The
+
+Action Modifier (11)
+---------------------
+1x Enkil Cog
+4x Freak Drive
+2x Lost in Crowds
+2x Spying Mission
+2x Veil the Legions
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Reaction (14)
+--------------
+4x Eyes of Argus
+2x Forced Awakening
+2x My Enemy's Enemy
+2x On the Qui Vive
+4x Telepathic Misdirection
+
+Combat (13)
+------------
+2x Amaranth
+2x Aura Reading
+2x Bone Spur
+2x Claws of the Dead
+2x Coma
+2x Flesh of Marble
+1x Wolf Claws
+
+Event (1)
+----------
+1x Fueled by Heart's Blood

@@ -1,0 +1,53 @@
+Deck Name: 202207_EC_Day1_19
+Author: VtesEC2022
+Description: 1GW4.5
+
+Crypt (12 cards, min=4 max=31 avg=4.25)
+=======================================
+3x Nuriel           8 AUS FOR VAL cel dom      Salubri antitribu:6
+1x Michaela         7 AUS FOR PRE VAL          Salubri antitribu:5
+1x Ariel            6 AUS FOR VAL              Salubri antitribu:6
+1x Azrael           5 AUS VAL for              Salubri antitribu:6
+1x Lailah           4 VAL aus                  Salubri antitribu:6
+5x Anarch Convert   1                          Caitiff:ANY
+
+Library (90 cards)
+------------------
+Master (16; 3 trifle)
+----------------------
+9x Anarch Revolt
+2x Code of Samiel
+1x Fame
+1x Smiling Jack, The Anarch
+3x Vessel
+
+Action (8)
+-----------
+8x Sense Death
+
+Equipment (8)
+--------------
+8x Blade of Bellona
+
+Action Modifier (1)
+--------------------
+1x Gift of Bellona
+
+Reaction (21)
+--------------
+4x Enhanced Senses
+9x Eyes of Argus
+2x My Enemy's Enemy
+1x Netwar
+5x Telepathic Misdirection
+
+Combat (36)
+------------
+3x Blessed Blade
+7x Concealed Weapon
+4x Death Seeker
+3x Hidden Strength
+2x Righteous Aura
+8x Sword of the Righteous
+6x Taste of Vitae
+3x Telepathic Tracking

@@ -1,0 +1,82 @@
+Deck Name: Finnish Nats 2022: #6
+Author: 3870035 2022
+Description: 1GW4.5
+
+Crypt (13 cards, min=40 max=35 avg=8.54)
+========================================
+5x Alonso Petrodon      10 ANI DOM OBF POT for tha   justicar   Nosferatu:5
+3x Baron Dieudonne       9 ANI OBF POT PRO           prince     Nosferatu:4
+2x Gustaphe Brunnelle    8 ANI DOM POT obf           primogen   Nosferatu:4
+3x Harold Tanner         6 POT ani dom obf                      Nosferatu:4
+
+Library (84 cards)
+==================
+Master (20; 6 trifle)
+----------------------
+1x Dark Influences
+1x Dominate
+1x Dreams of the Sphinx
+1x Giant's Blood
+1x Grooming the Protégé
+1x Information Highway
+1x Labyrinth, The
+1x Metro Underground
+1x Monastery of Shadows
+1x Rack, The
+1x Secret Library of Alexandria, The
+1x Slum Hunting Ground
+1x Vessel
+4x Villein
+2x Warsaw Station
+1x Wash
+
+Action (13)
+------------
+2x Deep Song
+8x Govern the Unaligned
+2x Judgment: Camarilla Segregation
+1x SchreckNET
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (5)
+---------------------
+1x Banishment
+2x Kine Resources Contested
+2x Parity Shift
+
+Retainer (1)
+-------------
+1x Raven Spy
+
+Action Modifier (12)
+---------------------
+4x Conditioning
+1x Elder Impersonation
+1x Enkil Cog
+2x Faceless Night
+4x Lost in Crowds
+
+Action Modifier/Combat (3)
+---------------------------
+3x Swallowed by the Night
+
+Reaction (16)
+--------------
+6x Deflection
+1x Guard Dogs
+2x On the Qui Vive
+4x Second Tradition: Domain
+3x Sense the Savage Way
+
+Combat (12)
+------------
+5x Aid from Bats
+1x Canine Horde
+6x Carrion Crows
+
+Event (1)
+----------
+1x Waiting Game

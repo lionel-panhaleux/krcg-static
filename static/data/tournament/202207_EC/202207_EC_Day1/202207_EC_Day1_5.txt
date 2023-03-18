@@ -1,0 +1,68 @@
+Deck Name: 202207_EC_Day1_5
+Author: VtesEC2022
+Description: 2GW8
+
+Crypt (12 cards, min=40 max=29 avg=8.92)
+========================================
+1x Alexandra         11 ANI AUS CEL PRE dom       inner circle   Toreador:2
+5x François Villon   10 AUS CEL PRE chi obf pot   prince         Toreador:2
+1x Madame Guil       10 AUS CEL PRE for pot ser   justicar       Toreador:3
+1x Marcellus         8 AUS CEL pro               prince         Toreador:2
+4x Ira Rivers        7 AUS CEL ani pre           prince         Toreador:3
+
+Library (79 cards)
+------------------
+Master (18; 10 trifle)
+-----------------------
+1x Anarch Troublemaker
+1x Direct Intervention
+2x Louvre, Paris, The
+2x Metro Underground
+1x Papillon
+1x Society Hunting Ground
+3x Vessel
+6x Villein
+1x Wider View
+
+Action (1)
+-----------
+1x Judgment: Camarilla Segregation
+
+Equipment (9)
+--------------
+7x .44 Magnum
+1x Bowl of Convergence
+1x Ivory Bow
+
+Retainer (1)
+-------------
+1x Mr. Winthrop
+
+Action Modifier (2)
+--------------------
+2x Enkil Cog
+
+Action Modifier/Combat (1)
+---------------------------
+1x Resist Earth's Grasp
+
+Reaction (25)
+--------------
+1x Eagle's Sight
+1x Enhanced Senses
+6x Eyes of Argus
+2x My Enemy's Enemy
+2x On the Qui Vive
+1x Quicken Sight
+5x Second Tradition: Domain
+7x Telepathic Misdirection
+
+Combat (22)
+------------
+1x Blur
+7x Concealed Weapon
+5x Psyche!
+5x Pursuit
+1x Side Strike
+1x Sideslip
+2x Taste of Vitae

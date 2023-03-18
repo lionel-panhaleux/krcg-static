@@ -1,0 +1,67 @@
+Deck Name: 202207_EC_LCQ_64
+Author: VtesEC2022
+Description: 0GW0.5
+
+Crypt (12 cards, min=14 max=33 avg=6.25)
+========================================
+1x Mambo Jeanne      9 FOR NEC OBF THN          Samedi:6
+2x Jean Lisle        8 FOR OBF THN pot          Samedi:6
+2x Josette           8 FOR OBF THN pot pre      Samedi:6
+2x Baroque           7 NEC THN aus for obf      Samedi:5
+1x Mister Schwartz   6 NEC THN for obf          Samedi:6
+2x Marie-Pierre      4 THN for nec              Samedi:6
+2x Angel Chavarria   3 THN                      Samedi:6
+
+Library (86 cards)
+------------------
+Master (18; 4 trifle)
+----------------------
+1x Blessings of the Loa
+4x Coroner's Contact
+1x Dirty Contract
+1x Fortitude
+1x Giant's Blood
+2x Houngan
+1x Information Highway
+1x KRCG News Radio
+1x Kaymakli Nightmares
+1x Sudden Reversal
+2x Vessel
+2x Villein
+
+Action (10)
+------------
+4x Little Mountain Cemetery
+6x Off Kilter
+
+Ally (11)
+----------
+1x Carlton Van Wyk
+10x Reanimated Corpse
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Action Modifier (12)
+---------------------
+6x Freak Drive
+1x Kiss of Ra, The
+5x Under My Skin
+
+Combat (32)
+------------
+1x Compress
+4x Dust to Dust
+6x Groaning Corpse
+1x Necrosis
+7x Relentless Reaper
+2x Rolling with the Punches
+2x Soak
+6x Target Vitals
+3x Unflinching Persistence
+
+Event (2)
+----------
+1x Scourge of the Enochians
+1x Unmasking, The

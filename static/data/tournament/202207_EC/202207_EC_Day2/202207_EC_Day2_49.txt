@@ -1,0 +1,58 @@
+Deck Name: 202207_EC_Day2_49
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=18 max=31 avg=6.17)
+========================================
+3x Gabrin                      8 ANI CHI dom for      Ravnos:2
+2x Natalia                     7 ANI chi dom for      Ravnos:2
+2x Joaquina Amaya              6 ANI CHI FOR          Ravnos:2
+1x Sarisha Veliku              6 ANI FOR chi dom      Ravnos:2
+1x Vaclav Petalengro           6 ANI CHI for pot      Ravnos:2
+2x Salbatore Bokkengro         4 CHI for pro          Ravnos:2
+1x Anka, Priestess of Thorns   4 ani chi pro          Ravnos:2
+
+Library (79 cards)
+------------------
+Master (13)
+------------
+4x Blood Doll
+1x Fortune Teller Shop
+1x Park Hunting Ground
+3x Path of Paradox, The
+2x Svadharma
+2x Week of Nightmares
+
+Action (4)
+-----------
+2x Bum's Rush
+2x Sensory Deprivation
+
+Equipment (4)
+--------------
+4x Flamethrower
+
+Action Modifier (10)
+---------------------
+4x Conditioning
+3x Fata Morgana
+3x Will-o'-the-Wisp
+
+Action Modifier/Combat (3)
+---------------------------
+3x Mirror Image
+
+Reaction (18)
+--------------
+5x Deflection
+4x Delaying Tactics
+4x Ignis Fatuus
+5x Wake with Evening's Freshness
+
+Combat (27)
+------------
+8x Apparition
+6x Horrid Reality
+6x Illusions of the Kindred
+2x Mayaparisatya
+5x Trap

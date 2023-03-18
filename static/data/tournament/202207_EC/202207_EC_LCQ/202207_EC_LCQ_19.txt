@@ -1,0 +1,68 @@
+Deck Name: 202207_EC_LCQ_19
+Author: VtesEC2022
+Description: 1GW4.5
+
+Crypt (12 cards, min=18 max=33 avg=6.33)
+========================================
+1x Gerald Windham     9 AUS DOM FOR THA              Tremere:5
+3x Abraham DuSable    8 AUS DOM FOR THA              Tremere:6
+1x Ayelech            7 AUS DOM THA       prince     Tremere:6
+1x Inês Tristão       6 THA aus dom pre   prince     Tremere:6
+1x Lloyd Brooks       6 THA DOM aus pot   primogen   Tremere:6
+1x Trevon Parker      6 AUS DOM THA                  Tremere:6
+1x Chrysanthemum      5 AUS THA dom       primogen   Tremere:6
+1x Claus Wegener      5 DOM aus for tha              Tremere:5
+1x Patrik Söderberg   5 AUS dom for tha              Tremere:6
+1x Monica Chang       3 dom tha                      Tremere:5
+
+Library (78 cards)
+------------------
+Master (10; 1 trifle)
+----------------------
+2x Anarch Troublemaker
+1x Barrens, The
+1x Chantry
+1x Coven, The
+1x Direct Intervention
+1x Dreams of the Sphinx
+2x Misdirection
+1x Pentex(TM) Subversion
+
+Action (16)
+------------
+10x Govern the Unaligned
+3x Magic of the Smith
+3x Scouting Mission
+
+Ally (1)
+---------
+1x Ponticulus
+
+Equipment (5)
+--------------
+2x .44 Magnum
+1x Heart of Nizchetus
+1x Ivory Bow
+1x Signet of King Saul, The
+
+Action Modifier (27)
+---------------------
+4x Bonding
+4x Conditioning
+2x Daring the Dawn
+2x Foreshadowing Destruction
+3x Freak Drive
+8x Mirror Walk
+4x Seduction
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Murmur of the False Will
+
+Reaction (17)
+--------------
+6x Deflection
+2x Delaying Tactics
+3x Eyes of Argus
+4x On the Qui Vive
+2x Telepathic Misdirection

@@ -39,7 +39,8 @@ def test_card():
             },
         },
         "_name": "Aid from Bats",
-        "artists": ["Eric Lofgren", "Melissa Benson"],
+        "_set": "Jyhad:C, VTES:C, CE:C/PN3, Anarchs:PG2, Third:C, KoT:C, FB:PN6",
+        "artists": ["Melissa Benson", "Eric Lofgren"],
         "card_text": "[ani] Strike: 1R damage, with 1 optional maneuver.\n"
         "[ANI] As above, with 1 optional press.",
         "disciplines": ["ani"],
@@ -101,6 +102,15 @@ def test_card():
                 "vampire-the-eternal-struggle/aidfrombats.jpg"
             ),
         },
+        "ordered_sets": [
+            "Jyhad",
+            "Vampire: The Eternal Struggle",
+            "Camarilla Edition",
+            "Anarchs",
+            "Third Edition",
+            "Keepers of Tradition",
+            "First Blood",
+        ],
         "types": ["Combat"],
         "url": "https://static.krcg.org/card/aidfrombats.jpg",
     }

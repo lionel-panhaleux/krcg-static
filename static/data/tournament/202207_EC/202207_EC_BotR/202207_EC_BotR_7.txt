@@ -1,0 +1,62 @@
+Deck Name: BOTR Deck #7
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (12 cards, min=12 max=16 avg=3.67)
+========================================
+2x Danylo      4 for pro san      Blood Brother:5
+2x Gavrylo     4 pot pro san      Blood Brother:5
+2x Kyrylo      4 SAN for          Blood Brother:5
+2x Pavlo       4 SAN pro          Blood Brother:5
+2x Volo        4 POT pro san      Blood Brother:5
+2x New Blood   2 san              Blood Brother:ANY
+
+Library (83 cards)
+------------------
+Master (24; 8 trifle)
+----------------------
+3x Archon Investigation
+6x Blood Buff
+2x Heidelberg Castle, Germany
+1x Major Boon
+2x Perfectionist
+8x Protean
+2x Wider View
+
+Action (14)
+------------
+1x Abbot
+9x Hive Mind
+4x Redistribution
+
+Equipment (7)
+--------------
+3x Camera Phone
+2x Heart of Nizchetus
+2x Sport Bike
+
+Retainer (3)
+-------------
+1x J. S. Simmons, Esq.
+1x Robert Carter
+1x Tasha Morgan
+
+Action Modifier (10)
+---------------------
+6x Shell Game
+4x Walk of Caine
+
+Action Modifier/Combat (6)
+---------------------------
+6x Slake the Thirst
+
+Reaction (5)
+-------------
+3x Camaraderie
+2x Delaying Tactics
+
+Combat (14)
+------------
+1x Claws of the Dead
+3x Earth Meld
+10x Form of Mist

@@ -1,0 +1,64 @@
+Deck Name: 202207_EC_LCQ_78
+Author: VtesEC2022
+Description: 0GW0
+
+Crypt (12 cards, min=32 max=32 avg=7.58)
+========================================
+2x Mary Anne Blaire     10 AUS DOM FOR PRE ani pot   justicar   Ventrue:5
+2x Alexa Draper         8 DOM PRE for pot           prince     Ventrue:6
+2x Lodin (Olaf Holte)   8 DOM FOR PRE aus pro       prince     Ventrue:5
+2x Sybren van Oosten    7 FOR PRE dom tha           prince     Ventrue:6
+1x Alice Chen           7 FOR PRE dom obf           prince     Ventrue:6
+1x Horst von Brühl      6 FOR aus pre dom           prince     Ventrue:6
+1x Madison              6 DOM FOR PRE                          Ventrue:6
+1x Victor Donaldson     6 DOM for pre               prince     Ventrue:5
+
+Library (68 cards)
+------------------
+Master (16; 4 trifle)
+----------------------
+1x Anarch Troublemaker
+1x Coven, The
+2x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Golconda: Inner Peace
+1x Information Highway
+1x Papillon
+1x Pentex(TM) Subversion
+1x Uptown Hunting Ground
+1x Ventrue Headquarters
+3x Villein
+
+Action (12)
+------------
+1x Dominate Kine
+6x Enchant Kindred
+2x Fifth Tradition: Hospitality
+2x Fourth Tradition: The Accounting
+1x Slaughtering the Herd
+
+Political Action (8)
+---------------------
+1x Ancilla Empowerment
+4x Kine Resources Contested
+3x Parity Shift
+
+Action Modifier (16)
+---------------------
+2x Conditioning
+2x Daring the Dawn
+1x Foreshadowing Destruction
+6x Freak Drive
+2x Seduction
+3x Voter Captivation
+
+Reaction (6)
+-------------
+4x Deflection
+2x Second Tradition: Domain
+
+Combat (10)
+------------
+8x Majesty
+2x Soak

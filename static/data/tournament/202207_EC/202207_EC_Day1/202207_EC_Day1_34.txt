@@ -1,0 +1,78 @@
+Deck Name: 202207_EC_Day1_34
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=4 max=20 avg=5.33)
+=======================================
+4x unnamed, The     10 CEL DAI OBF PRE PRO           Baali:6
+1x Vivian VI        7 PRE PRO obf tha       baron   Ministry:6
+1x Doctor Morocco   5 PRO cel obf pre               Ministry:6
+1x Jenny Silver     5 PRE PRO obf                   Ministry:6
+1x Horde, The       3 dai obf pre                   Baali:6
+4x Anarch Convert   1                               Caitiff:ANY
+
+Library (79 cards)
+------------------
+Master (17; 6 trifle)
+----------------------
+1x Anarch Railroad
+1x Archon Investigation
+1x Coven, The
+2x Dabbler
+1x Dreams of the Sphinx
+1x Garibaldi-Meucci Museum
+1x Information Highway
+2x Libertas
+2x Secure Haven
+1x Sudden Reversal
+1x Twilight Camp
+1x Vessel
+1x Wash
+1x Wider View
+
+Action (13)
+------------
+3x Illegalism
+8x Platinum Protocol, The
+2x Unleash Hell's Fury
+
+Ally (1)
+---------
+1x Infernal Servitor
+
+Retainer (1)
+-------------
+1x Homunculus
+
+Action Modifier (32)
+---------------------
+2x CrimethInc.
+2x Elder Impersonation
+4x Enchanting Gaze
+3x Enkil Cog
+2x Faceless Night
+3x I am Legion
+8x Instantaneous Transformation
+3x Lost in Crowds
+5x Revelation of the Serpent
+
+Action Modifier/Combat (1)
+---------------------------
+1x Swallowed by the Night
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Sense the Sin
+
+Reaction (1)
+-------------
+1x Delaying Tactics
+
+Combat (8)
+-----------
+1x Earth Meld
+7x Form of Mist
+
+Event (1)
+----------
+1x Nightmares upon Nightmares

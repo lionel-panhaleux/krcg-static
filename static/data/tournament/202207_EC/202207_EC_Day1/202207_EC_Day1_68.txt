@@ -1,0 +1,76 @@
+Deck Name: 202207_EC_Day1_68
+Author: VtesEC2022
+Description: 0GW1.5
+
+Crypt (12 cards, min=19 max=28 avg=5.75)
+========================================
+1x Nonu Dis             8 OBF PRE PRO for               Ministry:6
+1x Hesha Ruhadze        7 PRE PRO ani aus obf           Ministry:6
+1x Vivian VI            7 PRE PRO obf tha       baron   Ministry:6
+2x Crystal Lynn         6 OBF PRE PRO                   Ministry:6
+1x Elisha Tucker        6 PRE cel obf pro       baron   Ministry:6
+2x Doctor Morocco       5 PRO cel obf pre               Ministry:6
+2x Jenny Silver         5 PRE PRO obf                   Ministry:6
+1x Aluc Romas de Leon   5 PRE aus obf pro               Ministry:6
+1x Marcel               4 obf pre pro                   Ministry:6
+
+Library (83 cards)
+------------------
+Master (16; 4 trifle)
+----------------------
+1x Anarch Free Press, The
+4x Blood Doll
+1x Club Illusion
+3x Dabbler
+1x Direct Intervention
+1x Dreams of the Sphinx
+1x Fragment of the Book of Nod
+1x Information Highway
+1x Khobar Towers, Al-Khubar
+1x Powerbase: Montreal
+1x Wash
+
+Action (20)
+------------
+6x Enchant Kindred
+1x Entrancement
+1x Mind Numb
+12x Platinum Protocol, The
+
+Ally (2)
+---------
+1x Carlton Van Wyk
+1x Saatet-ta
+
+Retainer (1)
+-------------
+1x Crypt's Sons
+
+Action Modifier (20)
+---------------------
+3x Enchanting Gaze
+3x Faceless Night
+10x Revelation of the Serpent
+4x Spying Mission
+
+Action Modifier/Combat (3)
+---------------------------
+3x Swallowed by the Night
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Form of the Bat
+
+Reaction (8)
+-------------
+2x On the Qui Vive
+6x Party Out Of Bounds
+
+Combat (8)
+-----------
+2x Claws of the Dead
+6x Form of Mist
+
+Event (1)
+----------
+1x Scourge of the Enochians

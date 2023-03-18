@@ -1,0 +1,75 @@
+Deck Name: 202207_EC_Day2_25
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=15 max=34 avg=6)
+=====================================
+1x Alvaro, The Scion of Angelica   9 OBT POT dom pre   archbishop   Lasombra:2
+1x Antonio Delgado                 9 DOM OBT POT tha   archbishop   Lasombra:2
+3x Gratiano                        8 DOM OBT obf pot   priscus      Lasombra:2
+1x Lisette Vizquel                 6 DOM POT pro       bishop       Lasombra:2
+1x Guido Lucciano                  5 OBT dom obf                    Lasombra:2
+1x Chas Giovanni Tello             4 DOM POT                        Giovanni:2
+1x Gloria Giovanni                 4 DOM nec                        Giovanni:2
+1x Ignacio, The Black Priest       4 dom obt pot                    Lasombra:2
+1x Ingrid Russo                    4 DOM for                        Ventrue antitribu:2
+1x Cameron                         3 dom pot                        Lasombra:2
+
+Library (76 cards)
+------------------
+Master (20; 7 trifle)
+----------------------
+1x Anarch Troublemaker
+1x Antediluvian Awakening
+1x Barrens, The
+2x Dreams of the Sphinx
+1x Elysian Fields
+2x Golconda: Inner Peace
+1x Jake Washington
+1x Pentex(TM) Subversion
+1x Perfectionist
+1x Political Hunting Ground
+1x Rumor Mill, Tabloid Newspaper, The
+6x Villein
+1x Wider View
+
+Action (12)
+------------
+1x Dominate Kine
+11x Govern the Unaligned
+
+Ally (2)
+---------
+1x Carlton Van Wyk
+1x Mylan Horseed
+
+Equipment (2)
+--------------
+1x Heart of Nizchetus
+1x Ivory Bow
+
+Political Action (2)
+---------------------
+1x Anarchist Uprising
+1x Ancient Influence
+
+Action Modifier (25)
+---------------------
+1x Blanket of Night
+8x Bonding
+5x Conditioning
+1x Foreshadowing Destruction
+1x Seduction
+4x Shadow Play
+4x Shroud of Absence
+1x Tenebrous Form
+
+Reaction (10)
+--------------
+7x Deflection
+3x On the Qui Vive
+
+Combat (3)
+-----------
+1x Disarm
+2x Target Vitals

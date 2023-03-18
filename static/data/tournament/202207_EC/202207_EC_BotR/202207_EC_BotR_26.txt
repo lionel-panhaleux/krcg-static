@@ -1,0 +1,59 @@
+Deck Name: BOTR Deck 26
+Author: VtesEC2022
+Description: 0GW1
+
+Crypt (12 cards, min=24 max=27 avg=6.25)
+========================================
+1x Drozodny                  7 AUS DEM OBF pre       bishop   Malkavian antitribu:5
+1x Vivian VI                 7 PRE PRO obf tha       baron    Ministry:6
+1x Xeper, Sultan of Lepers   7 OBF PRE ani dai pro            Baali:6
+4x Arishat                   6 DAI OBF PRE           1 vote   Baali:6
+2x Elisha Tucker             6 PRE cel obf pro       baron    Ministry:6
+2x Jacques Rouge             6 OBF ani pot pre       baron    Nosferatu:6
+1x Atiena                    6 CEL pot pre obf       baron    Brujah:6
+
+Library (65 cards)
+------------------
+Master (15; 7 trifle)
+----------------------
+1x Dreams of the Sphinx
+4x Information Highway
+1x Pentex(TM) Subversion
+2x Protected Resources
+5x Villein
+2x Wider View
+
+Action (4)
+-----------
+1x Entrancement
+3x Unleash Hell's Fury
+
+Political Action (16)
+----------------------
+2x Anarchist Uprising
+1x Ancilla Empowerment
+7x Kine Resources Contested
+6x Reckless Agitation
+
+Action Modifier (24)
+---------------------
+1x Awe
+2x Bewitching Oration
+2x Elder Impersonation
+1x Faceless Night
+5x Forgotten Labyrinth
+4x Lost in Crowds
+2x Perfect Paragon
+7x Voter Captivation
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Reaction (2)
+-------------
+2x Bait and Switch
+
+Combat (2)
+-----------
+2x Majesty

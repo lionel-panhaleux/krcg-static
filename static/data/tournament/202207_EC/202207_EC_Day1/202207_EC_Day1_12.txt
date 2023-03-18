@@ -1,0 +1,68 @@
+Deck Name: 202207_EC_Day1_12
+Author: VtesEC2022
+Description: 1GW5.5
+
+Crypt (12 cards, min=14 max=26 avg=5.25)
+========================================
+2x Massimiliano        7 ANI FOR pro       baron   Gangrel:6
+2x Casey Snyder        6 PRO ani for cel   baron   Gangrel:6
+2x Kuyén               6 ANI PRO           baron   Gangrel:6
+1x Martina Srnankova   6 FOR PRO ani               Gangrel:6
+1x Kamile Paukstys     5 PRO ani for               Gangrel:6
+1x Hanna Nokelainen    4 ani for pro               Gangrel:6
+1x Nathan Turner       4 PRO ani                   Gangrel:6
+1x Indira              3 PRO                       Gangrel:6
+1x Joaquín de Cádiz    3 for pro                   Gangrel:6
+
+Library (90 cards)
+------------------
+Master (18; 5 trifle)
+----------------------
+1x Anarch Free Press, The
+1x Anarch Railroad
+1x Backways
+1x Carfax Abbey
+1x Ecoterrorists
+1x Ennoia's Theater
+1x Erciyes Fragments, The
+2x Garibaldi-Meucci Museum
+1x Powerbase: Los Angeles
+1x Powerbase: Montreal
+1x Smiling Jack, The Anarch
+5x Vessel
+1x Zoo Hunting Ground
+
+Action (17)
+------------
+1x Constant Revolution
+2x Rewilding
+6x Shattering
+8x Thing
+
+Equipment (2)
+--------------
+2x Sniper Rifle
+
+Retainer (5)
+-------------
+5x Raven Spy
+
+Action Modifier (4)
+--------------------
+4x Earth Control
+
+Action Modifier/Reaction (4)
+-----------------------------
+4x Form of the Bat
+
+Reaction (25)
+--------------
+6x Bait and Switch
+5x Deep Ecology
+6x Eyes of the Wild
+8x Organized Resistance
+
+Combat (15)
+------------
+10x Earth Meld
+5x Form of Mist

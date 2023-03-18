@@ -27,10 +27,71 @@
             <span>
                 &lthead&gt<br>
                 ...<br>
-                &ltlink rel="stylesheet" type="text/css" href="https://static.krcg.org/web/krcg.css"&gt<br>
-                &ltscript src="https://static.krcg.org/web/krcg.js"&gt&lt/script&gt<br>
+                &ltlink rel="stylesheet" type="text/css" href="https://static.krcg.org/web/krcg.css" /&gt<br>
+                &ltscript src="https://static.krcg.org/web/krcg.js" /&gt<br>
                 &lt/head&gt
             </span>
+        </p>
+        <h2>Blogger special</h2>
+        <p>
+            For users of the <a target="_blank" href="https://www.blogger.com">Blogger</a> platform,
+            there is an additional script you might want to include:
+            <a href="web/krcg-blogger.js">krcg-blogger.js</a>, <b>before</b> the standard script:
+        </p>
+        <p>
+            <span>
+                &lthead&gt<br>
+                ...<br>
+                &ltlink rel="stylesheet" type="text/css" href="https://static.krcg.org/web/krcg.css" /&gt<br>
+                &ltlink rel="stylesheet" type="text/css" href="https://static.krcg.org/web/krcg-blogger.css" /&gt<br>
+                &ltscript src="https://static.krcg.org/web/krcg-blogger.js" /&gt<br>
+                &ltscript src="https://static.krcg.org/web/krcg.js" /&gt<br>
+                &lt/head&gt
+            </span>
+        </p>
+        <p>
+            This script will let you include icons and cards in your posts by using the <span>Courier</span> font.
+            Then you get the following conversions:
+        </p>
+        <ul>
+            <li><span>discipline: for</span> → <i>f</i></li>
+            <li><span>disc: FOR</span> → <i>F</i></li>
+            <li><span>icon: action</span> → <i>0</i></li>
+            <li><span>clan: Nosferatu</span> → <span class="krcg-clan">s</span></li>
+            <li><span>card: Govern the Unaligned</span> → <span class="krcg-card">Govern the Unaligned</span></li>
+        </ul>
+        <p>
+            Yes, both "disc" and "discipline" work the same, the short one is for your convenience.
+            For a better result, you can add a small styling section in your theme
+            so that the cards are displayed with a fitting color:
+        </p>
+        <p>
+            <span>
+                .krcg-card{<br>
+                &nbsp;&nbsp;color:$(body.link.hover.color);<br>
+                }<br>
+                .krcg-decklist .krcg-card{<br>
+                &nbsp;&nbsp;color: $(body.text.color);<br>
+                }<br>
+                .krcg-decklist .krcg-card:hover,<br>
+                .krcg-decklist .krcg-card:focus {<br>
+                    &nbsp;&nbsp;color: $(body.link.hover.color);<br>
+                }<br>
+                .krcg-decklist {<br>
+                &nbsp;&nbsp;background-color: background-color:rgba(<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$(heropost.main.background.color.red),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$(heropost.main.background.color.green),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$(heropost.main.background.color.blue),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;.15<br>
+                &nbsp;&nbsp;);<br>
+                }
+            </span>
+        </p>
+        <p>
+            To learn how to modify your theme <span>HTML</span>, check
+            <a target="_blank" href="https://support.google.com/blogger/answer/176245">this documentation</a>.
+            Note you can also decide <b>not</b> to include the blogger-specific script,
+            and use spans and classes like all other websites, see below.
         </p>
         <h2>Discipline icon</h2>
         <p>

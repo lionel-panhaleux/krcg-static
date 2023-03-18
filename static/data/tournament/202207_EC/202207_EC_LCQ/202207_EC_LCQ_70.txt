@@ -1,0 +1,62 @@
+Deck Name: 202207_EC_LCQ_70
+Author: VtesEC2022
+Description: 0GW0.5
+
+Crypt (12 cards, min=4 max=16 avg=4.42)
+=======================================
+3x unnamed, The              10 CEL DAI OBF PRE PRO      Baali:6
+1x Xeper, Sultan of Lepers   7 OBF PRE ani dai pro      Baali:6
+4x Horde, The                3 dai obf pre              Baali:6
+4x Anarch Convert            1                          Caitiff:ANY
+
+Library (89 cards)
+------------------
+Master (12)
+------------
+1x Anarch Revolt
+1x Giant's Blood
+1x Information Highway
+1x Pentex(TM) Loves You!
+1x Sudden Reversal
+4x Tend the Flock
+1x Twilight Camp
+2x Zillah's Valley
+
+Action (18)
+------------
+13x Platinum Protocol, The
+3x Rise of the Fallen
+2x Unleash Hell's Fury
+
+Retainer (1)
+-------------
+1x Homunculus
+
+Action Modifier (31)
+---------------------
+3x CrimethInc.
+6x Enchanting Gaze
+1x Enkil Cog
+8x Instantaneous Transformation
+2x Psychomachia
+6x Revelation of the Serpent
+5x True Love's Face
+
+Action Modifier/Combat (4)
+---------------------------
+4x Swallowed by the Night
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Sense the Sin
+
+Reaction (12)
+--------------
+5x Deep Ecology
+1x Lost in Translation
+6x Party Out Of Bounds
+
+Combat (9)
+-----------
+4x Earth Meld
+5x Form of Mist

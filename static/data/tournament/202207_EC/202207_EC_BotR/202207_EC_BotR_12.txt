@@ -1,0 +1,69 @@
+Deck Name: BOTR Deck #12
+Author: VtesEC2022
+Description: 1GW4
+
+Crypt (12 cards, min=18 max=32 avg=6.33)
+========================================
+1x Harrod                 11 ANI CEL OBF POT aus pre   inner circle   Nosferatu:2
+2x Casino Reeds           9 ANI OBF POT cel dem       prince         Nosferatu:3
+3x Nikolaus Vermeulen     7 POT ani for obf           prince         Nosferatu:2
+2x Murat                  7 OBF POT ser               prince         Nosferatu:2
+1x Calebros, The Martyr   5 ANI obf pot               prince         Nosferatu:2
+1x Clarissa Steinburgen   3 ani obf                                  Nosferatu:3
+1x Krid                   2 obf                                      Nosferatu:3
+1x Mouse                  2 ani                                      Nosferatu:3
+
+Library (89 cards)
+------------------
+Master (20; 1 trifle)
+----------------------
+1x Archon Investigation
+1x Blood Doll
+1x Dreams of the Sphinx
+1x Elysium: The Palace of Versailles
+1x Information Highway
+1x Labyrinth, The
+2x Major Boon
+5x Obfuscate
+1x Perfectionist
+1x Secret Library of Alexandria, The
+1x Slum Hunting Ground
+1x Two Wrongs
+3x Warsaw Station
+
+Action (11)
+------------
+11x Third Tradition: Progeny
+
+Equipment (1)
+--------------
+1x Ivory Bow
+
+Political Action (23)
+----------------------
+8x Consanguineous Boon
+9x Kine Resources Contested
+2x Nosferatu Justicar
+4x Parity Shift
+
+Action Modifier (17)
+---------------------
+1x Cloak the Gathering
+2x Elder Impersonation
+6x Faceless Night
+6x Lost in Crowds
+1x Mask of a Thousand Faces
+1x Veil the Legions
+
+Action Modifier/Combat (6)
+---------------------------
+6x Swallowed by the Night
+
+Reaction (6)
+-------------
+6x Second Tradition: Domain
+
+Combat (5)
+-----------
+1x Canine Horde
+4x Thrown Gate

@@ -1,0 +1,61 @@
+Deck Name: BOTR Deck 24
+Author: VtesEC2022
+Description: 0GW2
+
+Crypt (12 cards, min=40 max=34 avg=9.08)
+========================================
+5x Kemintiri (ADV)            10 OBF PRE SER THA aus dom            Ministry:2
+1x Kemintiri                  10 OBF PRE SER THA aus dom            Ministry:2
+2x Khay'tall, Snake of Eden   9 DOM OBF PRE SER aus                Ministry:2
+3x Sarrasine (ADV)            8 OBF PRE SER aus nec       prince   Ministry:2
+1x Sarrasine                  7 OBF PRE aus nec ser                Ministry:2
+
+Library (80 cards)
+------------------
+Master (14; 3 trifle)
+----------------------
+8x Eternals of Sirius, The
+2x Ferraille
+1x Secure Haven
+3x Villein
+
+Action (15)
+------------
+2x Entrancement
+2x Heart of the City
+9x Legacy
+2x Rutor's Hand
+
+Political Action (17)
+----------------------
+1x Ancilla Empowerment
+1x Banishment
+2x Conservative Agitation
+1x Kindred Segregation
+4x Kine Resources Contested
+2x Parity Shift
+1x Political Stranglehold
+4x Reckless Agitation
+1x Reins of Power
+
+Action Modifier (17)
+---------------------
+4x Bewitching Oration
+3x Elder Impersonation
+1x Enkil Cog
+2x Forgotten Labyrinth
+2x Lost in Crowds
+5x Voter Captivation
+
+Action Modifier/Combat (2)
+---------------------------
+2x Swallowed by the Night
+
+Action Modifier/Reaction (6)
+-----------------------------
+6x Velvet Tongue
+
+Reaction (9)
+-------------
+5x Deflection
+4x On the Qui Vive

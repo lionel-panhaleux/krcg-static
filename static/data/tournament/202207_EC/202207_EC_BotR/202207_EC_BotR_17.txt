@@ -1,0 +1,78 @@
+Deck Name: BOTR Deck 17
+Author: VtesEC2022
+Description: 1GW3
+
+Crypt (12 cards, min=26 max=36 avg=7.75)
+========================================
+1x Jann Berger       10 CEL POT PRE dem for   prince     Brujah:4
+5x Dmitra Ilyanova   9 CEL FOR POT PRE obf   justicar   Brujah:5
+1x Carlak            8 CEL PRE dom pot       prince     Brujah:5
+2x Karen Suadela     7 CEL POT obf pre       prince     Brujah:5
+1x Tara              6 POT PRE cel           prince     Brujah:5
+1x Tomaine           6 CEL POT PRE           primogen   Brujah:4
+1x Reginald Moore    4 PRE                   primogen   Brujah:4
+
+Library (90 cards)
+------------------
+Master (19; 10 trifle)
+-----------------------
+1x Carthage Remembered
+1x Dreams of the Sphinx
+2x Information Highway
+1x Monastery of Shadows
+3x New Carthage
+1x Pentex(TM) Subversion
+1x Two Wrongs
+6x Villein
+2x Wash
+1x Wider View
+
+Action (12)
+------------
+1x Aranthebes, The Immortal
+7x Enchant Kindred
+1x Entrancement
+3x Fourth Tradition: The Accounting
+
+Equipment (1)
+--------------
+1x Assault Rifle
+
+Political Action (16)
+----------------------
+1x Alastor
+1x Anarchist Uprising
+1x Ancilla Empowerment
+2x Banishment
+1x Justicar Retribution
+7x Kine Resources Contested
+3x Parity Shift
+
+Action Modifier (22)
+---------------------
+1x Bewitching Oration
+1x Closed Session
+2x Daring the Dawn
+3x Forced March
+3x Forgotten Labyrinth
+1x Freak Drive
+2x Iron Glare
+3x Perfect Paragon
+6x Voter Captivation
+
+Action Modifier/Combat (5)
+---------------------------
+5x Resist Earth's Grasp
+
+Action Modifier/Reaction (2)
+-----------------------------
+2x Scalpel Tongue
+
+Reaction (7)
+-------------
+1x Lost in Translation
+6x Second Tradition: Domain
+
+Combat (6)
+-----------
+6x Majesty

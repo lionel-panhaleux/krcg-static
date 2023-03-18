@@ -1,0 +1,63 @@
+Deck Name: BOTR Deck #8
+Author: VtesEC2022
+Description: 1GW5
+
+Crypt (12 cards, min=18 max=26 avg=5.5)
+=======================================
+1x Graham Gottesman    7 DOM FOR obf pre tha   prince     Ventrue:5
+1x Mata Hari           7 CHI OBF aus for qui   2 votes    Ravnos:4
+2x Mustafa, The Heir   6 FOR PRE cel dom       prince     Ventrue:4
+2x Victor Donaldson    6 DOM for pre           prince     Ventrue:5
+3x Victor Pelletier    5 PRE cel dom for                  Ventrue:4
+1x Emily Carson        5 DOM for pre           primogen   Ventrue:5
+1x Hamid Mansour       4 dom for pre                      Ventrue:5
+1x Robin Withers       4 dom obf pre                      Ventrue:4
+
+Library (60 cards)
+------------------
+Master (15; 1 trifle)
+----------------------
+1x Coven, The
+1x Creepshow Casino
+1x Giant's Blood
+1x Pentex(TM) Subversion
+1x Protected Resources
+2x Recruitment
+1x Uptown Hunting Ground
+6x Ventrue Directorate Assembly
+1x Ventrue Headquarters
+
+Action (11)
+------------
+9x Embrace, The
+2x Vaticination
+
+Equipment (1)
+--------------
+1x Heart of Nizchetus
+
+Political Action (23)
+----------------------
+6x Consanguineous Boon
+3x Conservative Agitation
+1x Domain Challenge
+7x Kine Resources Contested
+1x Neonate Breach
+4x Parity Shift
+1x Ventrue Justicar
+
+Action Modifier (4)
+--------------------
+2x Conditioning
+1x Daring the Dawn
+1x Veil the Legions
+
+Reaction (5)
+-------------
+2x Deflection
+1x Legacy of Power
+2x Second Tradition: Domain
+
+Event (1)
+----------
+1x Uncoiling, The
