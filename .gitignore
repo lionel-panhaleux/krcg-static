@@ -6,6 +6,9 @@ venv/
 *.egg-info/
 *.pkl
 
+# env variables
+.env
+
 # test
 .pytest_cache/
 
