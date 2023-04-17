@@ -11,7 +11,8 @@ def format_tournament(path):
         head = content.split("\n", 2)
         print(head[0])
         score = re.match(
-            r"[\w\d\s:]*?(?P<number>\d+)\.\s*(?P<gw>\d+)GW\s*(?P<vp>\d+)(,|.)?(?P<half>\d)?\s*V?P?",
+            r"[\w\d\s:]*?(?P<number>\d+)\.\s*(?P<gw>\d+)GW\s*"
+            r"(?P<vp>\d+)(,|.)?(?P<half>\d)?\s*V?P?",
             head[0],
         )
         print(score.groups())
