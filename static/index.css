@@ -15,6 +15,11 @@ a:focus {
     color: #007acc;
 }
 
+i {
+    font-family: "Ankha VTES";
+    font-style: normal;
+}
+
 header,
 footer {
     display: flex;
