@@ -602,4 +602,4 @@ def main():
     (args.folder / "data").mkdir(parents=True, exist_ok=True)
     standard_json(args.folder)
     standard_html(args.folder)
-    # amaranth_ids(args.folder)
+    amaranth_ids(args.folder)
