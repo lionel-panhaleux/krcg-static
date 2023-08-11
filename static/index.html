@@ -136,12 +136,20 @@
                 <a target="_blank" href="card/fame.jpg#2022-01-25-14">https://static.krcg.org/card/fame.jpg#2022-01-25-14</a>
             </p>
             <p>
-                On a similar note, the card images files hold a meaningful modification date,
-                which means you can also inspect and trust this modificaiton date in the HTTP header of the file:
+                Alternatively, you can use the <span>/bust</span> prefix as URL path, followed by any digits.
+                For example,
+                <a target="_blank" href="bust/2022012514/card/fame.jpg">https://static.krcg.org/bust/2022012514/card/fame.jpg</a>
             </p>
-            <p><span>curl -I "https://static.krcg.org/card/archon.jpg"</span></p>
+            <p>
+                On a similar note, the card images files hold a <strong>meaningful modification date</strong>,
+                which means you can also inspect and trust this modification date in the HTTP header of the file:
+            </p>
+            <p><span>curl -I -X HEAD "https://static.krcg.org/card/archon.jpg"</span></p>
             <p>will get you (among others):</p>
             <p><span>Last-Modified: Thu, 19 Aug 2021 20:01:34 GMT</span></p>
+            <p>
+                you can use the <span>HEAD</span> method to gather this information before querying the files
+            </p>
         </div>
         <h2>Symbols images</h2>
         <p>
