@@ -136,7 +136,7 @@ convert $f -bordercolor black -border 0x1 $name; \
 done
 ```
 
-Depending on how they generate the files, those can come up with large block borders, in this case, do this instead:
+Depending on how they generate the files, those can come up with large block borders (400x544), in this case, do this:
 
 ```shell
 for f in incoming/*(.); do \
