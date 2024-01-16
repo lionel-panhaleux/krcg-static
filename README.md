@@ -132,7 +132,7 @@ name=${name% - *}; \
 name=${name% \[*}; \
 name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
 name=result/${name}.jpg; \
-convert $f -bordercolor black -border 0x1 $name; \
+convert $f $name; \
 done
 ```
 
