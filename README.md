@@ -158,6 +158,27 @@ convert $f -shave 18 -resize x500 $name; \
 done
 ```
 
+Sometimes the resulting image won't exactly fir the expected 358x500 pixels.
+To add a 1-pixel borders on both sides use:
+```shell
+convert $f -bordercolor black -border 1x $name
+````
+
+And to remove:
+```shell
+convert $f -shave 1x $name
+````
+
+To add a 1-pixel border on a single side, use:
+```shell
+convert $f -background black -gravity west -splice 1x $name
+````
+
+And to remove:
+```shell
+convert $f -gravity west -chop 1x $name
+````
+
 Then, to create the symbolic links for the crypt cards, you can:
 
 ```shell
@@ -168,6 +189,16 @@ short=${name%g[123456789].jpg}; \
 if [[ ${short} != ${name} ]]; then \
     ln -fs ${name} ${short}.jpg; \
 fi; \
+done
+```
+
+To generate round corners for the card:
+
+```shell
+for f in incoming/*(.); do \
+    name=${f#incoming/}; \
+    name=${name%.*}; \
+    convert incoming/${name}.jpg \( +clone  -alpha extract -draw 'fill black polygon 0,0 0,15 15,0 fill white circle 15,15 15,0' \( +clone -flip \) -compose Multiply -composite \( +clone -flop \) -compose Multiply -composite \) -alpha off -compose CopyOpacity -composite result/${name}.png; \
 done
 ```
 
