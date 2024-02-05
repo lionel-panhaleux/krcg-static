@@ -1,6 +1,6 @@
 .PHONY: quality test static update clean
 
-export GITHUB_BRANCH = V5C-20240201
+export GITHUB_BRANCH = main
 STATIC_SERVER ?= lpanhaleux@krcg.org:projects/static.krcg.org/dist
 
 quality:
