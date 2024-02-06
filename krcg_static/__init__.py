@@ -2,6 +2,7 @@
 
 Produces static files for use in third parties softwares.
 """
+
 import aiofile
 import aiohttp
 import argparse

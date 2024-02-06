@@ -1,5 +1,6 @@
 """A convenience function to rename BCP images
 """
+
 import os
 import re
 

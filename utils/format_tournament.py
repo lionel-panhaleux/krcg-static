@@ -1,5 +1,6 @@
 """A convenience function to fix tournament archive files
 """
+
 import os
 import re
 
