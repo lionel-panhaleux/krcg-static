@@ -7,10 +7,10 @@ jobs:
     environment: krcg.org
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Python 3.10
+      - name: Setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -22,6 +22,9 @@ jobs:
           mkdir /home/runner/.ssh
           echo "${{ secrets.KRCG_DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
           chmod 600 /home/runner/.ssh/id_rsa
-          echo "${{ secrets.KRCG_HOST_ID }}" > /home/runner/.ssh/known_hosts
-      - name: Deploy files to server
-        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@krcg.org:projects/static.krcg.org/dist
+          echo "${{ secrets.KRCG_GRA_HOST_ID }}" > /home/runner/.ssh/known_hosts
+          echo "${{ secrets.KRCG_SBG_HOST_ID }}" > /home/runner/.ssh/known_hosts
+      - name: Deploy files to krcg-gra
+        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@152.228.170.51:projects/static.krcg.org/dist
+      - name: Deploy files to krcg-sbg
+        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@51.178.45.139:projects/static.krcg.org/dist
