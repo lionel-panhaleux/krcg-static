@@ -23,7 +23,7 @@ jobs:
           echo "${{ secrets.KRCG_DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
           chmod 600 /home/runner/.ssh/id_rsa
           echo "${{ secrets.KRCG_GRA_HOST_ID }}" > /home/runner/.ssh/known_hosts
-          echo "${{ secrets.KRCG_SBG_HOST_ID }}" > /home/runner/.ssh/known_hosts
+          echo "${{ secrets.KRCG_SBG_HOST_ID }}" >> /home/runner/.ssh/known_hosts
       - name: Deploy files to krcg-gra
         run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@152.228.170.51:projects/static.krcg.org/dist
       - name: Deploy files to krcg-sbg
