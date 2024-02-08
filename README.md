@@ -1,6 +1,6 @@
 # KRCG Static
 
-[![Validation](https://github.com/lionel-panhaleux/krcg-static/workflows/Validation/badge.svg)](https://github.com/lionel-panhaleux/krcg-static/actions)
+[![Validation](https://github.com/lionel-panhaleux/krcg-static/actions/workflows/validation.yml/badge.svg)](https://github.com/lionel-panhaleux/krcg-static/actions/workflows/validation.yml)
 [![Python version](https://img.shields.io/badge/python-3.8-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)

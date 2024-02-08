@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "krcg-static"
+version = "0.0"
+authors = [
+    { name = "Lionel Panhaleux", email = "lionel.panhaleux+krcg@gmail.com" },
+]
+description = "KRCG Static website and files generator"
+keywords = ["vtes", "Vampire: The Eternal Struggle", "CCG", "TWD", "TWDA"]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Environment :: Web Environment",
+    "Topic :: Games/Entertainment",
+]
+dependencies = ["aiofile", "aiohttp", "requests", "unidecode", "krcg>=3.8"]
+
+[project.optional-dependencies]
+dev = ["black", "ipython", "pytest", "ruff"]
+ocr = ["opencv-python", "pytesseract"]
+
+[project.scripts]
+krcg-static = "krcg_static:main"
+
+[project.urls]
+Homepage = "https://static.krcg.org"
+Repository = "https://github.com/lionel-panhaleux/krcg-static"
+
+[tool.setuptools.packages.find]
+include = ["krcg_static*"]
