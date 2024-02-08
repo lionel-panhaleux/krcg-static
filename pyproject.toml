@@ -27,7 +27,7 @@ dependencies = ["aiofile", "aiohttp", "requests", "unidecode", "krcg>=3.8"]
 
 [project.optional-dependencies]
 dev = ["black", "ipython", "pytest", "ruff"]
-ocr = ["opencv-python", "pytesseract"]
+utils = ["opencv-python", "pytesseract", "pydantic"]
 
 [project.scripts]
 krcg-static = "krcg_static:main"

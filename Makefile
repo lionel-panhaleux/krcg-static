@@ -20,7 +20,7 @@ minimal:
 	rsync -rlptq --delete-after -e ssh build/ ${STATIC_SERVER}
 
 update:
-	pip install --upgrade --upgrade-strategy eager -e .[dev,ocr]
+	pip install --upgrade --upgrade-strategy eager -e .[dev,utils]
 
 clean:
 	rm -rf build
