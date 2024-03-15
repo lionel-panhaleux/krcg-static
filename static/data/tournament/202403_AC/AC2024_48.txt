@@ -1,0 +1,48 @@
+-- 0GW0.5
+
+Deck Name: Anarch Revolt
+
+Crypt (12 cards, min=23, max=32, avg=6.75)
+------------------------------------------
+1x Medic, The             6 OBF POT dem for             Nosferatu:5
+1x Jacques Rouge          6 OBF ani pot pre      baron  Nosferatu:6
+1x Benedito, a Lanterna   6 POT ani aus obf      baron  Nosferatu:6
+1x Atiena                 6 CEL obf pot pre      baron  Brujah:6
+1x Doctor Morocco         5 PRO cel obf pre             Ministry:6
+1x Elisha Tucker          6 PRE cel obf pro      baron  Ministry:6
+4x Faruq Abd al-Qadir     8 POT PRE PRO cel obf         Ministry:6
+2x Valeriya Zinovieva     7 POT cel pre pro      baron  Brujah:6
+
+Library (90 cards)
+Master (16; 8 trifle)
+1x Carfax Abbey
+1x Club Illusion
+5x Dabbler
+3x Dreams of the Sphinx
+2x Fame
+1x Tension in the Ranks
+2x Villein
+1x Wider View
+
+Action (23)
+1x Constant Revolution
+3x Field Training
+7x Make the Misere
+12x Platinum Protocol, The
+
+Ally (1)
+1x Saatet-ta
+
+Reaction (23)
+6x Bait and Switch
+8x Organized Resistance
+5x Party Out Of Bounds
+4x Protection Racket
+
+Combat (27)
+4x Donnybrook
+7x Dust Up
+4x Flesh of Marble
+4x Hell-for-Leather
+4x Immortal Grapple
+4x Taste of Vitae

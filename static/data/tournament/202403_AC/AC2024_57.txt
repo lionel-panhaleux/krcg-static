@@ -1,0 +1,62 @@
+-- 0GW0.0
+
+Deck Name: Ahribrugangremistry Lackey
+
+Crypt (12 cards, min=4, max=27, avg=4.17)
+-----------------------------------------
+4x Anarch Convert      1 -none-                     Caitiff:ANY
+1x Howler              8 ANI PRE SPI obf            Ahrimane:2
+1x Maria Stone         5 FOR cel obf pro            Gangrel antitribu:3
+1x Maria Stone (ADV)   5 FOR cel obf pre pro spi    Ahrimane:3
+1x Nettie Hale         5 ani cel pre pro spi        Ahrimane:2
+2x Pariah              6 OBF PRO pot pre            Abomination:2
+1x Siamese, The        7 PRE SPI ani pro            Ahrimane:2
+1x Tori Longwood       4 cel pot pre pro            Caitiff:2
+
+Library (90 cards)
+Master (24; 8 trifle)
+1x Anarch Railroad
+4x Dabbler
+4x Effective Management
+1x Garibaldi-Meucci Museum
+2x Guardian Angel
+2x Libertas
+4x Protean
+2x Rötschreck
+4x Villein
+
+Action (8)
+2x Field Training
+6x Platinum Protocol, The
+
+Action/Combat (6)
+6x Spirit Claws
+
+Ally (2)
+2x Procurer
+
+Retainer (2)
+1x J. S. Simmons, Esq.
+1x Tasha Morgan
+
+Action Modifier (6)
+6x Revelation of the Serpent
+
+Action Modifier/Combat (4)
+4x Lay Low
+
+Action Modifier/Reaction (4)
+4x Form of the Bat
+
+Reaction (16)
+4x Deep Ecology
+4x On the Qui Vive
+4x Party Out Of Bounds
+4x Speak with Spirits
+
+Combat (18)
+4x Amaranth
+2x Donnybrook
+6x Dust Up
+4x Immortal Grapple
+2x Leapfrog

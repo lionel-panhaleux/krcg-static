@@ -1,0 +1,60 @@
+-- 0GW0.0
+
+Deck Name: ___blood doll politics 
+
+Crypt (13 cards, min=19, max=35, avg=6.69)
+------------------------------------------
+1x Arishat            6 DAI OBF PRE          1 vote    Baali:6
+1x Benjamin Rose      7 AUS OBF ani pot      prince    Nosferatu:5
+2x Dmitra Ilyanova    9 CEL FOR POT PRE obf  justicar  Brujah:5
+1x Graham Gottesman   7 DOM FOR obf pre tha  prince    Ventrue:5
+1x Karen Suadela      7 CEL POT obf pre      prince    Brujah:5
+1x New Blood          2 san                            Blood Brother:ANY
+1x Jacques Rouge      6 OBF ani pot pre      baron     Nosferatu:6
+1x Andi Liu           6 DOM aus obf pre      prince    Malkavian:6
+1x Belinde            6 OBF ani aus pot      prince    Nosferatu:6
+1x Warmaksan          5 THA cel obf          prince    Banu Haqim:6
+1x Kasim Bayar        9 CEL OBF THA aus pot  justicar  Banu Haqim:6
+1x Oluwafunmilayo     8 AUS CEL OBF THA      prince    Banu Haqim:6
+
+Library (68 cards)
+Master (23; 5 trifle)
+6x Ashur Tablets
+3x Blood Doll
+1x Coven, The
+1x Creepshow Casino
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Humanitas
+1x Information Highway
+2x Parthenon, The
+1x Protected Resources
+2x Vessel
+2x Villein
+
+Action (8)
+7x Fourth Tradition: The Accounting
+1x Kindred Intelligence
+
+Equipment (1)
+1x Ritual Goblet
+
+Political Action (19)
+2x Banishment
+1x Conservative Agitation
+6x Kine Resources Contested
+1x Neonate Breach
+8x Parity Shift
+1x Rumors of Gehenna
+
+Action Modifier (13)
+1x Faceless Night
+6x Forgotten Labyrinth
+5x Lost in Crowds
+1x Voter Captivation
+
+Action Modifier/Combat (1)
+1x Swallowed by the Night
+
+Combat (3)
+3x Majesty

@@ -1,0 +1,51 @@
+-- 0GW0.0
+
+Deck Name: AnarchAnimalismv3
+
+Crypt (12 cards, min=19, max=27, avg=5.83)
+------------------------------------------
+3x Kuyén             6 ANI PRO          baron  Gangrel:6
+2x Massimiliano      7 ANI FOR pro      baron  Gangrel:6
+1x Ángel Guerrero    7 ANI DOM PRO      baron  Tzimisce:6
+2x Branimira         6 ANI dom pre pro  baron  Tzimisce:6
+1x Doc Martina       6 ANI OBF for pre         Ravnos:7
+1x Gathii            5 ANI PRE obf             Ravnos:7
+1x Trung Chau Pham   3 ANI                     Ravnos:7
+1x Whisper           5 ANI DOM pro             Tzimisce:6
+
+Library (84 cards)
+Master (19; 9 trifle)
+1x Anarch Free Press, The
+2x Carfax Abbey
+2x Club Illusion
+1x Garibaldi-Meucci Museum
+2x Papillon
+1x Powerbase: Montreal
+1x Rack, The
+4x Vessel
+4x Villein
+1x Wider View
+
+Action (4)
+4x Deep Song
+
+Equipment (6)
+6x .44 Magnum
+
+Retainer (6)
+6x Raven Spy
+
+Action Modifier (2)
+2x Monkey Wrench
+
+Reaction (20)
+5x Bait and Switch
+4x Cats' Guidance
+11x Organized Resistance
+
+Combat (27)
+2x Canine Horde
+7x Carrion Crows
+6x Concealed Weapon
+6x Hell-for-Leather
+6x Pack Alpha

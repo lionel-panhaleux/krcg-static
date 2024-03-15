@@ -1,0 +1,67 @@
+-- 2GW4.5+1
+
+Deck Name: Vote Domination
+
+Crypt (12 cards, min=18, max=28, avg=5.92)
+------------------------------------------
+3x Arishat                   6 DAI OBF PRE          1 vote  Baali:6
+4x Xeper, Sultan of Lepers   7 OBF PRE ani dai pro          Baali:6
+1x Jacques Rouge             6 OBF ani pot pre      baron   Nosferatu:6
+1x Elisha Tucker             6 PRE cel obf pro      baron   Ministry:6
+1x Vivian VI                 7 PRE PRO obf tha      baron   Ministry:6
+2x Dominica                  3 aus for                      Salubri:7
+
+Library (75 cards)
+Master (20; 4 trifle)
+1x Anarch Railroad
+1x Creepshow Casino
+2x Dreams of the Sphinx
+1x Effective Management
+1x Garibaldi-Meucci Museum
+1x Information Highway
+1x Parthenon, The
+1x Path of the Void
+1x Powerbase: Los Angeles
+1x Protean
+1x Saulot's Guiding Wisdom
+3x Tend the Flock
+1x Twilight Camp
+2x Villein
+2x Wider View
+
+Action (5)
+2x Charming Lobby
+1x Condemnation: Mute
+2x Unleash Hell's Fury
+
+Ally (1)
+1x Veneficti
+
+Political Action (11)
+2x Eat the Rich
+1x Firebrand
+8x Reckless Agitation
+
+Action Modifier (24)
+1x Bewitching Oration
+5x Cloak the Gathering
+2x CrimethInc.
+2x Elder Impersonation
+2x Forgotten Labyrinth
+2x Lost in Crowds
+1x Memory Rift
+2x Spying Mission
+1x Veil the Legions
+6x Voter Captivation
+
+Action Modifier/Combat (2)
+2x Swallowed by the Night
+
+Reaction (10)
+3x Bait and Switch
+3x Organized Resistance
+4x Party Out Of Bounds
+
+Combat (2)
+1x Majesty
+1x Staredown

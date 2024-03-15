@@ -1,0 +1,43 @@
+-- 0GW0.5
+
+Deck Name: Antti Tuisku's Mayhem Tour 2023: Blaablaa (En kuule sanaakaan) remix pienin versio
+
+Crypt (12 cards, min=20, max=42, avg=8.08)
+------------------------------------------
+1x Hardestadt        11 DOM FOR POT PRE cel pro      inner circle  Ventrue:4
+1x Josef von Bauren  11 ANI DEM OBF POT cel          inner circle  Nosferatu:4
+2x Jaroslav Pascek   10 CEL POT PRE for obf          justicar      Brujah:3
+2x Xaviar (ADV)      10 ABO ANI FOR PRO aus cel pot  justicar      Gangrel:3
+1x Madame Guil       10 AUS CEL PRE for pot ser      justicar      Toreador:3
+5x Victor Pelletier   5 PRE cel dom for                            Ventrue:4
+
+Library (61 cards)
+Master (20; 6 trifle)
+6x Dreams of the Sphinx
+6x Filchware's Pawn Shop
+2x Pentex(TM) Subversion
+6x Tomb of Rameses III
+
+Action (14)
+2x Abactor
+1x Baltimore Purge
+3x Distraction
+4x Eternal Mask, The
+1x Flurry of Action
+1x Rave
+2x Scrounging
+
+Equipment (6)
+4x Book of Going Forth by Night, The
+1x Martinelli's Ring
+1x Sargon Fragment, The
+
+Political Action (5)
+5x Might of the Camarilla
+
+Action Modifier (16)
+1x Daring the Dawn
+2x Forced March
+11x Freak Drive
+1x Perfect Paragon
+1x Voter Captivation

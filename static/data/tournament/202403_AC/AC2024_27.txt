@@ -1,0 +1,70 @@
+-- 0GW3.0
+
+Deck Name: ventrue anti AT
+
+Crypt (13 cards, min=4, max=32, avg=5.15)
+-----------------------------------------
+4x Anarch Convert              1 -none-                 Caitiff:ANY
+3x Joseph O'Grady              7 DOM FOR aus cel        Ventrue antitribu:3
+2x Neighbor John               5 AUS dom for            Ventrue antitribu:4
+4x Owain Evans, The Wanderer   8 AUS DOM FOR cel pre    Ventrue antitribu:3
+
+Library (90 cards)
+Master (19; 6 trifle)
+1x Anarch Free Press, The
+1x Anarch Railroad
+1x Corporate Hunting Ground
+2x Dabbler
+1x Direct Intervention
+1x Erciyes Fragments, The
+2x Guardian Angel
+2x Jake Washington
+1x Powerbase: Montreal
+1x Rack, The
+1x Smiling Jack, The Anarch
+3x Vessel
+1x Wider View
+1x WMRH Talk Radio
+
+Action (12)
+1x Constant Revolution
+1x Field Training
+10x Govern the Unaligned
+
+Ally (1)
+1x Carlton Van Wyk
+
+Equipment (7)
+1x .44 Magnum
+1x Bowl of Convergence
+1x Flak Jacket
+1x Heart of Nizchetus
+2x Kevlar Vest
+1x Sniper Rifle
+
+Action Modifier (8)
+3x Forced March
+2x Freak Drive
+1x Kiss of Ra, The
+2x Seduction
+
+Action Modifier/Combat (2)
+2x Resist Earth's Grasp
+
+Reaction (29)
+4x Deflection
+2x Enhanced Senses
+4x Eyes of Argus
+2x Forced Vigilance
+6x Guardian Vigil
+2x Precognition
+2x Quicken Sight
+2x Redirection
+2x Spirit's Touch
+3x Telepathic Misdirection
+
+Combat (12)
+6x Diversion
+2x Hidden Strength
+2x Rolling with the Punches
+2x Weighted Walking Stick

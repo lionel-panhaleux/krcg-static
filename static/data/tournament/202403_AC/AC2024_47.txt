@@ -1,0 +1,57 @@
+-- 0GW0.5
+
+Deck Name: Tzcimisce G2
+
+Crypt (13 cards, min=22, max=32, avg=7.08)
+------------------------------------------
+2x Caliban                                  6 ANI AUS VIC                      Tzimisce:2
+2x Corine Marcón                            6 AUS VIC ani                      Tzimisce:2
+1x Lolita Houston                           4 VIC aus                          Tzimisce:2
+2x Meshenka                                 8 ANI AUS VIC          priscus     Tzimisce:2
+3x Sascha Vykos, The Angel of Caine         8 AUS THA VIC ani dom  priscus     Tzimisce:2
+3x Sascha Vykos, The Angel of Caine (ADV)   8 AUS THA VIC ani dom  archbishop  Tzimisce:2
+
+Library (90 cards)
+Master (16; 5 trifle)
+2x Charisma
+1x Direct Intervention
+1x Dreams of the Sphinx
+1x Fame
+1x Library Hunting Ground
+3x Path of Metamorphosis, The
+1x Rack, The
+1x Tension in the Ranks
+3x Villein
+2x Wider View
+
+Action (6)
+5x Deep Song
+1x Under Siege
+
+Ally (14)
+8x Underbridge Stray
+1x Vozhd of Sofia
+5x War Ghoul
+
+Equipment (5)
+5x Living Manse
+
+Retainer (8)
+8x Revenant
+
+Reaction (18)
+2x Eagle's Sight
+4x Enhanced Senses
+4x Eyes of Argus
+4x Read the Winds
+4x Telepathic Misdirection
+
+Combat (20)
+6x Breath of the Dragon
+12x Chiropteran Marauder
+2x Telepathic Tracking
+
+Event (3)
+1x Dragonbound
+1x FBI Special Affairs Division
+1x Unmasking, The

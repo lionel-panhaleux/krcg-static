@@ -1,0 +1,54 @@
+-- 0GW0.0
+
+Deck Name: Fresh Corpses
+
+Crypt (12 cards, min=9, max=32, avg=5.42)
+-----------------------------------------
+3x Jean Lisle         8 FOR OBF THN pot        Samedi:6
+3x Josette            8 FOR OBF THN pot pre    Samedi:6
+2x Marie-Pierre       4 THN for nec            Samedi:6
+1x Angel Chavarria    3 THN                    Samedi:6
+1x Brock Sterling     3 FOR                    Ventrue:6
+1x Adri, The Seeker   2 for                    Ravnos:6
+1x Anarch Convert     1 -none-                 Caitiff:ANY
+
+Library (90 cards)
+Master (15; 7 trifle)
+1x Barrens, The
+2x Blessings of the Loa
+1x Dirty Contract
+1x Fame
+1x Giant's Blood
+1x Houngan
+1x Tension in the Ranks
+3x Vessel
+4x Villein
+
+Action (13)
+1x Ambush
+6x Bum's Rush
+6x Harass
+
+Ally (1)
+1x Mylan Horseed
+
+Equipment (1)
+1x Camera Phone
+
+Action Modifier (6)
+6x Freak Drive
+
+Combat (54)
+2x Disarm
+9x Groaning Corpse
+7x Immortal Grapple
+4x Indomitability
+4x Necrosis
+6x Relentless Reaper
+4x Rigor Mortis
+2x Rolling with the Punches
+4x Soak
+6x Taste of Vitae
+1x Trap
+3x Unflinching Persistence
+2x Withering

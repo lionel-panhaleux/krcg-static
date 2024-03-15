@@ -1,0 +1,65 @@
+-- 0GW0.5
+
+Deck Name: * Ministerio de la Chana
+
+Crypt (12 cards, min=21, max=30, avg=6.33)
+------------------------------------------
+2x Sergio Bueno         8 OBF PRE PRO aus pot  baron  Ministry:6
+3x Vivian VI            7 PRE PRO obf tha      baron  Ministry:6
+2x Elisha Tucker        6 PRE cel obf pro      baron  Ministry:6
+1x Crystal Lynn         6 OBF PRE PRO                 Ministry:6
+1x Jacques Rouge        6 OBF ani pot pre      baron  Nosferatu:6
+1x Aluc Romas de Leon   5 PRE aus obf pro             Ministry:6
+1x Doctor Morocco       5 PRO cel obf pre             Ministry:6
+1x Jenny Silver         5 PRE PRO obf                 Ministry:6
+
+Library (90 cards)
+Master (17; 8 trifle)
+1x Anarch Railroad
+1x Carfax Abbey
+1x Club Illusion
+2x Dabbler
+1x Ferraille
+2x Garibaldi-Meucci Museum
+1x Opium Den
+1x Papillon
+1x Powerbase: Los Angeles
+6x Villein
+
+Action (16)
+1x Entrancement
+1x Fee Stake: Boston
+1x Fee Stake: Los Angeles
+1x Fee Stake: New York
+1x Heart of the City
+11x Platinum Protocol, The
+
+Ally (1)
+1x Saatet-ta
+
+Political Action (8)
+3x Eat the Rich
+1x Firebrand
+1x Patsy
+2x Reckless Agitation
+1x Revolutionary Council
+
+Action Modifier (31)
+2x Bewitching Oration
+6x CrimethInc.
+4x Earth Control
+4x Enchanting Gaze
+4x Memory Rift
+4x Propaganda of the Deed
+5x Revelation of the Serpent
+2x Voter Captivation
+
+Reaction (8)
+6x Bait and Switch
+2x Organized Resistance
+
+Combat (9)
+1x Claws of the Dead
+1x Donnybrook
+3x Earth Meld
+4x Form of Mist

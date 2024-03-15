@@ -1,0 +1,41 @@
+-- 1GW4.0
+
+Deck Name: TupRock
+
+Crypt (27 cards, min=4, max=17, avg=1.63)
+-----------------------------------------
+1x Antonio d'Erlette   5 THA dom for pot    Tremere antitribu:4
+1x Esoara              5 DOM aus for pot    Tremere antitribu:4
+1x Janine              4 aus dom tha        Tremere antitribu:4
+2x Keith Moody         3 DOM                Tremere antitribu:4
+1x Ember Wright        3 aus dom            Tremere antitribu:3
+21x Tupdog              1 POT VIS            Gargoyle:3
+
+Library (79 cards)
+Master (12; 3 trifle)
+1x Direct Intervention
+3x Dreams of the Sphinx
+1x Fame
+3x Information Highway
+1x Secure Haven
+3x Wider View
+
+Action (8)
+8x Graverobbing
+
+Ally (7)
+7x Rock Cat
+
+Political Action (9)
+9x Autarkis Persecution
+
+Reaction (4)
+2x Deflection
+2x Redirection
+
+Combat (39)
+9x Brick by Brick
+10x Immortal Grapple
+10x Raking Talons
+5x Roundhouse
+5x Torn Signpost

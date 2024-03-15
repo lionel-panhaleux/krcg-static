@@ -1,0 +1,60 @@
+-- 0GW1.5
+
+Deck Name: New deck
+
+Crypt (15 cards, min=17, max=26, avg=5.53)
+------------------------------------------
+1x André the Manipulator   6 FOR PRO                 Gangrel:5
+1x Crow                    5 ANI for pro tha         Gangrel:5
+3x Casey Snyder            6 PRO ani cel for  baron  Gangrel:6
+2x Kuyén                   6 ANI PRO          baron  Gangrel:6
+1x Dario Ziggler           5 FOR ani pro tha         Gangrel:6
+1x Hanna Nokelainen        4 ani for pro             Gangrel:6
+1x Joaquín de Cádiz        3 for pro                 Gangrel:6
+1x Kamile Paukstys         5 PRO ani for             Gangrel:6
+1x Martina Srnankova       6 FOR PRO ani             Gangrel:6
+2x Massimiliano            7 ANI FOR pro      baron  Gangrel:6
+1x Mickey Wheeler          5 ani cel for pro         Gangrel:6
+
+Library (89 cards)
+Master (18; 6 trifle)
+1x Anarch Free Press, The
+1x Anarch Railroad
+1x Backways
+1x Carfax Abbey
+1x Club Illusion
+1x Ecoterrorists
+1x Gangrel Revel
+2x Libertas
+2x Rötschreck
+6x Vessel
+1x Zoo Hunting Ground
+
+Action (3)
+1x Aranthebes, The Immortal
+2x Rewilding
+
+Equipment (4)
+3x Camera Phone
+1x Ivory Bow
+
+Retainer (5)
+2x Dog Pack
+1x J. S. Simmons, Esq.
+2x Raven Spy
+
+Reaction (28)
+6x Bait and Switch
+6x Deep Ecology
+4x Delaying Tactics
+6x Eyes of the Wild
+6x Organized Resistance
+
+Combat (30)
+4x Diversion
+5x Donnybrook
+18x Earth Meld
+3x Form of Mist
+
+Event (1)
+1x Scourge of the Enochians

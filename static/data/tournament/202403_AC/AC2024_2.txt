@@ -1,0 +1,60 @@
+-- 3GW13.0+1
+
+Deck Name: Hesha's trinket emporium
+Author: Sérgio Louçã Martins (#3120101)
+
+Crypt (12 cards, min=12, max=28, avg=5)
+---------------------------------------
+6x Angel Chavarria      3 THN                    Samedi:6
+6x Hesha Ruhadze (G6)   7 PRE PRO ani aus obf    Ministry:6
+
+Library (79 cards)
+Master (3; 1 trifle)
+1x Direct Intervention
+1x Heidelberg Castle, Germany
+1x Nod
+
+Action (1)
+1x Revelations
+
+Equipment (35)
+1x Amulet of Temporal Perception
+1x Argent Baton
+1x Blood Tears of Kephran
+1x Body Bag
+1x Bowl of Convergence
+1x Changeling Skin Mask
+1x Cloak of the Abalone
+1x Codex of the Edenic Groundskeepers
+1x Concoction of Vitality
+1x Flaming Candle
+1x Gran Madre di Dio, Italy
+1x Heart of Nizchetus
+1x Joumlon's Axe
+2x Kaymakli Fragment
+6x Learjet
+1x Martinelli's Ring
+1x Monocle of Clarity
+1x Orb of Ulain
+1x Ritual Goblet
+1x Sargon Fragment, The
+1x Seal of Veddartha
+1x Signet of King Saul, The
+1x Sire's Index Finger
+1x Soul Gem of Etrius
+2x Textbook Damnation, The
+1x Veneficorum Artum Sanguis
+2x Vial of Elder Vitae
+
+Action Modifier (38)
+1x Approximation of Loyalty
+29x Hag's Wrinkles
+1x Horrific Countenance
+2x I am Legion
+2x Perfect Clarity
+1x Red Question, The
+2x Under My Skin
+
+Action Modifier/Combat (2)
+1x Force of Personality
+1x Hide the Mind

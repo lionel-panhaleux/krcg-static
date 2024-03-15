@@ -1,0 +1,62 @@
+-- 1GW4.0
+
+Deck Name: Sacerdoce perso
+
+Crypt (12 cards, min=19, max=30, avg=6.17)
+------------------------------------------
+2x Crystal Lynn         6 OBF PRE PRO                 Ministry:6
+2x Elisha Tucker        6 PRE cel obf pro      baron  Ministry:6
+1x Hesha Ruhadze (G6)   7 PRE PRO ani aus obf         Ministry:6
+1x Jenny Silver         5 PRE PRO obf                 Ministry:6
+2x Marcel               4 obf pre pro                 Ministry:6
+1x Nonu Dis             8 OBF PRE PRO for             Ministry:6
+2x Vivian VI            7 PRE PRO obf tha      baron  Ministry:6
+1x Sergio Bueno         8 OBF PRE PRO aus pot  baron  Ministry:6
+
+Library (90 cards)
+Master (16; 3 trifle)
+1x Anarch Railroad
+1x Archon Investigation
+4x Blood Doll
+1x British Museum, London, The
+1x Club Illusion
+2x Dabbler
+1x Dreams of the Sphinx
+1x Garibaldi-Meucci Museum
+1x Opium Den
+1x Realm of the Black Sun, The
+1x Temple Hunting Ground
+1x Wider View
+
+Action (21)
+7x Enchant Kindred
+2x Entrancement
+12x Platinum Protocol, The
+
+Equipment (4)
+1x Heart of Nizchetus
+1x Ritual Goblet
+1x Sargon Fragment, The
+1x Signet of King Saul, The
+
+Retainer (1)
+1x Homunculus
+
+Action Modifier (20)
+3x Enchanting Gaze
+4x Faceless Night
+5x Lost in Crowds
+6x Revelation of the Serpent
+2x True Love's Face
+
+Reaction (17)
+4x Bait and Switch
+4x On the Qui Vive
+9x Party Out Of Bounds
+
+Combat (10)
+4x Earth Meld
+6x Form of Mist
+
+Event (1)
+1x Narrow Minds

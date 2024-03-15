@@ -1,0 +1,56 @@
+-- 0GW0.0
+
+Deck Name: Toreador V5 Cearense 2023
+
+Crypt (12 cards, min=17, max=31, avg=6.17)
+------------------------------------------
+1x Lindsay Yates      5 CEL aus for pre          Toreador:5
+1x Bret Stryker       4 CEL PRE                  Toreador:6
+3x Catalina Vega      8 AUS CEL PRE for  prince  Toreador:6
+3x Flávio Gonçalves   7 CEL PRE aus for  prince  Toreador:6
+2x Mkhokheli          6 PRE aus cel for  prince  Toreador:6
+1x Nik Sikko          3 cel pre                  Toreador:6
+1x Tamoszius          5 CEL PRE aus              Toreador:6
+
+Library (90 cards)
+Master (18; 5 trifle)
+8x Aching Beauty
+1x Anarch Troublemaker
+1x Archon Investigation
+1x Art Museum
+1x Pentex(TM) Subversion
+1x Society Hunting Ground
+4x Villein
+1x Wider View
+
+Action (11)
+4x Enchant Kindred
+1x Entrancement
+1x Heart of the City
+3x Judgment: Camarilla Segregation
+2x Legal Manipulations
+
+Political Action (14)
+1x Ancilla Empowerment
+8x Kine Resources Contested
+4x Parity Shift
+1x Toreador Justicar
+
+Action Modifier (30)
+5x Aire of Elation
+2x Awe
+3x Bewitching Oration
+8x Change of Target
+4x Forced March
+3x Perfect Paragon
+5x Voter Captivation
+
+Action Modifier/Reaction (3)
+3x Scalpel Tongue
+
+Reaction (6)
+3x Second Tradition: Domain
+3x Telepathic Misdirection
+
+Combat (8)
+8x Majesty

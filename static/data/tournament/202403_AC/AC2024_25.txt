@@ -1,0 +1,57 @@
+-- 0GW3.5
+
+Deck Name: AC 2024 Candidate - Organized Bleed Resistance
+
+Crypt (12 cards, min=17, max=32, avg=6.33)
+------------------------------------------
+1x New Blood         2 san                     Blood Brother:ANY
+1x Kamile Paukstys   5 PRO ani for             Gangrel:6
+4x Adrino Manauara   8 ANI DOM PRO pot  baron  Tzimisce:6
+3x Ángel Guerrero    7 ANI DOM PRO      baron  Tzimisce:6
+1x Branimira         6 ANI dom pre pro  baron  Tzimisce:6
+1x Clara Hjortshøj   5 PRO ani aus dom         Tzimisce:6
+1x Marialena         5 DOM PRO ani             Tzimisce:6
+
+Library (90 cards)
+Master (14; 3 trifle)
+1x Anarch Railroad
+1x Anarch Troublemaker
+1x Carfax Abbey
+2x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Information Highway
+1x Papillon
+1x Pentex(TM) Subversion
+3x Wider View
+
+Action (17)
+4x Deep Song
+13x Govern the Unaligned
+
+Equipment (1)
+1x Heart of Nizchetus
+
+Retainer (1)
+1x Revenant
+
+Action Modifier (9)
+3x Bonding
+4x Conditioning
+2x Earth Control
+
+Action Modifier/Reaction (4)
+2x Form of the Bat
+2x Murmur of the False Will
+
+Reaction (21)
+4x Deep Ecology
+8x Deflection
+1x Delaying Tactics
+8x Organized Resistance
+
+Combat (23)
+11x Earth Meld
+7x Form of Mist
+3x Groundfighting
+2x Sculpt the Flesh

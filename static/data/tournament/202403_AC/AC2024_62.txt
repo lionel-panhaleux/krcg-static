@@ -1,0 +1,58 @@
+-- 0GW0.0
+
+Deck Name: Stanislave_-_2024-02-12_1051
+
+Crypt (12 cards, min=38, max=44, avg=10.25)
+-------------------------------------------
+2x Genevieve       10 ANI FOR PRO aus dom      priscus       Gangrel antitribu:2
+2x Ingrid Rossler   9 ANI FOR PRO dom          prince        Gangrel:2
+5x Stanislava      11 ANI CEL DOM FOR PRO      inner circle  Gangrel:2
+3x Xaviar          10 ANI FOR PRO aus cel pot  2 votes       Gangrel:3
+
+Library (89 cards)
+Master (16; 6 trifle)
+1x Celerity
+1x Fame
+2x Haven Uncovered
+1x Tension in the Ranks
+1x Vessel
+2x Villein
+3x Wider View
+5x Zillah's Valley
+
+Action (14)
+1x Ambush
+1x Bum's Rush
+4x Deep Song
+2x Govern the Unaligned
+1x Harass
+5x Sense Death
+
+Political Action (3)
+1x Ancient Influence
+1x Meddling of Semsith, The
+1x Political Stranglehold
+
+Action Modifier (14)
+3x Earth Control
+5x Forced March
+3x Freak Drive
+3x Instantaneous Transformation
+
+Action Modifier/Reaction (7)
+6x Form of the Bat
+1x Murmur of the False Will
+
+Reaction (6)
+3x Deflection
+3x On the Qui Vive
+
+Combat (26)
+12x Claws of the Dead
+10x Hidden Strength
+4x Psyche!
+
+Event (3)
+1x Dragonbound
+1x NSA Trio
+1x Urban Jungle

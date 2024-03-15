@@ -1,0 +1,49 @@
+-- 1GW5.5
+
+Deck Name: Lucian_bleed_lackey
+
+Crypt (12 cards, min=15, max=44, avg=7.75)
+------------------------------------------
+1x Anarch Convert        1 -none-                     Caitiff:ANY
+4x Isanwayen             6 DOM MYT OBT                Kiasyd:4
+6x Lucian, the Perfect  11 ANI AUS DOM OBF POT PRE    Guruhi:4
+1x New Blood             2 san                        Blood Brother:ANY
+
+Library (65 cards)
+Master (28; 4 trifle)
+1x Abombwe
+9x Blind Spot
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Information Highway
+1x Metro Underground
+1x Monastery of Shadows
+2x Parthenon, The
+1x Secure Haven
+3x Villein
+5x Zillah's Valley
+
+Action (5)
+5x Intimidation
+
+Action Modifier (20)
+6x Conditioning
+1x Edge of the World
+2x Elder Impersonation
+3x Enkil Cog
+1x Faceless Night
+3x Into Thin Air
+1x Spying Mission
+1x Strange Day
+2x Tangle Atropos' Hand
+
+Action Modifier/Combat (2)
+2x Swallowed by the Night
+
+Reaction (6)
+3x Deflection
+3x Sense the Savage Way
+
+Combat (4)
+4x Majesty

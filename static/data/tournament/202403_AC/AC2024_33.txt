@@ -1,0 +1,36 @@
+-- 0GW2.0
+
+Deck Name: No Name
+
+Crypt (12 cards, min=12, max=32, avg=5.5)
+-----------------------------------------
+3x Ashley            3 dom obf                       Malkavian:6
+6x Scout Youngwood   8 MEL OBF PRE for qui  2 votes  Daughter of Cacophony:6
+3x Susie Kano        3 ani dom                       Tzimisce:6
+
+Library (64 cards)
+Master (13)
+1x Barrens, The
+1x Bastille Opera House
+1x Conductor
+2x Direct Intervention
+4x Protected Resources
+4x Secure Haven
+
+Political Action (10)
+10x Lily Prelude
+
+Action Modifier (28)
+6x Bewitching Oration
+10x Forgotten Labyrinth
+6x Perfect Paragon
+6x Voter Captivation
+
+Action Modifier/Reaction (6)
+6x Madrigal
+
+Reaction (6)
+6x Deflection
+
+Event (1)
+1x Scourge of the Enochians

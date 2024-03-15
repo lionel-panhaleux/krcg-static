@@ -1,0 +1,59 @@
+-- 0GW1.0
+
+Deck Name: Deathstar v2 [by Yomyael]
+
+Crypt (12 cards, min=24, max=31, avg=6.75)
+------------------------------------------
+1x Jacques Rouge          6 OBF ani pot pre      baron  Nosferatu:6
+1x Benedito, a Lanterna   6 POT ani aus obf      baron  Nosferatu:6
+1x Atiena                 6 CEL obf pot pre      baron  Brujah:6
+1x Crystal Lynn           6 OBF PRE PRO                 Ministry:6
+2x Elisha Tucker          6 PRE cel obf pro      baron  Ministry:6
+3x Vivian VI              7 PRE PRO obf tha      baron  Ministry:6
+3x Sergio Bueno           8 OBF PRE PRO aus pot  baron  Ministry:6
+
+Library (90 cards)
+Master (16; 2 trifle)
+1x Anarch Railroad
+1x Archon Investigation
+1x Carfax Abbey
+1x Creepshow Casino
+3x Dreams of the Sphinx
+1x Ferraille
+1x Garibaldi-Meucci Museum
+1x Obfuscate
+1x Opium Den
+1x Papillon
+1x Pentex(TM) Subversion
+1x Temple Hunting Ground
+2x Wider View
+
+Action (19)
+8x Childe of the Revolution
+6x Enchant Kindred
+1x Psychic Veil
+4x Waters of Duat
+
+Ally (1)
+1x Saatet-ta
+
+Political Action (17)
+6x Consanguineous Boon
+4x Kine Resources Contested
+1x Patsy
+4x Reckless Agitation
+2x Revolutionary Council
+
+Action Modifier (35)
+2x Cloak the Gathering
+8x CrimethInc.
+2x Earth Control
+3x Elder Impersonation
+2x Faceless Night
+3x Forgotten Labyrinth
+6x Propaganda of the Deed
+5x Veil the Legions
+4x Voter Captivation
+
+Event (2)
+2x Uncoiling, The

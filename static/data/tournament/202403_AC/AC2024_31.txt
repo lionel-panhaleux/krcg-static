@@ -1,0 +1,56 @@
+-- 0GW2.5
+
+Deck Name: ['V5.Tzimisce.CombatToolbox']
+
+Crypt (12 cards, min=13, max=31, avg=5.75)
+------------------------------------------
+2x Anarch Convert    1 -none-                  Caitiff:ANY
+1x Kuyén             6 ANI PRO          baron  Gangrel:6
+3x Adrino Manauara   8 ANI DOM PRO pot  baron  Tzimisce:6
+2x Ángel Guerrero    7 ANI DOM PRO      baron  Tzimisce:6
+2x Branimira         6 ANI dom pre pro  baron  Tzimisce:6
+1x Neserian          6 ANI DOM cel pro         Tzimisce:6
+1x Whisper           5 ANI DOM pro             Tzimisce:6
+
+Library (88 cards)
+Master (18; 5 trifle)
+6x Ashur Tablets
+1x Carfax Abbey
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Fame
+1x Parthenon, The
+1x Tension in the Ranks
+3x Vessel
+1x Villein
+1x Wash
+
+Action (14)
+10x Deep Song
+4x Govern the Unaligned
+
+Equipment (1)
+1x Heart of Nizchetus
+
+Political Action (1)
+1x Ancilla Empowerment
+
+Action Modifier (2)
+2x Conditioning
+
+Reaction (14)
+1x Bait and Switch
+6x Deflection
+7x Organized Resistance
+
+Combat (37)
+11x Aid from Bats
+1x Canine Horde
+10x Carrion Crows
+3x Donnybrook
+4x Flesh of Marble
+4x Taste of Vitae
+4x Terror Frenzy
+
+Event (1)
+1x Dragonbound

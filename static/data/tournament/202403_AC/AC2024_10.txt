@@ -1,0 +1,62 @@
+-- 1GW5.0
+
+Deck Name: BTB/PP
+
+Crypt (12 cards, min=13, max=28, avg=5)
+---------------------------------------
+1x Doc Martina         6 ANI OBF for pre    Ravnos:7
+1x Gathii              5 ANI PRE obf        Ravnos:7
+1x Jean-François       4 ani obf pre        Ravnos:7
+1x Oleg Kaprizov       3 obf pre            Ravnos:7
+2x Phaibun             5 OBF PRE ani        Ravnos:7
+1x Roberto Rivamonte   6 ANI OBF PRE        Ravnos:7
+1x Roy                 2 obf                Ravnos:7
+2x Sreelekha           8 ANI FOR OBF PRE    Ravnos:7
+2x Zafira              4 PRE obf            Ravnos:7
+
+Library (79 cards)
+Master (14; 7 trifle)
+1x Anarch Railroad
+1x Club Illusion
+1x Coven, The
+3x Dabbler
+1x Fortune Teller Shop
+1x Garibaldi-Meucci Museum
+1x Pentex(TM) Subversion
+1x Powerbase: Los Angeles
+3x Villein
+1x Week of Nightmares
+
+Action (18)
+10x Break the Bonds
+1x Entrancement
+3x Mind Numb
+4x Platinum Protocol, The
+
+Equipment (2)
+1x Shilmulo Tarot
+1x Treasured Samadji
+
+Action Modifier (26)
+4x Elder Impersonation
+3x Faceless Night
+6x Lost in Crowds
+4x Memory Rift
+2x Spying Mission
+1x True Love's Face
+6x Visions of Gehenna
+
+Action Modifier/Combat (1)
+1x Swallowed by the Night
+
+Reaction (12)
+2x Night Terrors
+4x On the Qui Vive
+3x Party Out Of Bounds
+3x Visions of Zapathasura
+
+Combat (5)
+5x Majesty
+
+Event (1)
+1x Narrow Minds

@@ -1,0 +1,37 @@
+-- 0GW1.0
+
+Deck Name: Hora da Disciplina
+
+Crypt (12 cards, min=23, max=32, avg=7)
+---------------------------------------
+3x Theo Bell (G6)   8 CEL POT PRE aus dom          Brujah:6
+2x Don Caravelli    8 CEL POT PRE aus dom          Brujah:5
+2x Chun Hei         7 CEL POT PRE                  Brujah:6
+2x Karen Suadela    7 CEL POT obf pre      prince  Brujah:5
+2x Octane           6 CEL POT PRE                  Brujah:6
+1x Elen Kamjian     4 CEL POT                      Brujah:6
+
+Library (90 cards)
+Master (13; 4 trifle)
+3x Fame
+6x Haven Uncovered
+4x Villein
+
+Action (10)
+10x Show of Force
+
+Action Modifier (8)
+8x Iron Glare
+
+Combat (59)
+4x Blur
+8x Dust Up
+4x Earthshock
+2x Hell-for-Leather
+8x Immortal Grapple
+4x Psyche!
+4x Quickness
+8x Roundhouse
+3x Stunt Cycle
+6x Taste of Vitae
+8x Torn Signpost

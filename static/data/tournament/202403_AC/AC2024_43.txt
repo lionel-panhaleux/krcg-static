@@ -1,0 +1,46 @@
+-- 0GW1.0
+
+Deck Name: Auspex&Guns
+
+Crypt (12 cards, min=4, max=31, avg=4.5)
+----------------------------------------
+1x Adonai                   7 AUS VAL for        Salubri antitribu:2
+5x Anarch Convert           1 -none-             Caitiff:ANY
+2x Cornelius Ottavio        8 AUS OBF pre qui    Malkavian:2
+1x Makarios, The Seducer    8 AUS PRE SER dom    Toreador:2
+1x Ozmo                     6 AUS dom obf        Malkavian:1
+1x Quira, The Bitch Queen   6 AUS OBF obt tha    Malkavian antitribu:2
+1x Sheila Mezarin           6 AUS PRE cel for    Toreador antitribu:2
+
+Library (90 cards)
+Master (18; 7 trifle)
+1x Carver's Meat Packing and Storage
+3x Dreams of the Sphinx
+4x Hackerspace
+1x Powerbase: Montreal
+1x Rack, The
+1x Smiling Jack, The Anarch
+2x Vessel
+5x Villein
+
+Equipment (10)
+8x .44 Magnum
+2x Bowl of Convergence
+
+Retainer (1)
+1x Mr. Winthrop
+
+Reaction (39)
+4x Eagle's Sight
+2x Enhanced Senses
+13x Eyes of Argus
+2x Forced Awakening
+4x My Enemy's Enemy
+3x On the Qui Vive
+11x Telepathic Misdirection
+
+Combat (22)
+4x Aura Reading
+8x Concealed Weapon
+5x Target Vitals
+5x Taste of Vitae

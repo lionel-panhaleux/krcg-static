@@ -1,0 +1,63 @@
+-- 0GW0.0
+
+Deck Name: Unnamed Protocol v.3.2
+
+Crypt (12 cards, min=4, max=40, avg=5.5)
+----------------------------------------
+4x Anarch Convert   1 -none-                      Caitiff:ANY
+4x unnamed, The    10 CEL DAI OBF PRE PRO         Baali:6
+1x Crystal Lynn     6 OBF PRE PRO                 Ministry:6
+1x Doctor Morocco   5 PRO cel obf pre             Ministry:6
+1x Elisha Tucker    6 PRE cel obf pro      baron  Ministry:6
+1x Jenny Silver     5 PRE PRO obf                 Ministry:6
+
+Library (90 cards)
+Master (15; 4 trifle)
+1x Anarch Railroad
+2x Dabbler
+2x Dreams of the Sphinx
+1x Garibaldi-Meucci Museum
+5x Information Highway
+1x Monastery of Shadows
+1x Secure Haven
+2x Vessel
+
+Action (18)
+1x Entrancement
+15x Platinum Protocol, The
+2x Unleash Hell's Fury
+
+Ally (1)
+1x Veneficti
+
+Equipment (1)
+1x Anarch Manifesto, An
+
+Retainer (2)
+2x Homunculus
+
+Action Modifier (28)
+1x Elder Impersonation
+1x Enchanting Gaze
+3x Enkil Cog
+2x I am Legion
+8x Instantaneous Transformation
+5x Memory Rift
+8x Revelation of the Serpent
+
+Action Modifier/Combat (5)
+4x Form of the Cobra
+1x Hide the Mind
+
+Action Modifier/Reaction (2)
+2x Sense the Sin
+
+Reaction (12)
+1x Delaying Tactics
+4x On the Qui Vive
+3x Party Out Of Bounds
+4x Visions of Zapathasura
+
+Combat (6)
+3x Earth Meld
+3x Form of Mist

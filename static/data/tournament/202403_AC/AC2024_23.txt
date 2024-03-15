@@ -1,0 +1,45 @@
+-- 1GW2.5
+
+Deck Name: Petrodon
+
+Crypt (12 cards, min=23, max=40, avg=8.08)
+------------------------------------------
+5x Alonso Petrodon       10 ANI DOM OBF POT for tha  justicar  Nosferatu:5
+1x Andi Liu               6 DOM aus obf pre          prince    Malkavian:6
+3x Alexander Silverson    8 AUS DOM OBF pre          prince    Malkavian:6
+1x Graham Gottesman       7 DOM FOR obf pre tha      prince    Ventrue:5
+1x Ashley                 3 dom obf                            Malkavian:6
+1x Jason "Son" Newberry   7 AUS DOM OBF pre          primogen  Malkavian:6
+
+Library (74 cards)
+Master (12)
+1x Elysium: The Palace of Versailles
+1x Giant's Blood
+2x Information Highway
+8x Zillah's Valley
+
+Action (5)
+1x Far Mastery
+4x Govern the Unaligned
+
+Political Action (10)
+3x Kine Resources Contested
+7x Parity Shift
+
+Action Modifier (28)
+6x Bonding
+3x Closed Session
+3x Elder Impersonation
+3x Faceless Night
+5x Freak Drive
+8x Lost in Crowds
+
+Action Modifier/Combat (4)
+4x Swallowed by the Night
+
+Reaction (9)
+6x Deflection
+3x Second Tradition: Domain
+
+Combat (6)
+6x No Trace

@@ -1,0 +1,64 @@
+-- 0GW3.0
+
+Deck Name: Turbo Thing
+
+Crypt (12 cards, min=12, max=29, avg=5.17)
+------------------------------------------
+1x Keegan              8 ANI FOR PRO aus cel         Gangrel:6
+1x Ragnar Nordstrom    8 ANI FOR PRO cel pot         Gangrel:6
+1x Massimiliano        7 ANI FOR pro          baron  Gangrel:6
+1x Casey Snyder        6 PRO ani cel for      baron  Gangrel:6
+1x Kuyén               6 ANI PRO              baron  Gangrel:6
+1x Martina Srnankova   6 FOR PRO ani                 Gangrel:6
+1x Kamile Paukstys     5 PRO ani for                 Gangrel:6
+1x Hanna Nokelainen    4 ani for pro                 Gangrel:6
+1x Nathan Turner       4 PRO ani                     Gangrel:6
+1x Indira              3 PRO                         Gangrel:6
+1x Joaquín de Cádiz    3 for pro                     Gangrel:6
+1x Ruslan Fedorenko    2 pro                         Gangrel:6
+
+Library (60 cards)
+Master (19; 3 trifle)
+1x Anarch Free Press, The
+6x Ashur Tablets
+1x Dreams of the Sphinx
+1x Ecoterrorists
+1x Ennoia's Theater
+1x Life in the City
+1x Parthenon, The
+1x Powerbase: Los Angeles
+1x Powerbase: Montreal
+2x Smiling Jack, The Anarch
+2x Vessel
+1x Zoo Hunting Ground
+
+Action (13)
+1x Army of Rats
+1x Constant Revolution
+2x Deep Song
+1x Skaald
+8x Thing
+
+Political Action (1)
+1x Consanguineous Boon
+
+Action Modifier (3)
+2x Earth Control
+1x Monkey Wrench
+
+Action Modifier/Combat (2)
+2x Rapid Change
+
+Action Modifier/Reaction (4)
+4x Form of the Bat
+
+Reaction (10)
+2x Bait and Switch
+2x Deep Ecology
+2x Eyes of the Wild
+2x Organized Resistance
+2x Protection Racket
+
+Combat (8)
+4x Earth Meld
+4x Form of Mist

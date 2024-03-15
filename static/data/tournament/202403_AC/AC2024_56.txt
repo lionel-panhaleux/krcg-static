@@ -1,0 +1,57 @@
+-- 0GW0.0
+
+Deck Name: Lutz Vote mine [by ]
+
+Crypt (12 cards, min=33, max=44, avg=10)
+----------------------------------------
+2x Adana de Sforza        11 CEL OBF POT PRE PRO aus  inner circle  Brujah:4
+1x Dmitra Ilyanova         9 CEL FOR POT PRE obf      justicar      Brujah:5
+1x Karen Suadela           7 CEL POT obf pre          prince        Brujah:5
+3x Lutz von Hohenzollern  11 AUS DEM OBF PRE pot      inner circle  Malkavian:4
+2x Rafael de Corazon      11 AUS CEL DOM OBF PRE      inner circle  Toreador:4
+1x Stavros                 7 AUS OBF PRE dem          priscus       Malkavian antitribu:4
+2x Unmada                 10 AUS DEM OBF VIC cel for  justicar      Malkavian:5
+
+Library (80 cards)
+Master (21; 8 trifle)
+2x Dreams of the Sphinx
+1x Giant's Blood
+1x Information Highway
+1x Metro Underground
+1x Monastery of Shadows
+7x Villein
+1x Wider View
+7x Zillah's Valley
+
+Political Action (17)
+1x Anarchist Uprising
+1x Ancient Influence
+1x Ancilla Empowerment
+2x Banishment
+6x Kine Resources Contested
+4x Parity Shift
+1x Political Stranglehold
+1x Reins of Power
+
+Action Modifier (26)
+3x Awe
+2x Elder Impersonation
+1x Faceless Night
+5x Forgotten Labyrinth
+4x Into Thin Air
+2x Lost in Crowds
+1x Perfect Paragon
+8x Voter Captivation
+
+Action Modifier/Combat (4)
+2x Force of Personality
+2x Swallowed by the Night
+
+Reaction (7)
+4x Mental Maze
+1x On the Qui Vive
+2x Telepathic Misdirection
+
+Combat (5)
+4x Majesty
+1x No Trace

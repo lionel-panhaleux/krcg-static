@@ -1,0 +1,58 @@
+-- 1GW3.5
+
+Deck Name: Brujahs_vao_a_gerra_outra_vez_diversao_que_eles_conhecem_bem_lackey
+
+Crypt (12 cards, min=15, max=31, avg=5.75)
+------------------------------------------
+1x Aline Gädeke        7 POT PRE cel          baron  Brujah:6
+1x Anita Wainwright    3 cel pre                     Brujah:6
+1x Ariane              3 cel pot pre                 Brujah:5
+2x Atiena              6 CEL obf pot pre      baron  Brujah:6
+1x Brandon Grime       5 CEL pot pre tha             Brujah:6
+1x Elen Kamjian        4 CEL POT                     Brujah:6
+1x Leumeah             6 PRE cel for pot      baron  Brujah:6
+3x Saku Pihlajamäki    8 CEL POT PRE for pro  baron  Brujah:6
+1x Siarhei Levchenko   5 CEL PRE pot                 Brujah:6
+
+Library (90 cards)
+Master (19; 5 trifle)
+1x Anarch Free Press, The
+1x Carfax Abbey
+1x Club Illusion
+1x Fame
+1x Garibaldi-Meucci Museum
+6x Hackerspace
+1x Mob Connections
+1x New Carthage
+5x Villein
+1x Warzone Hunting Ground
+
+Action (11)
+9x Line Brawl
+2x Open War
+
+Equipment (10)
+6x .44 Magnum
+1x Codex of the Edenic Groundskeepers
+1x Heart of Nizchetus
+2x Spike-Thrower
+
+Political Action (3)
+1x Anarchist Uprising
+1x Eat the Rich
+1x Reckless Agitation
+
+Action Modifier (2)
+2x Monkey Wrench
+
+Reaction (15)
+7x Bait and Switch
+8x Organized Resistance
+
+Combat (30)
+5x Blur
+8x Concealed Weapon
+3x Diversion
+4x Psyche!
+5x Pursuit
+5x Taste of Vitae

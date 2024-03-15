@@ -1,0 +1,72 @@
+-- 2GW8.5
+
+Deck Name: Chameleon
+
+Crypt (12 cards, min=24, max=32, avg=7.08)
+------------------------------------------
+5x Sergio Bueno         8 OBF PRE PRO aus pot  baron   Ministry:6
+2x Vivian VI            7 PRE PRO obf tha      baron   Ministry:6
+1x Gilbert Duane (G6)   7 AUS DOM OBF          baron   Malkavian:6
+1x Arishat              6 DAI OBF PRE          1 vote  Baali:6
+1x Atiena               6 CEL obf pot pre      baron   Brujah:6
+1x Elisha Tucker        6 PRE cel obf pro      baron   Ministry:6
+1x Jacques Rouge        6 OBF ani pot pre      baron   Nosferatu:6
+
+Library (70 cards)
+Master (33; 8 trifle)
+2x Abombwe
+1x Anarch Railroad
+6x Ashur Tablets
+1x Carfax Abbey
+1x Club Illusion
+1x Coven, The
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Ferraille
+1x Garibaldi-Meucci Museum
+1x Giant's Blood
+2x Heidelberg Castle, Germany
+2x Information Highway
+1x Opium Den
+3x Parthenon, The
+2x Thaumaturgy
+4x Villein
+1x Wider View
+
+Action (9)
+8x Chameleon
+1x Entrancement
+
+Equipment (1)
+1x Heart of Nizchetus
+
+Political Action (6)
+1x Ancient Influence
+3x Banishment
+1x Reins of Power
+1x Revolutionary Council
+
+Action Modifier (11)
+1x Cloak the Gathering
+1x CrimethInc.
+1x Elder Impersonation
+1x Faceless Night
+1x Forgotten Labyrinth
+3x Lost in Crowds
+1x Memory Rift
+1x Perfect Paragon
+1x Voter Captivation
+
+Action Modifier/Combat (1)
+1x Swallowed by the Night
+
+Action Modifier/Reaction (1)
+1x Form of the Bat
+
+Reaction (4)
+3x Bait and Switch
+1x On the Qui Vive
+
+Combat (4)
+2x Earth Meld
+2x Form of Mist

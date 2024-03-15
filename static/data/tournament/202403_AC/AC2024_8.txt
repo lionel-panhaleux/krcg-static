@@ -1,0 +1,66 @@
+-- 1GW6.0
+
+Deck Name: bruninho anarch
+
+Crypt (12 cards, min=6, max=28, avg=4.75)
+-----------------------------------------
+3x Alabástrom       7 POT VIS aus cel for    Gargoyle:6
+3x Anarch Convert   1 -none-                 Caitiff:ANY
+3x Chalcedony       7 FOR POT THA VIS        Gargoyle:6
+1x Monica Chang     3 dom tha                Tremere:5
+1x Verbruch         5 POT VIS for            Gargoyle:5
+1x Ayse Dhanial     4 aus dom tha            Tremere:6
+
+Library (90 cards)
+Master (21; 6 trifle)
+6x Ashur Tablets
+1x Carfax Abbey
+1x Fame
+1x Flames of Insurrection
+1x Heidelberg Castle, Germany
+2x Perfectionist
+1x Powerbase: Montreal
+1x Rack, The
+1x Rebel
+1x Tension in the Ranks
+2x Vessel
+2x Villein
+1x Wider View
+
+Action (13)
+8x Children of Stone
+1x Field Training
+2x Hatchling
+2x Preternatural Strength
+
+Equipment (7)
+1x Flak Jacket
+3x Heart of Nizchetus
+1x IR Goggles
+1x Ivory Bow
+1x Kevlar Vest
+
+Retainer (9)
+1x Mr. Winthrop
+6x Razor Bat
+2x Stone Dog
+
+Action Modifier (9)
+6x As the Crow
+3x Freak Drive
+
+Reaction (9)
+2x Deflection
+3x Forced Awakening
+3x On the Qui Vive
+1x Wake with Evening's Freshness
+
+Combat (21)
+5x Immortal Grapple
+2x Roll
+7x Stonestrength
+2x Taste of Vitae
+5x Unflinching Persistence
+
+Event (1)
+1x Dragonbound

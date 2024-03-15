@@ -1,0 +1,59 @@
+-- 1GW4.0
+
+Deck Name: Unnamed Beast
+
+Crypt (13 cards, min=4, max=40, avg=5.23)
+-----------------------------------------
+4x Anarch Convert   1 -none-                       Caitiff:ANY
+1x Arishat          6 DAI OBF PRE          1 vote  Baali:6
+2x Horde, The       3 dai obf pre                  Baali:6
+1x New Blood        2 san                          Blood Brother:ANY
+5x unnamed, The    10 CEL DAI OBF PRE PRO          Baali:6
+
+Library (74 cards)
+Master (14; 2 trifle)
+1x Blood Doll
+1x Brujah Frenzy
+3x Chimerstry
+1x Direct Intervention
+2x Dreams of the Sphinx
+1x Retribution
+3x Tend the Flock
+2x Villein
+
+Action (15)
+2x Call the Great Beast
+1x Entrancement
+7x Illegalism
+1x Legal Manipulations
+2x Shattering
+2x Unleash Hell's Fury
+
+Ally (2)
+2x Infernal Servitor
+
+Action Modifier (25)
+2x Elder Impersonation
+2x Enkil Cog
+1x Faceless Night
+4x I am Legion
+7x Instantaneous Transformation
+5x Lost in Crowds
+2x Psychomachia
+1x Spying Mission
+1x True Love's Face
+
+Action Modifier/Combat (3)
+3x Swallowed by the Night
+
+Action Modifier/Reaction (5)
+2x Form of the Bat
+3x Sense the Sin
+
+Reaction (6)
+1x Delaying Tactics
+5x Party Out Of Bounds
+
+Combat (4)
+2x Earth Meld
+2x Form of Mist

@@ -1,0 +1,56 @@
+-- 0GW0.0
+
+Deck Name: ['Flurry no parquinho']
+
+Crypt (12 cards, min=12, max=40, avg=5.92)
+------------------------------------------
+7x Horde, The     3 dai obf pre            Baali:6
+5x unnamed, The  10 CEL DAI OBF PRE PRO    Baali:6
+
+Library (90 cards)
+Master (20; 2 trifle)
+2x Information Highway
+3x Parthenon, The
+1x Perfectionist
+3x Secure Haven
+5x Tend the Flock
+2x Vessel
+4x Zillah's Valley
+
+Action (14)
+1x Contagion
+5x Flurry of Action
+5x Shatter the Gate
+3x Unleash Hell's Fury
+
+Ally (2)
+1x Infernal Servitor
+1x Veneficti
+
+Equipment (1)
+1x Palatial Estate
+
+Retainer (4)
+4x Homunculus
+
+Action Modifier (21)
+3x Earth Control
+3x Enkil Cog
+3x Faceless Night
+6x Instantaneous Transformation
+3x Lost in Crowds
+3x Spying Mission
+
+Action Modifier/Combat (3)
+3x Swallowed by the Night
+
+Action Modifier/Reaction (6)
+6x Sense the Sin
+
+Reaction (8)
+2x Delaying Tactics
+6x Visions of Zapathasura
+
+Combat (11)
+5x Earth Meld
+6x Form of Mist

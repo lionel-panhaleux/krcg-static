@@ -1,0 +1,52 @@
+-- 0GW1.0
+
+Deck Name: Undue Swarm
+
+Crypt (12 cards, min=11, max=16, avg=3.33)
+------------------------------------------
+1x Helen Fairchild        4 cel obf pre spi    Ahrimane:6
+1x Horde, The             3 dai obf pre        Baali:6
+1x Nik Sikko              3 cel pre            Toreador:6
+1x Marcel                 4 obf pre pro        Ministry:6
+1x Milton Fox             3 pre pro            Ministry:6
+1x Mateo García           2 pre                Toreador:6
+1x Rose Abawi             4 aus obf pre        Toreador:6
+1x Anita Wainwright       3 cel pre            Brujah:6
+1x "Coach" Tyrone Soros   3 obf pre            Ministry:6
+1x Jean-François          4 ani obf pre        Ravnos:7
+1x Oleg Kaprizov          3 obf pre            Ravnos:7
+1x Zafira                 4 PRE obf            Ravnos:7
+
+Library (79 cards)
+Master (16; 2 trifle)
+2x Anarch Railroad
+3x Anarch Troublemaker
+1x Archon Investigation
+2x Club Illusion
+3x Dreams of the Sphinx
+1x Garibaldi-Meucci Museum
+2x Twilight Camp
+2x Wash
+
+Action (19)
+4x Clotho's Gift
+15x Undue Influence
+
+Ally (2)
+1x Repo Man
+1x Saatet-ta
+
+Equipment (6)
+5x Stolen Police Cruiser
+1x Treasured Samadji
+
+Action Modifier (22)
+8x Change of Target
+4x Memory Rift
+10x Power of One
+
+Reaction (14)
+4x Delaying Tactics
+3x On the Qui Vive
+3x Party Out Of Bounds
+4x Visions of Zapathasura

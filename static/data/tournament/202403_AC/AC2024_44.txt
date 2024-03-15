@@ -1,0 +1,57 @@
+-- 0GW1.0
+
+Deck Name: Banu AC 2024 [by Backwinder]
+
+Crypt (12 cards, min=17, max=24, avg=5.42)
+------------------------------------------
+1x Flavia, Avenging Angel   6 CEL OBF QUI                Banu Haqim:6
+1x Omer                     5 CEL QUI obf                Banu Haqim:6
+1x Wise Frog                5 OBF aus cel qui            Banu Haqim:6
+1x Greg Mazouni             4 cel obf tha                Banu Haqim:6
+3x Kalinda (G6)             6 CEL OBF tha      primogen  Banu Haqim:6
+3x Khadija Al-Kindi         6 CEL OBF THA      primogen  Banu Haqim:6
+1x Kassandra Tassaki        6 CEL THA obf      prince    Banu Haqim:6
+1x Adisa                    3 cel obf                    Banu Haqim:6
+
+Library (90 cards)
+Master (21; 2 trifle)
+1x Archon Investigation
+6x Ashur Tablets
+5x Haqim's Law: Retribution
+2x Khabar: Community, The
+2x Parthenon, The
+2x Underworld Hunting Ground
+2x Vessel
+1x Yoruba Shrine
+
+Action (17)
+1x Aranthebes, The Immortal
+8x Flurry of Action
+4x Haqim's Law: Leadership
+4x Khabar: Glory
+
+Action Modifier (10)
+2x Elder Impersonation
+2x Faceless Night
+2x Lost in Crowds
+2x Marked Path
+2x Spying Mission
+
+Action Modifier/Combat (24)
+4x Hide the Mind
+10x Resist Earth's Grasp
+10x Swallowed by the Night
+
+Reaction (11)
+3x Nest of Eagles
+4x On the Qui Vive
+4x Protected District
+
+Combat (4)
+2x No Trace
+2x Torrent
+
+Event (3)
+1x Narrow Minds
+1x Nightmares upon Nightmares
+1x Scourge of the Enochians
