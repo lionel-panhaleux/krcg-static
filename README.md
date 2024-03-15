@@ -202,6 +202,17 @@ for f in incoming/*(.); do \
 done
 ```
 
+To extract the images:
+
+```shell
+for f in incoming/*(.); do \
+name=${f#incoming/}; \
+name=${name%.*}; \
+name=result/${name}.jpg; \
+convert $f -crop 259x225+75+58 +repage $name; \
+done
+```
+
 Then copy everything and preserve the links to the static directory:
 
 ```shell
