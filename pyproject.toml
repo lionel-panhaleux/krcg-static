@@ -23,7 +23,7 @@ classifiers = [
     "Environment :: Web Environment",
     "Topic :: Games/Entertainment",
 ]
-dependencies = ["aiofile", "aiohttp", "requests", "unidecode", "krcg>=3.8"]
+dependencies = ["aiofile", "aiohttp", "requests", "unidecode", "krcg>=3.9"]
 
 [project.optional-dependencies]
 dev = ["black", "ipython", "pytest", "ruff"]
