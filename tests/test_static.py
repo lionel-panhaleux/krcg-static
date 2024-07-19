@@ -53,6 +53,7 @@ def test_card():
             'D.H. Lawrence, "Bat"'
         ),
         "id": 100029,
+        "legality": "1994-08-16",
         "name": "Aid from Bats",
         "printed_name": "Aid from Bats",
         "rulings": {
@@ -136,6 +137,7 @@ def test_card():
         "has_advanced": True,
         "has_evolution": True,
         "id": 201362,
+        "legality": "2001-06-11",
         "name": "Theo Bell (G2)",
         "name_variants": ["Theo Bell"],
         "ordered_sets": ["Final Nights", "Camarilla Edition"],
