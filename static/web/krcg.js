@@ -8,6 +8,7 @@ function getName(elem) {
 function clickCard() {
     document.getElementById("krcg-click-image").src = nameToImage(getName(this))
     document.getElementById("krcg-click-modal").style.display = "block"
+    document.getElementById("krcg-over-modal").style.display = "none"
 }
 
 function overCard() {
@@ -69,8 +70,10 @@ function krcgCards() {
     document.body.insertBefore(click_modal, document.body.firstChild)
     // add events listeners on all page elements marked as cards
     for (elem of document.querySelectorAll(".krcg-card")) {
-        elem.addEventListener("click", clickCard.bind(elem))
-        if (!elem.dataset.nohover) {
+        if (!(elem.dataset.noclick && elem.dataset.noclick === "true")) {
+            elem.addEventListener("click", clickCard.bind(elem))
+        }
+        if (!(elem.dataset.nohover && elem.dataset.nohover === "true")) {
             elem.addEventListener("mouseover", overCard.bind(elem))
             elem.addEventListener("mouseout", outCard)
         }
