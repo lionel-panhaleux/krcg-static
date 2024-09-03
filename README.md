@@ -57,7 +57,7 @@ SelectWorthOutputting(); foreach Export("svg"); endloop;
 Convert SVG to PNG with a transparent background:
 
 ```shell
-for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; convert -background none $f $g; done
+for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; magick -background none $f $g; done
 ```
 
 Convert transparent PNG to white bordered PNG:
@@ -65,7 +65,7 @@ Convert transparent PNG to white bordered PNG:
 ```shell
 for f in png/icon/*(.); \
 do g=png_wb/${f#png/}; \
-convert $f \( \
+magick $f \( \
     +clone -alpha extract -morphology edgeout octagon:15 -bordercolor black \
     -border 100 -morphology close Octagon:50 -shave 100 \
     -level 50% -transparent black \) \
@@ -78,7 +78,7 @@ Convert transparent square PNG to white bordered PNG:
 ```shell
 for f in png/icon/*(.); \
 do g=png_wb/${f#png/}; \
-convert -background none -size 896x896 xc:white \
+magick -background none -size 896x896 xc:white \
     \( $f -trim +repage -resize 768x768 \) \
     -geometry +64+64 -composite $g \
 ; done
@@ -96,7 +96,7 @@ Convert transparent losange (sup) PNG to white bordered PNG:
 ```shell
 for f in png/icon/*(.); \
 do g=png_wb/${f#png/}; \
-convert -background none -size 780x780 xc:white -rotate 45 \
+magick -background none -size 780x780 xc:white -rotate 45 \
     \( $f -trim +repage -resize 944x944 \) \
     -geometry +82+82 -composite $g \
 ; done
@@ -106,14 +106,14 @@ Add transparent border (`128px`):
 
 ```shell
 for f in png_wb/icon/*(.); do \
-convert -background none $f -bordercolor none -border 128x128 $f \
+magick -background none $f -bordercolor none -border 128x128 $f \
 ; done
 ```
 
 Generate a multisize `.ico` file:
 
 ```shell
-convert -background none vtes.svg \
+magick -background none vtes.svg \
 \( -clone 0 -resize 16x16 \) \
 \( -clone 0 -resize 32x32 \) \
 \( -clone 0 -resize 64x64 \) \
@@ -132,7 +132,7 @@ name=${name% - *}; \
 name=${name% \[*}; \
 name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
 name=result/${name}.jpg; \
-convert $f -resize x500 $name; \
+magick $f -resize x500 $name; \
 done
 ```
 
@@ -154,29 +154,29 @@ if [[ ! -z $group ]]; then \
     name=${name}g${group}; \
 fi; \
 name=result/${name}.jpg; \
-convert $f -shave 18 -resize x500 $name; \
+magick $f -shave 18 -resize x500 $name; \
 done
 ```
 
 Sometimes the resulting image won't exactly fir the expected 358x500 pixels.
 To add a 1-pixel borders on both sides use:
 ```shell
-convert $f -bordercolor black -border 1x $name
+magick $f -bordercolor black -border 1x $name
 ````
 
 And to remove:
 ```shell
-convert $f -shave 1x $name
+magick $f -shave 1x $name
 ````
 
 To add a 1-pixel border on a single side, use:
 ```shell
-convert $f -background black -gravity west -splice 1x $name
+magick $f -background black -gravity west -splice 1x $name
 ````
 
 And to remove:
 ```shell
-convert $f -gravity west -chop 1x $name
+magick $f -gravity west -chop 1x $name
 ````
 
 Then, to create the symbolic links for the crypt cards, you can:
@@ -198,7 +198,7 @@ To generate round corners for the card:
 for f in incoming/*(.); do \
     name=${f#incoming/}; \
     name=${name%.*}; \
-    convert incoming/${name}.jpg \( +clone  -alpha extract -draw 'fill black polygon 0,0 0,15 15,0 fill white circle 15,15 15,0' \( +clone -flip \) -compose Multiply -composite \( +clone -flop \) -compose Multiply -composite \) -alpha off -compose CopyOpacity -composite result/${name}.png; \
+    magick incoming/${name}.jpg \( +clone  -alpha extract -draw 'fill black polygon 0,0 0,15 15,0 fill white circle 15,15 15,0' \( +clone -flip \) -compose Multiply -composite \( +clone -flop \) -compose Multiply -composite \) -alpha off -compose CopyOpacity -composite result/${name}.png; \
 done
 ```
 
@@ -209,7 +209,7 @@ for f in incoming/*(.); do \
 name=${f#incoming/}; \
 name=${name%.*}; \
 name=result/${name}.jpg; \
-convert $f -crop 259x225+75+58 +repage $name; \
+magick $f -crop 259x225+75+58 +repage $name; \
 done
 ```
 
