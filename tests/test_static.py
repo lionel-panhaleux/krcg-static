@@ -56,18 +56,30 @@ def test_card():
         "legality": "1994-08-16",
         "name": "Aid from Bats",
         "printed_name": "Aid from Bats",
-        "rulings": {
-            "links": {
-                "[TOM 19960521]": (
-                    "https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/"
-                    "poYD3n0TKGo/xvU5HW7lBxMJ"
-                )
+        "rulings": [
+            {
+                "references": [
+                    {
+                        "label": "TOM 19960521",
+                        "text": "[TOM 19960521]",
+                        "url": (
+                            "https://groups.google.com/g/rec.games.trading-cards.jyhad/"
+                            "c/poYD3n0TKGo/m/xvU5HW7lBxMJ"
+                        ),
+                    },
+                ],
+                "symbols": [
+                    {
+                        "symbol": "I",
+                        "text": "[ANI]",
+                    },
+                ],
+                "text": (
+                    "[ANI] The press can only be used during the current round. "
+                    "[TOM 19960521]"
+                ),
             },
-            "text": [
-                "[ANI] The press can only be used during the current "
-                "round. [TOM 19960521]"
-            ],
-        },
+        ],
         "sets": {
             "Anarchs": [
                 {"copies": 2, "precon": "Gangrel", "release_date": "2003-05-19"}
