@@ -39,6 +39,16 @@ and contributions guidelines.
 If you're a contributor, signal yourself to the repository administrators so they
 can review and authorize your deployment.
 
+## Refresh cards scans from vtes.pl
+
+It's done manually, run the following python code:
+
+```python
+from pathlib import Path
+from krcg_static import vtespl_cards_scans
+vtespl_cards_scans(Path("static"))
+```
+
 ## Fontforge & Imagemagick foo
 
 Use [Homebrew](https://brew.sh) on OSX to install a few graphical tools:

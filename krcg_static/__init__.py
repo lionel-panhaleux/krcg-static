@@ -70,29 +70,51 @@ VTES_PL_SETS_URLS = {
     "humble-bundle": "http://vtes.pl/cards/set/promohb",
     "anthology-1": "http://vtes.pl/cards/set/anth1",
     "promo-pack-1": "http://vtes.pl/cards/set/pp1",
+    # we have BCP cards images for the newest sets, do not sync them
+    # "anthology-reprint": "http://vtes.pl/cards/set/anth1r",
+    # "twenty-fifth-reprint": "http://vtes.pl/cards/set/25thr",
+    # "promo-pack-2": "http://vtes.pl/cards/set/pp2",
+    # "fifth-edition": "http://vtes.pl/cards/set/v5",
+    # "fifth-edition-anarch": "http://vtes.pl/cards/set/v5a",
+    # "fall-of-london": "http://vtes.pl/cards/set/fol",
+    # "new-blood": "http://vtes.pl/cards/set/nb",
+    # "shadows-of-berlin": "http://vtes.pl/cards/set/sob",
+    # "echoes-of-gehenna": "http://vtes.pl/set/view/eog",
+    # "new-blood-2": "http://vtes.pl/cards/set/nb2",
+    # "fifth-edition-companion": "http://vtes.pl/cards/set/v5c",
+    # "thirtieth-anniversary": "http://vtes.pl/cards/set/30th",
 }
 CARD_RENAME = {
+    "abrahammellon": "abrahammellong6",
     "akhenatenthesunpharaohmummy": "akhenatenthesunpharaoh",
-    "amamthedevourerbanemummy": "amamthedevourerbane",
+    "alinegadecke": "alinegadekeg6",
+    "amamthedevourerbanemummy": "amamthedevourer",
     "ambrosiustheferrymanwraith": "ambrosiustheferryman",
     "brigittegebauerwraith": "brigittegebauer",
     "carltonvanwykhunter": "carltonvanwyk",
     "dauntainblackmagicianchangeling": "dauntainblackmagician",
     "draevensoftfootchangeling": "draevensoftfoot",
     "felixfixhessianwraith": "felixfixhessian",
+    "gustaphebrunelle": "gustaphebrunnelle",
+    "irisbennet": "irisbennett",
     "jakewashingtonhunter": "jakewashington",
     "kherebutubanemummy": "kherebutu",
     "khobartowers": "khobartowersalkhubar",
+    "lutzvonhoenzollern": "lutzvonhohenzollern",
     "masquerwraith": "masquer",
     "mehemetoftheahlibatinmage": "mehemetoftheahlibatin",
     "mylanhorseedgoblin": "mylanhorseed",
     "neighborhoodwatchcommanderhunter": "neighborhoodwatchcommander",
     "nephandusmage": "nephandus",
+    "niksicko": "niksikkog6",
     "pentexsubversion": "pentextmsubversion",
     "puppeteerwraith": "puppeteer",
     "qetutheevildoerbanemummy": "qetutheevildoer",
     "regomotus": "regomotum",
+    "sacrecourcathedralfrance": "sacrecoeurcathedralfrance",
+    "sebastiangoulet": "sebastiengoulet",
     "shadowcourtsatyrchangeling": "shadowcourtsatyr",
+    "tarathehollowonemage": "tarathehollowone",
     "thadiuszhomage": "thadiuszho",
     "theadmonitions": "admonitionsthe",
     "theailingspirit": "ailingspiritthe",
@@ -111,6 +133,7 @@ CARD_RENAME = {
     "theblackbeast": "blackbeastthe",
     "theblackthrone": "blackthronethe",
     "thebookofgoingforthbynight": "bookofgoingforthbynightthe",
+    "thebritishmuseumlondon": "britishmuseumlondonthe",
     "thebruisers": "bruisersthe",
     "thecall": "callthe",
     "thecapuchin": "capuchinthe",
@@ -133,10 +156,12 @@ CARD_RENAME = {
     "theeternalmask": "eternalmaskthe",
     "theeternalsofsirius": "eternalsofsiriusthe",
     "thefinalnights": "finalnightsthe",
+    "thefirsttraditionthemasquerade": "firsttraditionthemasquerade",
     "thefourthcycle": "fourthcyclethe",
     "theframing": "framingthe",
     "theghoulsofplazamorera": "ghoulsofplazamorerathe",
     "thegrandesttrick": "grandesttrickthe",
+    "theguardian": "guardianthe",
     "theguruhiaretheland": "guruhiarethelandthe",
     "thehaunting": "hauntingthe",
     "thehorde": "hordethe",
@@ -157,6 +182,7 @@ CARD_RENAME = {
     "themeddlingofsemsith": "meddlingofsemsiththe",
     "themedic": "medicthe",
     "themissingvoice": "missingvoicethe",
+    "themithraeumlondon": "mithraeumlondonthe",
     "themole": "molethe",
     "thenameforgotten": "nameforgottenthe",
     "thenewinquisition": "newinquisitionthe",
@@ -176,6 +202,7 @@ CARD_RENAME = {
     "thepathofthescorchedheart": "pathofthescorchedheartthe",
     "thepathoftyphon": "pathoftyphonthe",
     "thepeaceofkhetamon": "peaceofkhetamonthe",
+    "theplatinumprotocol": "platinumprotocolthe",
     "theportrait": "portraitthe",
     "therack": "rackthe",
     "therealmoftheblacksun": "realmoftheblacksunthe",
@@ -188,6 +215,7 @@ CARD_RENAME = {
     "thesargonfragment": "sargonfragmentthe",
     "thesecretlibraryofalexandria": "secretlibraryofalexandriathe",
     "thesecretmustbekept": "secretmustbekeptthe",
+    "theshardlondon": "shardlondonthe",
     "thesiamese": "siamesethe",
     "thesignetofkingsaul": "signetofkingsaulthe",
     "theslashers": "slashersthe",
@@ -537,12 +565,9 @@ async def fetch_vtespl_set_images(session, path, url):
     async with session.get(url) as response:
         index = await response.text()
         parser.feed(index)
-    await asyncio.gather(
-        *(
-            fetch_file(card, path / url_to_filename(card), session)
-            for card in parser.cards
-        )
-    )
+    # don't gather here to avoid opening too many files
+    for card in parser.cards:
+        await fetch_file(card, path / url_to_filename(card), session)
 
 
 async def fetch_vtespl_cards_scans(path):
