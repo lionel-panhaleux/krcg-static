@@ -562,6 +562,8 @@ def test_images():
         "windycitycoffeecart.jpg",
         "yellowsignthe.jpg",
     }
+    # legacy names kept for convenience
+    filenames.add("mindrape.jpg")
     for card in vtes.VTES:
         filename = card.url.replace("https://static.krcg.org/card/", "")
         assert os.path.isfile("static/card/" + filename)
