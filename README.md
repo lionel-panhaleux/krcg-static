@@ -159,7 +159,8 @@ if [[ ${group} == ${name} ]]; then \
     group= ; \
 fi; \
 name=${name% \[*}; \
-name=`echo $name | iconv -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
+name=`echo $name | iconv -sc -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]'`; \
+group=`echo $group | iconv -f utf-8 -t ascii//translit | tr -d '[:punct:]' | tr -d '[:space:]'`; \
 if [[ ! -z $group ]]; then \
     name=${name}g${group}; \
 fi; \
