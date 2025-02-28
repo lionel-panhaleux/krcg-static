@@ -1,6 +1,6 @@
 .PHONY: quality test static update clean
 
-export VTESCSV_GITHUB_BRANCH = main
+export VTESCSV_GITHUB_BRANCH=main
 STATIC_SERVER ?= lpanhaleux@krcg.org:projects/static.krcg.org/dist
 
 quality:
