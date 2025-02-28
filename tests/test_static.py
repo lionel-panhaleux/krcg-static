@@ -58,6 +58,7 @@ def test_card():
         "printed_name": "Aid from Bats",
         "rulings": [
             {
+                "group": "Optional press",
                 "references": [
                     {
                         "label": "TOM 19960521",
@@ -75,8 +76,8 @@ def test_card():
                     },
                 ],
                 "text": (
-                    "[ANI] The press can only be used during the current round. "
-                    "[TOM 19960521]"
+                    "[ANI]The optional press can only be used during the current "
+                    "round. [TOM 19960521]"
                 ),
             },
         ],
