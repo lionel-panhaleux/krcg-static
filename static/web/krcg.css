@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Ankha VTES";
-    src: url("https://static.krcg.org/web/ankha2.otf") format("opentype");
+    src: url("./ankha2.otf") format("opentype");
 }
 
 @font-face {
     font-family: "VTES Clans";
-    src: url("https://static.krcg.org/web/vtes-clans.otf") format("opentype");
+    src: url("./vtes-clans.otf") format("opentype");
 }
 
 .krcg-icon {
