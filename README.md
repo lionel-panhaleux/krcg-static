@@ -57,8 +57,16 @@ Use [Homebrew](https://brew.sh) on OSX to install a few graphical tools:
 brew install imagemagick inkscape potrace
 ```
 
+To convert an image to SVG:
+
+```shell
+magick image.png -threshold 50% -flatten -alpha off input.pbm
+potrace input.pbm -s -o image.svg 
+```
+
 [Fontforge](https://fontforge.org) can be used to build and extract fonts.
-Use `File > Execute Script` to execute the following `FF` script:
+
+To extract fonts, use `File > Execute Script` to execute the following `FF` script:
 
 ```txt
 SelectWorthOutputting(); foreach Export("svg"); endloop;
