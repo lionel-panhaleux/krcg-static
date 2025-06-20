@@ -75,7 +75,13 @@ SelectWorthOutputting(); foreach Export("svg"); endloop;
 Convert SVG to PNG with a transparent background:
 
 ```shell
-for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; magick -background none $f $g; done
+for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; magick $f -background none $g; done
+```
+
+or using inkscape (might be more reliable):
+
+```shell
+for f in svg/**/*(.); do g=${f#svg/}; g=png/${g%.svg}.png; inkscape $f --export-type=png --export-background-opacity=0 --export-filename=$g; done
 ```
 
 Convert transparent PNG to white bordered PNG:
