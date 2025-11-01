@@ -58,6 +58,27 @@ def test_card():
         "printed_name": "Aid from Bats",
         "rulings": [
             {
+                "cards": [
+                    {
+                        "id": 100916,
+                        "name": "Hidden Lurker",
+                        "text": "{Hidden Lurker}",
+                        "usual_name": "Hidden Lurker",
+                        "vekn_name": "Hidden Lurker",
+                    },
+                ],
+                "group": "Strikes with optional maneuver",
+                "references": [
+                    {
+                        "label": "LSJ 20021028",
+                        "text": "[LSJ 20021028]",
+                        "url": "https://groups.google.com/g/rec.games.trading-cards.jyhad/c/g0GGiVIxyis/m/35WA-O9XrroJ",
+                    },
+                ],
+                "text": "The optional maneuver cannot be used if the strike cannot be used "
+                "(eg. {Hidden Lurker}). [LSJ 20021028]",
+            },
+            {
                 "group": "Optional press",
                 "references": [
                     {
@@ -565,6 +586,7 @@ def test_images():
     }
     # legacy names kept for convenience
     filenames.add("mindrape.jpg")
+    filenames.add("vozhdofsofia.jpg")
     for card in vtes.VTES:
         filename = card.url.replace("https://static.krcg.org/card/", "")
         assert os.path.isfile("static/card/" + filename)

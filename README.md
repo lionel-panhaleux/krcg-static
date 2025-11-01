@@ -245,3 +245,9 @@ cp -av ./* ~/dev/krcg-static/static/card/
 ```
 
 Make sure your symbolic links are **relative to the `.` folder**  ot they won't work online.
+
+You can list the cards that changed (excluding new cards), with:
+
+```shell
+git diff --name-only --diff-filter=M | xargs -n1 basename
+```
