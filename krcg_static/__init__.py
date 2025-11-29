@@ -628,4 +628,7 @@ def main():
     (args.folder / "data").mkdir(parents=True, exist_ok=True)
     standard_json(args.folder)
     standard_html(args.folder)
-    amaranth_ids(args.folder)
+    try:
+        amaranth_ids(args.folder)
+    except Exception as e:
+        logger.exception("failed to generate Amaranth IDs: %s", e)
