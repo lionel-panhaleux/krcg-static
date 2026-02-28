@@ -13,7 +13,6 @@ import logging
 import os
 import pydantic
 
-
 logging.basicConfig(
     level=logging.DEBUG if os.getenv("DEBUG") else logging.INFO,
     format="[%(levelname)7s] %(message)s",

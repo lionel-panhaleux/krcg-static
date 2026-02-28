@@ -40,7 +40,7 @@ def test_card():
             },
         },
         "_name": "Aid from Bats",
-        "_set": "Jyhad:C, VTES:C, CE:C/PN3, Anarchs:PG2, Third:C, KoT:C, FB:PN6",
+        "_set": "Jyhad:C, VTES:C, CE:C/PN3, Anarchs:PG2, Third:C, KoT:C, FB:PN6, NB3C:PR3",
         "artists": ["Melissa Benson", "Eric Lofgren"],
         "card_text": (
             "[ani] Strike: 1R damage, with 1 optional maneuver.\n"
@@ -58,6 +58,7 @@ def test_card():
         "printed_name": "Aid from Bats",
         "rulings": [
             {
+                "group": "Strikes with optional maneuver",
                 "cards": [
                     {
                         "id": 100916,
@@ -67,16 +68,20 @@ def test_card():
                         "vekn_name": "Hidden Lurker",
                     },
                 ],
-                "group": "Strikes with optional maneuver",
                 "references": [
                     {
                         "label": "LSJ 20021028",
                         "text": "[LSJ 20021028]",
-                        "url": "https://groups.google.com/g/rec.games.trading-cards.jyhad/c/g0GGiVIxyis/m/35WA-O9XrroJ",
+                        "url": (
+                            "https://groups.google.com/g/rec.games.trading-cards.jyhad/"
+                            "c/g0GGiVIxyis/m/35WA-O9XrroJ"
+                        ),
                     },
                 ],
-                "text": "The optional maneuver cannot be used if the strike cannot be used "
-                "(eg. {Hidden Lurker}). [LSJ 20021028]",
+                "text": (
+                    "The optional maneuver cannot be used if the strike cannot be used "
+                    "(eg. {Hidden Lurker}). [LSJ 20021028]"
+                ),
             },
             {
                 "group": "Optional press",
@@ -117,6 +122,9 @@ def test_card():
             "Keepers of Tradition": [
                 {"rarity": "Common", "release_date": "2008-11-19"}
             ],
+            "New Blood III": [
+                {"copies": 3, "precon": "Ravnos", "release_date": "2026-02-28"}
+            ],
             "Third Edition": [{"rarity": "Common", "release_date": "2006-09-04"}],
             "Vampire: The Eternal Struggle": [
                 {"rarity": "Common", "release_date": "1995-09-15"}
@@ -134,6 +142,9 @@ def test_card():
             "Keepers of Tradition": (
                 "https://static.krcg.org/card/set/keepers-of-tradition/aidfrombats.jpg"
             ),
+            "New Blood III": (
+                "https://static.krcg.org/card/set/new-blood-iii/aidfrombats.jpg"
+            ),
             "Third Edition": (
                 "https://static.krcg.org/card/set/third-edition/aidfrombats.jpg"
             ),
@@ -150,6 +161,7 @@ def test_card():
             "Third Edition",
             "Keepers of Tradition",
             "First Blood",
+            "New Blood III",
         ],
         "types": ["Combat"],
         "url": "https://static.krcg.org/card/aidfrombats.jpg",
@@ -202,8 +214,7 @@ def test_twda():
     test_twda[deck.id] = deck
     assert test_twda.to_json() == [
         {
-            "comments": textwrap.dedent(
-                """
+            "comments": textwrap.dedent("""
 Here is a quick report by the Winner of the event Niko Vanhatalo.
 
 Just your average Ventrue grinder/stickmen with my own personal preferences
@@ -217,8 +228,7 @@ concern was my predator who played pretty much the same deck with like 90% of
 the crypt being the same cards, but we were able to avoid unnecesary contesting
 thanks to table talk. He still contested my Lodin later in the game but was
 ousted pretty fast after that before any real damage to me was done.
-"""
-            )[1:],
+""")[1:],
             "crypt": {
                 "cards": [
                     {"count": 3, "id": 200848, "name": "Lodin (Olaf Holte)"},
@@ -601,4 +611,5 @@ def test_images():
     for filename in os.listdir("static/card"):
         if os.path.isfile("static/card/" + filename):
             static_filenames.add(filename)
-    assert filenames == static_filenames
+    assert filenames - static_filenames == set(), "missing files"
+    assert static_filenames - filenames == set(), "spurious files"

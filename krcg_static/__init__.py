@@ -26,7 +26,6 @@ from krcg import twda
 from krcg import utils
 from krcg import vtes
 
-
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
 CARD_LIBRARY_BACK_URL = "https://lackeyccg.com/vtes/high/images/cardback.jpg"
 VTES_PL_SETS_URLS = {

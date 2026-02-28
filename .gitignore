@@ -6,6 +6,8 @@ venv/
 *.egg-info/
 *.pkl
 tournament_points.json
+.venv/
+uv.lock
 
 # env variables
 .env

@@ -20,7 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e .
       - name: Build static files
-        run: VTESCSV_GITHUB_BRANCH="main" krcg-static build
+        run: LOCAL_CARDS=1 krcg-static build
       - name: Setup SSH key
         run: |
           mkdir /home/runner/.ssh
