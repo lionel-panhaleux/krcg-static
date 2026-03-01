@@ -146,6 +146,21 @@ magick -background none vtes.svg \
 -delete 0 -alpha on -compress Zip vtes.ico     
 ```
 
+### Processing new card images
+
+Place incoming card images in `incoming/` and use the `just` targets:
+
+```shell
+just cards      # standard images
+just cards-bcp  # BCP images with large border removal
+```
+
+This processes all images in `incoming/`, generating JPG and WebP versions in `result/`,
+creates crypt card symlinks (both `.jpg` and `.webp`), and copies everything to `static/card/`.
+Both JPG and WebP files must be committed to git.
+
+### Manual image processing
+
 Convert VEKN card images to our format:
 
 ```shell
@@ -214,6 +229,27 @@ short=${name%g[123456789].jpg}; \
 if [[ ${short} != ${name} ]]; then \
     ln -fs ${name} ${short}.jpg; \
 fi; \
+done
+```
+
+Convert JPGs to WebP (both formats are committed):
+
+```shell
+for f in result/*.jpg(.); do
+  magick "$f" "${f%.jpg}.webp"
+done
+```
+
+Create WebP symlinks for crypt cards:
+
+```shell
+cd result
+for f in ./*.jpg(.); do
+  name=${f#./}
+  short=${name%g[123456789].jpg}
+  if [[ ${short} != ${name} ]]; then
+    ln -fs ${name%.jpg}.webp ${short}.webp
+  fi
 done
 ```
 

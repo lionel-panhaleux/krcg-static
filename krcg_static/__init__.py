@@ -378,7 +378,11 @@ def all_cards_images(path: str) -> None:
     with zipfile.ZipFile(path / "card" / "_all_cards.zip", "w") as zipf:
         for fil in os.listdir(source):
             fil = source / fil
-            if os.path.isfile(fil) and not os.path.islink(fil):
+            if (
+                fil.suffix == ".webp"
+                and os.path.isfile(fil)
+                and not os.path.islink(fil)
+            ):
                 zipf.write(fil, fil.relative_to("static"))
 
 

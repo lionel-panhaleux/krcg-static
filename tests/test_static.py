@@ -606,6 +606,16 @@ def test_images():
         )
         assert os.path.isfile("static/card/" + filename)
         filenames.add(filename)
+    # add .webp counterparts for all .jpg files (except storyline/token symlinks)
+    filenames |= {
+        f[:-4] + ".webp"
+        for f in filenames
+        if f.endswith(".jpg")
+        and not (
+            os.path.islink("static/card/" + f)
+            and "/" in os.readlink("static/card/" + f)
+        )
+    }
     static_filenames = set()
 
     for filename in os.listdir("static/card"):
