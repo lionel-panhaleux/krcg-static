@@ -11,10 +11,10 @@ authors = [
 description = "KRCG Static website and files generator"
 keywords = ["vtes", "Vampire: The Eternal Struggle", "CCG", "TWD", "TWDA"]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Natural Language :: English",

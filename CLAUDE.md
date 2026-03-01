@@ -1,76 +1,44 @@
 # CLAUDE.md
 
-This file provides guidance to AI agents when working in this repository.
-
-## Project Overview
-
-**krcg-static** generates the static website [static.krcg.org](https://static.krcg.org), serving card data, images, and resources for VTES (Vampire: The Eternal Struggle) card game developers. It fetches card data from VEKN, the Tournament Winning Deck Archive (TWDA), and KRCG rulings, then builds a deployable static site.
+Static site generator for [static.krcg.org](https://static.krcg.org) — VTES card data, images, and resources. Fetches from VEKN, TWDA, and KRCG rulings.
 
 ## Commands
 
 ```bash
-# Install (dev)
-uv sync --extra dev
-
-# Lint & format
-uv run ruff format --check .       # format check
-uv run ruff check                  # lint
-
-# Test (requires internet for VEKN data fetch)
-LOCAL_CARDS=1 uv run pytest -vv
-
-# Combined quality + tests
-just test
-
-# Build the static site
-LOCAL_CARDS=1 uv run krcg-static build
-
-# Build minimal (web resources only, no card images or data generation)
-LOCAL_CARDS=1 uv run krcg-static build --minimal
-
-# Deploy to production
-just static                        # full build + rsync to both servers
-just minimal                       # minimal build + rsync to one server
+uv sync --extra dev                          # install (dev)
+uv run ruff format --check . && uv run ruff check  # lint
+LOCAL_CARDS=1 uv run pytest -vv              # test (needs LOCAL_CARDS=1)
+just test                                    # lint + test
+LOCAL_CARDS=1 uv run krcg-static build       # full build
+LOCAL_CARDS=1 uv run krcg-static build --minimal  # web resources only
+just static                                  # build + deploy (both servers)
+just minimal                                 # minimal build + deploy (one server)
 ```
-
-The `LOCAL_CARDS=1` environment variable is required for tests and builds — it tells the `krcg` library to use local card image files instead of fetching them.
 
 ## Architecture
 
-- **Single module**: All build logic lives in `krcg_static/__init__.py` (~630 lines)
-- **`krcg` library** (>=4.18): Core dependency providing card parsing, TWDA parsing, rulings, and JSON serialization via `vtes.VTES` and `twda.TWDA`
-- **`static/`**: Source assets committed to the repo (card images, icons, fonts, JS/CSS, HTML)
-- **`build/`**: Generated output (git-ignored) — a complete website tree rsync'd to production
+- Single module: `krcg_static/__init__.py` (~630 lines)
+- Core dep: `krcg` (>=4.18) — card parsing, TWDA, rulings via `vtes.VTES` / `twda.TWDA`
+- `static/` → source assets (committed, includes ~6k card images + symlinks)
+- `build/` → generated output (git-ignored), rsync'd to production
 
-### Build process (`krcg-static build`)
+Build steps: copy `static/` → zip cards → load VEKN data → generate `build/data/{vtes,twda}.json`, `twd.htm`, `amaranth_ids.json`
 
-1. Copies `static/` to `build/` (preserving symlinks)
-2. Creates `build/card/_all_cards.zip`
-3. Loads card data and TWDA from VEKN
-4. Generates `build/data/vtes.json`, `build/data/twda.json`, `build/data/twd.htm`, `build/data/amaranth_ids.json`
-
-### Generated data files
-
-- `data/vtes.json` — all card data with rulings, translations, set info, image URLs
-- `data/twda.json` — Tournament Winning Deck Archive in JSON
-- `data/twd.htm` — normalized HTML TWDA
-- `data/amaranth_ids.json` — Amaranth-to-KRCG card ID mapping
-
-### Card images
-
-~6,159 images in `static/card/`. Filenames are ASCII-only, lowercase, no spaces or punctuation (e.g., `powerbasezurich.jpg`). Crypt cards use symlinks (e.g., `theobellg2.jpg` → `theobell.jpg`), some vampires have multiple versions. The `CARD_RENAME` dict in `__init__.py` maps legacy filenames to canonical names.
+Card images: ASCII-only lowercase filenames, crypt cards use symlinks. `CARD_RENAME` dict maps legacy names.
 
 ## Testing
 
-Tests live in `tests/test_static.py` with three test functions:
-- `test_card()` — validates JSON output for specific cards (fields, disciplines, sets, rulings, i18n)
-- `test_twda()` — validates JSON output for a specific TWDA deck
-- `test_images()` — checks every card in VTES has a corresponding file in `static/card/` and no unexpected extras exist
+`tests/test_static.py`: `test_card()`, `test_twda()`, `test_images()`
+`tests/conftest.py`: loads VEKN + TWDA from `tests/twda_test.html` at session start.
 
-`tests/conftest.py` loads VTES data from VEKN and TWDA from `tests/twda_test.html` (a 20-deck snapshot) at session start.
+## Conventions
 
-## Key Conventions
+- Python 3.12+, ruff (default config)
+- `static/` dir including card images and symlinks is committed to git
 
-- Python 3.11+
-- Formatter & Linter: `ruff` (default config)
-- The `static/` directory including all card images and symlinks is committed to git
+## Context7 Library IDs
+
+Always use Context7 MCP (`resolve-library-id` + `query-docs`) for docs lookup.
+
+uv: `/astral-sh/uv` | ruff: `/astral-sh/ruff` | pytest: `/pytest-dev/pytest` | just: `/casey/just`
+GitHub Actions: `/websites/github_en_actions` | setup-uv: `/astral-sh/setup-uv` | checkout: `/actions/checkout`
