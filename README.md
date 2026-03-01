@@ -3,7 +3,7 @@
 [![Validation](https://github.com/lionel-panhaleux/krcg-static/actions/workflows/validation.yml/badge.svg)](https://github.com/lionel-panhaleux/krcg-static/actions/workflows/validation.yml)
 [![Python version](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
-[![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 KRCG static V:tES files generation, using
 the VEKN [official card texts](http://www.vekn.net/card-lists),
