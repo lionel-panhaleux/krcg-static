@@ -25,22 +25,22 @@ clean:
     rm -rf result
 
 # Process incoming card images into result/, then copy to static/card/
-cards: (_process-cards "false")
+cards dir="incoming": (_process-cards "false" dir)
 
 # Process incoming BCP card images (with large border removal)
-cards-bcp: (_process-cards "true")
+cards-bcp dir="incoming": (_process-cards "true" dir)
 
-_process-cards bcp:
+_process-cards bcp dir:
     #!/usr/bin/env zsh
     set -euo pipefail
-    if [[ ! -d incoming ]]; then
-        echo "Error: incoming/ directory not found. Place card images in incoming/"
+    if [[ ! -d "{{dir}}" ]]; then
+        echo "Error: {{dir}}/ directory not found. Place card images in {{dir}}/"
         exit 1
     fi
     mkdir -p result
     # Process and rename incoming images
-    for f in incoming/*(.); do
-        name=${f#incoming/}
+    for f in "{{dir}}"/*(.); do
+        name=${f#"{{dir}}"/}
         name=${name%.*}
         name=${name% - *}
         group=${name##*\[}
