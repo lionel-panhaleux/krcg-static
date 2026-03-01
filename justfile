@@ -17,7 +17,7 @@ minimal:
     rsync -rlptq --delete-after -e ssh build/ {{static_server}}
 
 update:
-    uv sync --extra dev
+    uv sync --upgrade
 
 clean:
     rm -rf build
