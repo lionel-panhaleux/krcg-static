@@ -16,6 +16,10 @@ uv.lock
 .pytest_cache/
 .ruff_cache/
 
+# card processing
+incoming/
+result/
+
 # editors & OS
 .vscode/
 *.DS_Store

@@ -22,3 +22,63 @@ update:
 clean:
     rm -rf build
     rm -rf .pytest_cache
+    rm -rf result
+
+# Process incoming card images into result/, then copy to static/card/
+cards: (_process-cards "false")
+
+# Process incoming BCP card images (with large border removal)
+cards-bcp: (_process-cards "true")
+
+_process-cards bcp:
+    #!/usr/bin/env zsh
+    set -euo pipefail
+    if [[ ! -d incoming ]]; then
+        echo "Error: incoming/ directory not found. Place card images in incoming/"
+        exit 1
+    fi
+    mkdir -p result
+    # Process and rename incoming images
+    for f in incoming/*(.); do
+        name=${f#incoming/}
+        name=${name%.*}
+        name=${name% - *}
+        group=${name##*\[}
+        group=${group%%\]*}
+        if [[ ${group} == ${name} ]]; then
+            group=
+        fi
+        name=${name% \[*}
+        name=$(echo $name | iconv -sc -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]')
+        group=$(echo $group | iconv -f utf-8 -t ascii//translit | tr -d '[:punct:]' | tr -d '[:space:]')
+        if [[ -n $group ]]; then
+            name=${name}g${group}
+        fi
+        out=result/${name}.jpg
+        if [[ "{{bcp}}" == "true" ]]; then
+            magick $f -shave 18 -resize x500 -background black -gravity center -extent 358x500 $out
+        else
+            magick $f -resize x500 -background black -gravity center -extent 358x500 $out
+        fi
+        echo "  $f -> $out"
+    done
+    # Generate webp versions
+    for f in result/*.jpg(.); do
+        magick $f ${f%.jpg}.webp
+    done
+    echo "Generated webp versions"
+    # Create symlinks for crypt cards (with group number)
+    cd result
+    for f in ./*.jpg(.); do
+        name=${f#./}
+        short=${name%g[123456789].jpg}
+        if [[ ${short} != ${name} ]]; then
+            ln -fs ${name} ${short}.jpg
+            ln -fs ${name%.jpg}.webp ${short}.webp
+            echo "  ${short}.jpg -> ${name}"
+        fi
+    done
+    cd ..
+    # Copy to static/card/ preserving symlinks
+    cp -av result/* static/card/
+    echo "Done! Cards copied to static/card/"
