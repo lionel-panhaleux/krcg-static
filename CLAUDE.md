@@ -5,31 +5,51 @@ Static site generator for [static.krcg.org](https://static.krcg.org) — VTES ca
 ## Commands
 
 ```bash
-uv sync --extra dev                          # install (dev)
+uv sync                                      # install (dev group is default)
 uv run ruff format --check . && uv run ruff check  # lint
-LOCAL_CARDS=1 uv run pytest -vv              # test (needs LOCAL_CARDS=1)
+uv run pytest -vv                            # test (offline, packaged krcg data)
 just test                                    # lint + test
-LOCAL_CARDS=1 uv run krcg-static build       # full build
-LOCAL_CARDS=1 uv run krcg-static build --minimal  # web resources only
+uv run krcg-static build                     # full build
+uv run krcg-static build --minimal           # web resources only
 just static                                  # build + deploy (both servers)
 just minimal                                 # minimal build + deploy (one server)
 ```
 
 ## Architecture
 
-- Single module: `krcg_static/__init__.py` (~630 lines)
-- Core dep: `krcg` (>=4.18) — card parsing, TWDA, rulings via `vtes.VTES` / `twda.TWDA`
+- Single module: `krcg_static/__init__.py`
+- Core dep: `krcg` (>=5.0) — card parsing, TWDA, rulings via the v5 API:
+  `loader.load_local()` (a `CardDict`) and `twda.load_local()` (a `dict[str, Deck]`).
+  No singletons, no `LOCAL_CARDS`; data is the packaged krcg snapshot.
 - `static/` → source assets (committed, includes ~6k card images + symlinks)
 - `build/` → generated output (git-ignored), rsync'd to production
 
-Build steps: copy `static/` → zip cards → load VEKN data → generate `build/data/{vtes,twda}.json`, `twd.htm`, `amaranth_ids.json`
+Build steps: copy `static/` → zip cards → `loader.load_local()` + `twda.load_local()`
+→ serialize (`msgspec.to_builtins`) the **v5** files into `build/data/v5/`
+(`vtes.json`, `expansions.json`, `twda.json`) + generate `build/data/v4/`
+(`twd.htm`, `amaranth_ids.json`).
 
-Card images: ASCII-only lowercase filenames, crypt cards use symlinks. `CARD_RENAME` dict maps legacy names.
+### Data versioning (`build/data/`)
+
+- `v5/` — current reference JSON, the layout `krcg.load_online` expects.
+- `v4/` — legacy retrocompat. `vtes.json` / `twda.json` are a **frozen committed
+  snapshot** under `static/data/v4/` (the v4 API is gone from krcg ≥5, so they
+  were generated once with `krcg==4.19` and can't be rebuilt here); `twd.htm` /
+  `amaranth_ids.json` are still generated each build.
+- root `data/{vtes,twda,twd.htm,amaranth_ids}` are committed symlinks → `v4/*`
+  (retrocompat now; flip to `v5` in a couple of months).
+
+Card images: ASCII-only lowercase filenames from the card name as printed; crypt
+cards keep group-less (and `…adv`) symlinks. v5 names the article naturally
+("The Ankou" → `theankou`); legacy v4 back-form files (`ankouthe`) remain and the
+natural names symlink onto them. `CARD_RENAME` maps vtes.pl downloads to the
+committed names.
 
 ## Testing
 
-`tests/test_static.py`: `test_card()`, `test_twda()`, `test_images()`
-`tests/conftest.py`: loads VEKN + TWDA from `tests/twda_test.html` at session start.
+`tests/test_static.py`: `test_card()`, `test_twda()`, `test_images()`.
+`tests/conftest.py`: session-scoped `cards` / `TWDA` fixtures via `loader.load_local()`
+and `twda.load_local()` (offline, from the packaged krcg snapshot).
 
 ## Conventions
 

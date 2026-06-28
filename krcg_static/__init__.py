@@ -8,6 +8,7 @@ import aiohttp
 import argparse
 import asyncio
 import csv
+import datetime
 import email.utils
 import html.parser
 import io
@@ -22,9 +23,11 @@ import sys
 import urllib.request
 import zipfile
 
+import msgspec
+
+from krcg import loader
+from krcg import providers
 from krcg import twda
-from krcg import utils
-from krcg import vtes
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
 CARD_LIBRARY_BACK_URL = "https://lackeyccg.com/vtes/high/images/cardback.jpg"
@@ -302,7 +305,7 @@ def geonames(path: str) -> None:
         except (KeyError, ValueError):
             logger.exception(f"Failed to parse country: {country}")
     with open(path / "data" / "countries.json", "w", encoding="utf-8") as fp:
-        json.dump(utils.json_pack(countries), fp, ensure_ascii=False)
+        json.dump(countries, fp, ensure_ascii=False)
     local_filename, _headers = urllib.request.urlretrieve(
         "https://download.geonames.org/export/dump/cities15000.zip"
     )
@@ -344,32 +347,47 @@ def geonames(path: str) -> None:
         city["dem"] = int(city["dem"] or 0)
         city["alternate_names"] = city["alternate_names"].split(",")
     with open(path / "data" / "cities.json", "w", encoding="utf-8") as fp:
-        json.dump(utils.json_pack(cities), fp, ensure_ascii=False)
+        json.dump(cities, fp, ensure_ascii=False)
 
 
-def amaranth_ids(path: str) -> None:
+def amaranth_ids(path, cards) -> None:
     print("generating Amaranth IDs file...")
-    with open(path / "data" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
-        r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
-        r.raise_for_status()
+    r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
+    r.raise_for_status()
+    mapping = {
+        int(card["id"]): cards[card["name"]].id
+        for card in r.json()["result"]
+        if card["name"] in cards  # ignore storyline / counter cards
+    }
+    with open(path / "data" / "v4" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
+        json.dump(mapping, fp, ensure_ascii=False)
+
+
+def standard_json(path, cards, archive) -> None:
+    """Generate the v5 reference JSON: cards, expansions and the TWDA.
+
+    The layout mirrors what `krcg.load_online` expects under `/data/v5/`.
+    """
+    print("generating v5 JSON files...")
+    target = path / "data" / "v5"
+    target.mkdir(parents=True, exist_ok=True)
+    with open(target / "vtes.json", "w", encoding="utf-8") as fp:
         json.dump(
-            {
-                int(card["id"]): vtes.VTES[card["name"]].id
-                for card in r.json()["result"]
-                if card["name"] in vtes.VTES  # ignore storyline / counter cards
-            },
+            [msgspec.to_builtins(c) for c in cards.cards()], fp, ensure_ascii=False
+        )
+    # cards.sets maps several keys (id, code, name) to each Set: dedupe by identity
+    expansions = {id(s): s for s in cards.sets.values()}
+    with open(target / "expansions.json", "w", encoding="utf-8") as fp:
+        json.dump(
+            [
+                msgspec.to_builtins(s)
+                for s in sorted(expansions.values(), key=lambda s: s.id)
+            ],
             fp,
             ensure_ascii=False,
         )
-
-
-def standard_json(path: str) -> None:
-    print("generating JSON files...")
-    path.mkdir(parents=True, exist_ok=True)
-    with open(path / "data" / "vtes.json", "w", encoding="utf-8") as fp:
-        json.dump(vtes.VTES.to_json(), fp, ensure_ascii=False)
-    with open(path / "data" / "twda.json", "w", encoding="utf-8") as fp:
-        json.dump(twda.TWDA.to_json(), fp, ensure_ascii=False)
+    with open(target / "twda.json", "w", encoding="utf-8") as fp:
+        json.dump(msgspec.to_builtins(archive), fp, ensure_ascii=False)
 
 
 def all_cards_images(path: str) -> None:
@@ -386,8 +404,8 @@ def all_cards_images(path: str) -> None:
                 zipf.write(fil, fil.relative_to("static"))
 
 
-def standard_html(path: str) -> None:
-    """A normalized HTML version of the TWDA"""
+def standard_html(path, cards, archive) -> None:
+    """A normalized HTML version of the TWDA (legacy, served under /data/v4/)."""
     print("generating HTML TWD file...")
     # TODO: automatize header generation, so as not to edit it every year
     content = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -453,12 +471,17 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
 <tr><td>ECQ</td><td>European Championship Qualifier</td><td>EC</td><td>European (Continental) Championship</td></tr>
 <tr><td>CCQ</td><td>Continental Championship Qualifier</td><td>ACC</td><td>Asian Continental Championship</td></tr>
 </table>"""  # noqa: E501
-    decks = sorted(twda.TWDA.values(), key=lambda a: a.date, reverse=True)
+    decks = sorted(
+        archive.values(),
+        key=lambda d: d.event.date if d.event and d.event.date else datetime.date.min,
+        reverse=True,
+    )
     current_year = None
     # header: list of decks, year after year
     for deck in decks:
-        if current_year != deck.date.year:
-            current_year = deck.date.year
+        date = deck.event.date
+        if current_year != date.year:
+            current_year = date.year
             content += f'\n<h3><a id="Year{current_year}">{current_year}</a></h3>\n\n'
         player = deck.player
         assert player, f"no player indicated for deck #{deck.id}"
@@ -466,9 +489,9 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
             player += "'"
         else:
             player += "'s"
-        event = deck.event
+        event = deck.event.name
         event = re.sub(r"\s*--\s+.*", "", event)
-        place = deck.place or "Undisclosed location"
+        place = deck.event.place or "Undisclosed location"
         place = re.sub(r"\s*,", ",", place)
         place = re.sub(r",,", ",", place)
         place = [x.strip() for x in place.split(",")[-2:]]
@@ -481,15 +504,15 @@ Many thanks to Jeff Thompson for maintaining them for all these years.
         place = ", ".join(place)
         content += (
             f"<a href=#{deck.id}>{player} {event} {place} "
-            f"{deck.date.strftime('%B %Y')}</a><br>\n"
+            f"{date.strftime('%B %Y')}</a><br>\n"
         )
     content += "</center>\n"
     # body: list of decklists
     for deck in decks:
         content += f"<a id={deck.id} href=#>Top</a>\n<hr><pre>\n"
-        content += deck.to_txt()
+        content += providers.serialize_twd(deck, cards)
         content += "\n</pre>\n"
-    with open(path / "data" / "twd.htm", "w", encoding="utf-8") as fp:
+    with open(path / "data" / "v4" / "twd.htm", "w", encoding="utf-8") as fp:
         fp.write(content)
 
 
@@ -619,19 +642,13 @@ def main():
     shutil.rmtree(args.folder, ignore_errors=True)
     static(args.folder)
     all_cards_images(args.folder)
-    if args.minimal:
-        return
+    print("loading card and TWDA data...")
+    cards = loader.load_local()
+    archive = twda.load_local()
+    (args.folder / "data" / "v4").mkdir(parents=True, exist_ok=True)
+    standard_json(args.folder, cards, archive)
+    standard_html(args.folder, cards, archive)
     try:
-        print("loading from VEKN...")
-        vtes.VTES.load_from_vekn()
-        twda.TWDA.load_from_vekn()
-    except requests.exceptions.ConnectionError as e:
-        logger.exception("failed to connect to %s", e.request.url)
-        exit(1)
-    (args.folder / "data").mkdir(parents=True, exist_ok=True)
-    standard_json(args.folder)
-    standard_html(args.folder)
-    try:
-        amaranth_ids(args.folder)
+        amaranth_ids(args.folder, cards)
     except Exception as e:
         logger.exception("failed to generate Amaranth IDs: %s", e)

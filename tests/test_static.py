@@ -1,365 +1,51 @@
 import os.path
-import textwrap
+import re
 
-from krcg import twda
-from krcg import vtes
+import msgspec
 
-
-def test_card():
-    assert vtes.VTES["Aid from Bats"].to_json() == {
-        "_i18n": {
-            "es": {
-                "card_text": (
-                    "[ani] Ataque: 1 de daño a distancia, con 1 maniobra opcional.\n"
-                    "[ANI] Como antes, con 1 acoso opcional."
-                ),
-                "flavor_text": (
-                    "Colgando boca abajo como hileras de trapos viejos y repugnantes\n"
-                    "Y sonriendo mientras duermen. ¡Murciélagos!\n"
-                    'D.H. Lawrence, "Murciélago"'
-                ),
-                "name": "Ayuda de murciélagos",
-                "sets": {"First Blood": "Primera Sangre"},
-                "url": "https://static.krcg.org/card/es/aidfrombats.jpg",
-            },
-            "fr": {
-                "card_text": (
-                    "[ani] Frapper à toute portée : 1 point de dégâts, "
-                    "avec 1 manœuvre optionnelle.\n"
-                    "[ANI] Comme ci-dessus, avec 1 poursuite optionnelle."
-                ),
-                "flavor_text": (
-                    "Pendues tête en bas comme des rangées de guenilles repoussantes\n"
-                    "Et souriant de toutes leurs dents dans leur sommeil. "
-                    "Des chauves-souris !\n"
-                    'D.H. Lawrence, "La Chauve-souris"'
-                ),
-                "name": "Aide des chauves-souris",
-                "sets": {"First Blood": "Premier Sang"},
-                "url": "https://static.krcg.org/card/fr/aidfrombats.jpg",
-            },
-        },
-        "_name": "Aid from Bats",
-        "_set": "Jyhad:C, VTES:C, CE:C/PN3, Anarchs:PG2, Third:C, KoT:C, FB:PN6, NB3C:PR3",
-        "artists": ["Melissa Benson", "Eric Lofgren"],
-        "card_text": (
-            "[ani] Strike: 1R damage, with 1 optional maneuver.\n"
-            "[ANI] As above, with 1 optional press."
-        ),
-        "disciplines": ["ani"],
-        "flavor_text": (
-            "Hanging upside down like rows of disgusting old rags\n"
-            "And grinning in their sleep. Bats!\n"
-            'D.H. Lawrence, "Bat"'
-        ),
-        "id": 100029,
-        "legality": "1994-08-16",
-        "name": "Aid from Bats",
-        "printed_name": "Aid from Bats",
-        "rulings": [
-            {
-                "group": "Strikes with optional maneuver",
-                "cards": [
-                    {
-                        "id": 100916,
-                        "name": "Hidden Lurker",
-                        "text": "{Hidden Lurker}",
-                        "usual_name": "Hidden Lurker",
-                        "vekn_name": "Hidden Lurker",
-                    },
-                ],
-                "references": [
-                    {
-                        "label": "LSJ 20021028",
-                        "text": "[LSJ 20021028]",
-                        "url": (
-                            "https://groups.google.com/g/rec.games.trading-cards.jyhad/"
-                            "c/g0GGiVIxyis/m/35WA-O9XrroJ"
-                        ),
-                    },
-                ],
-                "text": (
-                    "The optional maneuver cannot be used if the strike cannot be used "
-                    "(eg. {Hidden Lurker}). [LSJ 20021028]"
-                ),
-            },
-            {
-                "group": "Optional press",
-                "references": [
-                    {
-                        "label": "TOM 19960521",
-                        "text": "[TOM 19960521]",
-                        "url": (
-                            "https://groups.google.com/g/rec.games.trading-cards.jyhad/"
-                            "c/poYD3n0TKGo/m/xvU5HW7lBxMJ"
-                        ),
-                    },
-                ],
-                "symbols": [
-                    {
-                        "symbol": "I",
-                        "text": "[ANI]",
-                    },
-                ],
-                "text": (
-                    "[ANI]The optional press can only be used during the current "
-                    "round. [TOM 19960521]"
-                ),
-            },
-        ],
-        "sets": {
-            "Anarchs": [
-                {"copies": 2, "precon": "Gangrel", "release_date": "2003-05-19"}
-            ],
-            "Camarilla Edition": [
-                {"rarity": "Common", "release_date": "2002-08-19"},
-                {"copies": 3, "precon": "Nosferatu", "release_date": "2002-08-19"},
-            ],
-            "First Blood": [
-                {"copies": 6, "precon": "Nosferatu", "release_date": "2019-10-01"}
-            ],
-            "Jyhad": [{"rarity": "Common", "release_date": "1994-08-16"}],
-            "Keepers of Tradition": [
-                {"rarity": "Common", "release_date": "2008-11-19"}
-            ],
-            "New Blood III": [
-                {"copies": 3, "precon": "Ravnos", "release_date": "2026-02-28"}
-            ],
-            "Third Edition": [{"rarity": "Common", "release_date": "2006-09-04"}],
-            "Vampire: The Eternal Struggle": [
-                {"rarity": "Common", "release_date": "1995-09-15"}
-            ],
-        },
-        "scans": {
-            "Anarchs": ("https://static.krcg.org/card/set/anarchs/aidfrombats.jpg"),
-            "Camarilla Edition": (
-                "https://static.krcg.org/card/set/camarilla-edition/aidfrombats.jpg"
-            ),
-            "First Blood": (
-                "https://static.krcg.org/card/set/first-blood/aidfrombats.jpg"
-            ),
-            "Jyhad": ("https://static.krcg.org/card/set/jyhad/aidfrombats.jpg"),
-            "Keepers of Tradition": (
-                "https://static.krcg.org/card/set/keepers-of-tradition/aidfrombats.jpg"
-            ),
-            "New Blood III": (
-                "https://static.krcg.org/card/set/new-blood-iii/aidfrombats.jpg"
-            ),
-            "Third Edition": (
-                "https://static.krcg.org/card/set/third-edition/aidfrombats.jpg"
-            ),
-            "Vampire: The Eternal Struggle": (
-                "https://static.krcg.org/card/set/"
-                "vampire-the-eternal-struggle/aidfrombats.jpg"
-            ),
-        },
-        "ordered_sets": [
-            "Jyhad",
-            "Vampire: The Eternal Struggle",
-            "Camarilla Edition",
-            "Anarchs",
-            "Third Edition",
-            "Keepers of Tradition",
-            "First Blood",
-            "New Blood III",
-        ],
-        "types": ["Combat"],
-        "url": "https://static.krcg.org/card/aidfrombats.jpg",
-    }
-
-    assert vtes.VTES["Theo Bell"].to_json() == {
-        "_name": "Theo Bell",
-        "_set": "FN:U, CE:PB",
-        "artists": ["John Van Fleet"],
-        "capacity": 7,
-        "card_text": (
-            "Camarilla: Theo may enter combat with any ready minion "
-            "controlled by another Methuselah as a Ⓓ action. If you control "
-            "a ready prince or justicar, blood hunts cannot be called on Theo."
-        ),
-        "clans": ["Brujah"],
-        "disciplines": ["cel", "dom", "pre", "POT"],
-        "group": "2",
-        "has_advanced": True,
-        "has_evolution": True,
-        "id": 201362,
-        "legality": "2001-06-11",
-        "name": "Theo Bell (G2)",
-        "name_variants": ["Theo Bell"],
-        "ordered_sets": ["Final Nights", "Camarilla Edition"],
-        "printed_name": "Theo Bell",
-        "scans": {
-            "Camarilla Edition": (
-                "https://static.krcg.org/card/set/camarilla-edition/theobellg2.jpg"
-            ),
-            "Final Nights": (
-                "https://static.krcg.org/card/set/final-nights/theobellg2.jpg"
-            ),
-        },
-        "sets": {
-            "Camarilla Edition": [
-                {"copies": 1, "precon": "Brujah", "release_date": "2002-08-19"}
-            ],
-            "Final Nights": [{"rarity": "Uncommon", "release_date": "2001-06-11"}],
-        },
-        "types": ["Vampire"],
-        "url": "https://static.krcg.org/card/theobellg2.jpg",
-        "variants": {"G2 ADV": 201363, "G6": 201613},
-    }
+from krcg import models
 
 
-def test_twda():
-    deck = twda.TWDA["2020bf3hf"]
-    test_twda = twda._TWDA()
-    test_twda[deck.id] = deck
-    assert test_twda.to_json() == [
-        {
-            "comments": textwrap.dedent("""
-Here is a quick report by the Winner of the event Niko Vanhatalo.
+def test_card(cards):
+    """The v5 card serialization krcg-static writes to data/v5/vtes.json."""
+    aid = cards["Aid from Bats"]
+    j = msgspec.to_builtins(aid)
+    assert j["id"] == 100029
+    assert j["kind"] == models.Card.Kind.LIBRARY
+    assert j["printed_name"] == "Aid from Bats"
+    assert aid.url == "https://static.krcg.org/card/aidfrombats.jpg"
+    # translations are carried over (data/v5 must ship i18n)
+    assert {lang.value for lang in aid.i18n} == {"es", "fr"}
+    assert aid.i18n[models.Lang.FR].name == "Aide des chauves-souris"
 
-Just your average Ventrue grinder/stickmen with my own personal preferences
-
-Finals were pretty brutal because every deck was a bleeder in some way or the
-other and there was no clear winner even when it was down to 2 players.
-Players from 1 to 5 were Petri with Anarch stealth bleeder, Jyrkkä with
-Lasombra/Kiasyd stealth bleeder, Pauli with Ventrue grinder, me with my own
-Ventrue grinder and Lasse with Legion and Legionnaire bleeder.  My biggest
-concern was my predator who played pretty much the same deck with like 90% of
-the crypt being the same cards, but we were able to avoid unnecesary contesting
-thanks to table talk. He still contested my Lodin later in the game but was
-ousted pretty fast after that before any real damage to me was done.
-""")[1:],
-            "crypt": {
-                "cards": [
-                    {"count": 3, "id": 200848, "name": "Lodin (Olaf Holte)"},
-                    {"count": 2, "id": 200533, "name": "Graham Gottesman"},
-                    {"count": 2, "id": 201438, "name": "Victor Donaldson"},
-                    {"count": 1, "id": 201026, "name": "Mustafa, The Heir"},
-                    {"count": 1, "id": 200280, "name": "Claus Wegener"},
-                    {"count": 1, "id": 200421, "name": "Emily Carson"},
-                    {"count": 1, "id": 200691, "name": "Jephta Hester"},
-                    {"count": 1, "id": 201403, "name": "Ulrike Rothbart"},
-                ],
-                "count": 12,
-            },
-            "date": "2020-09-05",
-            "event": "Black Forest Base 3",
-            "event_link": "http://www.vekn.net/event-calendar/event/9667",
-            "id": "2020bf3hf",
-            "library": {
-                "cards": [
-                    {
-                        "cards": [
-                            {"count": 1, "id": 100058, "name": "Anarch Troublemaker"},
-                            {"count": 1, "id": 100545, "name": "Direct Intervention"},
-                            {"count": 1, "id": 100588, "name": "Dreams of the Sphinx"},
-                            {"count": 1, "id": 100824, "name": "Giant's Blood"},
-                            {
-                                "comments": "Neat card, but never played. "
-                                "Should propably switch for "
-                                "another Dreams or Wash",
-                                "count": 1,
-                                "id": 100842,
-                                "name": "Golconda: Inner Peace",
-                            },
-                            {"count": 1, "id": 101225, "name": "Misdirection"},
-                            {"count": 1, "id": 101350, "name": "Papillon"},
-                            {"count": 2, "id": 101384, "name": "Pentex™ Subversion"},
-                            {"count": 2, "id": 101388, "name": "Perfectionist"},
-                            {"count": 2, "id": 102113, "name": "Vessel"},
-                            {"count": 2, "id": 102121, "name": "Villein"},
-                            {"count": 1, "id": 102151, "name": "Wash"},
-                        ],
-                        "count": 16,
-                        "type": "Master",
-                    },
-                    {
-                        "cards": [
-                            {"count": 1, "id": 100573, "name": "Dominate Kine"},
-                            {"count": 2, "id": 100652, "name": "Entrancement"},
-                            {"count": 11, "id": 100845, "name": "Govern the Unaligned"},
-                        ],
-                        "count": 14,
-                        "type": "Action",
-                    },
-                    {
-                        "cards": [
-                            {"count": 2, "id": 100903, "name": "Heart of Nizchetus"}
-                        ],
-                        "count": 2,
-                        "type": "Equipment",
-                    },
-                    {
-                        "cards": [{"count": 4, "id": 101353, "name": "Parity Shift"}],
-                        "count": 4,
-                        "type": "Political Action",
-                    },
-                    {
-                        "cards": [
-                            {"count": 2, "id": 100236, "name": "Bonding"},
-                            {"count": 3, "id": 100401, "name": "Conditioning"},
-                            {"count": 3, "id": 100492, "name": "Daring the Dawn"},
-                            {"count": 4, "id": 100788, "name": "Freak Drive"},
-                            {"count": 5, "id": 101712, "name": "Seduction"},
-                            {"count": 2, "id": 101978, "name": "Threats"},
-                        ],
-                        "count": 19,
-                        "type": "Action Modifier",
-                    },
-                    {
-                        "cards": [
-                            {"count": 8, "id": 100518, "name": "Deflection"},
-                            {"count": 3, "id": 101321, "name": "On the Qui Vive"},
-                            {
-                                "count": 4,
-                                "id": 101706,
-                                "name": "Second Tradition: Domain",
-                            },
-                            {
-                                "comments": (
-                                    "This should be another On the Qui Vive but I was "
-                                    "too lazy to find 1 from my collection"
-                                ),
-                                "count": 1,
-                                "id": 102137,
-                                "name": "Wake with Evening's Freshness",
-                            },
-                        ],
-                        "count": 16,
-                        "type": "Reaction",
-                    },
-                    {
-                        "cards": [
-                            {"count": 5, "id": 100918, "name": "Hidden Strength"},
-                            {"count": 6, "id": 100973, "name": "Indomitability"},
-                            {
-                                "count": 2,
-                                "id": 101649,
-                                "name": "Rolling with the Punches",
-                            },
-                            {
-                                "count": 4,
-                                "id": 102169,
-                                "name": "Weighted Walking Stick",
-                            },
-                        ],
-                        "count": 17,
-                        "type": "Combat",
-                    },
-                ],
-                "count": 88,
-            },
-            "name": "My stick is better than bacon",
-            "place": "Hyvinkää, Finland",
-            "player": "Niko Vanhatalo",
-            "players_count": 14,
-            "score": "1GW5+3",
-            "tournament_format": "2R+F",
-        },
-    ]
+    theo = cards["Theo Bell"]
+    j = msgspec.to_builtins(theo)
+    assert j["id"] == 201362
+    assert j["kind"] == models.Card.Kind.CRYPT
+    assert j["printed_name"] == "Theo Bell"
+    assert j["clan"] == "Brujah"
+    assert j["capacity"] == 7
+    assert j["disciplines"] == ["cel", "dom", "pre", "POT"]
+    assert theo.url == "https://static.krcg.org/card/theobellg2.jpg"
 
 
-def test_images():
+def test_twda(TWDA):
+    """The v5 deck model krcg-static writes to data/v5/twda.json."""
+    deck = TWDA["2020bf3hf"]
+    assert deck.name == "My stick is better than bacon"
+    assert deck.player == "Niko Vanhatalo"
+    assert deck.event.name == "Black Forest Base 3"
+    assert deck.event.place == "Hyvinkää, Finland"
+    assert deck.event.date.isoformat() == "2020-09-05"
+    assert deck.event.players_count == 14
+    assert str(deck.score) == "1GW5+3!"
+    crypt = sum(c.count for c in deck.cards if c.kind == models.Card.Kind.CRYPT)
+    library = sum(c.count for c in deck.cards if c.kind == models.Card.Kind.LIBRARY)
+    assert crypt == 12
+    assert library == 88
+
+
+def test_images(cards):
     # list of storyline/token cards that are present, but not for legal play.
     filenames = {
         "agonisingfury.jpg",
@@ -597,15 +283,24 @@ def test_images():
     # legacy names kept for convenience
     filenames.add("mindrape.jpg")
     filenames.add("vozhdofsofia.jpg")
-    for card in vtes.VTES:
+
+    def card_file(filename):
+        """Assert an image exists for a card, return its real-file target name."""
+        path = "static/card/" + filename
+        assert os.path.isfile(path), f"missing {filename}"
+        filenames.add(filename)
+        # v5 names are symlinks onto the committed v4-convention files: keep both
+        if os.path.islink(path) and "/" not in os.readlink(path):
+            filenames.add(os.readlink(path))
+
+    for card in cards.cards():
         filename = card.url.replace("https://static.krcg.org/card/", "")
-        assert os.path.isfile("static/card/" + filename)
-        filenames.add(filename)
-        filename = card._compute_legacy_url().replace(
-            "https://static.krcg.org/card/", ""
-        )
-        assert os.path.isfile("static/card/" + filename)
-        filenames.add(filename)
+        card_file(filename)
+        # crypt cards keep a group-less symlink for convenience ("...g3.jpg" ->
+        # "....jpg", "...g3adv.jpg" -> "...adv.jpg")
+        legacy = re.sub(r"g\d(adv)?\.jpg$", r"\1.jpg", filename)
+        if legacy != filename:
+            card_file(legacy)
     # add .webp counterparts for all .jpg files (except storyline/token symlinks)
     filenames |= {
         f[:-4] + ".webp"
@@ -616,8 +311,17 @@ def test_images():
             and "/" in os.readlink("static/card/" + f)
         )
     }
-    static_filenames = set()
+    # the .webp symlinks resolve onto the committed v4-convention .webp files
+    for f in list(filenames):
+        path = "static/card/" + f
+        if (
+            f.endswith(".webp")
+            and os.path.islink(path)
+            and "/" not in os.readlink(path)
+        ):
+            filenames.add(os.readlink(path))
 
+    static_filenames = set()
     for filename in os.listdir("static/card"):
         if os.path.isfile("static/card/" + filename):
             static_filenames.add(filename)
