@@ -32,20 +32,23 @@ just data                                    # data-only build + deploy data/ (c
 - `build/` → generated output (git-ignored), rsync'd to production
 
 Build steps: copy `static/` → zip cards → `loader.load_local()` + `load_twda()`
-→ serialize (`msgspec.to_builtins`) the **v5** files into `build/data/v5/`
-(`vtes.json`, `expansions.json`, `twda.json`) + generate `build/data/v4/`
-(`twd.htm`, `amaranth_ids.json`). `--data` skips the image copy/zip and refreshes
-only `build/data/` (for the frequent cron; `just data` rsyncs just `data/`).
+→ serialize (`msgspec.to_builtins`) **only the v5** files into `build/data/v5/`
+(`vtes.json`, `expansions.json`, `twda.json`). `--data` skips the image copy/zip
+and refreshes only `build/data/` (for the frequent cron; `just data` rsyncs just
+`data/`).
 
 ### Data versioning (`build/data/`)
 
-- `v5/` — current reference JSON, the layout `krcg.load_online` expects.
-- `v4/` — legacy retrocompat. `vtes.json` / `twda.json` are a **frozen committed
-  snapshot** under `static/data/v4/` (the v4 API is gone from krcg ≥5, so they
-  were generated once with `krcg==4.19` and can't be rebuilt here); `twd.htm` /
-  `amaranth_ids.json` are still generated each build.
+- `v5/` — the only **generated** data; the layout `krcg.load_online` expects.
+- `v4/` — a **frozen committed snapshot** under `static/data/v4/`, shipped as-is
+  (no per-build regen): `vtes.json` / `twda.json` (built once with `krcg==4.19`,
+  the v4 API being gone from krcg ≥5), plus `twd.htm` / `amaranth_ids.json`.
+- geodata `countries.json` / `cities.json` — version-agnostic, served frozen from
+  `static/data/` when supplied (refresh with the `geonames` utility).
 - root `data/{vtes,twda,twd.htm,amaranth_ids}` are committed symlinks → `v4/*`
   (retrocompat now; flip to `v5` in a couple of months).
+- `standard_html`, `amaranth_ids` and `geonames` stay as **manual utilities** to
+  refresh the frozen snapshot offline; the build no longer calls them.
 
 Card images: ASCII-only lowercase filenames from the card name as printed; crypt
 cards keep group-less (and `…adv`) symlinks. v5 names the article naturally

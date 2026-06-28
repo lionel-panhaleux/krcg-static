@@ -641,14 +641,13 @@ def load_twda(cards):
 
 
 def generate_data(path, cards, archive):
-    """Generate the versioned data files (v5 reference JSON + legacy v4)."""
-    (path / "data" / "v4").mkdir(parents=True, exist_ok=True)
+    """Generate the v5 reference JSON.
+
+    The v4 data (vtes/twda/twd.htm/amaranth_ids) and the geodata are a frozen
+    static snapshot shipped from `static/data/` — `standard_html`, `amaranth_ids`
+    and `geonames` remain as manual utilities to refresh that snapshot offline.
+    """
     standard_json(path, cards, archive)
-    standard_html(path, cards, archive)
-    try:
-        amaranth_ids(path, cards)
-    except Exception as e:
-        logger.exception("failed to generate Amaranth IDs: %s", e)
 
 
 def main():
