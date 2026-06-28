@@ -11,23 +11,31 @@ uv run pytest -vv                            # test (offline, packaged krcg data
 just test                                    # lint + test
 uv run krcg-static build                     # full build
 uv run krcg-static build --minimal           # web resources only
+uv run krcg-static build --data              # data files only (cards, TWDA)
 just static                                  # build + deploy (both servers)
 just minimal                                 # minimal build + deploy (one server)
+just data                                    # data-only build + deploy data/ (cron)
 ```
 
 ## Architecture
 
 - Single module: `krcg_static/__init__.py`
+- Purpose: regenerate the data files often (cron) so `krcg.load_online` consumers
+  track VTES data. **Cards** come from the packaged krcg snapshot (the `fix_csv`
+  pipeline is mandatory) → fresh cards need a krcg release. **TWDA** is fetched
+  live from source each build, so it stays current without a krcg release.
 - Core dep: `krcg` (>=5.0) — card parsing, TWDA, rulings via the v5 API:
-  `loader.load_local()` (a `CardDict`) and `twda.load_local()` (a `dict[str, Deck]`).
-  No singletons, no `LOCAL_CARDS`; data is the packaged krcg snapshot.
+  `loader.load_local()` (a `CardDict`) for cards; `twda.fetch_from_source(cards)`
+  for a live TWDA (falls back to `twda.load_local()` if unavailable/offline).
+  No singletons, no `LOCAL_CARDS`.
 - `static/` → source assets (committed, includes ~6k card images + symlinks)
 - `build/` → generated output (git-ignored), rsync'd to production
 
-Build steps: copy `static/` → zip cards → `loader.load_local()` + `twda.load_local()`
+Build steps: copy `static/` → zip cards → `loader.load_local()` + `load_twda()`
 → serialize (`msgspec.to_builtins`) the **v5** files into `build/data/v5/`
 (`vtes.json`, `expansions.json`, `twda.json`) + generate `build/data/v4/`
-(`twd.htm`, `amaranth_ids.json`).
+(`twd.htm`, `amaranth_ids.json`). `--data` skips the image copy/zip and refreshes
+only `build/data/` (for the frequent cron; `just data` rsyncs just `data/`).
 
 ### Data versioning (`build/data/`)
 

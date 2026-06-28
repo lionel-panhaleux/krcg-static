@@ -250,6 +250,11 @@ parser.add_argument("folder", help="Target folder", type=pathlib.Path)
 parser.add_argument(
     "--minimal", action="store_true", help="Re-generate just the static web files"
 )
+parser.add_argument(
+    "--data",
+    action="store_true",
+    help="Re-generate just the data files (cards, TWDA) — for frequent re-runs",
+)
 
 
 def geonames(path: str) -> None:
@@ -622,6 +627,30 @@ def static(path):
     )
 
 
+def load_twda(cards):
+    """Build a current TWDA from its source, else the packaged krcg snapshot.
+
+    A daily/hourly data refresh wants the live TWDA; `fetch_from_source` is only
+    in recent krcg, and needs the network, so any failure falls back gracefully.
+    """
+    try:
+        return twda.fetch_from_source(cards)
+    except Exception as e:
+        logger.warning("TWDA source fetch unavailable, using snapshot: %s", e)
+        return twda.load_local()
+
+
+def generate_data(path, cards, archive):
+    """Generate the versioned data files (v5 reference JSON + legacy v4)."""
+    (path / "data" / "v4").mkdir(parents=True, exist_ok=True)
+    standard_json(path, cards, archive)
+    standard_html(path, cards, archive)
+    try:
+        amaranth_ids(path, cards)
+    except Exception as e:
+        logger.exception("failed to generate Amaranth IDs: %s", e)
+
+
 def main():
     """Entrypoint for the krcg-gen tool."""
     args = parser.parse_args(sys.argv[1:])
@@ -639,16 +668,18 @@ def main():
             dirs_exist_ok=True,
         )
         return
+    if args.data:
+        print("setting up data files...")
+        shutil.copytree(
+            "static/data", args.folder / "data", symlinks=True, dirs_exist_ok=True
+        )
+        print("loading card and TWDA data...")
+        cards = loader.load_local()
+        generate_data(args.folder, cards, load_twda(cards))
+        return
     shutil.rmtree(args.folder, ignore_errors=True)
     static(args.folder)
     all_cards_images(args.folder)
     print("loading card and TWDA data...")
     cards = loader.load_local()
-    archive = twda.load_local()
-    (args.folder / "data" / "v4").mkdir(parents=True, exist_ok=True)
-    standard_json(args.folder, cards, archive)
-    standard_html(args.folder, cards, archive)
-    try:
-        amaranth_ids(args.folder, cards)
-    except Exception as e:
-        logger.exception("failed to generate Amaranth IDs: %s", e)
+    generate_data(args.folder, cards, load_twda(cards))

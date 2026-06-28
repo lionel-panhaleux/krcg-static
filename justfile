@@ -1,4 +1,3 @@
-export LOCAL_CARDS := "1"
 static_server := env_var_or_default("STATIC_SERVER", "lpanhaleux@krcg.org:projects/static.krcg.org/dist")
 
 quality:
@@ -15,6 +14,11 @@ static:
 minimal:
     uv run krcg-static build --minimal
     rsync -rlptq --delete-after -e ssh build/ {{static_server}}
+
+# Regenerate and deploy only the data files (cards, TWDA) — for a frequent cron
+data:
+    uv run krcg-static build --data
+    rsync -rlptq --delete-after -e ssh build/data/ {{static_server}}/data
 
 update:
     uv sync --upgrade
