@@ -1,12 +1,12 @@
-name: Deployment
+name: Data
 on:
   workflow_dispatch:
   schedule:
-    # Run daily at 1:00 AM UTC
-    - cron: "0 1 * * *"
+    # Refresh the data files every 6 hours
+    - cron: "0 */6 * * *"
 
 jobs:
-  deployment:
+  data:
     runs-on: ubuntu-latest
     environment: krcg.org
     steps:
@@ -17,8 +17,8 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: uv sync
-      - name: Build static files
-        run: uv run krcg-static build
+      - name: Build data files
+        run: uv run krcg-static build --data
       - name: Setup SSH key
         run: |
           mkdir /home/runner/.ssh
@@ -26,5 +26,5 @@ jobs:
           chmod 600 /home/runner/.ssh/id_rsa
           echo "${{ secrets.KRCG_GRA_HOST_ID }}" > /home/runner/.ssh/known_hosts
           echo "${{ secrets.KRCG_SBG_HOST_ID }}" >> /home/runner/.ssh/known_hosts
-      - name: Deploy files to krcg-sbg
-        run: rsync -rlptq --delete-after -e ssh build/ lpanhaleux@51.178.45.139:projects/static.krcg.org/dist
+      - name: Deploy data files to krcg-sbg
+        run: rsync -rlptq --delete-after -e ssh build/data/ lpanhaleux@51.178.45.139:projects/static.krcg.org/dist/data

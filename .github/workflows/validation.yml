@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: uv sync --extra dev
+        run: uv sync
       - name: Format
         run: |
           uv run ruff format --check .
@@ -27,4 +27,4 @@ jobs:
           uv run ruff check
       - name: Test
         run: |
-          LOCAL_CARDS=1 uv run pytest
+          uv run pytest
