@@ -9,6 +9,7 @@ import argparse
 import asyncio
 import email.utils
 import html.parser
+import inspect
 import json
 import logging
 import os
@@ -293,6 +294,34 @@ def load_twda(cards):
         return twda.load_local()
 
 
+def card_image_manifest(source="static/card"):
+    """Image paths (relative to `/card/`) that resolve to a file on disk.
+
+    Passed to `loader.load_local` so krcg emits image URLs only for variants we
+    actually host: the card itself, its `<lang>/` translations and its
+    `set/<set>/` prints. Symlinks (legacy back-form aliases) that resolve count.
+    """
+    source = pathlib.Path(source)
+    manifest = set()
+    for root, _dirs, files in os.walk(source):
+        rel_root = pathlib.Path(root).relative_to(source)
+        for name in files:
+            if os.path.isfile(pathlib.Path(root) / name):  # follows symlinks
+                manifest.add((rel_root / name).as_posix())
+    return manifest
+
+
+def load_cards():
+    """Load cards, pruning image URLs to the variants we host when supported.
+
+    krcg only links images listed in the manifest it is given; older krcg
+    without that parameter links every set/language variant optimistically.
+    """
+    if "available" in inspect.signature(loader.load_local).parameters:
+        return loader.load_local(available=card_image_manifest())
+    return loader.load_local()
+
+
 def generate_data(path, cards, archive):
     """Generate the v5 reference JSON.
 
@@ -325,7 +354,7 @@ def main():
             "static/data", args.folder / "data", symlinks=True, dirs_exist_ok=True
         )
         print("loading card and TWDA data...")
-        cards = loader.load_local()
+        cards = load_cards()
         generate_data(args.folder, cards, load_twda(cards))
         return
     shutil.rmtree(args.folder, ignore_errors=True)
