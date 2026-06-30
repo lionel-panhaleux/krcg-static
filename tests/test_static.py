@@ -289,7 +289,7 @@ def test_images(cards):
         path = "static/card/" + filename
         assert os.path.isfile(path), f"missing {filename}"
         filenames.add(filename)
-        # v5 names are symlinks onto the committed v4-convention files: keep both
+        # group-less names are symlinks onto the real grouped file: keep both
         if os.path.islink(path) and "/" not in os.readlink(path):
             filenames.add(os.readlink(path))
 
@@ -311,15 +311,16 @@ def test_images(cards):
             and "/" in os.readlink("static/card/" + f)
         )
     }
-    # the .webp symlinks resolve onto the committed v4-convention .webp files
-    for f in list(filenames):
-        path = "static/card/" + f
-        if (
-            f.endswith(".webp")
-            and os.path.islink(path)
-            and "/" not in os.readlink(path)
-        ):
-            filenames.add(os.readlink(path))
+    # the real card file is the name as printed ("theankoug5.jpg"); legacy
+    # back-form names ("ankoutheg5.jpg") and group-less aliases are symlinks
+    # kept for retrocompatibility: accept any local symlink (.jpg or .webp)
+    # that resolves onto an already-expected card file.
+    for filename in os.listdir("static/card"):
+        path = "static/card/" + filename
+        if os.path.islink(path) and "/" not in os.readlink(path):
+            target = os.path.basename(os.path.realpath(path))
+            if target in filenames:
+                filenames.add(filename)
 
     static_filenames = set()
     for filename in os.listdir("static/card"):
