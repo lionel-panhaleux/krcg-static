@@ -7,7 +7,6 @@ import aiofile
 import aiohttp
 import argparse
 import asyncio
-import datetime
 import email.utils
 import html.parser
 import json
@@ -15,7 +14,6 @@ import logging
 import os
 import pathlib
 import re
-import requests
 import shutil
 import sys
 import zipfile
@@ -23,7 +21,6 @@ import zipfile
 import msgspec
 
 from krcg import loader
-from krcg import providers
 from krcg import twda
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
@@ -115,125 +112,7 @@ CARD_RENAME = {
     "shadowcourtsatyrchangeling": "shadowcourtsatyr",
     "tarathehollowonemage": "tarathehollowone",
     "thadiuszhomage": "thadiuszho",
-    "theadmonitions": "admonitionsthe",
-    "theailingspirit": "ailingspiritthe",
-    "theanarchfreepress": "anarchfreepressthe",
-    "theancestorstalisman": "ancestorstalismanthe",
-    "theankaracitadelturkey": "ankaracitadelturkeythe",
-    "theankou": "ankouthe",
-    "thearcadian": "arcadianthe",
-    "theartoflove": "artoflovethe",
-    "theartofmemory": "artofmemorythe",
-    "theartofpain": "artofpainthe",
-    "thebaron": "baronthe",
-    "thebarrens": "barrensthe",
-    "thebecoming": "becomingthe",
-    "thebitterandsweetstory": "bitterandsweetstorythe",
-    "theblackbeast": "blackbeastthe",
-    "theblackthrone": "blackthronethe",
-    "thebookofgoingforthbynight": "bookofgoingforthbynightthe",
-    "thebritishmuseumlondon": "britishmuseumlondonthe",
-    "thebruisers": "bruisersthe",
-    "thecall": "callthe",
-    "thecapuchin": "capuchinthe",
-    "thechurchofvindicatedfaith": "churchofvindicatedfaiththe",
-    "thecolonel": "colonelthe",
-    "thecoven": "coventhe",
-    "thecrimsonsentinel": "crimsonsentinelthe",
-    "thecrocodiletemple": "crocodiletemplethe",
-    "thecrusadersword": "crusaderswordthe",
-    "thedamned": "damnedthe",
-    "thedeadliestsin": "deadliestsinthe",
-    "thedeathofmyconscience": "deathofmyconsciencethe",
-    "thediamondthunderbolt": "diamondthunderboltthe",
-    "thedowager": "dowagerthe",
-    "thedracon": "draconthe",
-    "theeldestarekholo": "eldestarekholothe",
-    "theeldestcommandundeath": "eldestcommandundeaththe",
-    "theembrace": "embracethe",
-    "theerciyesfragments": "erciyesfragmentsthe",
-    "theeternalmask": "eternalmaskthe",
-    "theeternalsofsirius": "eternalsofsiriusthe",
-    "thefinalnights": "finalnightsthe",
     "thefirsttraditionthemasquerade": "firsttraditionthemasquerade",
-    "thefourthcycle": "fourthcyclethe",
-    "theframing": "framingthe",
-    "theghoulsofplazamorera": "ghoulsofplazamorerathe",
-    "thegrandesttrick": "grandesttrickthe",
-    "theguardian": "guardianthe",
-    "theguruhiaretheland": "guruhiarethelandthe",
-    "thehaunting": "hauntingthe",
-    "thehorde": "hordethe",
-    "thehungrycoyote": "hungrycoyotethe",
-    "thehuntclub": "huntclubthe",
-    "thejones": "jonesthe",
-    "thekhabarcommunity": "khabarcommunitythe",
-    "thekhabarhonor": "khabarhonorthe",
-    "thekikiyaon": "kikiyaonthe",
-    "thekissofra": "kissofrathe",
-    "theknights": "knightsthe",
-    "thelabyrinth": "labyrinththe",
-    "theline": "linethe",
-    "thelouvreparis": "louvreparisthe",
-    "themalkaviansevenmiseries": "malkaviansevenmiseriesthe",
-    "themarrakeshcodex": "marrakeshcodexthe",
-    "themausoleumvenice": "mausoleumvenicethe",
-    "themeddlingofsemsith": "meddlingofsemsiththe",
-    "themedic": "medicthe",
-    "themissingvoice": "missingvoicethe",
-    "themithraeumlondon": "mithraeumlondonthe",
-    "themole": "molethe",
-    "thenameforgotten": "nameforgottenthe",
-    "thenewinquisition": "newinquisitionthe",
-    "theoath": "oaththe",
-    "theparthenon": "parthenonthe",
-    "thepathofblood": "pathofbloodthe",
-    "thepathofbone": "pathofbonethe",
-    "thepathofharmony": "pathofharmonythe",
-    "thepathoflilith": "pathofliliththe",
-    "thepathofmetamorphosis": "pathofmetamorphosisthe",
-    "thepathofnight": "pathofnightthe",
-    "thepathofparadox": "pathofparadoxthe",
-    "thepathofretribution": "pathofretributionthe",
-    "thepathofservice": "pathofservicethe",
-    "thepathoftears": "pathoftearsthe",
-    "thepathoftheferalheart": "pathoftheferalheartthe",
-    "thepathofthescorchedheart": "pathofthescorchedheartthe",
-    "thepathoftyphon": "pathoftyphonthe",
-    "thepeaceofkhetamon": "peaceofkhetamonthe",
-    "theplatinumprotocol": "platinumprotocolthe",
-    "theportrait": "portraitthe",
-    "therack": "rackthe",
-    "therealmoftheblacksun": "realmoftheblacksunthe",
-    "theredquestion": "redquestionthe",
-    "thereturntoinnocence": "returntoinnocencethe",
-    "therising": "risingthe",
-    "therose": "rosethe",
-    "therosefoundation": "rosefoundationthe",
-    "therumormilltabloidnewspaper": "rumormilltabloidnewspaperthe",
-    "thesargonfragment": "sargonfragmentthe",
-    "thesecretlibraryofalexandria": "secretlibraryofalexandriathe",
-    "thesecretmustbekept": "secretmustbekeptthe",
-    "theshardlondon": "shardlondonthe",
-    "thesiamese": "siamesethe",
-    "thesignetofkingsaul": "signetofkingsaulthe",
-    "theslashers": "slashersthe",
-    "theslaughterhouse": "slaughterhousethe",
-    "thesleepingmind": "sleepingmindthe",
-    "theslowwithering": "slowwitheringthe",
-    "thespawningpool": "spawningpoolthe",
-    "thestatusperfectus": "statusperfectusthe",
-    "thestrangeramongus": "strangeramongusthe",
-    "thesummoning": "summoningthe",
-    "thetextbookdamnation": "textbookdamnationthe",
-    "thetreatment": "treatmentthe",
-    "thetrickofthedanya": "trickofthedanyathe",
-    "theuncoiling": "uncoilingthe",
-    "theunmasking": "unmaskingthe",
-    "theunnamed": "unnamedthe",
-    "thewarrens": "warrensthe",
-    "thewildebeest": "wildebeestthe",
-    "theworldsacanvas": "worldsacanvasthe",
     "tututhedoublyevilonebanemummy": "tututhedoublyevilone",
     "wendelldelburtonhunter": "wendelldelburton",
 }
@@ -252,19 +131,6 @@ parser.add_argument(
     action="store_true",
     help="Re-generate just the data files (cards, TWDA) — for frequent re-runs",
 )
-
-
-def amaranth_ids(path, cards) -> None:
-    print("generating Amaranth IDs file...")
-    r = requests.get("https://amaranth.vtes.co.nz/api/cards", timeout=30)
-    r.raise_for_status()
-    mapping = {
-        int(card["id"]): cards[card["name"]].id
-        for card in r.json()["result"]
-        if card["name"] in cards  # ignore storyline / counter cards
-    }
-    with open(path / "data" / "v4" / "amaranth_ids.json", "w", encoding="utf-8") as fp:
-        json.dump(mapping, fp, ensure_ascii=False)
 
 
 def standard_json(path, cards, archive) -> None:
@@ -306,118 +172,6 @@ def all_cards_images(path: str) -> None:
                 and not os.path.islink(fil)
             ):
                 zipf.write(fil, fil.relative_to("static"))
-
-
-def standard_html(path, cards, archive) -> None:
-    """A normalized HTML version of the TWDA (legacy, served under /data/v4/)."""
-    print("generating HTML TWD file...")
-    # TODO: automatize header generation, so as not to edit it every year
-    content = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>TWDA</title></head>
-
-<body>
-<center>
-<h1>Tournament Winning Deck Archive</h1>
-<h2>Formerly hosted on the Lasombra</h2>
-
-<p>
-This is a chronological archive of decks that have won tournaments that were<br>
-sanctioned by the Vampire: Elder Kindred Network and had 10 or more players.<br>
-National and Continental Championship are included as well, irrelatively to their attendance.<br>
-To be included in this list, a tournament report had to be made on the official V:EKN Player's Forum:<br>
-<a href="http://www.vekn.net/index.php/forum/9-event-reports-and-twd">http://www.vekn.net/index.php/forum/9-event-reports-and-twd</a><br>
-This archive will not include the Storyline Tournament Winning Decks.<br>
-Unless otherwise noted, each deck was the winning player's creation.<br>
-<br>
-The original <a href="http://www.thelasombra.com/hall_of_fame.htm">Hall of Fame</a> and the <a href="http://www.veknfrance.com/decks/twd.htm">Tournament Winning Deck Archive</a> were closed as of October 26, 2013.<br>
-Many thanks to Jeff Thompson for maintaining them for all these years.
-</p>
-<table width="500" align="center" border="2" cellpadding="0">
-<tbody><tr align="center">
-<td colspan="10">You can jump to the end of a year that interests you:</td>
-</tr>
-<tr align="center">
-<td colspan="3"></td>
-<td><a href="#Year2020">2020</a></td>
-<td><a href="#Year2019">2019</a></td>
-<td><a href="#Year2018">2018</a></td>
-<td><a href="#Year2017">2017</a></td>
-<td colspan="3"></td>
-</tr><tr align="center">
-<td><a href="#Year2016">2016</a></td>
-<td><a href="#Year2015">2015</a></td>
-<td><a href="#Year2014">2014</a></td>
-<td><a href="#Year2013">2013</a></td>
-<td><a href="#Year2012">2012</a></td>
-<td><a href="#Year2011">2011</a></td>
-<td><a href="#Year2010">2010</a></td>
-<td><a href="#Year2009">2009</a></td>
-<td><a href="#Year2008">2008</a></td>
-<td><a href="#Year2007">2007</a></td>
-</tr><tr align="center">
-<td><a href="#Year2006">2006</a></td>
-<td><a href="#Year2005">2005</a></td>
-<td><a href="#Year2004">2004</a></td>
-<td><a href="#Year2003">2003</a></td>
-<td><a href="#Year2002">2002</a></td>
-<td><a href="#Year2001">2001</a></td>
-<td><a href="#Year2000">2000</a></td>
-<td><a href="#Year1999">1999</a></td>
-<td><a href="#Year1998">1998</a></td>
-<td><a href="#Year1997">1997</a></td>
-</tr>
-</tbody></table>
-<p>Some abbreviations are used throughout the archive:
-<table>
-<tr><td>NC</td><td>National Championship</td><td>NAC</td><td>North American (Continental) Championship</td></tr>
-<tr><td>NCQ</td><td>National Championship Qualifier</td><td>SAC</td><td>South American (Continental) Championship</td></tr>
-<tr><td>ECQ</td><td>European Championship Qualifier</td><td>EC</td><td>European (Continental) Championship</td></tr>
-<tr><td>CCQ</td><td>Continental Championship Qualifier</td><td>ACC</td><td>Asian Continental Championship</td></tr>
-</table>"""  # noqa: E501
-    decks = sorted(
-        archive.values(),
-        key=lambda d: d.event.date if d.event and d.event.date else datetime.date.min,
-        reverse=True,
-    )
-    current_year = None
-    # header: list of decks, year after year
-    for deck in decks:
-        date = deck.event.date
-        if current_year != date.year:
-            current_year = date.year
-            content += f'\n<h3><a id="Year{current_year}">{current_year}</a></h3>\n\n'
-        player = deck.player
-        assert player, f"no player indicated for deck #{deck.id}"
-        if player[-1] == "s":
-            player += "'"
-        else:
-            player += "'s"
-        event = deck.event.name
-        event = re.sub(r"\s*--\s+.*", "", event)
-        place = deck.event.place or "Undisclosed location"
-        place = re.sub(r"\s*,", ",", place)
-        place = re.sub(r",,", ",", place)
-        place = [x.strip() for x in place.split(",")[-2:]]
-        event = event.strip().strip(":")
-        if event[-len(place[0]) :] == place[0]:
-            place = place[1:]
-            event = event.strip().strip(":") + ","
-        else:
-            event = event.strip().strip(":") + ":"
-        place = ", ".join(place)
-        content += (
-            f"<a href=#{deck.id}>{player} {event} {place} "
-            f"{date.strftime('%B %Y')}</a><br>\n"
-        )
-    content += "</center>\n"
-    # body: list of decklists
-    for deck in decks:
-        content += f"<a id={deck.id} href=#>Top</a>\n<hr><pre>\n"
-        content += providers.serialize_twd(deck, cards)
-        content += "\n</pre>\n"
-    with open(path / "data" / "v4" / "twd.htm", "w", encoding="utf-8") as fp:
-        fp.write(content)
 
 
 class LackeyIndexParser(html.parser.HTMLParser):
@@ -542,9 +296,8 @@ def load_twda(cards):
 def generate_data(path, cards, archive):
     """Generate the v5 reference JSON.
 
-    The v4 data (vtes/twda/twd.htm/amaranth_ids) and the geodata are a frozen
-    static snapshot shipped from `static/data/` — `standard_html`, `amaranth_ids`
-    and `geonames` remain as manual utilities to refresh that snapshot offline.
+    All v4 data (vtes/twda/twd.htm/amaranth_ids) is a frozen static snapshot
+    shipped as-is from `static/data/v4/`; it is never regenerated by the build.
     """
     standard_json(path, cards, archive)
 
