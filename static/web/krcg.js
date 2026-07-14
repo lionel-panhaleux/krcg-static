@@ -51,7 +51,7 @@ function nameToImage(text) {
         .replace(/[ǹńñṅňŋɲṇņṋṉŉƞȵ]/g, "n")
         .replace(/[ùúûũūŭüủůűǔȕȗưụṳųṷṵṹṻǜǘǖǚừứữửựʉ]/g, "u")
         .replace(/[źẑżžȥẓẕƶɀⱬ]/g, "z")
-    return "https://static.krcg.org/card/".concat(text, ".jpg")
+    return "http://static.krcg.org/card/".concat(text, ".webp")
 }
 
 function krcgCards() {
