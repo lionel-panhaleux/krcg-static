@@ -22,6 +22,7 @@ import zipfile
 import msgspec
 
 from krcg import loader
+from krcg import rulings
 from krcg import twda
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
@@ -312,14 +313,34 @@ def card_image_manifest(source="static/card"):
 
 
 def load_cards():
-    """Load cards, pruning image URLs to the variants we host when supported.
+    """Load cards, pruning image URLs to the variants we host, with LIVE rulings.
 
     krcg only links images listed in the manifest it is given; older krcg
     without that parameter links every set/language variant optimistically.
+
+    krcg's load_local bakes in the rulings snapshot shipped with the installed
+    krcg package; we want the just-approved rulings instead (an approval fires a
+    rebuild here), so we build the library the usual way then swap the baked
+    rulings for a live fetch from the vtes-rulings repo. On failure — a transient
+    fetch error, or a live ruling referencing a card newer than the packaged CSV —
+    we keep the baked rulings rather than abort: the whole data build (cards,
+    expansions, TWDA) rides on this, so slightly stale rulings beat no rebuild at
+    all. The 6h cron and the next approval retry.
     """
     if "available" in inspect.signature(loader.load_local).parameters:
-        return loader.load_local(available=card_image_manifest())
-    return loader.load_local()
+        cards = loader.load_local(available=card_image_manifest())
+    else:
+        cards = loader.load_local()
+    for card in cards.cards():
+        card.rulings.clear()
+    try:
+        rulings.load_online(cards)
+    except Exception:
+        logger.warning("live rulings load failed, keeping krcg's baked snapshot", exc_info=True)
+        for card in cards.cards():
+            card.rulings.clear()  # drop any partial online load
+        rulings.load_local(cards)
+    return cards
 
 
 def generate_data(path, cards, archive):
@@ -361,5 +382,5 @@ def main():
     static(args.folder)
     all_cards_images(args.folder)
     print("loading card and TWDA data...")
-    cards = loader.load_local()
+    cards = load_cards()
     generate_data(args.folder, cards, load_twda(cards))

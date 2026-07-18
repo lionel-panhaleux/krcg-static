@@ -1,6 +1,10 @@
 name: Data
 on:
   workflow_dispatch:
+  # Fired by rulings-website when a proposal is approved, so approved rulings
+  # reach players immediately instead of waiting for the 6h cron.
+  repository_dispatch:
+    types: [rulings-updated]
   schedule:
     # Refresh the data files every 6 hours
     - cron: "0 */6 * * *"
