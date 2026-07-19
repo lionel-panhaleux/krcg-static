@@ -336,7 +336,9 @@ def load_cards():
     try:
         rulings.load_online(cards)
     except Exception:
-        logger.warning("live rulings load failed, keeping krcg's baked snapshot", exc_info=True)
+        logger.warning(
+            "live rulings load failed, keeping krcg's baked snapshot", exc_info=True
+        )
         for card in cards.cards():
             card.rulings.clear()  # drop any partial online load
         rulings.load_local(cards)
