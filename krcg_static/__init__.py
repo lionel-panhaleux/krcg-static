@@ -3,8 +3,6 @@
 Produces static files for use in third parties softwares.
 """
 
-import aiofile
-import aiohttp
 import argparse
 import asyncio
 import email.utils
@@ -19,11 +17,10 @@ import shutil
 import sys
 import zipfile
 
+import aiofile
+import aiohttp
 import msgspec
-
-from krcg import loader
-from krcg import rulings
-from krcg import twda
+from krcg import loader, rulings, twda
 
 CARD_IMAGES_URL = "https://lackeyccg.com/vtes/high/cards/"
 CARD_LIBRARY_BACK_URL = "https://lackeyccg.com/vtes/high/images/cardback.jpg"
@@ -290,7 +287,7 @@ def load_twda(cards):
     """
     try:
         return twda.fetch_from_source(cards)
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         logger.warning("TWDA source fetch unavailable, using snapshot: %s", e)
         return twda.load_local()
 

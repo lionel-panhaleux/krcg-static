@@ -46,6 +46,7 @@ It's done manually, run the following python code:
 ```python
 from pathlib import Path
 from krcg_static import vtespl_cards_scans
+
 vtespl_cards_scans(Path("static"))
 ```
 

@@ -2,7 +2,6 @@ import os.path
 import re
 
 import msgspec
-
 from krcg import models
 
 

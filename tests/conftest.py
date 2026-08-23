@@ -1,7 +1,5 @@
 import pytest
-
-from krcg import loader
-from krcg import twda
+from krcg import loader, twda
 
 
 @pytest.fixture(scope="session")
