@@ -24,7 +24,7 @@ just data                                    # data-only build + deploy data/ (c
   track VTES data. **Cards** come from the packaged krcg snapshot (the `fix_csv`
   pipeline is mandatory) → fresh cards need a krcg release. **TWDA** is fetched
   live from source each build, so it stays current without a krcg release.
-- Core dep: `krcg` (>=5.0) — card parsing, TWDA, rulings via the v5 API:
+- Core dep: `krcg` (>=5.10) — card parsing, TWDA, rulings via the v5 API:
   `loader.load_local()` (a `CardDict`) for cards; `twda.fetch_from_source(cards)`
   for a live TWDA (falls back to `twda.load_local()` if unavailable/offline).
   No singletons, no `LOCAL_CARDS`.
