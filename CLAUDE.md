@@ -30,6 +30,8 @@ just data                                    # data-only build + deploy data/ (c
   No singletons, no `LOCAL_CARDS`.
 - `static/` → source assets (committed, includes ~6k card images + symlinks)
 - `build/` → generated output (git-ignored), rsync'd to production
+- `ansible/` → nginx and the TLS certificate for `static.krcg.org` (server-setup's
+  `nginx_site` role), run by hand from a laptop; it doesn't ship `build/`
 
 Build steps: copy `static/` → zip cards → `loader.load_local()` + `load_twda()`
 → serialize (`msgspec.to_builtins`) **only the v5** files into `build/data/v5/`

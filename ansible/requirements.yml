@@ -1,0 +1,6 @@
+---
+# nginx_site from the server-setup repo.
+collections:
+  - name: https://github.com/lionel-panhaleux/server-setup.git
+    type: git
+    version: main

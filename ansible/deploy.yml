@@ -1,0 +1,29 @@
+---
+# Serve static.krcg.org with server-setup's nginx_site role (static + Let's Encrypt).
+# The files themselves are not shipped here: the Deployment and Data actions rsync
+# the build into the site root.
+- name: Serve static.krcg.org
+  hosts: all
+  become: true
+  tasks:
+    # The legacy myserver vhosts claim the same domain, and must be gone before
+    # nginx_site re-issues the certificate through its own ACME webroot
+    - name: Remove the legacy myserver vhosts
+      ansible.builtin.file:
+        path: "/etc/nginx/sites-enabled/static.krcg.org.{{ item }}.conf"
+        state: absent
+      loop: [http, https]
+
+    - name: Serve it with nginx
+      ansible.builtin.include_role:
+        name: lionel_panhaleux.server_setup.nginx_site
+      vars:
+        nginx_site_name: static
+        nginx_site_domain: static.krcg.org
+        nginx_site_type: static
+        nginx_site_root: /home/lpanhaleux/projects/static.krcg.org/dist
+        # CORS, listings, and the same site over plain HTTP
+        nginx_site_public: true
+        # /bust/<digits>/<path> serves <path>, for cache busting
+        nginx_site_extra_locations: |
+          rewrite ^/bust/\d+/(.*)$ /$1 last;
