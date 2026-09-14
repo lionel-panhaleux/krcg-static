@@ -25,7 +25,3 @@ ansible-playbook deploy.yml
 
 `inventory.yml` targets strasbourg as `deploy` with `~/.ssh/deploy`; set `DEPLOY_USER`
 to connect as someone else.
-
-The first run takes the site over from the legacy `myserver` deploy: it removes
-that deploy's vhosts, and `nginx_site` re-issues the certificate through its own
-ACME webroot (a dry run shows that as a certbot `--force-renewal`).

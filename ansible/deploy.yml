@@ -6,14 +6,6 @@
   hosts: all
   become: true
   tasks:
-    # The legacy myserver vhosts claim the same domain, and must be gone before
-    # nginx_site re-issues the certificate through its own ACME webroot
-    - name: Remove the legacy myserver vhosts
-      ansible.builtin.file:
-        path: "/etc/nginx/sites-enabled/static.krcg.org.{{ item }}.conf"
-        state: absent
-      loop: [http, https]
-
     - name: Serve it with nginx
       ansible.builtin.include_role:
         name: lionel_panhaleux.server_setup.nginx_site

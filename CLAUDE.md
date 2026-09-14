@@ -12,8 +12,8 @@ just test                                    # lint + test
 uv run krcg-static build                     # full build
 uv run krcg-static build --minimal           # web resources only
 uv run krcg-static build --data              # data files only (cards, TWDA)
-just static                                  # build + deploy (both servers)
-just minimal                                 # minimal build + deploy (one server)
+just static                                  # build + deploy
+just minimal                                 # minimal build + deploy
 just data                                    # data-only build + deploy data/ (cron)
 ```
 
