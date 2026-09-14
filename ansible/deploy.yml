@@ -5,7 +5,19 @@
 - name: Serve static.krcg.org
   hosts: all
   become: true
+  vars:
+    static_root: /var/www/static
+
   tasks:
+    # the actions rsync into it as `deploy`, without sudo
+    - name: Create the site root
+      ansible.builtin.file:
+        path: "{{ static_root }}"
+        state: directory
+        owner: deploy
+        group: deploy
+        mode: "0755"
+
     - name: Serve it with nginx
       ansible.builtin.include_role:
         name: lionel_panhaleux.server_setup.nginx_site
@@ -13,7 +25,7 @@
         nginx_site_name: static
         nginx_site_domain: static.krcg.org
         nginx_site_type: static
-        nginx_site_root: /home/lpanhaleux/projects/static.krcg.org/dist
+        nginx_site_root: "{{ static_root }}"
         # CORS, listings, and the same site over plain HTTP
         nginx_site_public: true
         # /bust/<digits>/<path> serves <path>, for cache busting

@@ -12,7 +12,9 @@ on:
 jobs:
   data:
     runs-on: ubuntu-latest
-    environment: krcg.org
+    # DEPLOY_SSH_KEY is a secret; DEPLOY_HOST and DEPLOY_HOST_KEY are variables
+    # (pushed by server-setup's `just sync`)
+    environment: production
     steps:
       - uses: actions/checkout@v6
       - name: Setup uv
@@ -23,11 +25,16 @@ jobs:
         run: uv sync
       - name: Build data files
         run: uv run krcg-static build --data
-      - name: Setup SSH key
+      - name: Configure SSH
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_HOST_KEY: ${{ vars.DEPLOY_HOST_KEY }}
         run: |
-          mkdir /home/runner/.ssh
-          echo "${{ secrets.KRCG_DEPLOY_KEY }}" > /home/runner/.ssh/id_rsa
-          chmod 600 /home/runner/.ssh/id_rsa
-          echo "${{ secrets.KRCG_SBG_HOST_ID }}" > /home/runner/.ssh/known_hosts
-      - name: Deploy data files to krcg-sbg
-        run: rsync -rlptq --delete-after -e ssh build/data/ lpanhaleux@51.178.45.139:projects/static.krcg.org/dist/data
+          mkdir -p ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$DEPLOY_HOST_KEY" >> ~/.ssh/known_hosts
+      - name: Deploy data files
+        env:
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+        run: rsync -rlptq --delete-after -e "ssh -i $HOME/.ssh/deploy" build/data/ "deploy@$DEPLOY_HOST:/var/www/static/data/"

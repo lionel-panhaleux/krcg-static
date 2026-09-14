@@ -10,9 +10,9 @@ listed, and plain HTTP serves the same site as HTTPS, with no redirect. `deploy.
 only adds the `/bust/<digits>/` cache-busting prefix. The role sets the short
 `Cache-Control` lifetimes; server-setup's host setup provides gzip.
 
-This only sets up the web server. The files still go out through the `Deployment`
-and `Data` actions (or `just static` and `just data`), which rsync the build into the site
-root, `/home/lpanhaleux/projects/static.krcg.org/dist`. Run it again only when the
+This only sets up the web server and its site root, `/var/www/static`, owned by
+`deploy`. The files go out through the `Deployment` and `Data` actions (or `just static`
+and `just data`), which rsync the build into it as `deploy`. Run it again only when the
 nginx setup changes.
 
 From this `ansible/` directory:

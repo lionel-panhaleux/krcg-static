@@ -1,4 +1,5 @@
-static_server := env_var_or_default("STATIC_SERVER", "lpanhaleux@krcg.org:projects/static.krcg.org/dist")
+static_server := env_var_or_default("STATIC_SERVER", "deploy@51.178.45.139:/var/www/static")
+ssh_key_file := env_var_or_default("SSH_KEY_FILE", "~/.ssh/deploy")
 
 quality:
     uv run ruff format --check .
@@ -9,16 +10,16 @@ test: quality
 
 static:
     uv run krcg-static build
-    rsync -rlptq --delete-after -e ssh build/ {{static_server}}
+    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
 
 minimal:
     uv run krcg-static build --minimal
-    rsync -rlptq --delete-after -e ssh build/ {{static_server}}
+    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
 
 # Regenerate and deploy only the data files (cards, TWDA) — for a frequent cron
 data:
     uv run krcg-static build --data
-    rsync -rlptq --delete-after -e ssh build/data/ {{static_server}}/data
+    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/data/ {{static_server}}/data
 
 update:
     uv sync --upgrade
