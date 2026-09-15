@@ -16,9 +16,9 @@ jobs:
     # (pushed by server-setup's `just sync`)
     environment: production
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Setup uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v10.1.0
         with:
           python-version: "3.12"
       - name: Install dependencies
