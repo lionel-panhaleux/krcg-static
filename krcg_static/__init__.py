@@ -268,14 +268,32 @@ def vtespl_cards_scans(path):
     asyncio.run(fetch_vtespl_cards_scans(path))
 
 
+def copy_tree(src, dst, ignore=None) -> None:
+    """`shutil.copytree` into an existing `dst`, keeping symlinks.
+
+    `os.symlink` won't overwrite, so a symlink left by a previous build makes
+    `copytree(symlinks=True, dirs_exist_ok=True)` fail: remove those first.
+    """
+
+    def _ignore(folder, names):
+        ignored = set(ignore(folder, names)) if ignore else set()
+        for name in names:
+            if name in ignored or not os.path.islink(os.path.join(folder, name)):
+                continue
+            target = os.path.join(dst, os.path.relpath(folder, src), name)
+            if os.path.islink(target) or os.path.isfile(target):
+                os.unlink(target)
+        return ignored
+
+    shutil.copytree(src, dst, symlinks=True, ignore=_ignore, dirs_exist_ok=True)
+
+
 def static(path):
     print("setting up website files...")
-    shutil.copytree(
+    copy_tree(
         "static",
         path,
-        symlinks=True,
         ignore=lambda _dir, names: [n for n in names if n[-3:] == ".py"],
-        dirs_exist_ok=True,
     )
 
 
@@ -356,23 +374,19 @@ def main():
     args = parser.parse_args(sys.argv[1:])
     if args.minimal:
         print("setting up website files...")
-        shutil.copytree(
+        copy_tree(
             "static",
             args.folder,
-            symlinks=True,
             ignore=lambda folder, names: (
                 names
                 if folder == "static/card"
                 else [n for n in names if n[-3:] == ".py"]
             ),
-            dirs_exist_ok=True,
         )
         return
     if args.data:
         print("setting up data files...")
-        shutil.copytree(
-            "static/data", args.folder / "data", symlinks=True, dirs_exist_ok=True
-        )
+        copy_tree("static/data", args.folder / "data")
         print("loading card and TWDA data...")
         cards = load_cards()
         generate_data(args.folder, cards, load_twda(cards))
