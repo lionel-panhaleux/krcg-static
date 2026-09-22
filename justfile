@@ -10,16 +10,16 @@ test: quality
 
 static:
     uv run krcg-static build
-    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
+    rsync -rlptq --delete-after --exclude=.DS_Store -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
 
 minimal:
     uv run krcg-static build --minimal
-    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
+    rsync -rlptq --delete-after --exclude=.DS_Store -e "ssh -i {{ssh_key_file}}" build/ {{static_server}}
 
 # Regenerate and deploy only the data files (cards, TWDA) — for a frequent cron
 data:
     uv run krcg-static build --data
-    rsync -rlptq --delete-after -e "ssh -i {{ssh_key_file}}" build/data/ {{static_server}}/data
+    rsync -rlptq --delete-after --exclude=.DS_Store -e "ssh -i {{ssh_key_file}}" build/data/ {{static_server}}/data
 
 update:
     uv sync --upgrade
