@@ -37,7 +37,7 @@ def test_twda(TWDA):
     assert deck.event.place == "Hyvinkää, Finland"
     assert deck.event.date.isoformat() == "2020-09-05"
     assert deck.event.players_count == 14
-    assert str(deck.score) == "1GW5+3!"
+    assert str(deck.score) == "1GW5 + 3vp in final"
     crypt = sum(c.count for c in deck.cards if c.kind == models.Card.Kind.CRYPT)
     library = sum(c.count for c in deck.cards if c.kind == models.Card.Kind.LIBRARY)
     assert crypt == 12
