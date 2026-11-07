@@ -300,6 +300,11 @@ def test_images(cards):
         legacy = re.sub(r"g\d(adv)?\.jpg$", r"\1.jpg", filename)
         if legacy != filename:
             card_file(legacy)
+        # "The X" cards keep their v4 back-form name as a symlink ("theankoug5.jpg"
+        # -> "ankoutheg5.jpg", "ankouthe.jpg") so v4 consumers still resolve
+        if card.printed_name.startswith("The "):
+            for name in {filename, legacy}:
+                card_file(re.sub(r"^the(.*?)((g\d)?(adv)?\.jpg)$", r"\1the\2", name))
     # add .webp counterparts for all .jpg files (except storyline/token symlinks)
     filenames |= {
         f[:-4] + ".webp"
