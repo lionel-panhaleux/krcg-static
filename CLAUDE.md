@@ -24,7 +24,7 @@ just data                                    # data-only build + deploy data/ (c
   track VTES data. **Cards** come from the packaged krcg snapshot (the `fix_csv`
   pipeline is mandatory) → fresh cards need a krcg release. **TWDA** is fetched
   live from source each build, so it stays current without a krcg release.
-- Core dep: `krcg` (>=5.10) — card parsing, TWDA, rulings via the v5 API:
+- Core dep: `krcg` (>=5.15) — card parsing, TWDA, rulings via the v5 API:
   `loader.load_local()` (a `CardDict`) for cards; `twda.fetch_from_source(cards)`
   for a live TWDA (falls back to `twda.load_local()` if unavailable/offline).
   No singletons, no `LOCAL_CARDS`.
@@ -56,6 +56,27 @@ cards keep group-less (and `…adv`) symlinks. The real file uses the as-printed
 name; legacy v4 back-form names (`ankouthe`) are symlinks onto it, kept so v4
 consumers still resolve. `CARD_RENAME` only carries genuine fixups (typos, group
 suffixes, subtitle drops) — vtes.pl already downloads the as-printed name.
+
+## Deploy
+
+CI deploys; pushing `main` is the normal way to ship. All three workflows run
+`uv sync` on a fresh runner (`uv.lock` is git-ignored, so CI resolves from
+`pyproject.toml` — raise the `krcg>=` floor to get new cards).
+
+- `validation.yml` — lint + tests on push/PR to `main`. Doesn't gate deploy.
+- `deployment.yml` — on push to `main` (+ weekly Monday 01:00 UTC, manual
+  dispatch): full `krcg-static build`, rsync `build/` → `/var/www/static/`.
+  Ships committed assets (card images, web files) and data.
+- `data.yml` — every 6h, manual dispatch, and `repository_dispatch`
+  `rulings-updated` (fired by rulings-website on an approved ruling):
+  `build --data`, rsync only `build/data/` → `/var/www/static/data/`.
+
+Both deploy jobs use the `production` environment: `DEPLOY_SSH_KEY` secret,
+`DEPLOY_HOST` / `DEPLOY_HOST_KEY` variables (pushed by server-setup's
+`just sync`), as user `deploy`. rsync uses `--delete-after`, so `build/` is the
+whole truth for the server. `just static|minimal|data` are the manual fallback
+(same rsync, needs `~/.ssh/deploy`). Watch a deploy with `gh run list` /
+`gh run watch <id>`.
 
 ## Testing
 
