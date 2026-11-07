@@ -43,6 +43,7 @@ _process-cards bcp dir:
         exit 1
     fi
     mkdir -p result
+    the_cards=()
     # Process and rename incoming images
     for f in "{{dir}}"/*(.); do
         name=${f#"{{dir}}"/}
@@ -54,10 +55,14 @@ _process-cards bcp dir:
             group=
         fi
         name=${name% \[*}
+        printed=$name
         name=$(echo $name | iconv -sc -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]')
         group=$(echo $group | iconv -f utf-8 -t ascii//translit | tr -d '[:punct:]' | tr -d '[:space:]')
         if [[ -n $group ]]; then
             name=${name}g${group}
+        fi
+        if [[ ${printed} == "The "* ]]; then
+            the_cards+=(${name})
         fi
         out=result/${name}.jpg
         if [[ "{{bcp}}" == "true" ]]; then
@@ -82,6 +87,19 @@ _process-cards bcp dir:
             ln -fs ${name%.jpg}.webp ${short}.webp
             echo "  ${short}.jpg -> ${name}"
         fi
+    done
+    # "The X" cards keep their v4 back-form names as symlinks
+    # (theankoug5 -> ankoutheg5, ankouthe)
+    for name in ${the_cards}; do
+        base=${name#the}
+        short=${base%g[123456789]}
+        group=${base#${short}}
+        backs=(${short}the${group} ${short}the)
+        for back in ${(u)backs}; do
+            ln -fs ${name}.jpg ${back}.jpg
+            ln -fs ${name}.webp ${back}.webp
+            echo "  ${back}.jpg -> ${name}.jpg"
+        done
     done
     cd ..
     # Copy to static/card/ preserving symlinks

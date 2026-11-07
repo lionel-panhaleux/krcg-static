@@ -54,7 +54,7 @@ Card images: ASCII-only lowercase filenames from the card name **as printed**,
 article prefixed ("The Ankou" → `theankou`, matching krcg v5's `card.url`); crypt
 cards keep group-less (and `…adv`) symlinks. The real file uses the as-printed
 name; legacy v4 back-form names (`ankouthe`) are symlinks onto it, kept so v4
-consumers still resolve. `CARD_RENAME` only carries genuine fixups (typos, group
+consumers still resolve (`just cards` creates them). `CARD_RENAME` only carries genuine fixups (typos, group
 suffixes, subtitle drops) — vtes.pl already downloads the as-printed name.
 
 ## Deploy
