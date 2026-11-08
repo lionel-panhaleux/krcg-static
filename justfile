@@ -55,12 +55,24 @@ _process-cards bcp dir:
             group=
         fi
         name=${name% \[*}
+        # advanced vampires: "Hannibal (Adv) [2]" -> hannibalg2adv (krcg card.url)
+        adv=
+        if [[ ${name:l} == *" (adv)" ]]; then
+            adv=adv
+            name=${name% \(*}
+        fi
+        # BCP sorts "The X" as "X, The"
+        if [[ ${name} == *", The" ]]; then
+            name="The ${name%, The}"
+        fi
         printed=$name
-        name=$(echo $name | iconv -sc -f utf-8 -t ascii//translit | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -d '[:space:]')
-        group=$(echo $group | iconv -f utf-8 -t ascii//translit | tr -d '[:punct:]' | tr -d '[:space:]')
+        # strip accents (NFD + drop marks: macOS iconv mangles them and exits 1)
+        name=$(print -r -- $name | perl -CSA -MUnicode::Normalize -pe '$_ = lc(NFD($_) =~ s/\pM//gr) =~ s/[^a-z0-9]//gr')
+        group=${group//[^0-9]/}
         if [[ -n $group ]]; then
             name=${name}g${group}
         fi
+        name=${name}${adv}
         if [[ ${printed} == "The "* ]]; then
             the_cards+=(${name})
         fi
@@ -79,22 +91,26 @@ _process-cards bcp dir:
     echo "Generated webp versions"
     # Create symlinks for crypt cards (with group number)
     cd result
+    # (hannibalg2 -> hannibal, hannibalg2adv -> hannibaladv)
     for f in ./*.jpg(.); do
         name=${f#./}
-        short=${name%g[123456789].jpg}
-        if [[ ${short} != ${name} ]]; then
-            ln -fs ${name} ${short}.jpg
-            ln -fs ${name%.jpg}.webp ${short}.webp
-            echo "  ${short}.jpg -> ${name}"
+        name=${name%.jpg}
+        adv=${(M)name%adv}
+        short=${${name%adv}%g[123456789]}
+        if [[ ${short} != ${name%adv} ]]; then
+            ln -fs ${name}.jpg ${short}${adv}.jpg
+            ln -fs ${name}.webp ${short}${adv}.webp
+            echo "  ${short}${adv}.jpg -> ${name}.jpg"
         fi
     done
     # "The X" cards keep their v4 back-form names as symlinks
-    # (theankoug5 -> ankoutheg5, ankouthe)
+    # (theankoug5 -> ankoutheg5, ankouthe; same with an adv suffix)
     for name in ${the_cards}; do
-        base=${name#the}
+        adv=${(M)name%adv}
+        base=${${name#the}%adv}
         short=${base%g[123456789]}
         group=${base#${short}}
-        backs=(${short}the${group} ${short}the)
+        backs=(${short}the${group}${adv} ${short}the${adv})
         for back in ${(u)backs}; do
             ln -fs ${name}.jpg ${back}.jpg
             ln -fs ${name}.webp ${back}.webp
